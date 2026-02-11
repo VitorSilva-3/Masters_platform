@@ -1,5 +1,0 @@
-streamlit
-biopython
-pandas
-plotly
-tabulate
