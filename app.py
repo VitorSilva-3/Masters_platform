@@ -18,7 +18,7 @@ from ui.tab_data import render_data_tab
 
 # 1. Page Configuration
 
-icon_image = Image.open("assets/logo.jpg")
+icon_image = Image.open("images/logo.jpg")
 
 st.set_page_config(
     page_title="MicroValue ",
