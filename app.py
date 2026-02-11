@@ -74,20 +74,20 @@ with tab1:
 
 # --- TAB 2: ARTICLES ---
 with tab2:
-    st.info("Module under construction. Connect `ui/tab_articles.py` to `ncbi_service`.")
+    st.info("Module under construction.")
     # render_articles_tab(ncbi_service, df)
 
 # --- TAB 3: TAXONOMY ---
 with tab3:
-    st.info("Module under construction. Connect `ui/tab_taxonomy.py` to `ncbi_service`.")
+    st.info("Module under construction.")
     # render_taxonomy_tab(ncbi_service, df)
 
 # --- TAB 4: KEGG ---
 with tab4:
-    st.info("Module under construction. Connect `ui/tab_kegg.py` to `kegg_service`.")
+    st.info("Module under construction.")
     # render_kegg_tab(kegg_service)
 
 # --- TAB 5: UNIPROT ---
 with tab5:
-    st.info("Module under construction. Connect `ui/tab_uniprot.py` to `uniprot_service`.")
+    st.info("Module under construction.")
     # render_uniprot_tab(uniprot_service)
