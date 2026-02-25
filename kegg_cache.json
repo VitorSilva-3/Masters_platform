@@ -1,0 +1,86 @@
+{
+    "3.2.1.23": {
+        "ec_number": "3.2.1.23",
+        "name": "beta-galactosidase",
+        "definition": null,
+        "reaction": "Hydrolysis of terminal non-reducing beta-D-galactose residues in beta-D-galactosides",
+        "pathways": [
+            {
+                "code": "ec00052",
+                "description": "Galactose metabolism"
+            }
+        ]
+    },
+    "3.2.1.26": {
+        "ec_number": "3.2.1.26",
+        "name": "beta-fructofuranosidase",
+        "definition": null,
+        "reaction": "Hydrolysis of terminal non-reducing beta-D-fructofuranoside residues in beta-D-fructofuranosides",
+        "pathways": [
+            {
+                "code": "ec00052",
+                "description": "Galactose metabolism"
+            }
+        ]
+    },
+    "2.7.1.4": {
+        "ec_number": "2.7.1.4",
+        "name": "fructokinase",
+        "definition": null,
+        "reaction": "ATP + D-fructose = ADP + D-fructose 6-phosphate [RN:R00760]",
+        "pathways": [
+            {
+                "code": "ec00051",
+                "description": "Fructose and mannose metabolism"
+            }
+        ]
+    },
+    "3.2.1.20": {
+        "ec_number": "3.2.1.20",
+        "name": "alpha-glucosidase",
+        "definition": null,
+        "reaction": "Hydrolysis of terminal (1->4)-linked alpha-D-glucose residues from the non-reducing ends of oligosaccharides with release of alpha-D-glucose",
+        "pathways": [
+            {
+                "code": "ec00052",
+                "description": "Galactose metabolism"
+            }
+        ]
+    },
+    "3.2.1.2": {
+        "ec_number": "3.2.1.2",
+        "name": "beta-amylase",
+        "definition": null,
+        "reaction": "Hydrolysis of (1->4)-alpha-D-glucosidic linkages in polysaccharides so as to remove successive maltose units from the non-reducing ends of the chains",
+        "pathways": [
+            {
+                "code": "ec00500",
+                "description": "Starch and sucrose metabolism"
+            }
+        ]
+    },
+    "3.2.1.1": {
+        "ec_number": "3.2.1.1",
+        "name": "alpha-amylase",
+        "definition": null,
+        "reaction": "Endohydrolysis of (1->4)-alpha-D-glucosidic linkages in polysaccharides containing three or more (1->4)-alpha-linked D-glucose units",
+        "pathways": [
+            {
+                "code": "ec00500",
+                "description": "Starch and sucrose metabolism"
+            }
+        ]
+    },
+    "3.2.1.4": {
+        "ec_number": "3.2.1.4",
+        "name": "cellulase",
+        "definition": null,
+        "reaction": "Endohydrolysis of (1->4)-beta-D-glucosidic linkages in cellulose, lichenin and cereal beta-D-glucans",
+        "pathways": [
+            {
+                "code": "ec00500",
+                "description": "Starch and sucrose metabolism"
+            }
+        ]
+    }
+}
