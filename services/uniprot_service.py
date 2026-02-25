@@ -28,7 +28,6 @@ class UniprotService:
             if not results:
                 return {}
             
-            # Process the raw results to get a summary
             return self._summarize_results(enzyme_name, ec_number, results)
             
         except Exception as e:
@@ -67,7 +66,6 @@ class UniprotService:
                     for txt in comment.get('texts', []):
                         subunits.add(txt.get('value'))
 
-        # Get protein name from the first result as a representative
         first_desc = results[0].get('proteinDescription', {}).get('recommendedName', {}).get('fullName', {}).get('value', 'Unknown')
 
         return {
@@ -75,7 +73,7 @@ class UniprotService:
             'ec_number': ec,
             'general_info': {
                 'protein_name': first_desc,
-                'functions': list(functions)[:3], # Limit to top 3
+                'functions': list(functions)[:3], 
                 'catalytic_activities': list(set(catalytic_activities))[:3],
                 'pathways': list(pathways)[:3],
                 'cofactors': list(cofactors)[:3],

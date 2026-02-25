@@ -5,6 +5,18 @@ import time
 from Bio import Entrez, SeqIO
 from config import AppConfig, FUTURE_TERMS
 
+EXCLUDED_TERMS = [
+    "inhibitor", "regulator", "activator", "repressor", 
+    "receptor", "transcription factor", "fingers", 
+    "binding protein", "domain-containing",
+    "dna", "rna", "trna", "mrna", "ribosomal", "ribosome",
+    "recombinase", "integrase", "transposase", "nuclease",
+    "polymerase", "helicase", "chromosome", "plasmid",
+    "protein kinase", "histidine kinase", "tyrosine kinase", 
+    "serine/threonine", "signal transduction",
+    "synthase", "biosynthesis", "assembly"
+]
+
 class DataManager:
     """Manages the local dataset: building it from NCBI and loading it for the app."""
 
@@ -21,7 +33,7 @@ class DataManager:
         return pd.DataFrame()
 
     def build_dataset_offline(self):
-        print(f"Starting data build. Target Taxa: {len(AppConfig.TARGET_TAXA)} groups.")
+        print(f"Starting dataset build. Target Taxa: {len(AppConfig.TARGET_TAXA)} groups.")
         Entrez.email = AppConfig.EMAIL
         
         taxa_query_parts = [f'"{t}"[Organism]' for t in AppConfig.TARGET_TAXA]
@@ -32,11 +44,11 @@ class DataManager:
         for enzyme_name, info in AppConfig.ENZYMES.items():
             print(f"Fetching data for: {enzyme_name} (EC: {info.ec_number})...")
             
-            term_query = f'("{enzyme_name}"[All Fields] OR "{info.ec_number}"[EC/RN Number])'
+            term_query = f'("{enzyme_name}"[Protein Name] OR "{enzyme_name}"[Title] OR "{info.ec_number}"[EC/RN Number])'
             full_query = f'({term_query}) AND ({taxa_query_full})'
             
             try:
-                handle = Entrez.esearch(db="protein", term=full_query, retmax=1000)
+                handle = Entrez.esearch(db="protein", term=full_query, retmax=2000)
                 search_results = Entrez.read(handle)
                 handle.close()
                 
@@ -54,12 +66,14 @@ class DataManager:
                         records = SeqIO.parse(handle, "genbank")
                         
                         for record in records:
-                            raw_organism = record.annotations.get("organism", "Unknown")
-                            
-                            organism_clean = raw_organism.replace("['", "").replace("']", "")
-
                             desc = record.description.lower()
                             
+                            if any(bad_term in desc for bad_term in EXCLUDED_TERMS):
+                                continue
+
+                            raw_organism = record.annotations.get("organism", "Unknown")
+                            organism_clean = raw_organism.replace("['", "").replace("']", "")
+
                             if "uncharacterized" in desc:
                                 status = "🔴 Uncharacterized"
                             elif any(term in desc for term in FUTURE_TERMS):
@@ -89,10 +103,12 @@ class DataManager:
         if all_records:
             df = pd.DataFrame(all_records)
             
-            df = df.drop_duplicates(subset=["Source ID"])
+            print(f"Records before cleaning: {len(df)}")
+            
+            df = df.drop_duplicates(subset=['Specie', 'Enzyme', 'Description'])
             
             df.to_csv(self.file_path, index=False)
-            print(f"Success! Dataset saved with {len(df)} records.")
+            print(f"Success! Saved {len(df)} records.")
         else:
             print("No records found.")
 
