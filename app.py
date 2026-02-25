@@ -27,7 +27,6 @@ except FileNotFoundError:
     st.set_page_config(page_title="MicroValue", layout="wide")
 
 # 2. Initialize Services (Dependency Injection)
-# We create the objects once to use throughout the app
 data_manager = DataManager()
 # ncbi_service = NCBIService(email=AppConfig.EMAIL)
 # uniprot_service = UniprotService()
