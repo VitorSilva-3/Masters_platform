@@ -10,9 +10,9 @@ def get_kegg_info(enzyme_name: str, ec_number: str):
 
 def render_kegg_tab(df: pd.DataFrame):
     """
-    Renders the KEGG database tab using an expander layout.
-    Replicates the specific UI structure with EC number breakdown.
+    Renders the KEGG data tab.
     """
+
     st.subheader("KEGG Enzyme integration")
     
     if df.empty:

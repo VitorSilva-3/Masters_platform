@@ -7,12 +7,13 @@ from typing import Dict, Any
 class KeggService:
     """Service to interact with the KEGG Enzyme Database with local caching."""
 
-    def __init__(self, cache_file: str = "kegg_cache.json"):
+    def __init__(self, cache_file: str = "data/kegg_cache.json"):
         self.cache_file = cache_file
         self.cache = self._load_cache()
 
     def _load_cache(self) -> Dict[str, Any]:
         """Loads the cache from a JSON file if it exists, otherwise returns an empty dictionary."""
+
         if os.path.exists(self.cache_file):
             try:
                 with open(self.cache_file, "r", encoding="utf-8") as f:
@@ -23,6 +24,7 @@ class KeggService:
 
     def _save_cache(self):
         """Saves the current cache dictionary to a JSON file."""
+
         try:
             with open(self.cache_file, "w", encoding="utf-8") as f:
                 json.dump(self.cache, f, indent=4)
@@ -32,8 +34,8 @@ class KeggService:
     def fetch_enzyme_details(self, enzyme_name: str, ec_number: str) -> Dict[str, Any]:
         """
         Fetches detailed information from KEGG for a specific enzyme.
-        Uses a local JSON cache to dramatically improve speed and avoid API bans.
         """
+
         if ec_number in self.cache:
             return self.cache[ec_number]
 
@@ -54,6 +56,7 @@ class KeggService:
 
     def _parse_kegg_text(self, raw_text: str, ec_number: str) -> Dict[str, Any]:
         """Parses the raw text response from KEGG into a dictionary."""
+        
         info = {
             'ec_number': ec_number,
             'name': None,

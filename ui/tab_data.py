@@ -2,84 +2,141 @@
 import streamlit as st
 import pandas as pd
 
-def render_data_tab(df: pd.DataFrame):
-    """
-    Renders the data table and filters in the UI.
-    Receives the main DataFrame loaded in app.py.
-    """
-    st.subheader("Main dataset overview")
+TARGET_TAXA = [
+    "Chlorophyceae", "Trebouxiophyceae", "Prasinophyceae", "Mamiellophyceae",
+    "Bacillariophyceae", "Eustigmatophyceae", "Chrysophyceae", "Xanthophyceae",
+    "Porphyridiophyceae", "Cyanidiophyceae", "Rhodellophyceae",
+    "Prymnesiophyceae", "Euglenida", "Dinophyceae", "Cryptophyceae",
+    "Cyanobacteria"
+]
+
+def get_group_for_species(species: str, taxonomy_service) -> str:
+    """Helper function to find which Target Taxa a species belongs to."""
     
+    lineage = taxonomy_service.fetch_taxonomy_lineage(species)
+    
+    if isinstance(lineage, list):
+        for node in lineage:
+            if node.get("name") in TARGET_TAXA:
+                return node.get("name")
+        
+        for node in lineage:
+            if node.get("rank") == "class":
+                return node.get("name")
+                
+    return "Other / Unknown"
+
+def render_data_tab(df: pd.DataFrame, taxonomy_service):
+    """
+    Renders the Data tab, displaying the main dataset with advanced filtering.
+    """
+
+    st.subheader("Global dataset")
+
     if df.empty:
-        st.warning("The DataFrame is empty. Please run the data builder script.")
+        st.warning("No data available.")
         return
 
-    col1, col2, col3 = st.columns(3)
-    
-    all_organisms = sorted(df["Specie"].unique().tolist())
-    all_enzymes = sorted(df["Enzyme"].unique().tolist())
+    if "Class" not in df.columns:
+        with st.spinner("Classifying species..."):
+            unique_species = df["Specie"].dropna().unique()
+            species_to_group = {sp: get_group_for_species(sp, taxonomy_service) for sp in unique_species}
+            df["Class"] = df["Specie"].map(species_to_group)
 
-    with col1:
-        selected_org = st.multiselect("Filter by species", options=all_organisms)
-    
-    with col2:
-        selected_enz = st.multiselect("Filter by enzyme", options=all_enzymes)
+    cols = df.columns.tolist()
+    if "Class" in cols:
+        cols.insert(cols.index("Specie") + 1, cols.pop(cols.index("Class")))
+        df = df[cols]
 
-    with col3:
-        selected_status = st.multiselect(
-            "Filter by status", 
-            options=["🟢 Confirmed", "🟡 Probable/Hypothetical", "🔴 Uncharacterized"]
-        )
-        
     filtered_df = df.copy()
+
+    st.markdown("### Filters")
     
-    if selected_org:
-        filtered_df = filtered_df[filtered_df["Specie"].isin(selected_org)]
-    
-    if selected_enz:
-        filtered_df = filtered_df[filtered_df["Enzyme"].isin(selected_enz)]
-
-    if selected_status:
-        filtered_df = filtered_df[filtered_df["Status"].isin(selected_status)]
-        
-    st.markdown(f"**Results:** {len(filtered_df)} records found.")
-    st.markdown(f"**Unique species:** {filtered_df['Specie'].nunique()}")
-    
-    display_df = filtered_df.copy()
-
-    if "Source ID (NCBI)" in display_df.columns:
-        display_df["Source ID (NCBI)"] = "https://www.ncbi.nlm.nih.gov/protein/" + display_df["Source ID (NCBI)"].astype(str)
-
-    column_cfg = {
-        "Source ID (NCBI)": st.column_config.LinkColumn(
-            "NCBI accession",
-            help="Direct link to the protein entry on NCBI.",
-            display_text="https://www.ncbi.nlm.nih.gov/protein/(.*)", 
-            width="small"
-        ),
-    }
-
-    st.dataframe(
-        display_df, 
-        column_config=column_cfg,
-        use_container_width=True,
-        hide_index=True
+    filter_type = st.radio(
+        "Taxonomic level:",
+        options=["View all", "Filter by class", "Filter by species"],
+        horizontal=True
     )
 
-    st.divider()
+    if filter_type == "Filter by class":
+        col1, col2, col3, col4 = st.columns(4)
 
-    st.markdown("""
-        ### Definitions of terms frequently found in NCBI annotations:
+        with col1:
+            groups = sorted([g for g in df["Class"].unique() if g != "Other / Unknown"])
+            if "Other / Unknown" in df["Class"].values:
+                groups.append("Other / Unknown")
+            
+            selected_group = st.selectbox("Select class:", options=["All"] + groups)
+            if selected_group != "All":
+                filtered_df = filtered_df[filtered_df["Class"] == selected_group]
 
-        > **'Unclassified' / 'sp.'** (e.g., "*Tetraselmis sp.*", "unclassified Leptolyngbya"):
-            Refers to organisms that have been isolated and sequenced but lack a formal species description.
+        with col2:
+            available_species = sorted(filtered_df["Specie"].dropna().unique().tolist())
+            selected_species = st.selectbox("Select species:", options=["All"] + available_species)
+            if selected_species != "All":
+                filtered_df = filtered_df[filtered_df["Specie"] == selected_species]
+
+        with col3:
+            available_enzymes = sorted(filtered_df["Enzyme"].dropna().unique().tolist())
+            selected_enzyme = st.selectbox("Select enzyme:", options=["All"] + available_enzymes)
+            if selected_enzyme != "All":
+                filtered_df = filtered_df[filtered_df["Enzyme"] == selected_enzyme]
+
+        with col4:
+            if "Status" in df.columns:
+                available_status = sorted(filtered_df["Status"].dropna().unique().tolist())
+                selected_status = st.selectbox("Select status:", options=["All"] + available_status)
+                if selected_status != "All":
+                    filtered_df = filtered_df[filtered_df["Status"] == selected_status]
+            else:
+                st.selectbox("Select status:", options=["All"], disabled=True)
+
+    elif filter_type == "Filter by species":
+        col1, col2, col3 = st.columns(3)
         
-        > **'Multispecies'** (e.g., "MULTISPECIES: alpha-amylase family glycosyl hydrolase [Spirulina]"):
-            Indicates that the protein sequence is 100% identical across multiple species within the same genus. This signifies a highly conserved enzyme structure.
-      
-        > **'Uncultured'** (e.g., "uncultured *Leptolyngbya sp.*"):
-            Sequences derived directly from environmental DNA (metagenomics) without laboratory cultivation of the organism.
-            While these sequences demonstrate the genetic potential for enzymatic activity in nature, the specific organism is not currently available in culture collections for industrial application.
+        with col1:
+            species_list = sorted(df["Specie"].dropna().unique().tolist())
+            selected_species = st.selectbox("Select species:", options=["All"] + species_list)
+            if selected_species != "All":
+                filtered_df = filtered_df[filtered_df["Specie"] == selected_species]
 
-        > **'Candidatus'** (e.g., "Candidatus *Synechococcus spongiarum*"):
-            Refers to well-characterized taxonomic lineages that remain uncultured or cannot be maintained in pure culture, limiting their immediate biotechnological viability.
-        """)
+        with col2:
+            available_enzymes = sorted(filtered_df["Enzyme"].dropna().unique().tolist())
+            selected_enzyme = st.selectbox("Select enzyme:", options=["All"] + available_enzymes)
+            if selected_enzyme != "All":
+                filtered_df = filtered_df[filtered_df["Enzyme"] == selected_enzyme]
+
+        with col3:
+            if "Status" in df.columns:
+                available_status = sorted(filtered_df["Status"].dropna().unique().tolist())
+                selected_status = st.selectbox("Select status:", options=["All"] + available_status)
+                if selected_status != "All":
+                    filtered_df = filtered_df[filtered_df["Status"] == selected_status]
+            else:
+                st.selectbox("Select status:", options=["All"], disabled=True)
+
+    else:
+        col1, col2, col3 = st.columns(3)
+        
+        with col1:
+            st.selectbox("Select taxonomy:", options=["All Taxa"], disabled=True)
+            
+        with col2:
+            available_enzymes = sorted(filtered_df["Enzyme"].dropna().unique().tolist())
+            selected_enzyme = st.selectbox("Select enzyme:", options=["All"] + available_enzymes)
+            if selected_enzyme != "All":
+                filtered_df = filtered_df[filtered_df["Enzyme"] == selected_enzyme]
+                
+        with col3:
+            if "Status" in df.columns:
+                available_status = sorted(filtered_df["Status"].dropna().unique().tolist())
+                selected_status = st.selectbox("Select status:", options=["All"] + available_status)
+                if selected_status != "All":
+                    filtered_df = filtered_df[filtered_df["Status"] == selected_status]
+            else:
+                st.selectbox("Select status:", options=["All"], disabled=True)
+
+    st.divider()
+    
+    st.markdown(f"**Showing {len(filtered_df)} records** based on your current filters.")
+    st.dataframe(filtered_df, use_container_width=True, hide_index=True)

@@ -2,8 +2,16 @@
 import pandas as pd
 import os
 import time
+import logging
 from Bio import Entrez, SeqIO
 from config import AppConfig, FUTURE_TERMS
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s | %(levelname)-8s | %(message)s",
+    datefmt="%Y-%m-%d %H:%M:%S"
+)
+logger = logging.getLogger(__name__)
 
 EXCLUDED_TERMS = [
     "inhibitor", "regulator", "activator", "repressor", 
@@ -20,7 +28,7 @@ EXCLUDED_TERMS = [
 class DataManager:
     """Manages the local dataset: building it from NCBI and loading it for the app."""
 
-    def __init__(self, file_path: str = "enzymes_data.csv"):
+    def __init__(self, file_path: str = "data/enzymes_data.csv"):
         self.file_path = file_path
 
     def load_data(self) -> pd.DataFrame:
@@ -33,7 +41,7 @@ class DataManager:
         return pd.DataFrame()
 
     def build_dataset_offline(self):
-        print(f"Starting dataset build. Target Taxa: {len(AppConfig.TARGET_TAXA)} groups.")
+        logger.info(f"Starting dataset build. Target Taxa: {len(AppConfig.TARGET_TAXA)} groups.")
         Entrez.email = AppConfig.EMAIL
         
         taxa_query_parts = [f'"{t}"[Organism]' for t in AppConfig.TARGET_TAXA]
@@ -42,7 +50,7 @@ class DataManager:
         all_records = []
         
         for enzyme_name, info in AppConfig.ENZYMES.items():
-            print(f"Fetching data for: {enzyme_name} (EC: {info.ec_number})...")
+            logger.info(f"Fetching data for: {enzyme_name} (EC: {info.ec_number})...")
             
             term_query = f'("{enzyme_name}"[Protein Name] OR "{enzyme_name}"[Title] OR "{info.ec_number}"[EC/RN Number])'
             full_query = f'({term_query}) AND ({taxa_query_full})'
@@ -54,7 +62,7 @@ class DataManager:
                 
                 id_list = search_results["IdList"]
                 if not id_list:
-                    print(f"  - No records found for {enzyme_name}.")
+                    logger.warning(f"No records found for {enzyme_name}.")
                     continue
                 
                 batch_size = 100
@@ -92,25 +100,26 @@ class DataManager:
                             })
                         handle.close()
                     except Exception as e:
-                        print(f"Error in batch: {e}")
+                        logger.error(f"Error in batch for {enzyme_name}: {e}")
                         continue
                     
                 time.sleep(1) 
 
             except Exception as e:
-                print(f"  - Error processing {enzyme_name}: {e}")
+                logger.error(f"Error processing {enzyme_name}: {e}")
 
         if all_records:
             df = pd.DataFrame(all_records)
             
-            print(f"Records before cleaning: {len(df)}")
+            logger.info(f"Records before cleaning (duplicate removal): {len(df)}")
             
             df = df.drop_duplicates(subset=['Specie', 'Enzyme', 'Description'])
             
+            os.makedirs(os.path.dirname(self.file_path), exist_ok=True)
             df.to_csv(self.file_path, index=False)
-            print(f"Success! Saved {len(df)} records.")
+            logger.info(f"Success! Saved {len(df)} records to '{self.file_path}'.")
         else:
-            print("No records found.")
+            logger.warning("No records were found in the global search.")
 
 if __name__ == "__main__":
     manager = DataManager()

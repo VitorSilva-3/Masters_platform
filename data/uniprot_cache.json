@@ -1,0 +1,193 @@
+{
+    "3.2.1.23": {
+        "enzyme_name": "beta-galactosidase",
+        "ec_number": "3.2.1.23",
+        "uniprot_link": "https://www.uniprot.org/uniprotkb/P16278/entry",
+        "general_info": {
+            "protein_name": "Beta-galactosidase",
+            "functions": [
+                "Has no beta-galactosidase catalytic activity, but plays functional roles in the formation of extracellular elastic fibers (elastogenesis) and in the development of connective tissue. Seems to be identical to the elastin-binding protein (EBP), a major component of the non-integrin cell surface receptor expressed on fibroblasts, smooth muscle cells, chondroblasts, leukocytes, and certain cancer cell types. In elastin producing cells, associates with tropoelastin intracellularly and functions as a recycling molecular chaperone which facilitates the secretions of tropoelastin and its assembly into elastic fibers",
+                "Hydrolyzes 6-bromo-2-naphthyl-beta-D-galactopyranoside and o-nitrophenyl-beta-D-galactopyranoside (ONPG). Possesses a high level of transgalactosylation activity. Hydrolyzes lactose in milk",
+                "Highly specific towards beta-D-galactoside substrates. Hydrolyzes 5-bromo-4-chloro-3-indolyl-beta-D-galactopyranoside (X-Gal) and o-nitrophenyl-beta-D-galactopyranoside (ONPG). Has activity against p-nitrophenyl(pNP)-beta-D-galactoside, but not significantly at all towards pNP-alpha-D-galactoside, pNP-beta-D-glucoside, pNP-beta-D-mannoside, pNP-beta-L-fucoside, pNP-beta-D-xyloside, pNP-beta-L-arabinoside, pNP-beta-D-galuronide, pNP-beta-D-glucuronide, pNP-beta-D-lactoside or pNP-beta-D-cellobioside"
+            ],
+            "catalytic_activities": [
+                "Hydrolysis of terminal non-reducing beta-D-galactose residues in beta-D-galactosides.",
+                "Hydrolysis of (1->4)-beta-D-glucosidic linkages in cellulose and cellotetraose, releasing cellobiose from the non-reducing ends of the chains.",
+                "Hydrolysis of (1->4)-beta-D-xylans, to remove successive D-xylose residues from the non-reducing termini."
+            ],
+            "pathways": [
+                "Glucan metabolism; xyloglucan degradation",
+                "Glycan metabolism; cellulose degradation",
+                "Glycan metabolism; beta-D-glucan degradation"
+            ],
+            "cofactors": [],
+            "subunit_structure": [
+                "Dimer",
+                "Trimer (PubMed:15480628). Tetramer (PubMed:10742215)"
+            ]
+        },
+        "total_entries_analyzed": 30
+    },
+    "3.2.1.26": {
+        "enzyme_name": "beta-fructofuranosidase",
+        "ec_number": "3.2.1.26",
+        "uniprot_link": "https://www.uniprot.org/uniprotkb/B9DFA8/entry",
+        "general_info": {
+            "protein_name": "Alkaline/neutral invertase C, mitochondrial",
+            "functions": [
+                "Mitochondrial invertase that cleaves sucrose into glucose and fructose and is involved in the regulation of aerial tissue development and floral transition. May be modulating hormone balance in relation to the radicle emergence",
+                "May play an important role in phloem unloading and in stress response",
+                "Acidic vacuolar invertase involved in light-induced bud burst (PubMed:22505690, PubMed:27083698)"
+            ],
+            "catalytic_activities": [
+                "Hydrolysis of terminal non-reducing beta-D-fructofuranoside residues in beta-D-fructofuranosides."
+            ],
+            "pathways": [
+                "Glycan biosynthesis; sucrose metabolism"
+            ],
+            "cofactors": [],
+            "subunit_structure": [
+                "Monomer (PubMed:1541302). May be present in two forms, a 70 kDa monomer and a heterodimer of the 30 kDa and 38 kDa subunits (By similarity). The ratio of the levels of the two forms within cells appears to be regulated developmentally (By similarity)",
+                "Present in two forms, a 70 kDa monomer and a heterodimer of the 30 kDa and 38 kDa subunits. The ratio of the levels of the two forms within cells appears to be regulated developmentally"
+            ]
+        },
+        "total_entries_analyzed": 30
+    },
+    "2.7.1.4": {
+        "enzyme_name": "fructokinase",
+        "ec_number": "2.7.1.4",
+        "uniprot_link": "https://www.uniprot.org/uniprotkb/Q9C524/entry",
+        "general_info": {
+            "protein_name": "Probable fructokinase-6, chloroplastic",
+            "functions": [
+                "May play an important role in maintaining the flux of carbon towards starch formation. May also be involved in a sugar-sensing pathway",
+                "Seems to be involved in the degradation of glucomannan",
+                "May play an important role in maintaining the flux of carbon towards starch formation"
+            ],
+            "catalytic_activities": [
+                "D-fructose + ATP = D-fructose 6-phosphate + ADP + H(+)"
+            ],
+            "pathways": [
+                "Glycan biosynthesis; starch biosynthesis"
+            ],
+            "cofactors": [],
+            "subunit_structure": [
+                "Homodimer"
+            ]
+        },
+        "total_entries_analyzed": 30
+    },
+    "3.2.1.20": {
+        "enzyme_name": "maltase",
+        "ec_number": "3.2.1.20",
+        "uniprot_link": "https://www.uniprot.org/uniprotkb/P10253/entry",
+        "general_info": {
+            "protein_name": "Lysosomal alpha-glucosidase",
+            "functions": [
+                "May play a role in regulating the intracellular level of maltotriose. Cleaves glucose from the reducing end of maltotriose and longer maltodextrins with a chain length of up to 7 glucose units",
+                "Alpha-glucosidase with broad specificity. Hydrolyzes maltose, palatinose, maltulose, trehalose, trehalulose, turanose, leucrose, sucrose and maltitol. Is not active against alpha-galactosides, e.g. melibiose, and alpha-mannosides. Shows an obligate requirement for an O-alpha-glycosidic linkage, since it is not able to cleave beta-glycosidic bonds (cellobiose, gentiobiose, lactose, sophorose or laminaribiose). Cannot hydrolyze phosphorylated alpha-glucosides derivatives. Seems to be involved in the degradation of palatinose, a sucrose isomer that is formed as a reserve material under conditions of excess carbon availability, sequestered in a form unavailable to competitors such as fungi or the host plant, and whose consumption appears to be postponed until the preferentially metabolized carbon source (e.g. sucrose) is depleted",
+                "High activity for alpha-glucan"
+            ],
+            "catalytic_activities": [
+                "Hydrolysis of terminal, non-reducing (1->4)-linked alpha-D-glucose residues with release of alpha-D-glucose.",
+                "kojibiose + H2O = alpha-D-glucose + D-glucose",
+                "D-maltose + H2O = alpha-D-glucose + D-glucose"
+            ],
+            "pathways": [
+                "Carbohydrate degradation",
+                "Glycan degradation; palatinose degradation"
+            ],
+            "cofactors": [],
+            "subunit_structure": [
+                "(Microbial infection) Binds to L.sphaericus BinB subunit of the binary toxin BinAB",
+                "Homotetramer"
+            ]
+        },
+        "total_entries_analyzed": 30
+    },
+    "3.2.1.2": {
+        "enzyme_name": "beta-amylase",
+        "ec_number": "3.2.1.2",
+        "uniprot_link": "https://www.uniprot.org/uniprotkb/O23553/entry",
+        "general_info": {
+            "protein_name": "Beta-amylase 3, chloroplastic",
+            "functions": [
+                "Low beta-amylase activity. Interacts poorly with starch or other alpha-1,4-glucan",
+                "Beta-amylase activity. Can use p-nitrophenyl maltopentaoside (PNPG5) as substrate only in reduced form. Can play a minor role in the starch degradation and maltose metabolism in chloroplasts during the night. More active on phosphorylated glucan. Interacts directly with starch or other alpha-1,4-glucan",
+                "Digests glycogen releasing maltose units"
+            ],
+            "catalytic_activities": [
+                "a fatty acyl-CoA + H2O = a fatty acid + CoA + H(+)",
+                "Endohydrolysis of (1->4)-alpha-D-glucosidic linkages in polysaccharides containing three or more (1->4)-alpha-linked D-glucose units.",
+                "Hydrolysis of (1->4)-alpha-D-glucosidic linkages in polysaccharides so as to remove successive maltose units from the non-reducing ends of the chains."
+            ],
+            "pathways": [
+                "Lipid metabolism; fatty acid metabolism",
+                "Alkaloid biosynthesis"
+            ],
+            "cofactors": [],
+            "subunit_structure": [
+                "Monomer",
+                "Homotetramer"
+            ]
+        },
+        "total_entries_analyzed": 30
+    },
+    "3.2.1.1": {
+        "enzyme_name": "alpha-amylase",
+        "ec_number": "3.2.1.1",
+        "uniprot_link": "https://www.uniprot.org/uniprotkb/P0DTE8/entry",
+        "general_info": {
+            "protein_name": "Alpha-amylase 1C",
+            "functions": [
+                "Alpha-amylase that cleaves starch into oligosaccharides before internalization for degradation, the first step in starch degradation",
+                "Since only maltooligosaccharides up to a chain length of 6 glucose units are actively transported through the cytoplasmic membrane via the membrane-bound complex of three proteins, MalF, MalG, and MalK, longer maltooligosaccharides must first be degraded by the periplasmic alpha-amylase, the MalS protein",
+                "Possesses endoamylolytic activity in vitro, but seems not required for breakdown of transitory starch in leaves. May be involved in the determination of the final structure of glucans by shortening long linear phospho-oligosaccharides in the chloroplast stroma. Can act on both soluble and insoluble glucan substrates to release small linear and branched malto-oligosaccharides (PubMed:24089528). Works synergistically with beta-amylase toward efficient starch degradation (PubMed:24089528). Has activity against p-nitrophenyl maltoheptaoside (BPNP-G7), amylopectin and beta-limit dextrin (PubMed:24089528). Involved in stress-induced starch degradation (PubMed:27436713)"
+            ],
+            "catalytic_activities": [
+                "Endohydrolysis of (1->4)-alpha-D-glucosidic linkages in polysaccharides containing three or more (1->4)-alpha-linked D-glucose units.",
+                "D-maltose = alpha,alpha-trehalose",
+                "Hydrolysis of (1->4)-alpha-D-glucosidic linkages in polysaccharides so as to remove successive maltose units from the non-reducing ends of the chains."
+            ],
+            "pathways": [
+                "Glycan degradation; starch degradation",
+                "Capsule biogenesis; capsule polysaccharide biosynthesis",
+                "Glycan biosynthesis; glycogen biosynthesis"
+            ],
+            "cofactors": [],
+            "subunit_structure": [
+                "Homohexamer",
+                "Binds to the sea anemone inhibitor helianthamide and magnificamide"
+            ]
+        },
+        "total_entries_analyzed": 30
+    },
+    "3.2.1.4": {
+        "enzyme_name": "cellulase",
+        "ec_number": "3.2.1.4",
+        "uniprot_link": "https://www.uniprot.org/uniprotkb/Q38890/entry",
+        "general_info": {
+            "protein_name": "Endoglucanase 25",
+            "functions": [
+                "Endoglucanase with some exoglucanase activity",
+                "Exhibits both endoglucanase and cellobiosidase activities",
+                "May digest the spore cell wall during germination, to release the enclosed amoeba"
+            ],
+            "catalytic_activities": [
+                "Deacetylation of xylans and xylo-oligosaccharides.",
+                "Endohydrolysis of (1->4)-beta-D-glucosidic linkages in cellulose, lichenin and cereal beta-D-glucans."
+            ],
+            "pathways": [
+                "Glycan degradation; xylan degradation",
+                "Glycan metabolism; cellulose degradation",
+                "Glycan metabolism; bacterial cellulose biosynthesis"
+            ],
+            "cofactors": [],
+            "subunit_structure": [
+                "Monomer",
+                "Homodimer"
+            ]
+        },
+        "total_entries_analyzed": 30
+    }
+}
