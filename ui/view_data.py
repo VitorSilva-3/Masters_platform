@@ -69,39 +69,39 @@ def render_data_view(df: pd.DataFrame, taxonomy_service):
         groups = sorted([g for g in df["Class"].unique() if g != "Other / Unknown"])
         if "Other / Unknown" in df["Class"].values:
             groups.append("Other / Unknown")
-        selected_groups = st.multiselect("Select class:", options=groups, default=[], placeholder="Select...", key="f_class")
+        selected_groups = st.multiselect("Select class:", options=groups, placeholder="Select...", key="f_class")
         if selected_groups:
             filtered_df = filtered_df[filtered_df["Class"].isin(selected_groups)]
 
     with col2:
         available_species = sorted(filtered_df["Specie"].dropna().unique().tolist())
-        selected_species = st.multiselect("Select species:", options=available_species, default=[], placeholder="Select...", key="f_specie")
+        selected_species = st.multiselect("Select species:", options=available_species, placeholder="Select...", key="f_specie")
         if selected_species:
             filtered_df = filtered_df[filtered_df["Specie"].isin(selected_species)]
 
     with col3:
         available_enzymes = sorted(filtered_df["Enzyme"].dropna().unique().tolist())
-        selected_enzymes = st.multiselect("Select enzyme:", options=available_enzymes, default=[], placeholder="Select...", key="f_enzyme")
+        selected_enzymes = st.multiselect("Select enzyme:", options=available_enzymes, placeholder="Select...", key="f_enzyme")
         if selected_enzymes:
             filtered_df = filtered_df[filtered_df["Enzyme"].isin(selected_enzymes)]
 
     with col4:
         if "Target sugar" in df.columns:
             available_sugars = sorted(filtered_df["Target sugar"].dropna().unique().tolist())
-            selected_sugars = st.multiselect("Select target sugar:", options=available_sugars, default=[], placeholder="Select...", key="f_sugar")
+            selected_sugars = st.multiselect("Select target sugar:", options=available_sugars, placeholder="Select...", key="f_sugar")
             if selected_sugars:
                 filtered_df = filtered_df[filtered_df["Target sugar"].isin(selected_sugars)]
         else:
-            st.multiselect("Select target sugar:", options=[], default=[], placeholder="N/A", disabled=True, key="f_sugar_disabled")
+            st.multiselect("Select target sugar:", options=[], placeholder="N/A", disabled=True, key="f_sugar_disabled")
 
     with col5:
         if "Status" in df.columns:
             available_status = sorted(filtered_df["Status"].dropna().unique().tolist())
-            selected_statuses = st.multiselect("Select status:", options=available_status, default=[], placeholder="Select...", key="f_status")
+            selected_statuses = st.multiselect("Select status:", options=available_status, placeholder="Select...", key="f_status")
             if selected_statuses:
                 filtered_df = filtered_df[filtered_df["Status"].isin(selected_statuses)]
         else:
-            st.multiselect("Select status:", options=[], default=[], placeholder="N/A", disabled=True, key="f_status_disabled")
+            st.multiselect("Select status:", options=[], placeholder="N/A", disabled=True, key="f_status_disabled")
 
     st.divider()
     st.markdown(f"**Showing {len(filtered_df)} records** based on your current filters.")

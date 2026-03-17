@@ -54,7 +54,6 @@ def render_taxonomy_view(taxonomy_service, df: pd.DataFrame):
         selected_groups = st.multiselect(
             "Select taxonomic class:", 
             options=groups, 
-            default=[], 
             placeholder="Select one or more classes...", 
             key="tax_f_class"
         )
@@ -65,8 +64,7 @@ def render_taxonomy_view(taxonomy_service, df: pd.DataFrame):
         available_species = sorted(filtered_df["Specie"].dropna().unique().tolist())
         selected_species_list = st.multiselect(
             "Select species:", 
-            options=available_species, 
-            default=[], 
+            options=available_species,
             placeholder="Select one or more species...", 
             key="tax_f_specie"
         )

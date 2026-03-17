@@ -53,8 +53,7 @@ def render_literature_view(pubmed_service, df: pd.DataFrame, taxonomy_service):
         
         selected_groups = st.multiselect(
             "Select taxonomic class:", 
-            options=groups, 
-            default=[], 
+            options=groups,
             placeholder="Select one or more classes...", 
             key="lit_f_class"
         )
@@ -65,8 +64,7 @@ def render_literature_view(pubmed_service, df: pd.DataFrame, taxonomy_service):
         available_species = sorted(filtered_df["Specie"].dropna().unique().tolist())
         selected_species_list = st.multiselect(
             "Select species:", 
-            options=available_species, 
-            default=[], 
+            options=available_species,  
             placeholder="Select one or more species...", 
             key="lit_f_specie"
         )
