@@ -1,5 +1,17 @@
+
+# Core Framework
 streamlit
-biopython
+
+# Data Handling & Bioinformatics
 pandas
-plotly
+biopython
 tabulate
+numpy
+
+# Visualization & UI components
+plotly
+streamlit-aggrid
+streamlit-lottie
+
+# API & Network
+requests
