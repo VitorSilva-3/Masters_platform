@@ -1,14 +1,18 @@
 
 import json
 import os
+import logging
 from Bio import Entrez, Medline
 from typing import List, Dict, Any
 
-class PubMedService:
-    """Service to search NCBI PubMed for enzyme-related articles with local caching."""
+logger = logging.getLogger(__name__)
 
-    def __init__(self, email: str, cache_file: str = "data/pubmed_cache.json"):
+class PubMedService:
+    """Service to search NCBI PubMed for articles."""
+
+    def __init__(self, email: str, cache_file: str = "data/literature_cache.json"):
         """Initialize with user email and load local PubMed cache."""
+
         self.email = email
         Entrez.email = self.email
         self.cache_file = cache_file
@@ -20,27 +24,36 @@ class PubMedService:
                 with open(self.cache_file, "r", encoding="utf-8") as f:
                     return json.load(f)
             except Exception as e:
-                print(f"[PubMedService] Error loading cache: {e}")
+                logger.error(f"[PubMedService] Error loading cache: {e}")
         return {}
 
-    def _save_cache(self):
+    def save_cache(self):
+        """Saves the current cache dictionary to a JSON file."""
         try:
             with open(self.cache_file, "w", encoding="utf-8") as f:
                 json.dump(self.cache, f, indent=4)
         except Exception as e:
-            print(f"[PubMedService] Error saving cache: {e}")
+            logger.error(f"[PubMedService] Error saving cache: {e}")
 
-    def search_articles(self, organism: str, enzyme: str, ec_number: str, max_results: int = 5) -> List[Dict[str, Any]]:
-        """
-        Searches PubMed for articles linking an organism to an enzyme.
-        """
-          
+    def search_articles(self, organism: str, enzyme: str, ec_number: str, keywords: List[str] = None, max_results: int = 15) -> List[Dict[str, Any]]:
+        """Searches PubMed for articles."""
+
         cache_key = f"{organism}|{enzyme}|{ec_number}"
         
         if cache_key in self.cache:
             return self.cache[cache_key]
 
-        query = f'"{organism}"[Organism] AND ("{enzyme}"[Title/Abstract] OR "{ec_number}"[Title/Abstract])'
+        if keywords:
+            keywords_block = " OR ".join([f'"{kw}"[Title/Abstract]' for kw in keywords])
+            query = (
+                f'("{organism}"[Organism] OR "{organism}"[Title/Abstract]) AND '
+                f'("{enzyme}"[Title/Abstract] OR "{ec_number}"[Title/Abstract] OR {keywords_block})'
+            )
+        else:
+            query = (
+                f'("{organism}"[Organism] OR "{organism}"[Title/Abstract]) AND '
+                f'("{enzyme}"[Title/Abstract] OR "{ec_number}"[Title/Abstract])'
+            )
         
         try:
             handle = Entrez.esearch(db="pubmed", term=query, retmax=max_results, sort="relevance")
@@ -49,30 +62,38 @@ class PubMedService:
             
             pmids = record.get("IdList", [])
             if not pmids:
-                self.cache[cache_key] = []
-                self._save_cache()
-                return []
+                return [] 
 
             handle = Entrez.efetch(db="pubmed", id=pmids, rettype="medline", retmode="text")
             articles = []
             
             for article in Medline.parse(handle):
+                authors_list = article.get('AU', [])
+                authors_str = ", ".join(authors_list) if authors_list else "Unknown Authors"
+
+                date_pub = article.get('DP', 'Unknown Year')
+                year = date_pub.split(' ')[0] if date_pub != 'Unknown Year' else 'Unknown Year'
+
+                doi = None
+                if 'LID' in article:
+                    for lid_part in article['LID'].split(' '):
+                        if '10.' in lid_part:  
+                            doi = lid_part
+                            break
+
                 articles.append({
                     'title': article.get('TI', 'No title available'),
-                    'authors': article.get('AU', []),
+                    'authors': authors_str,
                     'journal': article.get('JT', 'Unknown Journal'),
-                    'year': article.get('DP', 'Unknown Year'),
+                    'year': year,
                     'pmid': article.get('PMID', 'N/A'),
                     'abstract': article.get('AB', 'No abstract available.'),
-                    'doi': article.get('LID', '').split(' [doi]')[0] if 'LID' in article else None
+                    'doi': doi,
                 })
             handle.close()
-            
-            self.cache[cache_key] = articles
-            self._save_cache()
             
             return articles
             
         except Exception as e:
-            print(f"Error searching PubMed for {organism} + {enzyme}: {e}")
+            logger.error(f"[PubMedService] Error searching PubMed for {organism} + {enzyme}: {e}")
             return []

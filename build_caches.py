@@ -7,9 +7,9 @@ import pandas as pd
 from config import AppConfig
 from services.taxonomy_service import TaxonomyService
 from services.pubmed_service import PubMedService
+#from services.semantic_scholar_service import SemanticScholarService
 from services.kegg_service import KeggService
 from services.uniprot_service import UniprotService 
-
 
 logging.basicConfig(
     level=logging.INFO,
@@ -27,12 +27,14 @@ class CacheBuilder:
         self.data_filepath = data_filepath
         self.ncbi_delay = 0.35  
         self.uniprot_delay = 0.50 
+        self.s2_delay = 3.0 
         
         try:
             self.kegg_service = KeggService()
             self.uniprot_service = UniprotService() 
             self.tax_service = TaxonomyService(email=self.email)
             self.pubmed_service = PubMedService(email=self.email)
+            self.s2_service = SemanticScholarService(email=self.email) 
             logger.info("All services initialized successfully.")
         except Exception as e:
             logger.error(f"Initialization Error: Could not load services. Details: {e}")
@@ -49,8 +51,32 @@ class CacheBuilder:
             logger.error(f"Critical Error: The data file '{self.data_filepath}' was not found.")
             sys.exit(1)
 
+    @staticmethod
+    def _deduplicate_articles(articles: list) -> list:
+        """Removes duplicate articles using DOI or Title as the primary key."""
+
+        seen_dois = set()
+        seen_titles = set()
+        unique_articles = []
+
+        for art in articles:
+            doi = art.get('doi')
+            if doi:
+                if doi in seen_dois:
+                    continue
+                seen_dois.add(doi)
+            
+            title = art.get('title', '').strip().lower()
+            if title in seen_titles:
+                continue
+            seen_titles.add(title)
+            
+            unique_articles.append(art)
+            
+        return unique_articles
+
     def update_kegg(self, df: pd.DataFrame) -> None:
-        """Updates the KEGG cache based on unique EC numbers."""
+        """Updates the KEGG cache."""
 
         logger.info("Initiating KEGG cache update...")
         unique_enzymes = df[['Enzyme', 'EC number']].drop_duplicates()
@@ -66,7 +92,7 @@ class CacheBuilder:
         logger.info(f"KEGG cache update completed. {added} new entries added.")
 
     def update_uniprot(self, df: pd.DataFrame) -> None: 
-        """Updates the UniProt cache based on unique EC numbers."""
+        """Updates the UniProt cache."""
 
         logger.info("Initiating UniProt cache update...")
         unique_enzymes = df[['Enzyme', 'EC number']].drop_duplicates()
@@ -83,7 +109,7 @@ class CacheBuilder:
         logger.info(f"UniProt cache update completed. {added} new entries added.")
 
     def update_taxonomy(self, df: pd.DataFrame) -> None:
-        """Updates the Taxonomy cache based on unique organisms."""
+        """Updates the Taxonomy cache."""
 
         logger.info("Initiating Taxonomy cache update...")
         unique_organisms = df['Specie'].unique()
@@ -98,10 +124,10 @@ class CacheBuilder:
                 
         logger.info(f"Taxonomy cache update completed. {added} new organisms added.")
 
-    def update_pubmed(self, df: pd.DataFrame) -> None:
-        """Updates the PubMed cache based on unique organism + enzyme combinations."""
+    def update_literature(self, df: pd.DataFrame) -> None:
+        """Updates the Literature cache (PubMed + Semantic Scholar)."""
 
-        logger.info("Initiating PubMed cache update...")
+        logger.info("Initiating Literature cache update (PubMed + Semantic Scholar)...")
         unique_combinations = df[['Specie', 'Enzyme', 'EC number']].drop_duplicates()
         added = 0
         
@@ -112,12 +138,32 @@ class CacheBuilder:
             cache_key = f"{org}|{enz}|{ec}"
             
             if cache_key not in self.pubmed_service.cache:
-                logger.info(f"Searching PubMed for: {org} + {enz}")
-                self.pubmed_service.search_articles(org, enz, ec)
-                added += 1
-                time.sleep(self.ncbi_delay)
+                logger.info(f"Searching Literature for: {org} + {enz}")
                 
-        logger.info(f"PubMed cache update completed. {added} new searches added.")
+                pubmed_arts = self.pubmed_service.search_articles(
+                    organism=org, 
+                    enzyme=enz, 
+                    ec_number=ec, 
+                    keywords=AppConfig.PUBMED_KEYWORDS
+                )
+                
+                #s2_arts = self.s2_service.search_articles(
+                    #species=org,
+                    #enzyme=enz,
+                    #keywords=AppConfig.PUBMED_KEYWORDS
+                #)
+                s2_arts = []
+                
+                combined_arts = pubmed_arts + s2_arts
+                unique_arts = self._deduplicate_articles(combined_arts)
+                
+                self.pubmed_service.cache[cache_key] = unique_arts
+                self.pubmed_service.save_cache()
+                
+                added += 1
+                time.sleep(self.s2_delay)
+                
+        logger.info(f"Literature cache update completed. {added} new searches added.")
 
     def run_all(self) -> None:
         """Executes the full cache building process."""
@@ -129,7 +175,7 @@ class CacheBuilder:
         self.update_kegg(df)
         self.update_uniprot(df) 
         self.update_taxonomy(df)
-        self.update_pubmed(df)
+        self.update_literature(df)
         
         logger.info("All caches updated successfully. Process completed.")
 

@@ -1,8 +1,11 @@
 
 import json
 import os
+import logging
 from Bio.KEGG import REST
 from typing import Dict, Any
+
+logger = logging.getLogger(__name__)
 
 class KeggService:
     """Service to interact with the KEGG Enzyme Database with local caching."""
@@ -19,7 +22,7 @@ class KeggService:
                 with open(self.cache_file, "r", encoding="utf-8") as f:
                     return json.load(f)
             except Exception as e:
-                print(f"[KeggService] Error loading cache: {e}")
+                logger.error(f"[KeggService] Error loading cache: {e}") 
         return {}
 
     def _save_cache(self):
@@ -29,12 +32,10 @@ class KeggService:
             with open(self.cache_file, "w", encoding="utf-8") as f:
                 json.dump(self.cache, f, indent=4)
         except Exception as e:
-            print(f"[KeggService] Error saving cache: {e}")
+            logger.error(f"[KeggService] Error saving cache: {e}") 
 
     def fetch_enzyme_details(self, enzyme_name: str, ec_number: str) -> Dict[str, Any]:
-        """
-        Fetches detailed information from KEGG for a specific enzyme.
-        """
+        """Fetches detailed information from KEGG for a specific enzyme."""
 
         if ec_number in self.cache:
             return self.cache[ec_number]
@@ -51,12 +52,12 @@ class KeggService:
             return info
             
         except Exception as e:
-            print(f"[KeggService] Error fetching {entry_id}: {e}")
+            logger.error(f"[KeggService] Error fetching {entry_id}: {e}") 
             return {}
 
     def _parse_kegg_text(self, raw_text: str, ec_number: str) -> Dict[str, Any]:
         """Parses the raw text response from KEGG into a dictionary."""
-        
+
         info = {
             'ec_number': ec_number,
             'name': None,

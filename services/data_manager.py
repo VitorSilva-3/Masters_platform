@@ -4,7 +4,7 @@ import os
 import time
 import logging
 from Bio import Entrez, SeqIO
-from config import AppConfig, FUTURE_TERMS
+from config import AppConfig
 
 logging.basicConfig(
     level=logging.INFO,
@@ -13,17 +13,6 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-EXCLUDED_TERMS = [
-    "inhibitor", "regulator", "activator", "repressor", 
-    "receptor", "transcription factor", "fingers", 
-    "binding protein", "domain-containing",
-    "dna", "rna", "trna", "mrna", "ribosomal", "ribosome",
-    "recombinase", "integrase", "transposase", "nuclease",
-    "polymerase", "helicase", "chromosome", "plasmid",
-    "protein kinase", "histidine kinase", "tyrosine kinase", 
-    "serine/threonine", "signal transduction",
-    "synthase", "biosynthesis", "assembly"
-]
 
 class DataManager:
     """Manages the local dataset: building it from NCBI and loading it for the app."""
@@ -76,7 +65,7 @@ class DataManager:
                         for record in records:
                             desc = record.description.lower()
                             
-                            if any(bad_term in desc for bad_term in EXCLUDED_TERMS):
+                            if any(bad_term in desc for bad_term in AppConfig.EXCLUDED_TERMS):
                                 continue
 
                             raw_organism = record.annotations.get("organism", "Unknown")
@@ -84,7 +73,7 @@ class DataManager:
 
                             if "uncharacterized" in desc:
                                 status = "🔴 Uncharacterized"
-                            elif any(term in desc for term in FUTURE_TERMS):
+                            elif any(term in desc for term in AppConfig.FUTURE_TERMS):
                                 status = "🟡 Probable/Hypothetical"
                             else:
                                 status = "🟢 Confirmed"
