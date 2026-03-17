@@ -53,14 +53,15 @@ def render_data_view(df: pd.DataFrame, taxonomy_service):
 
     filtered_df = df.copy()
 
+    def clear_data_filters():
+        for key in ["f_class", "f_specie", "f_enzyme", "f_sugar", "f_status"]:
+            st.session_state[key] = []
+
     col_title, col_btn = st.columns([4, 1])
     with col_title:
         st.markdown("### Filters")
     with col_btn:
-        if st.button("Clear filters", use_container_width=True):
-            for key in ["f_class", "f_specie", "f_enzyme", "f_sugar", "f_status"]:
-                if key in st.session_state:
-                    del st.session_state[key]
+        st.button("Clear filters", use_container_width=True, on_click=clear_data_filters)
 
     col1, col2, col3, col4, col5 = st.columns(5)
 

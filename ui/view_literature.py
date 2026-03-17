@@ -34,14 +34,15 @@ def render_literature_view(pubmed_service, df: pd.DataFrame, taxonomy_service):
 
     filtered_df = df.copy()
 
+    def clear_lit_filters():
+        for key in ["lit_f_class", "lit_f_specie"]:
+            st.session_state[key] = []
+
     col_title, col_btn = st.columns([4, 1])
     with col_title:
         st.markdown("### Search filters")
     with col_btn:
-        if st.button("Clear filters", use_container_width=True):
-            for key in ["lit_f_class", "lit_f_specie"]:
-                if key in st.session_state:
-                    del st.session_state[key]
+        st.button("Clear filters", use_container_width=True, on_click=clear_lit_filters)
 
     col1, col2 = st.columns(2)
 

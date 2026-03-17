@@ -34,14 +34,15 @@ def render_taxonomy_view(taxonomy_service, df: pd.DataFrame):
 
     filtered_df = df.copy()
 
+    def clear_tax_filters():
+        for key in ["tax_f_class", "tax_f_specie"]:
+            st.session_state[key] = []
+
     col_title, col_btn = st.columns([4, 1])
     with col_title:
         st.markdown("### Search filters")
     with col_btn:
-        if st.button("Clear filters", use_container_width=True):
-            for key in ["tax_f_class", "tax_f_specie"]:
-                if key in st.session_state:
-                    del st.session_state[key]
+        st.button("Clear filters", use_container_width=True, on_click=clear_tax_filters)
 
     col1, col2 = st.columns(2)
 
