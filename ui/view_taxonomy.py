@@ -40,7 +40,8 @@ def render_taxonomy_view(taxonomy_service, df: pd.DataFrame):
     with col_btn:
         if st.button("Clear filters", use_container_width=True):
             for key in ["tax_f_class", "tax_f_specie"]:
-                st.session_state[key] = []
+                if key in st.session_state:
+                    del st.session_state[key]
 
     col1, col2 = st.columns(2)
 

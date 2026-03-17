@@ -57,9 +57,10 @@ def render_data_view(df: pd.DataFrame, taxonomy_service):
     with col_title:
         st.markdown("### Filters")
     with col_btn:
-        if st.button("View all", use_container_width=True):
+        if st.button("Clear filters", use_container_width=True):
             for key in ["f_class", "f_specie", "f_enzyme", "f_sugar", "f_status"]:
-                st.session_state[key] = []
+                if key in st.session_state:
+                    del st.session_state[key]
 
     col1, col2, col3, col4, col5 = st.columns(5)
 
