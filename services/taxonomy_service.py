@@ -4,6 +4,7 @@ import os
 import logging
 from Bio import Entrez
 from typing import Dict, Any, List, Union
+from config import AppConfig  
 
 logger = logging.getLogger(__name__)
 
@@ -37,7 +38,6 @@ class TaxonomyService:
     def fetch_taxonomy_lineage(self, organism_name: str) -> Union[List[Dict[str, str]], str]:
         """
         Fetches the full taxonomy lineage for a specific organism.
-        Returns a list of dictionaries with 'rank' and 'name' or an error string.
         """
         
         if organism_name in self.cache:
@@ -48,16 +48,35 @@ class TaxonomyService:
             record = Entrez.read(handle)
             handle.close()
 
-            if not record["IdList"]:
+            id_list = record.get("IdList", [])
+
+            if not id_list:
                 result = "Taxonomy ID not found."
             else:
-                tax_id = record["IdList"][0]
-                handle = Entrez.efetch(db="taxonomy", id=tax_id, retmode="xml")
-                details = Entrez.read(handle)
+                handle = Entrez.efetch(db="taxonomy", id=",".join(id_list), retmode="xml")
+                details_list = Entrez.read(handle)
                 handle.close()
                 
-                if details:
-                    lineage_ex = details[0].get("LineageEx", [])
+                chosen_details = None
+
+                if len(details_list) == 1:
+                    chosen_details = details_list[0]
+                else:
+                    target_taxa_lower = [t.lower() for t in AppConfig.TARGET_TAXA]
+                    
+                    for details in details_list:
+                        lineage_str = details.get("Lineage", "").lower()
+                        
+                        if any(taxa in lineage_str for taxa in target_taxa_lower):
+                            chosen_details = details
+                            logger.info(f"Resolved homonym for '{organism_name}': Chose correct TaxID {details.get('TaxId')}")
+                            break
+                    
+                    if not chosen_details:
+                        chosen_details = details_list[0]
+
+                if chosen_details:
+                    lineage_ex = chosen_details.get("LineageEx", [])
                     if lineage_ex:
                         result = []
                         for node in lineage_ex:

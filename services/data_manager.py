@@ -33,10 +33,21 @@ class DataManager:
         logger.info(f"Starting dataset build. Target Taxa: {len(AppConfig.TARGET_TAXA)} groups.")
         Entrez.email = AppConfig.EMAIL
         
+        existing_df = self.load_data()
+        existing_ids = set()
+        if not existing_df.empty and 'Source ID (NCBI)' in existing_df.columns:
+            existing_ids = set(existing_df['Source ID (NCBI)'].dropna().astype(str))
+            logger.info(f"Found existing dataset with {len(existing_df)} records.")
+            logger.info(f"Loaded {len(existing_ids)} unique NCBI Source IDs to skip.")
+        else:
+            logger.info("No existing dataset found or missing Source ID column. Full download will proceed.")
+
         taxa_query_parts = [f'"{t}"[Organism]' for t in AppConfig.TARGET_TAXA]
         taxa_query_full = " OR ".join(taxa_query_parts)
         
-        all_records = []
+        target_taxa_lower = [t.lower() for t in AppConfig.TARGET_TAXA]
+        
+        new_records = []
         
         for enzyme_name, info in AppConfig.ENZYMES.items():
             logger.info(f"Fetching data for: {enzyme_name} (EC: {info.ec_number})...")
@@ -45,18 +56,27 @@ class DataManager:
             full_query = f'({term_query}) AND ({taxa_query_full})'
             
             try:
-                handle = Entrez.esearch(db="protein", term=full_query, retmax=2000)
+                handle = Entrez.esearch(db="protein", term=full_query, retmax=5000)
                 search_results = Entrez.read(handle)
                 handle.close()
                 
-                id_list = search_results["IdList"]
-                if not id_list:
+                all_found_ids = search_results.get("IdList", [])
+                
+                if not all_found_ids:
                     logger.warning(f"No records found for {enzyme_name}.")
                     continue
                 
+                ids_to_fetch = [ncbi_id for ncbi_id in all_found_ids if ncbi_id not in existing_ids]
+                
+                skipped_count = len(all_found_ids) - len(ids_to_fetch)
+                logger.info(f"Total found: {len(all_found_ids)}. Skipping {skipped_count} already saved. Fetching {len(ids_to_fetch)} new records.")
+
+                if not ids_to_fetch:
+                    continue
+                
                 batch_size = 100
-                for i in range(0, len(id_list), batch_size):
-                    batch_ids = id_list[i:i+batch_size]
+                for i in range(0, len(ids_to_fetch), batch_size):
+                    batch_ids = ids_to_fetch[i:i+batch_size]
                     
                     try:
                         handle = Entrez.efetch(db="protein", id=batch_ids, rettype="gb", retmode="text")
@@ -70,6 +90,15 @@ class DataManager:
 
                             raw_organism = record.annotations.get("organism", "Unknown")
                             organism_clean = raw_organism.replace("['", "").replace("']", "")
+                            
+                            taxonomy_list = record.annotations.get("taxonomy", [])
+                            taxonomy_lower = [tax.lower() for tax in taxonomy_list]
+                            
+                            is_valid_taxa = any(target in taxonomy_lower for target in target_taxa_lower)
+                            
+                            if not is_valid_taxa:
+                                logger.debug(f"Skipping '{organism_clean}' - Lineage does not match Target Taxa.")
+                                continue 
 
                             if "uncharacterized" in desc:
                                 status = "🔴 Uncharacterized"
@@ -78,7 +107,7 @@ class DataManager:
                             else:
                                 status = "🟢 Confirmed"
 
-                            all_records.append({
+                            new_records.append({
                                 "Specie": organism_clean,
                                 "Enzyme": enzyme_name,
                                 "EC number": info.ec_number,
@@ -92,23 +121,31 @@ class DataManager:
                         logger.error(f"Error in batch for {enzyme_name}: {e}")
                         continue
                     
-                time.sleep(1) 
+                    time.sleep(1) 
 
             except Exception as e:
                 logger.error(f"Error processing {enzyme_name}: {e}")
 
-        if all_records:
-            df = pd.DataFrame(all_records)
+        if new_records or not existing_df.empty:
+            new_df = pd.DataFrame(new_records)
             
-            logger.info(f"Records before cleaning (duplicate removal): {len(df)}")
+            if not existing_df.empty and not new_df.empty:
+                final_df = pd.concat([existing_df, new_df], ignore_index=True)
+                logger.info(f"Merged {len(existing_df)} old records with {len(new_df)} new records.")
+            elif not new_df.empty:
+                final_df = new_df
+            else:
+                final_df = existing_df
             
-            df = df.drop_duplicates(subset=['Specie', 'Enzyme', 'Description'])
+            logger.info(f"Records before cleaning (duplicate removal): {len(final_df)}")
+            
+            final_df = final_df.drop_duplicates(subset=['Specie', 'Enzyme', 'Description'])
             
             os.makedirs(os.path.dirname(self.file_path), exist_ok=True)
-            df.to_csv(self.file_path, index=False)
-            logger.info(f"Success! Saved {len(df)} records to '{self.file_path}'.")
+            final_df.to_csv(self.file_path, index=False)
+            logger.info(f"Success! Saved total of {len(final_df)} records to '{self.file_path}'.")
         else:
-            logger.warning("No records were found in the global search.")
+            logger.warning("No records were found in the global search and no existing data to save.")
 
 if __name__ == "__main__":
     manager = DataManager()

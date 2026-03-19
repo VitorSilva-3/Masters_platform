@@ -63,7 +63,7 @@ def render_data_view(df: pd.DataFrame, taxonomy_service):
     with col_btn:
         st.button("Clear filters", use_container_width=True, on_click=clear_data_filters)
 
-    col1, col2, col3, col4, col5 = st.columns(5)
+    col1, col2, col3 = st.columns(3, gap="large")
 
     with col1:
         groups = sorted([g for g in df["Class"].unique() if g != "Other / Unknown"])
@@ -84,6 +84,8 @@ def render_data_view(df: pd.DataFrame, taxonomy_service):
         selected_enzymes = st.multiselect("Select enzyme:", options=available_enzymes, placeholder="Select...", key="f_enzyme")
         if selected_enzymes:
             filtered_df = filtered_df[filtered_df["Enzyme"].isin(selected_enzymes)]
+
+    col4, col5 = st.columns(2, gap="large")
 
     with col4:
         if "Target sugar" in df.columns:
@@ -135,6 +137,8 @@ def render_data_view(df: pd.DataFrame, taxonomy_service):
             headerName="Source ID (NCBI)", 
             cellRenderer=link_jscode
         )
+
+    gb.configure_column("Specie", pinned="left")
          
     gridOptions = gb.build()
 

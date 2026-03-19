@@ -14,13 +14,12 @@ class UniprotService:
 
     def __init__(self, cache_file: str = "data/uniprot_cache.json"):
         """Initialize and load local UniProt cache."""
-
         self.cache_file = cache_file
         self.cache = self._load_cache()
 
     def _load_cache(self) -> Dict[str, Any]:
         """Loads the JSON cache from disk."""
-
+        
         if os.path.exists(self.cache_file):
             try:
                 with open(self.cache_file, "r", encoding="utf-8") as f:
@@ -33,6 +32,7 @@ class UniprotService:
         """Saves the current cache dictionary to disk."""
 
         try:
+            os.makedirs(os.path.dirname(self.cache_file), exist_ok=True)
             with open(self.cache_file, "w", encoding="utf-8") as f:
                 json.dump(self.cache, f, indent=4)
         except Exception as e:
@@ -40,10 +40,9 @@ class UniprotService:
 
     def fetch_enzyme_data(self, enzyme_name: str, ec_number: str, max_entries: int = 30) -> Dict[str, Any]:
         """
-        Searches UniProt for proteins matching the EC number.
-        Returns aggregated stats and general info.
+        Searches UniProt for general protein properties matching the EC number.
         """
-        
+
         if ec_number in self.cache:
             return self.cache[ec_number]
 
@@ -66,19 +65,61 @@ class UniprotService:
                 return {}
             
             summary = self._summarize_results(enzyme_name, ec_number, results)
-            
-            # Save to cache
             self.cache[ec_number] = summary
             self._save_cache()
-            
             return summary
             
         except Exception as e:
-            logger.error(f"[UniprotService] Error fetching data for {enzyme_name} (EC {ec_number}): {e}")
+            logger.error(f"[UniprotService] Error fetching general data for {enzyme_name} (EC {ec_number}): {e}")
             return {}
 
+    def fetch_species_link(self, ec_number: str, species_name: str) -> Dict[str, str]:
+        """
+        Searches UniProt specifically for an entry matching the EC number AND Species.
+        """
+
+        cache_key = f"{ec_number}_{species_name}_link"
+        if cache_key in self.cache:
+            return self.cache[cache_key]
+
+        params = {
+            'query': f'ec:{ec_number} AND organism_name:"{species_name}"',
+            'format': 'json',
+            'size': 1, 
+            'fields': 'accession'
+        }
+        
+        try:
+            response = requests.get(self.BASE_URL, params=params, timeout=10)
+            if response.status_code == 200:
+                results = response.json().get('results', [])
+                if results:
+                    accession = results[0].get('primaryAccession')
+                    if accession:
+                        result = {
+                            "status": "Found",
+                            "accession": accession,
+                            "url": f"https://www.uniprot.org/uniprotkb/{accession}/entry"
+                        }
+                        self.cache[cache_key] = result
+                        self._save_cache()
+                        return result
+        except Exception as e:
+            logger.error(f"[UniprotService] Error fetching link for {species_name}: {e}")
+
+        fallback_url = f"https://www.uniprot.org/uniprotkb?query=ec:{ec_number}+AND+organism_name:\"{species_name}\""
+        result = {
+            "status": "Not Found",
+            "accession": "-",
+            "url": fallback_url
+        }
+        self.cache[cache_key] = result
+        self._save_cache()
+        return result
+
     def _summarize_results(self, name: str, ec: str, results: List[dict]) -> Dict[str, Any]:
-        """Aggregates data from multiple entries to give a general enzyme profile."""
+        """Aggregates general data."""
+
         functions = set()
         catalytic_activities = []
         pathways = set()
@@ -92,19 +133,15 @@ class UniprotService:
                 if ctype == 'FUNCTION':
                     for txt in comment.get('texts', []):
                         functions.add(txt.get('value'))
-                
                 elif ctype == 'CATALYTIC ACTIVITY':
                     reaction = comment.get('reaction', {}).get('name')
                     if reaction: catalytic_activities.append(reaction)
-                
                 elif ctype == 'PATHWAY':
                     for txt in comment.get('texts', []):
                         pathways.add(txt.get('value'))
-
                 elif ctype == 'COFACTOR':
                     for txt in comment.get('texts', []):
                         cofactors.add(txt.get('value'))
-                        
                 elif ctype == 'SUBUNIT':
                     for txt in comment.get('texts', []):
                         subunits.add(txt.get('value'))
@@ -112,10 +149,7 @@ class UniprotService:
         first_desc = results[0].get('proteinDescription', {}).get('recommendedName', {}).get('fullName', {}).get('value', 'Unknown')
         first_accession = results[0].get('primaryAccession')
         
-        if first_accession:
-            link = f"https://www.uniprot.org/uniprotkb/{first_accession}/entry"
-        else:
-            link = f"https://www.uniprot.org/uniprotkb?query=ec:{ec}"
+        link = f"https://www.uniprot.org/uniprotkb/{first_accession}/entry" if first_accession else f"https://www.uniprot.org/uniprotkb?query=ec:{ec}"
 
         return {
             'enzyme_name': name,

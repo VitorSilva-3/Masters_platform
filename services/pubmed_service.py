@@ -62,6 +62,8 @@ class PubMedService:
             
             pmids = record.get("IdList", [])
             if not pmids:
+                self.cache[cache_key] = []
+                self.save_cache()
                 return [] 
 
             handle = Entrez.efetch(db="pubmed", id=pmids, rettype="medline", retmode="text")
@@ -91,6 +93,9 @@ class PubMedService:
                     'doi': doi,
                 })
             handle.close()
+            
+            self.cache[cache_key] = articles
+            self.save_cache()
             
             return articles
             

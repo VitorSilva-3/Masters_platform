@@ -14,39 +14,71 @@ class EnzymeInfo:
     ec_number: str
     target_sugar: str
 
+@dataclass
+class TransporterInfo:
+    """Data structure to hold transporter details."""
+
+    tc_number: str  
+    target_sugar: str
+    family: str     
+
 class AppConfig:
     """Central configuration for the application."""
     
     EMAIL: str = "vtsilva3@gmail.com"
     
     TARGET_TAXA: List[str] = [
-        # --- Green Microalgae (Chlorophyta) ---
-        "Chlorophyceae",          # Chlamydomonas, Scenedesmus, Dunaliella
-        "Trebouxiophyceae",       # Chlorella, Auxenochlorella
-        "Prasinophyceae",         # Ostreococcus (Picoplankton)
-        "Mamiellophyceae",        # Micromonas
-        
-        # --- Diatoms & Ochrophytes ---
-        "Bacillariophyceae",      # Diatoms (Phaeodactylum)
-        "Eustigmatophyceae",      # Nannochloropsis
-        "Chrysophyceae",          # Golden algae
-        "Xanthophyceae",          # Yellow-green algae
-        
+        # --- Green Microalgae ---
+        "Chloropicophyceae",
+        "Mamiellophyceae",
+        "Nephroselmidophyceae",
+        "Picocystophyceae",
+        "Pseudoscourfieldiophyceae",
+        "Pyramimonadophyceae",
+        "Chlorodendrophyceae",
+        "Chlorophyceae",
+        "Pedinophyceae",       
+        "Trebouxiophyceae", 
+
         # --- Red Microalgae ---
-        "Porphyridiophyceae",     # Porphyridium (Exopolysaccharides)
-        "Cyanidiophyceae",        # Extremophiles (Galdieria - loves waste/acid)
-        "Rhodellophyceae",        # Unicellular red algae
-        
+        "Rhodellophyceae",       
+        "Stylonematophyceae",    
+    
+        # --- Yellow-green Microalgae ---
+        "Xanthophyceae",
+
+        # --- Golden Microalgae ---
+        "Chrysophyceae",
+
+        # --- Diatoms ---
+        "Bacillariophyceae",
+        "Coscinodiscophyceae",
+        "Fragilariophyceae",
+        "Mediophyceae",     
+
         # --- Haptophytes ---
-        "Prymnesiophyceae",       # Isochrysis, Pavlova
+        "Prymnesiophyceae",
+        "Pavlovophyceae",
+        "Rappephyceae",
+
+        # --- Dinoflagellates ---
+        "Dinophyceae",
+
+        # --- Ochrophytes ---
+        "Eustigmatophyceae",
+        "Dictyochophyceae",
+        "Raphidophyceae",
         
-        # --- Key Heterotrophs (Crucial for Waste) ---
-        "Euglenida",              # Euglena (Excellent for waste sugars)
-        "Dinophyceae",            # Crypthecodinium (DHA production)
-        "Cryptophyceae",          # Cryptomonas
+        # --- Flagellates ---
+        "Euglenida",
+        "Cryptophyceae",
         
-        # --- Blue-Green Algae ---
-        "Cyanobacteria"           # Spirulina, Synechocystis, Anabaena
+        # --- Ancestral & Specialized Lineages ---
+        "Glaucocystophyceae",
+        "Chlorarachniophyceae",
+                
+        # --- Cyanobacteria ---
+        "Cyanophyceae"          
     ]
 
     ENZYMES: Dict[str, EnzymeInfo] = {
@@ -60,6 +92,33 @@ class AppConfig:
         "beta-amylase":               EnzymeInfo("3.2.1.2",  "starch"),
         "alpha-amylase":              EnzymeInfo("3.2.1.1",  "starch"),
         "cellulase":                  EnzymeInfo("3.2.1.4",  "cellulose")
+    }
+
+    TRANSPORTERS: Dict[str, TransporterInfo] = {
+        # --- Transportadores de Lactose / Galactose ---
+        "lactose permease":           TransporterInfo("2.A.1.14", "lactose", "MFS"),
+        "lac y":                      TransporterInfo("2.A.1.14", "lactose", "MFS"),
+        "galactose transporter":      TransporterInfo("2.A.1.1",  "galactose", "MFS"),
+        "gal2":                       TransporterInfo("2.A.1.1",  "galactose", "MFS"),
+        
+        # --- Transportadores de Sacarose ---
+        "sucrose transporter":        TransporterInfo("2.A.1.1",  "sucrose", "MFS"),
+        "sucrose permease":           TransporterInfo("2.A.1.1",  "sucrose", "MFS"),
+        "sut1":                       TransporterInfo("2.A.1.1",  "sucrose", "MFS"),
+        
+        # --- Transportadores de Hexoses ---
+        "hexose transporter":         TransporterInfo("2.A.1.1",  "glucose/fructose", "MFS"),
+        "hxt":                        TransporterInfo("2.A.1.1",  "glucose/fructose", "MFS"),
+        "fructose transporter":       TransporterInfo("2.A.1.1",  "fructose", "MFS"),
+        "glucose transporter":        TransporterInfo("2.A.1.1",  "glucose", "MFS"),
+        
+        # --- Transportadores de Maltose ---
+        "maltose transporter":        TransporterInfo("2.A.1.1",  "maltose", "MFS"),
+        "maltose permease":           TransporterInfo("2.A.1.1",  "maltose", "MFS"),
+        
+        # --- Sistemas ABC (Mais complexos, usam ATP) ---
+        "sugar abc transporter":      TransporterInfo("3.A.1.1",  "multiple sugars", "ABC"),
+        "multiple sugar transport":   TransporterInfo("3.A.1.1",  "multiple sugars", "ABC")
     }
 
     FUTURE_TERMS: List[str] = [

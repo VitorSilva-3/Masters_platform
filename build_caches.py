@@ -34,7 +34,7 @@ class CacheBuilder:
             self.uniprot_service = UniprotService() 
             self.tax_service = TaxonomyService(email=self.email)
             self.pubmed_service = PubMedService(email=self.email)
-            self.s2_service = SemanticScholarService(email=self.email) 
+            #self.s2_service = SemanticScholarService(email=self.email) 
             logger.info("All services initialized successfully.")
         except Exception as e:
             logger.error(f"Initialization Error: Could not load services. Details: {e}")
@@ -95,18 +95,33 @@ class CacheBuilder:
         """Updates the UniProt cache."""
 
         logger.info("Initiating UniProt cache update...")
-        unique_enzymes = df[['Enzyme', 'EC number']].drop_duplicates()
-        added = 0
+        
+        unique_enzymes = df[['Enzyme', 'EC number']].dropna().drop_duplicates()
+        added_general = 0
         
         for _, row in unique_enzymes.iterrows():
             ec = row['EC number']
             if ec not in self.uniprot_service.cache:
-                logger.info(f"Fetching UniProt data for EC: {ec}")
+                logger.info(f"Fetching UniProt general data for EC: {ec}")
                 self.uniprot_service.fetch_enzyme_data(row['Enzyme'], ec)
-                added += 1
+                added_general += 1
                 time.sleep(self.uniprot_delay) 
                 
-        logger.info(f"UniProt cache update completed. {added} new entries added.")
+        existing_pairs = df[['EC number', 'Specie']].dropna().drop_duplicates()
+        added_links = 0
+        
+        for _, row in existing_pairs.iterrows():
+            ec = row['EC number']
+            sp = row['Specie']
+            cache_key = f"{ec}_{sp}_link"
+            
+            if cache_key not in self.uniprot_service.cache:
+                logger.info(f"Fetching UniProt link for {sp} + EC {ec}")
+                self.uniprot_service.fetch_species_link(ec, sp)
+                added_links += 1
+                time.sleep(self.uniprot_delay)
+                
+        logger.info(f"UniProt cache update completed. {added_general} general profiles and {added_links} specific links added.")
 
     def update_taxonomy(self, df: pd.DataFrame) -> None:
         """Updates the Taxonomy cache."""
