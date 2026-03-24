@@ -13204,5 +13204,235 @@
         "status": "Found",
         "accession": "D8UXL6",
         "url": "https://www.uniprot.org/uniprotkb/D8UXL6/entry"
+    },
+    "3.2.1.26_Raphidiopsis curvispora_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:3.2.1.26+AND+organism_name:\"Raphidiopsis curvispora\""
+    },
+    "2.7.1.4_Anabaena cylindrica PCC 7122_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Anabaena cylindrica PCC 7122\""
+    },
+    "2.7.1.4_Phormidium nigroviride PCC 7112_link": {
+        "status": "Found",
+        "accession": "K9VIJ4",
+        "url": "https://www.uniprot.org/uniprotkb/K9VIJ4/entry"
+    },
+    "2.7.1.4_Calothrix sp. PCC 7507_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Calothrix sp. PCC 7507\""
+    },
+    "2.7.1.4_Nostoc punctiforme PCC 73102_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Nostoc punctiforme PCC 73102\""
+    },
+    "2.7.1.4_Dulcicalothrix desertica PCC 7102_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Dulcicalothrix desertica PCC 7102\""
+    },
+    "2.7.1.4_Synechococcus sp. Ace-Pa_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Synechococcus sp. Ace-Pa\""
+    },
+    "2.7.1.4_Synechococcus sp. MW101C3_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Synechococcus sp. MW101C3\""
+    },
+    "2.7.1.4_Cyanobium sp. PLM2.Bin73_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Cyanobium sp. PLM2.Bin73\""
+    },
+    "2.7.1.4_Chroococcidiopsis cubana SAG 39.79_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Chroococcidiopsis cubana SAG 39.79\""
+    },
+    "2.7.1.4_Trichormus variabilis SAG 1403-4b_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Trichormus variabilis SAG 1403-4b\""
+    },
+    "2.7.1.4_Chlorogloeopsis fritschii PCC 6912_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Chlorogloeopsis fritschii PCC 6912\""
+    },
+    "2.7.1.4_Limnospira platensis YZ_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Limnospira platensis YZ\""
+    },
+    "2.7.1.4_Microcystis viridis NIES-102_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Microcystis viridis NIES-102\""
+    },
+    "2.7.1.4_Nostoc minutum NIES-26_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Nostoc minutum NIES-26\""
+    },
+    "2.7.1.4_Nostoc punctiforme NIES-2108_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Nostoc punctiforme NIES-2108\""
+    },
+    "2.7.1.4_Nostoc sp. ATCC 53789_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Nostoc sp. ATCC 53789\""
+    },
+    "2.7.1.4_Nostoc sp. ATCC 43529_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Nostoc sp. ATCC 43529\""
+    },
+    "2.7.1.4_Fistulifera solaris_link": {
+        "status": "Found",
+        "accession": "A0A1Z5J8T1",
+        "url": "https://www.uniprot.org/uniprotkb/A0A1Z5J8T1/entry"
+    },
+    "2.7.1.4_Leptolyngbya foveolarum_link": {
+        "status": "Found",
+        "accession": "A0A2W4TTE0",
+        "url": "https://www.uniprot.org/uniprotkb/A0A2W4TTE0/entry"
+    },
+    "2.7.1.4_Acaryochloris thomasi RCC1774_link": {
+        "status": "Found",
+        "accession": "A0A2W1JI72",
+        "url": "https://www.uniprot.org/uniprotkb/A0A2W1JI72/entry"
+    },
+    "2.7.1.4_Raphidocelis subcapitata_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Raphidocelis subcapitata\""
+    },
+    "2.7.1.4_Nostoc sp. 3335mG_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Nostoc sp. 3335mG\""
+    },
+    "2.7.1.4_Nodularia spumigena UHCC 0039_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Nodularia spumigena UHCC 0039\""
+    },
+    "2.7.1.4_Chlorella sorokiniana_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Chlorella sorokiniana\""
+    },
+    "2.7.1.4_Nostoc sp. 'Lobaria pulmonaria (5183) cyanobiont'_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Nostoc sp. 'Lobaria pulmonaria (5183) cyanobiont'\""
+    },
+    "2.7.1.4_Nostoc sp. 'Peltigera membranacea cyanobiont' N6_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Nostoc sp. 'Peltigera membranacea cyanobiont' N6\""
+    },
+    "2.7.1.4_Geitlerinema sp. FC II_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Geitlerinema sp. FC II\""
+    },
+    "2.7.1.4_Fischerella thermalis CCMEE 5330_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Fischerella thermalis CCMEE 5330\""
+    },
+    "2.7.1.4_Limnothrix sp. PR1529_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Limnothrix sp. PR1529\""
+    },
+    "2.7.1.4_Nostoc linckia z16_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Nostoc linckia z16\""
+    },
+    "2.7.1.4_Nostoc linckia z15_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Nostoc linckia z15\""
+    },
+    "2.7.1.4_Nostoc linckia z18_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Nostoc linckia z18\""
+    },
+    "2.7.1.4_Nostoc linckia z13_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Nostoc linckia z13\""
+    },
+    "2.7.1.4_Nostoc linckia z14_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Nostoc linckia z14\""
+    },
+    "2.7.1.4_Nostoc linckia z9_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Nostoc linckia z9\""
+    },
+    "2.7.1.4_Nostoc linckia z7_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Nostoc linckia z7\""
+    },
+    "2.7.1.4_Nostoc linckia z6_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Nostoc linckia z6\""
+    },
+    "2.7.1.4_Nostoc linckia z8_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Nostoc linckia z8\""
+    },
+    "2.7.1.4_Nostoc linckia z4_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Nostoc linckia z4\""
+    },
+    "2.7.1.4_Nostoc linckia z2_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Nostoc linckia z2\""
+    },
+    "2.7.1.4_Nostoc linckia z1_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Nostoc linckia z1\""
+    },
+    "2.7.1.4_Nostoc linckia z3_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:2.7.1.4+AND+organism_name:\"Nostoc linckia z3\""
+    },
+    "3.2.1.20_Cyanobium sp. NIVA-CYA 375_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:3.2.1.20+AND+organism_name:\"Cyanobium sp. NIVA-CYA 375\""
+    },
+    "3.2.1.1_Cyanobium sp. NIVA-CYA 375_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:3.2.1.1+AND+organism_name:\"Cyanobium sp. NIVA-CYA 375\""
+    },
+    "3.2.1.1_Raphidiopsis curvispora_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:3.2.1.1+AND+organism_name:\"Raphidiopsis curvispora\""
     }
 }

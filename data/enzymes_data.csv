@@ -3885,3 +3885,61 @@ Crocosphaera watsonii WH 0003,cellulase,3.2.1.4,cellulose,Cellulase M related pr
 Crocosphaera watsonii WH 0003,cellulase,3.2.1.4,cellulose,"Chitinase, Cellulase, partial [Crocosphaera watsonii WH 0003]",🟡 Probable/Hypothetical,EHJ09847.1
 Lingulaulax polyedra,cellulase,3.2.1.4,cellulose,cellulase [Lingulaulax polyedra],🟢 Confirmed,ADG63074.1
 Pyrocystis lunula,cellulase,3.2.1.4,cellulose,cellulase [Pyrocystis lunula],🟢 Confirmed,ADG63073.1
+uncultured Microcoleus sp.,beta-galactosidase,3.2.1.23,lactose,MAG: GH2 [uncultured Microcoleus sp.],🟢 Confirmed,CAA9320841.1
+uncultured Coleofasciculus sp.,beta-galactosidase,3.2.1.23,lactose,MAG: GH2 [uncultured Coleofasciculus sp.],🟢 Confirmed,CAA9210920.1
+uncultured Microcoleus sp.,lactase,3.2.1.23,lactose,MAG: GH2 [uncultured Microcoleus sp.],🟢 Confirmed,CAA9320841.1
+uncultured Coleofasciculus sp.,lactase,3.2.1.23,lactose,MAG: GH2 [uncultured Coleofasciculus sp.],🟢 Confirmed,CAA9210920.1
+Raphidiopsis curvispora,sucrase,3.2.1.26,sucrose,sucrase ferredoxin [Raphidiopsis curvispora],🟢 Confirmed,WP_187706949.1
+uncultured Synechococcales cyanobacterium,fructokinase,2.7.1.4,fructose,MAG: Fructokinase [uncultured Synechococcales cyanobacterium],🟢 Confirmed,CAA9570069.1
+Anabaena cylindrica PCC 7122,fructokinase,2.7.1.4,fructose,Fructokinase [Anabaena cylindrica PCC 7122],🟢 Confirmed,AFZ56419.1
+Phormidium nigroviride PCC 7112,fructokinase,2.7.1.4,fructose,Fructokinase [Phormidium nigroviride PCC 7112],🟢 Confirmed,AFZ07776.1
+Calothrix sp. PCC 7507,fructokinase,2.7.1.4,fructose,Fructokinase [Calothrix sp. PCC 7507],🟢 Confirmed,AFY32912.1
+Nostoc punctiforme PCC 73102,fructokinase,2.7.1.4,fructose,PfkB domain protein [Nostoc punctiforme PCC 73102],🟢 Confirmed,ACC82615.1
+Dulcicalothrix desertica PCC 7102,fructokinase,2.7.1.4,fructose,fructokinase [Dulcicalothrix desertica PCC 7102],🟢 Confirmed,TWH39255.1
+Synechococcus sp. Ace-Pa,fructokinase,2.7.1.4,fructose,fructokinase [Synechococcus sp. Ace-Pa],🟢 Confirmed,TWB91847.1
+Synechococcus sp. MW101C3,fructokinase,2.7.1.4,fructose,fructokinase [Synechococcus sp. MW101C3],🟢 Confirmed,WP_144036858.1
+Cyanobium sp. PLM2.Bin73,fructokinase,2.7.1.4,fructose,MAG: fructokinase [Cyanobium sp. PLM2.Bin73],🟢 Confirmed,TVS01463.1
+Chroococcidiopsis cubana SAG 39.79,fructokinase,2.7.1.4,fructose,fructokinase [Chroococcidiopsis cubana SAG 39.79],🟢 Confirmed,RUT08063.1
+Trichormus variabilis SAG 1403-4b,fructokinase,2.7.1.4,fructose,fructokinase [Trichormus variabilis SAG 1403-4b],🟢 Confirmed,RUS94821.1
+Chlorogloeopsis fritschii PCC 6912,fructokinase,2.7.1.4,fructose,fructokinase [Chlorogloeopsis fritschii PCC 6912],🟢 Confirmed,RUR84229.1
+Limnospira platensis YZ,fructokinase,2.7.1.4,fructose,fructokinase [Limnospira platensis YZ],🟢 Confirmed,AMW30496.1
+Microcystis viridis NIES-102,fructokinase,2.7.1.4,fructose,fructokinase [Microcystis viridis NIES-102],🟢 Confirmed,BBH41714.1
+Nostoc minutum NIES-26,fructokinase,2.7.1.4,fructose,fructokinase [Nostoc minutum NIES-26],🟢 Confirmed,RCJ39211.1
+Nostoc punctiforme NIES-2108,fructokinase,2.7.1.4,fructose,fructokinase [Nostoc punctiforme NIES-2108],🟢 Confirmed,RCJ36362.1
+Nostoc sp. ATCC 53789,fructokinase,2.7.1.4,fructose,fructokinase [Nostoc sp. ATCC 53789],🟢 Confirmed,RCJ26363.1
+Nostoc sp. ATCC 43529,fructokinase,2.7.1.4,fructose,fructokinase [Nostoc sp. ATCC 43529],🟢 Confirmed,RCJ22378.1
+Fistulifera solaris,fructokinase,2.7.1.4,fructose,fructokinase [Fistulifera solaris],🟢 Confirmed,GAX10312.1
+Cyanobium sp.,fructokinase,2.7.1.4,fructose,MAG: fructokinase [Cyanobium sp.],🟢 Confirmed,PZV24242.1
+Leptolyngbya foveolarum,fructokinase,2.7.1.4,fructose,MAG: fructokinase [Leptolyngbya foveolarum],🟢 Confirmed,PZO12212.1
+Acaryochloris thomasi RCC1774,fructokinase,2.7.1.4,fructose,Fructokinase [Acaryochloris thomasi RCC1774],🟢 Confirmed,PZD73006.1
+Raphidocelis subcapitata,fructokinase,2.7.1.4,fructose,fructokinase [Raphidocelis subcapitata],🟢 Confirmed,GBF99680.1
+Nostoc sp. 3335mG,fructokinase,2.7.1.4,fructose,fructokinase [Nostoc sp. 3335mG],🟢 Confirmed,PXA96670.1
+Nodularia spumigena UHCC 0039,fructokinase,2.7.1.4,fructose,fructokinase [Nodularia spumigena UHCC 0039],🟢 Confirmed,AVZ31699.1
+Chlorella sorokiniana,fructokinase,2.7.1.4,fructose,fructokinase [Chlorella sorokiniana],🟢 Confirmed,PRW58019.1
+Nostoc sp. 'Lobaria pulmonaria (5183) cyanobiont',fructokinase,2.7.1.4,fructose,fructokinase [Nostoc sp. 'Lobaria pulmonaria (5183) cyanobiont'],🟢 Confirmed,AVH71216.1
+Nostoc sp. 'Peltigera membranacea cyanobiont' N6,fructokinase,2.7.1.4,fructose,fructokinase [Nostoc sp. 'Peltigera membranacea cyanobiont' N6],🟢 Confirmed,AVH67981.1
+Geitlerinema sp. FC II,fructokinase,2.7.1.4,fructose,Fructokinase [Geitlerinema sp. FC II],🟢 Confirmed,PPT09305.1
+Fischerella thermalis CCMEE 5330,fructokinase,2.7.1.4,fructose,fructokinase [Fischerella thermalis CCMEE 5330],🟢 Confirmed,PMB48394.1
+Limnothrix sp. PR1529,fructokinase,2.7.1.4,fructose,fructokinase [Limnothrix sp. PR1529],🟢 Confirmed,PIB14717.1
+Nostoc linckia z16,fructokinase,2.7.1.4,fructose,fructokinase [Nostoc linckia z16],🟢 Confirmed,PHK44942.1
+Nostoc linckia z15,fructokinase,2.7.1.4,fructose,fructokinase [Nostoc linckia z15],🟢 Confirmed,PHK37915.1
+Nostoc linckia z18,fructokinase,2.7.1.4,fructose,fructokinase [Nostoc linckia z18],🟢 Confirmed,PHK33636.1
+Nostoc linckia z13,fructokinase,2.7.1.4,fructose,fructokinase [Nostoc linckia z13],🟢 Confirmed,PHK25556.1
+Nostoc linckia z14,fructokinase,2.7.1.4,fructose,fructokinase [Nostoc linckia z14],🟢 Confirmed,PHK12541.1
+Nostoc linckia z9,fructokinase,2.7.1.4,fructose,fructokinase [Nostoc linckia z9],🟢 Confirmed,PHK07753.1
+Nostoc linckia z7,fructokinase,2.7.1.4,fructose,fructokinase [Nostoc linckia z7],🟢 Confirmed,PHJ95348.1
+Nostoc linckia z6,fructokinase,2.7.1.4,fructose,fructokinase [Nostoc linckia z6],🟢 Confirmed,PHJ91502.1
+Nostoc linckia z8,fructokinase,2.7.1.4,fructose,fructokinase [Nostoc linckia z8],🟢 Confirmed,PHJ91384.1
+Nostoc linckia z4,fructokinase,2.7.1.4,fructose,fructokinase [Nostoc linckia z4],🟢 Confirmed,PHJ83880.1
+Nostoc linckia z2,fructokinase,2.7.1.4,fructose,fructokinase [Nostoc linckia z2],🟢 Confirmed,PHJ74035.1
+Nostoc linckia z1,fructokinase,2.7.1.4,fructose,fructokinase [Nostoc linckia z1],🟢 Confirmed,PHJ68725.1
+Nostoc linckia z3,fructokinase,2.7.1.4,fructose,fructokinase [Nostoc linckia z3],🟢 Confirmed,PHJ66131.1
+Cyanobium sp. NIES-981,fructokinase,2.7.1.4,fructose,fructokinase [Cyanobium sp. NIES-981],🟢 Confirmed,WP_087067844.1
+Cyanobium sp. NIVA-CYA 375,maltase,3.2.1.20,maltose,"alpha-glucosidase, partial [Cyanobium sp. NIVA-CYA 375]",🟡 Probable/Hypothetical,WP_474482082.1
+uncultured Coleofasciculus sp.,maltase,3.2.1.20,maltose,MAG: GH31 [uncultured Coleofasciculus sp.],🟢 Confirmed,CAA9277363.1
+Cyanobium sp. NIVA-CYA 375,alpha-amylase,3.2.1.1,starch,"alpha-amylase family glycosyl hydrolase, partial [Cyanobium sp. NIVA-CYA 375]",🟡 Probable/Hypothetical,WP_474482163.1
+Cyanobium sp. NIVA-CYA 375,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Cyanobium sp. NIVA-CYA 375],🟢 Confirmed,WP_474477249.1
+uncultured Coleofasciculus sp.,alpha-amylase,3.2.1.1,starch,"MAG: GH13_3 | GH13, partial [uncultured Coleofasciculus sp.]",🟡 Probable/Hypothetical,CAA9237431.1
+Raphidiopsis curvispora,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Raphidiopsis curvispora],🟢 Confirmed,WP_187706034.1
+uncultured Microcoleus sp.,cellulase,3.2.1.4,cellulose,MAG: Cellulase M and related proteins [uncultured Microcoleus sp.],🟢 Confirmed,CAA9339188.1
+uncultured Leptolyngbya sp.,cellulase,3.2.1.4,cellulose,MAG: GH8 [uncultured Leptolyngbya sp.],🟢 Confirmed,CAA9313425.1
