@@ -9,7 +9,9 @@ from services.taxonomy_service import TaxonomyService
 from services.pubmed_service import PubMedService
 #from services.semantic_scholar_service import SemanticScholarService
 from services.kegg_service import KeggService
-from services.uniprot_service import UniprotService 
+from services.uniprot_service import UniprotService
+from services.fasta_service import FastaService
+from services.subcellular_localization_service import SubcellularLocalizationService
 
 logging.basicConfig(
     level=logging.INFO,
@@ -35,6 +37,9 @@ class CacheBuilder:
             self.tax_service = TaxonomyService(email=self.email)
             self.pubmed_service = PubMedService(email=self.email)
             #self.s2_service = SemanticScholarService(email=self.email) 
+            self.fasta_service = FastaService(tax_service=self.tax_service, email=self.email, data_filepath=self.data_filepath)
+            self.subcellular_localization_service = SubcellularLocalizationService(data_dir="data", output_dir="data")
+            
             logger.info("All services initialized successfully.")
         except Exception as e:
             logger.error(f"Initialization Error: Could not load services. Details: {e}")
@@ -180,6 +185,20 @@ class CacheBuilder:
                 
         logger.info(f"Literature cache update completed. {added} new searches added.")
 
+    def update_fasta(self, df: pd.DataFrame) -> None:
+        """Generates the FASTA sequences files (eukaryotes and prokaryotes) from the dataset."""
+
+        logger.info("Initiating FASTA files generation...")
+        self.fasta_service.generate_fasta_files(df)
+        logger.info("FASTA sequence generation integrated successfully.")
+
+    def update_subcellular_localization(self) -> None:
+        """Executes DeepLoc 2.0 and DeepLocPro to predict subcellular localizations."""
+        
+        logger.info("Initiating subcellular localization predictions...")
+        self.subcellular_localization_service.run_all()
+        logger.info("Subcellular localization predictions integrated successfully.")
+
     def run_all(self) -> None:
         """Executes the full cache building process."""
 
@@ -191,6 +210,8 @@ class CacheBuilder:
         self.update_uniprot(df) 
         self.update_taxonomy(df)
         self.update_literature(df)
+        self.update_fasta(df)
+        self.update_subcellular_localization()
         
         logger.info("All caches updated successfully. Process completed.")
 

@@ -13434,5 +13434,20 @@
         "status": "Not Found",
         "accession": "-",
         "url": "https://www.uniprot.org/uniprotkb?query=ec:3.2.1.1+AND+organism_name:\"Raphidiopsis curvispora\""
+    },
+    "3.2.1.26_Hapalosiphonaceae_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:3.2.1.26+AND+organism_name:\"Hapalosiphonaceae\""
+    },
+    "3.2.1.1_Neowestiellopsis sp. NC-DW_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:3.2.1.1+AND+organism_name:\"Neowestiellopsis sp. NC-DW\""
+    },
+    "3.2.1.1_Hapalosiphonaceae_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:3.2.1.1+AND+organism_name:\"Hapalosiphonaceae\""
     }
 }

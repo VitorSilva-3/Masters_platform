@@ -61260,5 +61260,77 @@
             "rank": "no rank",
             "name": "unclassified Cyanobium"
         }
+    ],
+    "Hapalosiphonaceae": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        }
+    ],
+    "Neowestiellopsis sp. NC-DW": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Hapalosiphonaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Neowestiellopsis"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Neowestiellopsis"
+        }
     ]
 }

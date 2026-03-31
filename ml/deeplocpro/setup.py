@@ -1,5 +1,6 @@
 import setuptools
 import atexit
+import logging
 from setuptools.command.develop import develop
 from setuptools.command.install import install
 

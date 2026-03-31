@@ -3943,3 +3943,7 @@ uncultured Coleofasciculus sp.,alpha-amylase,3.2.1.1,starch,"MAG: GH13_3 | GH13,
 Raphidiopsis curvispora,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Raphidiopsis curvispora],🟢 Confirmed,WP_187706034.1
 uncultured Microcoleus sp.,cellulase,3.2.1.4,cellulose,MAG: Cellulase M and related proteins [uncultured Microcoleus sp.],🟢 Confirmed,CAA9339188.1
 uncultured Leptolyngbya sp.,cellulase,3.2.1.4,cellulose,MAG: GH8 [uncultured Leptolyngbya sp.],🟢 Confirmed,CAA9313425.1
+Hapalosiphonaceae,sucrase,3.2.1.26,sucrose,MULTISPECIES: sucrase ferredoxin [Hapalosiphonaceae],🟢 Confirmed,WP_131116711.1
+Neowestiellopsis sp. NC-DW,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Neowestiellopsis sp. NC-DW],🟢 Confirmed,WP_476425835.1
+Neowestiellopsis sp. NC-DW,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Neowestiellopsis sp. NC-DW],🟢 Confirmed,WP_476424566.1
+Hapalosiphonaceae,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Hapalosiphonaceae],🟢 Confirmed,WP_044447182.1
