@@ -13,6 +13,7 @@ plotly
 streamlit-aggrid
 streamlit-lottie
 Pillow
+matplotlib
 
 # API & Network
 requests
