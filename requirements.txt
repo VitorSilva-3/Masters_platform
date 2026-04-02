@@ -12,6 +12,7 @@ numpy
 plotly
 streamlit-aggrid
 streamlit-lottie
+Pillow
 
 # API & Network
 requests
