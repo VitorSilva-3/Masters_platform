@@ -123,7 +123,8 @@ class AppConfig:
 
     FUTURE_TERMS: List[str] = [
     "hypothetical", "similar", "putative", 
-    "uncharacterized", "probable", "partial"
+    "uncharacterized", "probable", "possible",
+    "potential", "like", "related"
     ]
 
     EXCLUDED_TERMS: List[str] = [
@@ -134,8 +135,13 @@ class AppConfig:
     "recombinase", "integrase", "transposase", "nuclease",
     "polymerase", "helicase", "chromosome", "plasmid",
     "protein kinase", "histidine kinase", "tyrosine kinase", 
-    "serine/threonine", "signal transduction",
-    "synthase", "biosynthesis", "assembly"
+    "serine/threonine", "signal transduction", "partial",
+    "synthase", "biosynthesis", "assembly", "pdb", "chain",
+    "fragment", "phage", "viral", "virus", "capsid",
+    "chaperone", "flagellar", "flagellum", "pilus", "porin",
+    "synthetic", "construct", "vector", "fusion", "mutant", "chimeric",
+    "operon", "promoter", "sensor", "toxin", "antitoxin", "domain",
+    "terminal", "n-terminal", "ferredoxin", "n-terminal", "c-terminal"
     ]
 
     PUBMED_KEYWORDS: List[str] = [

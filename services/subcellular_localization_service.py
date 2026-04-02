@@ -44,10 +44,23 @@ predict()
             return set()
 
         try:
-            df = pd.read_csv(csv_path, usecols=[0])
+            df = pd.read_csv(csv_path)
+            
             if df.empty:
                 return set()
-            return set(df.iloc[:, 0].astype(str))
+            
+            if "ACC" in df.columns:
+                id_col_name = "ACC"
+            elif "Protein_ID" in df.columns:
+                id_col_name = "Protein_ID"
+            else:
+                if str(df.columns[0]).startswith("Unnamed"):
+                    id_col_name = df.columns[1]
+                else:
+                    id_col_name = df.columns[0]
+                
+            return set(df[id_col_name].astype(str).str.strip())
+            
         except Exception as e:
             logger.warning(f"Could not read existing IDs from {csv_path}: {e}")
             return set()

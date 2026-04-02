@@ -106,7 +106,7 @@ def render_data_view(df: pd.DataFrame, taxonomy_service):
             st.multiselect("Select status:", options=[], placeholder="N/A", disabled=True, key="f_status_disabled")
 
     st.divider()
-    st.markdown(f"**Showing {len(filtered_df)} records** based on your current filters.")
+    st.markdown(f"Showing {len(filtered_df)} records based on your current filters.")
 
     gb = GridOptionsBuilder.from_dataframe(filtered_df)
     gb.configure_pagination(paginationAutoPageSize=False, paginationPageSize=15) 

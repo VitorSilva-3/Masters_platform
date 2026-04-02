@@ -74,7 +74,7 @@ class FastaService:
 
         existing_ids = self._get_existing_ids(output_file)
         
-        new_ids = [ncbi_id for ncbi_id in id_list if ncbi_id not in existing_ids and ncbi_id.split('.')[0] not in existing_ids]
+        new_ids = list(set([ncbi_id for ncbi_id in id_list if ncbi_id not in existing_ids and ncbi_id.split('.')[0] not in existing_ids]))
 
         if not new_ids:
             logger.info(f"All sequences for '{os.path.basename(output_file)}' are already downloaded. Skipping.")
@@ -104,12 +104,12 @@ class FastaService:
                                 
                         handle.close()
                         break 
-                    except HTTPError as e:
+                    except Exception as e:  
                         if attempt < max_retries - 1:
-                            logger.warning(f"Network error on batch {batch_num}. Retrying in 5 seconds... (Attempt {attempt + 1}/{max_retries})")
+                            logger.warning(f"Network error on batch {batch_num} ({type(e).__name__}). Retrying in 5 seconds... (Attempt {attempt + 1}/{max_retries})")
                             time.sleep(5)
                         else:
-                            logger.error(f"Failed to download batch {batch_num} after {max_retries} attempts.")
+                            logger.error(f"Failed to download batch {batch_num} after {max_retries} attempts. Error: {e}")
                 
                 time.sleep(0.5)
 
