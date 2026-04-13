@@ -2,7 +2,6 @@
 import streamlit as st
 import pandas as pd
 from config import AppConfig
-from st_aggrid import AgGrid, GridOptionsBuilder, ColumnsAutoSizeMode, JsCode
 
 def get_group_for_species(species: str, taxonomy_service) -> str:
     """Helper function to find which Target Taxa a species belongs to."""
@@ -108,46 +107,24 @@ def render_data_view(df: pd.DataFrame, taxonomy_service):
     st.divider()
     st.markdown(f"Showing {len(filtered_df)} records based on your current filters.")
 
-    gb = GridOptionsBuilder.from_dataframe(filtered_df)
-    gb.configure_pagination(paginationAutoPageSize=False, paginationPageSize=15) 
-    gb.configure_side_bar() 
-    gb.configure_default_column(groupable=True, value=True, enableRowGroup=True, sortable=True, filter=True)
-    
-    column_ncbi = "Source ID (NCBI)"
-    if column_ncbi in filtered_df.columns:
-        link_jscode = JsCode("""
-        class UrlCellRenderer {
-            init(params) {
-                this.eGui = document.createElement('a');
-                this.eGui.innerText = params.value;
-                if (params.value && params.value !== 'nan' && params.value.trim() !== '') {
-                    this.eGui.setAttribute('href', 'https://www.ncbi.nlm.nih.gov/protein/' + params.value);
-                    this.eGui.setAttribute('target', '_blank');
-                    this.eGui.setAttribute('style', 'text-decoration: underline; color: #4DA6FF; font-weight: 500;');
-                }
-            }
-            getGui() {
-                return this.eGui;
-            }
-        }
-        """)
-        
-        gb.configure_column(
-            column_ncbi, 
-            headerName="Source ID (NCBI)", 
-            cellRenderer=link_jscode
-        )
-
-    gb.configure_column("Specie", pinned="left")
-         
-    gridOptions = gb.build()
+    display_df = filtered_df.copy()
+    if "Source ID (NCBI)" in display_df.columns:
+        display_df["NCBI_URL"] = "https://www.ncbi.nlm.nih.gov/protein/" + display_df["Source ID (NCBI)"].astype(str)
 
     st.markdown("<br>", unsafe_allow_html=True)
-    AgGrid(
-        filtered_df,
-        gridOptions=gridOptions,
-        enable_enterprise_modules=True,
-        allow_unsafe_jscode=True, 
-        columns_auto_size_mode=ColumnsAutoSizeMode.FIT_CONTENTS,
-        theme="streamlit" 
+    
+    col_config = {
+        "Specie": st.column_config.TextColumn("Species", width="medium"),
+        "Source ID (NCBI)": None, 
+        "NCBI_URL": st.column_config.LinkColumn(
+            "Source ID (NCBI)", 
+            display_text=r"https://www\.ncbi\.nlm\.nih\.gov/protein/(.*)" 
+        )
+    }
+
+    st.dataframe(
+        display_df,
+        use_container_width=True,
+        hide_index=True,
+        column_config=col_config
     )
