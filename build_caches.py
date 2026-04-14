@@ -147,7 +147,7 @@ class CacheBuilder:
     def update_literature(self, df: pd.DataFrame) -> None:
         """Updates the Literature cache (PubMed + Semantic Scholar)."""
 
-        logger.info("Initiating Literature cache update (PubMed + Semantic Scholar)...")
+        logger.info("Initiating Literature cache update (PubMed)...")
         unique_combinations = df[['Specie', 'Enzyme', 'EC number']].drop_duplicates()
         added = 0
         

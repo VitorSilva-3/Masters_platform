@@ -26,6 +26,7 @@ class AppConfig:
     """Central configuration for the application."""
     
     EMAIL: str = "vtsilva3@gmail.com"
+    NCBI_API_KEY: str = "2ac9197aa54c40c6426e84efdfa5e3d63e09"
     
     TARGET_TAXA: List[str] = [
         # --- Green Microalgae ---

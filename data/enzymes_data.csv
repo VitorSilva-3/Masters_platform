@@ -1,4 +1,13 @@
 Specie,Enzyme,EC number,Target sugar,Description,Status,Source ID (NCBI)
+Leptolyngbya sp. FACHB-1624,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya sp. FACHB-1624],🟢 Confirmed,WP_190647893.1
+Nostoc sp.,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Nostoc sp.],🟢 Confirmed,WP_461921067.1
+Coleofasciculus sp. E2-BRE-01,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Coleofasciculus sp. E2-BRE-01],🟢 Confirmed,WP_446382102.1
+Synechococcus sp. W70.1,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Synechococcus sp. W70.1],🟢 Confirmed,WP_414420387.1
+Kovacikia minuta,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Kovacikia minuta],🟢 Confirmed,WP_224343591.1
+Leptolyngbya sp. 7M,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya sp. 7M],🟢 Confirmed,WP_211622863.1
+Leptolyngbya sp. NK1-12,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya sp. NK1-12],🟢 Confirmed,WP_316434458.1
+Leptolyngbya boryana,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya boryana],🟢 Confirmed,WP_316427059.1
+Pseudanabaena sp. SR411,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Pseudanabaena sp. SR411],🟢 Confirmed,WP_094535020.1
 Leptothermofonsia sichuanensis,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Leptothermofonsia sichuanensis],🟢 Confirmed,WP_225938127.1
 Leptolyngbya sp. FACHB-261,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya sp. FACHB-261],🟢 Confirmed,WP_313949256.1
 uncultured Microcoleus sp.,beta-galactosidase,3.2.1.23,lactose,MAG: GH2 [uncultured Microcoleus sp.],🟢 Confirmed,CAA9320841.1
@@ -12,14 +21,12 @@ Alkalinema pantanalense,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [
 Leptolyngbya sp. GGD,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya sp. GGD],🟢 Confirmed,WP_268242865.1
 Microcystis aeruginosa,beta-galactosidase,3.2.1.23,lactose,Beta-glucosidase/6-phospho-beta-glucosidase/ beta-galactosidase [Microcystis aeruginosa],🟢 Confirmed,CAO7126836.1
 Leptolyngbya sp. 'hensonii',beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya sp. 'hensonii'],🟢 Confirmed,WP_075599814.1
-Nostoc sp.,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Nostoc sp.],🟢 Confirmed,WP_461921067.1
 Chaetoceros neogracilis,beta-galactosidase,3.2.1.23,lactose,Beta-galactosidase [Chaetoceros neogracilis],🟢 Confirmed,GAB7162751.1
 Coccomyxa sp. KJ,beta-galactosidase,3.2.1.23,lactose,Beta-galactosidase 17 [Coccomyxa sp. KJ],🟢 Confirmed,BHG31004.1
 Coccomyxa sp. KJ,beta-galactosidase,3.2.1.23,lactose,Beta-galactosidase [Coccomyxa sp. KJ],🟢 Confirmed,BHG31003.1
 Coccomyxa sp. KJ,beta-galactosidase,3.2.1.23,lactose,Beta-galactosidase 2 [Coccomyxa sp. KJ],🟢 Confirmed,BHG28987.1
 Coccomyxa sp. KJ,beta-galactosidase,3.2.1.23,lactose,Beta-galactosidase 8 [Coccomyxa sp. KJ],🟢 Confirmed,BHG23188.1
 Petrachloros mirabilis,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Petrachloros mirabilis],🟢 Confirmed,WP_455243548.1
-Coleofasciculus sp. E2-BRE-01,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Coleofasciculus sp. E2-BRE-01],🟢 Confirmed,WP_446382102.1
 Trebouxia sp. C0006,beta-galactosidase,3.2.1.23,lactose,"TPA_asm: Glycoside hydrolase 2 (Mannanase, beta-galactosidase) [Trebouxia sp. C0006]",🟢 Confirmed,DBB03750.1
 Trebouxia sp. C0005,beta-galactosidase,3.2.1.23,lactose,"TPA_asm: Glycoside hydrolase 2 (Mannanase, beta-galactosidase) [Trebouxia sp. C0005]",🟢 Confirmed,DBA75588.1
 unclassified Leptolyngbya,beta-galactosidase,3.2.1.23,lactose,MULTISPECIES: beta-galactosidase [unclassified Leptolyngbya],🟢 Confirmed,WP_430678206.1
@@ -28,14 +35,9 @@ Pseudoscourfieldia marina,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase
 Pycnococcus provasolii,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Pycnococcus provasolii],🟢 Confirmed,XRB04322.1
 Kamptonema sp. PCC 6506,beta-galactosidase,3.2.1.23,lactose,Beta-galactosidase [Kamptonema sp. PCC 6506],🟢 Confirmed,CAI7983512.1
 Leptolyngbya sp. IPPAS B-1204,beta-galactosidase,3.2.1.23,lactose,MAG: beta-galactosidase [Leptolyngbya sp. IPPAS B-1204],🟢 Confirmed,XPM60513.2
-Leptolyngbya sp. FACHB-1624,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya sp. FACHB-1624],🟢 Confirmed,WP_415354778.1
-Leptolyngbya sp. NK1-12,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya sp. NK1-12],🟢 Confirmed,WP_316434458.1
 Phormidium sp. FACHB-1136,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Phormidium sp. FACHB-1136],🟢 Confirmed,WP_190499166.1
 Stenomitos frigidus,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Stenomitos frigidus],🟢 Confirmed,WP_245939984.1
-Leptolyngbya boryana,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya boryana],🟢 Confirmed,WP_316426393.1
 Leptolyngbya,beta-galactosidase,3.2.1.23,lactose,MULTISPECIES: beta-galactosidase [Leptolyngbya],🟢 Confirmed,WP_190651623.1
-Pseudanabaena sp. SR411,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Pseudanabaena sp. SR411],🟢 Confirmed,WP_094535020.1
-Kovacikia minuta,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Kovacikia minuta],🟢 Confirmed,WP_224343591.1
 Synechococcus sp. RC10A2,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Synechococcus sp. RC10A2],🟢 Confirmed,WP_414510838.1
 Synechococcus sp. RC10B2,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Synechococcus sp. RC10B2],🟢 Confirmed,WP_414508776.1
 Leptolyngbya sp. UWPOB_LEPTO1,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya sp. UWPOB_LEPTO1],🟢 Confirmed,WP_287456343.1
@@ -43,11 +45,9 @@ Romeriopsis navalis,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Rome
 Leptolyngbya sp. NIES-2104,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya sp. NIES-2104],🟢 Confirmed,WP_072218237.1
 Leptolyngbya sp. DQ-M1,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya sp. DQ-M1],🟢 Confirmed,WP_348245129.1
 Leptolyngbya sp. FACHB-321,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya sp. FACHB-321],🟢 Confirmed,WP_190513244.1
-Leptolyngbya sp. 7M,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya sp. 7M],🟢 Confirmed,WP_211622863.1
 Alkalinema sp. FACHB-956,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Alkalinema sp. FACHB-956],🟢 Confirmed,WP_190570970.1
 Nostoc punctiforme,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Nostoc punctiforme],🟢 Confirmed,WP_340092224.1
 Phormidesmis priestleyi,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Phormidesmis priestleyi],🟢 Confirmed,WP_068817670.1
-Synechococcus sp. W70.1,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Synechococcus sp. W70.1],🟢 Confirmed,WP_414420387.1
 Chlorella vulgaris,beta-galactosidase,3.2.1.23,lactose,Beta-galactosidase [Chlorella vulgaris],🟢 Confirmed,KAL4854100.1
 Chloropicon roscoffensis,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Chloropicon roscoffensis],🟢 Confirmed,XKU22121.1
 Trebouxia sp. C0009 RCD-2024,beta-galactosidase,3.2.1.23,lactose,"Glycoside hydrolase 2 (Mannanase, beta-galactosidase) [Trebouxia sp. C0009 RCD-2024]",🟢 Confirmed,KAL3145805.1
@@ -150,6 +150,15 @@ Tetraselmis sp. GSL018,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase 9-
 Nannochloropsis gaditana,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Nannochloropsis gaditana],🟢 Confirmed,EWM25763.1
 Lyngbya aestuarii BL J,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Lyngbya aestuarii BL J],🟢 Confirmed,ERT08413.1
 Kamptonema sp. PCC 6506,beta-galactosidase,3.2.1.23,lactose,putative Beta-galactosidase [Kamptonema sp. PCC 6506],🟡 Probable/Hypothetical,CBN58930.1
+Leptolyngbya sp. FACHB-1624,lactase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya sp. FACHB-1624],🟢 Confirmed,WP_190647893.1
+Nostoc sp.,lactase,3.2.1.23,lactose,beta-galactosidase [Nostoc sp.],🟢 Confirmed,WP_461921067.1
+Coleofasciculus sp. E2-BRE-01,lactase,3.2.1.23,lactose,beta-galactosidase [Coleofasciculus sp. E2-BRE-01],🟢 Confirmed,WP_446382102.1
+Synechococcus sp. W70.1,lactase,3.2.1.23,lactose,beta-galactosidase [Synechococcus sp. W70.1],🟢 Confirmed,WP_414420387.1
+Kovacikia minuta,lactase,3.2.1.23,lactose,beta-galactosidase [Kovacikia minuta],🟢 Confirmed,WP_224343591.1
+Leptolyngbya sp. 7M,lactase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya sp. 7M],🟢 Confirmed,WP_211622863.1
+Leptolyngbya sp. NK1-12,lactase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya sp. NK1-12],🟢 Confirmed,WP_316434458.1
+Leptolyngbya boryana,lactase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya boryana],🟢 Confirmed,WP_316427059.1
+Pseudanabaena sp. SR411,lactase,3.2.1.23,lactose,beta-galactosidase [Pseudanabaena sp. SR411],🟢 Confirmed,WP_094535020.1
 Leptothermofonsia sichuanensis,lactase,3.2.1.23,lactose,beta-galactosidase [Leptothermofonsia sichuanensis],🟢 Confirmed,WP_225938127.1
 Leptolyngbya sp. FACHB-261,lactase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya sp. FACHB-261],🟢 Confirmed,WP_313949256.1
 uncultured Microcoleus sp.,lactase,3.2.1.23,lactose,MAG: GH2 [uncultured Microcoleus sp.],🟢 Confirmed,CAA9320841.1
@@ -162,20 +171,13 @@ Nostoc sp. NMS4,lactase,3.2.1.23,lactose,beta-galactosidase [Nostoc sp. NMS4],�
 Alkalinema pantanalense,lactase,3.2.1.23,lactose,beta-galactosidase [Alkalinema pantanalense],🟢 Confirmed,WP_431629357.1
 Leptolyngbya sp. GGD,lactase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya sp. GGD],🟢 Confirmed,WP_268242865.1
 Leptolyngbya sp. 'hensonii',lactase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya sp. 'hensonii'],🟢 Confirmed,WP_075599814.1
-Nostoc sp.,lactase,3.2.1.23,lactose,beta-galactosidase [Nostoc sp.],🟢 Confirmed,WP_461921067.1
 Petrachloros mirabilis,lactase,3.2.1.23,lactose,beta-galactosidase [Petrachloros mirabilis],🟢 Confirmed,WP_455243548.1
-Coleofasciculus sp. E2-BRE-01,lactase,3.2.1.23,lactose,beta-galactosidase [Coleofasciculus sp. E2-BRE-01],🟢 Confirmed,WP_446382102.1
 unclassified Leptolyngbya,lactase,3.2.1.23,lactose,MULTISPECIES: beta-galactosidase [unclassified Leptolyngbya],🟢 Confirmed,WP_430678206.1
 Kamptonema sp. PCC 6506,lactase,3.2.1.23,lactose,Beta-galactosidase [Kamptonema sp. PCC 6506],🟢 Confirmed,CAI7983512.1
 Leptolyngbya sp. IPPAS B-1204,lactase,3.2.1.23,lactose,MAG: beta-galactosidase [Leptolyngbya sp. IPPAS B-1204],🟢 Confirmed,XPM60513.2
-Leptolyngbya sp. FACHB-1624,lactase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya sp. FACHB-1624],🟢 Confirmed,WP_415354778.1
-Leptolyngbya sp. NK1-12,lactase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya sp. NK1-12],🟢 Confirmed,WP_316434458.1
 Phormidium sp. FACHB-1136,lactase,3.2.1.23,lactose,beta-galactosidase [Phormidium sp. FACHB-1136],🟢 Confirmed,WP_190499166.1
 Stenomitos frigidus,lactase,3.2.1.23,lactose,beta-galactosidase [Stenomitos frigidus],🟢 Confirmed,WP_245939984.1
-Leptolyngbya boryana,lactase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya boryana],🟢 Confirmed,WP_316426393.1
 Leptolyngbya,lactase,3.2.1.23,lactose,MULTISPECIES: beta-galactosidase [Leptolyngbya],🟢 Confirmed,WP_190651623.1
-Pseudanabaena sp. SR411,lactase,3.2.1.23,lactose,beta-galactosidase [Pseudanabaena sp. SR411],🟢 Confirmed,WP_094535020.1
-Kovacikia minuta,lactase,3.2.1.23,lactose,beta-galactosidase [Kovacikia minuta],🟢 Confirmed,WP_224343591.1
 Synechococcus sp. RC10A2,lactase,3.2.1.23,lactose,beta-galactosidase [Synechococcus sp. RC10A2],🟢 Confirmed,WP_414510838.1
 Synechococcus sp. RC10B2,lactase,3.2.1.23,lactose,beta-galactosidase [Synechococcus sp. RC10B2],🟢 Confirmed,WP_414508776.1
 Leptolyngbya sp. UWPOB_LEPTO1,lactase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya sp. UWPOB_LEPTO1],🟢 Confirmed,WP_287456343.1
@@ -183,11 +185,9 @@ Romeriopsis navalis,lactase,3.2.1.23,lactose,beta-galactosidase [Romeriopsis nav
 Leptolyngbya sp. NIES-2104,lactase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya sp. NIES-2104],🟢 Confirmed,WP_072218237.1
 Leptolyngbya sp. DQ-M1,lactase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya sp. DQ-M1],🟢 Confirmed,WP_348245129.1
 Leptolyngbya sp. FACHB-321,lactase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya sp. FACHB-321],🟢 Confirmed,WP_190513244.1
-Leptolyngbya sp. 7M,lactase,3.2.1.23,lactose,beta-galactosidase [Leptolyngbya sp. 7M],🟢 Confirmed,WP_211622863.1
 Alkalinema sp. FACHB-956,lactase,3.2.1.23,lactose,beta-galactosidase [Alkalinema sp. FACHB-956],🟢 Confirmed,WP_190570970.1
 Nostoc punctiforme,lactase,3.2.1.23,lactose,beta-galactosidase [Nostoc punctiforme],🟢 Confirmed,WP_340092224.1
 Phormidesmis priestleyi,lactase,3.2.1.23,lactose,beta-galactosidase [Phormidesmis priestleyi],🟢 Confirmed,WP_068817670.1
-Synechococcus sp. W70.1,lactase,3.2.1.23,lactose,beta-galactosidase [Synechococcus sp. W70.1],🟢 Confirmed,WP_414420387.1
 Leptolyngbya sp. BL-A-14,lactase,3.2.1.23,lactose,MAG: beta-galactosidase [Leptolyngbya sp. BL-A-14],🟢 Confirmed,XGV94482.1
 Durusdinium trenchii,lactase,3.2.1.23,lactose,Beta-galactosidase (Beta-gal) (Lactase) [Durusdinium trenchii],🟢 Confirmed,CAK8998252.1
 Durusdinium trenchii,lactase,3.2.1.23,lactose,Beta-galactosidase (Beta-gal) (Beta-D-galactoside galactohydrolase) (Lactase) [Durusdinium trenchii],🟢 Confirmed,CAK9046591.1
@@ -1106,159 +1106,373 @@ Monoraphidium neglectum,beta-amylase,3.2.1.2,starch,beta-amylase [Monoraphidium 
 Auxenochlorella protothecoides,beta-amylase,3.2.1.2,starch,"Beta-amylase 1, chloroplastic [Auxenochlorella protothecoides]",🟢 Confirmed,KFM23571.1
 Tetraselmis sp. GSL018,beta-amylase,3.2.1.2,starch,beta-amylase [Tetraselmis sp. GSL018],🟢 Confirmed,JAC70457.1
 Tetraselmis sp. GSL018,beta-amylase,3.2.1.2,starch,beta-amylase chloroplastic-like [Tetraselmis sp. GSL018],🟡 Probable/Hypothetical,JAC61110.1
-Nostoc sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp.],🟢 Confirmed,WP_461944825.1
-uncultured Nostoc sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [uncultured Nostoc sp.],🟢 Confirmed,WP_298919943.1
+Nostoc sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp.],🟢 Confirmed,WP_461943806.1
+Nostoc sp. DSM 114160,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. DSM 114160],🟢 Confirmed,WP_448272541.1
+Nostoc sp. DSM 114159,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. DSM 114159],🟢 Confirmed,WP_448267677.1
+Coleofasciculus sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Coleofasciculus sp.],🟢 Confirmed,WP_446419999.1
+Coleofasciculus sp. C1-SOL-03,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Coleofasciculus sp. C1-SOL-03],🟢 Confirmed,WP_446404754.1
+Coleofasciculus chthonoplastes,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Coleofasciculus chthonoplastes],🟢 Confirmed,WP_446344106.1
+Nostoc sp. DSM 114161,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. DSM 114161],🟢 Confirmed,WP_445632641.1
+Crocosphaera sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Crocosphaera sp.],🟢 Confirmed,WP_437172549.1
+Aliinostoc sp. HNIBRCY26,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Aliinostoc sp. HNIBRCY26],🟢 Confirmed,WP_427156876.1
+Dapis hubbardiae,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Dapis hubbardiae],🟢 Confirmed,WP_426560106.1
+Synechococcus sp. A10-1-5-9,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. A10-1-5-9],🟢 Confirmed,WP_415409051.1
+Cyanobium sp. ATX-6F1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Cyanobium sp. ATX-6F1],🟢 Confirmed,WP_414026345.1
+unclassified Synechococcus,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [unclassified Synechococcus],🟢 Confirmed,WP_413404788.1
+Floridanema evergladense,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Floridanema evergladense],🟢 Confirmed,WP_413279426.1
+Floridanema aerugineum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Floridanema aerugineum],🟢 Confirmed,WP_413269496.1
+Microcoleus sp. MON2_D5,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. MON2_D5],🟢 Confirmed,WP_333430996.1
+Microcoleus sp. MON1_C1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. MON1_C1],🟢 Confirmed,WP_333405577.1
+Microcoleus sp. BROC3,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. BROC3],🟢 Confirmed,WP_333333037.1
+Microcoleus,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Microcoleus],🟢 Confirmed,WP_333326213.1
+unclassified Microcoleus,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [unclassified Microcoleus],🟢 Confirmed,WP_293246862.1
+Moorena sp. SIO3H5,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Moorena sp. SIO3H5],🟢 Confirmed,WP_293084950.1
+unclassified Nostoc,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [unclassified Nostoc],🟢 Confirmed,WP_292833436.1
+Nostoc sp. NMS7,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. NMS7],🟢 Confirmed,WP_292803323.1
+Microcystis sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcystis sp.],🟢 Confirmed,WP_288138091.1
+Zarconia navalis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Zarconia navalis],🟢 Confirmed,WP_264322171.1
+Limnofasciculus baicalensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Limnofasciculus baicalensis],🟢 Confirmed,WP_254014423.1
+Leptodesmis sichuanensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptodesmis sichuanensis],🟢 Confirmed,WP_233743798.1
+Dendronalium phyllosphericum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Dendronalium phyllosphericum],🟢 Confirmed,WP_214431205.1
+Nostoc edaphicum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc edaphicum],🟢 Confirmed,WP_194046968.1
+Nostoc flagelliforme,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc flagelliforme],🟢 Confirmed,WP_190943971.1
+Iningainema tapete,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Iningainema tapete],🟢 Confirmed,WP_190836024.1
+Coleofasciculus sp. FACHB-1120,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Coleofasciculus sp. FACHB-1120],🟢 Confirmed,WP_190815506.1
+Microcoleus sp. FACHB-672,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. FACHB-672],🟢 Confirmed,WP_190669711.1
+Planktothrix sp. FACHB-1365,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Planktothrix sp. FACHB-1365],🟢 Confirmed,WP_190517853.1
+Oscillatoria sp. FACHB-1407,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Oscillatoria sp. FACHB-1407],🟢 Confirmed,WP_190510628.1
+Oscillatoriophycideae,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Oscillatoriophycideae],🟢 Confirmed,WP_190463587.1
+Aerosakkonema funiforme,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Aerosakkonema funiforme],🟢 Confirmed,WP_190460918.1
+Cylindrospermum sp. FACHB-282,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Cylindrospermum sp. FACHB-282],🟢 Confirmed,WP_190458815.1
+Trichocoleus,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Trichocoleus],🟢 Confirmed,WP_190434838.1
+unclassified Leptolyngbya,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [unclassified Leptolyngbya],🟢 Confirmed,WP_190377014.1
+Synechococcus sp. RS9907,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. RS9907],🟢 Confirmed,WP_188021372.1
+Nostoc sp. C057,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. C057],🟢 Confirmed,WP_179071980.1
+Leptodesmis sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptodesmis sp.],🟢 Confirmed,WP_445928096.1
+Tolypothrix sp. VBCCA 56010,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Tolypothrix sp. VBCCA 56010],🟢 Confirmed,WP_432554522.1
+Leptothermofonsia sp. ETS-13,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptothermofonsia sp. ETS-13],🟢 Confirmed,WP_421655947.1
+Calothrix sp. CCY 0018,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Calothrix sp. CCY 0018],🟢 Confirmed,WP_414625026.1
+Scytonema sp. PCC 10023,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Scytonema sp. PCC 10023],🟢 Confirmed,WP_414581149.1
+Floridanema flaviceps,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Floridanema flaviceps],🟢 Confirmed,WP_413262730.1
+Floridanema fluviatile,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Floridanema fluviatile],🟢 Confirmed,WP_413259407.1
+Capilliphycus salinus,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Capilliphycus salinus],🟢 Confirmed,WP_413159979.1
+Parasynechococcus sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Parasynechococcus sp.],🟢 Confirmed,WP_392351745.1
+Chamaesiphon sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chamaesiphon sp.],🟢 Confirmed,WP_373540145.1
+[Phormidium] sp. ETS-05,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [[Phormidium] sp. ETS-05],🟢 Confirmed,WP_346341806.1
+Crocosphaera sp. Alani8,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Crocosphaera sp. Alani8],🟢 Confirmed,WP_342057062.1
+Allocoleopsis sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Allocoleopsis sp.],🟢 Confirmed,WP_333479826.1
+Microcoleus sp. N9_A1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. N9_A1],🟢 Confirmed,WP_333397848.1
+unclassified Microcoleus,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase [unclassified Microcoleus],🟢 Confirmed,WP_333128008.1
+Pannus brasiliensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Pannus brasiliensis],🟢 Confirmed,WP_332866141.1
+Okeania sp. SIO2B3,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Okeania sp. SIO2B3],🟢 Confirmed,WP_293059610.1
+Nostoc sp. JL33,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. JL33],🟢 Confirmed,WP_292835230.1
+unclassified Cyanobium,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [unclassified Cyanobium],🟢 Confirmed,WP_254957029.1
+Microcystis aeruginosa,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcystis aeruginosa],🟢 Confirmed,WP_235614829.1
+Chroogloeocystis siderophila,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chroogloeocystis siderophila],🟢 Confirmed,WP_218596862.1
+Anthocerotibacter panamensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Anthocerotibacter panamensis],🟢 Confirmed,WP_218079296.1
+Nostoc commune,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc commune],🟢 Confirmed,WP_196528300.1
+unclassified Nodularia (in: cyanobacteria),alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [unclassified Nodularia (in: cyanobacteria)],🟢 Confirmed,WP_194000222.1
+[Phormidium] sp. LEGE 05292,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [[Phormidium] sp. LEGE 05292],🟢 Confirmed,WP_193980936.1
+Desmonostoc muscorum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Desmonostoc muscorum],🟢 Confirmed,WP_193924166.1
+Fortiea sp. LEGE XX443,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Fortiea sp. LEGE XX443],🟢 Confirmed,WP_193886323.1
+Cyanobium sp. LEGE 06143,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Cyanobium sp. LEGE 06143],🟢 Confirmed,WP_193813966.1
+Nostoc,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Nostoc],🟢 Confirmed,WP_190894941.1
+Leptolyngbya sp. FACHB-541,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya sp. FACHB-541],🟢 Confirmed,WP_190798786.1
+Nostoc sp. FACHB-145,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. FACHB-145],🟢 Confirmed,WP_190756575.1
+unclassified Calothrix,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [unclassified Calothrix],🟢 Confirmed,WP_190634185.1
+Nostocaceae,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Nostocaceae],🟢 Confirmed,WP_190594972.1
+Trichocoleus sp. FACHB-262,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Trichocoleus sp. FACHB-262],🟢 Confirmed,WP_190558244.1
+Calothrix,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Calothrix],🟢 Confirmed,WP_190546192.1
+Pseudanabaena sp. FACHB-2040,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Pseudanabaena sp. FACHB-2040],🟢 Confirmed,WP_190481278.1
+Anabaena subtropica,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Anabaena subtropica],🟢 Confirmed,WP_190406439.1
+Synechococcus sp. RS9902,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. RS9902],🟢 Confirmed,WP_186509444.1
+Synechococcus sp. A15-60,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. A15-60],🟢 Confirmed,WP_186500776.1
+Nostoc sp. 2RC,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. 2RC],🟢 Confirmed,WP_185566393.1
+Coleofasciculus sp. G3-WIS-01,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Coleofasciculus sp. G3-WIS-01],🟢 Confirmed,WP_446367450.1
+Microcoleus drouetii,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus drouetii],🟢 Confirmed,WP_445299789.1
+Pantanalinema rosaneae,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Pantanalinema rosaneae],🟢 Confirmed,WP_431656378.1
+Nostoc sp. CCY0012,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. CCY0012],🟢 Confirmed,WP_414545606.1
+Synechococcus sp. MIT S9503,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. MIT S9503],🟢 Confirmed,WP_413324016.1
+Nostoc sp. UIC 10607,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. UIC 10607],🟢 Confirmed,WP_412980949.1
+Dendronalium sp. ChiSLP03b,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Dendronalium sp. ChiSLP03b],🟢 Confirmed,WP_409878116.1
+Scytonema sp. NUACC26,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Scytonema sp. NUACC26],🟢 Confirmed,WP_407893848.1
+Aerosakkonema sp. BLCC-F183,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Aerosakkonema sp. BLCC-F183],🟢 Confirmed,WP_374827315.1
+Microcoleus sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp.],🟢 Confirmed,WP_373535558.1
+Microcoleus sp. BM001215392,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. BM001215392],🟢 Confirmed,WP_333471427.1
+Microcoleus occultus,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus occultus],🟢 Confirmed,WP_333464104.1
+Microcoleus sp. D3_18_C4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. D3_18_C4],🟢 Confirmed,WP_333443293.1
+Microcoleus sp. D2_18a_D3,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. D2_18a_D3],🟢 Confirmed,WP_333436742.1
+Microcoleus sp. F4-D5,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. F4-D5],🟢 Confirmed,WP_333425767.1
+Microcoleus tentaculus,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus tentaculus],🟢 Confirmed,WP_333421959.1
+Microcoleus tentaculus,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus tentaculus],🟢 Confirmed,WP_333420433.1
+Microcoleus tentaculus,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus tentaculus],🟢 Confirmed,WP_333418719.1
+Microcoleus sp. MOSTC5,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. MOSTC5],🟢 Confirmed,WP_333416063.1
+Microcoleus sp. T2B6,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. T2B6],🟢 Confirmed,WP_333413207.1
+Microcoleus drouetii,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus drouetii],🟢 Confirmed,WP_333395535.1
+Microcoleus sp. POL10_C6,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. POL10_C6],🟢 Confirmed,WP_333385260.1
+Microcoleus sp. AT3-D2,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. AT3-D2],🟢 Confirmed,WP_333367207.1
+Microcoleus occultus,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus occultus],🟢 Confirmed,WP_333363144.1
+Microcoleus sp. N3A4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. N3A4],🟢 Confirmed,WP_333353865.1
+Microcoleus occultus,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus occultus],🟢 Confirmed,WP_333352982.1
+Microcoleus sp. B3-A4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. B3-A4],🟢 Confirmed,WP_333351295.1
+Microcoleus,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase [Microcoleus],🟢 Confirmed,WP_333349952.1
+Microcoleus,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family protein [Microcoleus],🟢 Confirmed,WP_333345333.1
+Microcoleus sp. T3_A4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. T3_A4],🟢 Confirmed,WP_333328347.1
+Microcoleus sp. B7-D4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. B7-D4],🟢 Confirmed,WP_333310940.1
+Roseofilum sp. SBFL,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Roseofilum sp. SBFL],🟢 Confirmed,WP_318719586.1
+Microcoleus sp. PH2017_18_LLB_O_A,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. PH2017_18_LLB_O_A],🟢 Confirmed,WP_293274559.1
+Nostoc sp. JL31,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. JL31],🟢 Confirmed,WP_292734521.1
+Leptothoe kymatousa,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptothoe kymatousa],🟢 Confirmed,WP_215616571.1
+Nodosilinea sp. LEGE 07088,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nodosilinea sp. LEGE 07088],🟢 Confirmed,WP_193968159.1
+Nostoc sp. LEGE 12450,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. LEGE 12450],🟢 Confirmed,WP_193950022.1
+Nostoc sp. MG11,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. MG11],🟢 Confirmed,WP_193196144.1
+Chroococcidiopsis sp. [FACHB-1243],alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chroococcidiopsis sp [FACHB-1243]],🟢 Confirmed,WP_192155573.1
+Nostoc sp. UIC 10890,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. UIC 10890],🟢 Confirmed,WP_460333009.1
+Phormidium nigroviride,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Phormidium nigroviride],🟢 Confirmed,WP_449417714.1
+Myxosarcina sp. GI1(2024),alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Myxosarcina sp. GI1(2024)],🟢 Confirmed,WP_449000190.1
+Thermoleptolyngbya sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Thermoleptolyngbya sp.],🟢 Confirmed,WP_448604089.1
+Microcoleus vaginatus,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus vaginatus],🟢 Confirmed,WP_445240116.1
+Laspinema palackyanum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Laspinema palackyanum],🟢 Confirmed,WP_438612368.1
+Chroococcidiopsis sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chroococcidiopsis sp.],🟢 Confirmed,WP_438556352.1
+Anabaena sp. CCY 9402-a,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Anabaena sp. CCY 9402-a],🟢 Confirmed,WP_414578887.1
+unclassified Anabaena,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [unclassified Anabaena],🟢 Confirmed,WP_414564923.1
+Nodularia chucula,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nodularia chucula],🟢 Confirmed,WP_414530157.1
+Nostoc sp. PCC 9305,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. PCC 9305],🟢 Confirmed,WP_414514916.1
+Synechococcus sp. MIT S9507,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. MIT S9507],🟢 Confirmed,WP_413745455.1
+Synechococcus sp. MIT S9451,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. MIT S9451],🟢 Confirmed,WP_413745096.1
+Synechococcus sp. MIT S1220,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. MIT S1220],🟢 Confirmed,WP_413439939.1
+Synechococcus sp. MIT S9452,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. MIT S9452],🟢 Confirmed,WP_413296211.1
+Nostoc piscinale,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc piscinale],🟢 Confirmed,WP_413199898.1
+Aphanothece,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Aphanothece],🟢 Confirmed,WP_412006770.1
+Vulcanococcus limneticus,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Vulcanococcus limneticus],🟢 Confirmed,WP_411875101.1
+uncultured Nostoc sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [uncultured Nostoc sp.],🟢 Confirmed,WP_375515034.1
+Roseofilum capinflatum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Roseofilum capinflatum],🟢 Confirmed,WP_283767428.1
+Roseofilum halophilum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Roseofilum halophilum],🟢 Confirmed,WP_283763388.1
+Roseofilum casamattae,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Roseofilum casamattae],🟢 Confirmed,WP_283756677.1
+Kamptonema sp. UHCC 0994,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Kamptonema sp. UHCC 0994],🟢 Confirmed,WP_275570832.1
+Synechococcus sp. A18-25c,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. A18-25c],🟢 Confirmed,WP_255478398.1
+Synechococcus sp. Lug-A,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. Lug-A],🟢 Confirmed,WP_255140414.1
+Cyanobium sp. Lug-B,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Cyanobium sp. Lug-B],🟢 Confirmed,WP_254975409.1
+Cyanobium sp. CH-040,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Cyanobium sp. CH-040],🟢 Confirmed,WP_254968910.1
+Oscillatoria sp. HE19RPO,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Oscillatoria sp. HE19RPO],🟢 Confirmed,WP_254567636.1
+Anabaena sp. UHCC 0204,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Anabaena sp. UHCC 0204],🟢 Confirmed,WP_254445272.1
+Synechococcus sp. BDU 130192,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. BDU 130192],🟢 Confirmed,WP_254047953.1
+Thermostichus vulcanus,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Thermostichus vulcanus],🟢 Confirmed,WP_244350057.1
+Synechococcus sp. UW179B,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. UW179B],🟢 Confirmed,WP_244278992.1
+Leptolyngbya subtilissima,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya subtilissima],🟢 Confirmed,WP_242020020.1
+Synechococcus sp. BS55D,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. BS55D],🟢 Confirmed,WP_236629535.1
+Tychonema litorale,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Tychonema litorale],🟢 Confirmed,WP_236508238.1
+Nostoc sp. CMAA1605,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. CMAA1605],🟢 Confirmed,WP_236144820.1
+Nostoc sp. XA010,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. XA010],🟢 Confirmed,WP_229557936.1
+Nostoc mirabile,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc mirabile],🟢 Confirmed,WP_229501370.1
+Nostoc favosum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc favosum],🟢 Confirmed,WP_229490050.1
+Lusitaniella coriacea,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Lusitaniella coriacea],🟢 Confirmed,WP_229425748.1
+Microcoleus sp. S13_C5,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. S13_C5],🟢 Confirmed,WP_333262765.1
+Microcoleus sp. S28C3,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. S28C3],🟢 Confirmed,WP_333200787.1
+Microcoleus sp. B3-D7,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. B3-D7],🟢 Confirmed,WP_333183093.1
+Microcoleus sp. Pol12B4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. Pol12B4],🟢 Confirmed,WP_333167085.1
+Microcoleus sp. B9-D4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. B9-D4],🟢 Confirmed,WP_333151124.1
+Microcoleus sp. Pol11C3,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. Pol11C3],🟢 Confirmed,WP_333131794.1
+Microcoleus sp. A003_D6,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. A003_D6],🟢 Confirmed,WP_332985137.1
+Kovacikia minuta,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Kovacikia minuta],🟢 Confirmed,WP_224342581.1
+Cylindrospermopsis raciborskii,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Cylindrospermopsis raciborskii],🟢 Confirmed,WP_211941681.1
+Fischerella thermalis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Fischerella thermalis],🟢 Confirmed,WP_337885003.1
+Chroococcidiopsis sp. SAG 2025,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chroococcidiopsis sp. SAG 2025],🟢 Confirmed,WP_317106068.1
+Thermoleptolyngbya oregonensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Thermoleptolyngbya oregonensis],🟢 Confirmed,WP_316789705.1
+Fischerella sp. JS2,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Fischerella sp. JS2],🟢 Confirmed,WP_315789591.1
+Limnospira sp. PMC 289.06,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Limnospira sp. PMC 289.06],🟢 Confirmed,WP_315670102.1
+Chlorogloeopsis fritschii,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chlorogloeopsis fritschii],🟢 Confirmed,WP_276745456.1
+Crocosphaera watsonii,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Crocosphaera watsonii],🟢 Confirmed,WP_157134087.1
+Scytonema sp. UIC 10036,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Scytonema sp. UIC 10036],🟢 Confirmed,WP_155752891.1
+Pseudanabaena sp. UWO311,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Pseudanabaena sp. UWO311],🟢 Confirmed,WP_142654595.1
+Leptolyngbya sp. PL-A3,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya sp. PL-A3],🟢 Confirmed,WP_348256519.1
+Leptolyngbya sp. DQ-M1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya sp. DQ-M1],🟢 Confirmed,WP_348242411.1
+Trichocoleus desertorum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Trichocoleus desertorum],🟢 Confirmed,WP_348228280.1
+Nostoc sp. FACHB-888,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. FACHB-888],🟢 Confirmed,WP_347242485.1
+Synechococcus sp. CCAP 1479/9,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. CCAP 1479/9],🟢 Confirmed,WP_216918719.1
+Thermoleptolyngbya sp. PKUAC-SCTB121,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Thermoleptolyngbya sp. PKUAC-SCTB121],🟢 Confirmed,WP_205369460.1
+Dulcicalothrix desertica,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Dulcicalothrix desertica],🟢 Confirmed,WP_127084650.1
+Chroococcidiopsis cubana,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chroococcidiopsis cubana],🟢 Confirmed,WP_127023934.1
+Aphanothece sacrum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Aphanothece sacrum],🟢 Confirmed,WP_124975863.1
+Synechococcus sp. N32,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. N32],🟢 Confirmed,WP_115081311.1
+Synechococcus sp. N5,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. N5],🟢 Confirmed,WP_115009801.1
+Nostoc sp. ATCC 53789,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. ATCC 53789],🟢 Confirmed,WP_114084419.1
+Calothrix sp. NIES-2100,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Calothrix sp. NIES-2100],🟢 Confirmed,WP_096606578.1
+Calothrix sp. NIES-2098,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Calothrix sp. NIES-2098],🟢 Confirmed,WP_096592524.1
+Tolypothrix tenuis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Tolypothrix tenuis],🟢 Confirmed,WP_096581913.1
+Synechococcus sp. BO 8801,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. BO 8801],🟢 Confirmed,WP_094584077.1
+Pseudanabaena sp. SR411,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Pseudanabaena sp. SR411],🟢 Confirmed,WP_094533025.1
+Nostoc sp. 'Peltigera membranacea cyanobiont' 210A,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. 'Peltigera membranacea cyanobiont' 210A],🟢 Confirmed,WP_094351365.1
+Nostoc sp. 106C,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. 106C],🟢 Confirmed,WP_086762704.1
+Nostoc sp. T09,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. T09],🟢 Confirmed,WP_086687758.1
+Nostoc sp. FACHB-892,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. FACHB-892],🟢 Confirmed,WP_277932899.1
+Argonema galeatum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Argonema galeatum],🟢 Confirmed,WP_249093978.1
+Argonema antarcticum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Argonema antarcticum],🟢 Confirmed,WP_249066464.1
+Nodosilinea sp. LEGE 07298,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nodosilinea sp. LEGE 07298],🟢 Confirmed,WP_228053006.1
+Oscillatoria salina,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Oscillatoria salina],🟢 Confirmed,WP_224411967.1
+Nostoc sp. MS1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. MS1],🟢 Confirmed,WP_224091821.1
+Cyanothece sp. BG0011,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Cyanothece sp. BG0011],🟢 Confirmed,WP_107668202.1
+Chroococcidiopsis sp. CCALA 051,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chroococcidiopsis sp. CCALA 051],🟢 Confirmed,WP_106545441.1
+Aphanothece hegewaldii,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Aphanothece hegewaldii],🟢 Confirmed,WP_106459219.1
+Gloeocapsopsis dulcis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Gloeocapsopsis dulcis],🟢 Confirmed,WP_105221944.1
+Nostoc sp. 'Lobaria pulmonaria (5183) cyanobiont',alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. 'Lobaria pulmonaria (5183) cyanobiont'],🟢 Confirmed,WP_104908901.1
+Nostoc sp. 'Peltigera membranacea cyanobiont' N6,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. 'Peltigera membranacea cyanobiont' N6],🟢 Confirmed,WP_104898513.1
+Chroococcidiopsis sp. TS-821,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chroococcidiopsis sp. TS-821],🟢 Confirmed,WP_104545694.1
+Microcoleus sp. herbarium12,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. herbarium12],🟢 Confirmed,WP_333469744.1
+Microcoleus sp. T3_B1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. T3_B1],🟢 Confirmed,WP_333465660.1
+Microcoleus sp. Pol10D4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. Pol10D4],🟢 Confirmed,WP_333459389.1
+Microcoleus sp. B6-A1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. B6-A1],🟢 Confirmed,WP_333392172.1
+Microcoleus sp. B4-D4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. B4-D4],🟢 Confirmed,WP_333377894.1
+Microcoleus sp. N9_B4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. N9_B4],🟢 Confirmed,WP_333370792.1
+Microcoleus sp. D2_18a_B4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. D2_18a_B4],🟢 Confirmed,WP_333288483.1
+Microcoleus sp. MON1_C5,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. MON1_C5],🟢 Confirmed,WP_333285234.1
+Microcoleus sp. BR0-C5,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. BR0-C5],🟢 Confirmed,WP_333228482.1
+Microcoleus sp. S36b_A4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. S36b_A4],🟢 Confirmed,WP_333213112.1
+Microcoleus sp. Pol7_A1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. Pol7_A1],🟢 Confirmed,WP_333192875.1
+Microcoleus sp. S13_B4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. S13_B4],🟢 Confirmed,WP_333173040.1
+Microcoleus sp. AT3-A2,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. AT3-A2],🟢 Confirmed,WP_333160651.1
+Microcoleus sp. Pol11C2,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. Pol11C2],🟢 Confirmed,WP_333138101.1
+Scytonema sp. PRP1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Scytonema sp. PRP1],🟢 Confirmed,WP_332993146.1
+Microcoleus sp. A006_D1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. A006_D1],🟢 Confirmed,WP_332990965.1
+Microcoleus sp. AR_TQ3_B6,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. AR_TQ3_B6],🟢 Confirmed,WP_332957074.1
+Nodosilinea sp. E11,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nodosilinea sp. E11],🟢 Confirmed,WP_317038278.1
+Leptolyngbya boryana,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya boryana],🟢 Confirmed,WP_316428822.1
+Synechococcus sp. ATX 2A4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. ATX 2A4],🟢 Confirmed,WP_315857150.1
+Okeania sp. KiyG1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Okeania sp. KiyG1],🟢 Confirmed,WP_307786316.1
+Thermocoleostomius sinensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Thermocoleostomius sinensis],🟢 Confirmed,WP_268610928.1
+Leptolyngbya sp. GGD,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya sp. GGD],🟢 Confirmed,WP_268183732.1
+Trichothermofontia sichuanensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Trichothermofontia sichuanensis],🟢 Confirmed,WP_265900646.1
+Lyngbya sp. CCAP 1446/10,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Lyngbya sp. CCAP 1446/10],🟢 Confirmed,WP_265238918.1
+Synechococcus sp. MU1651,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. MU1651],🟢 Confirmed,WP_250397167.1
+Chroococcidiopsis sp. CCMEE 29,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chroococcidiopsis sp. CCMEE 29],🟢 Confirmed,WP_250125343.1
+Chroococcidiopsis sp. CCNUC1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chroococcidiopsis sp. CCNUC1],🟢 Confirmed,WP_250016895.1
+Nostoc sp. 'Peltigera malacea cyanobiont' DB3992,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. 'Peltigera malacea cyanobiont' DB3992],🟢 Confirmed,WP_099100683.1
+Nostoc linckia,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc linckia],🟢 Confirmed,WP_099067766.1
+Brunnivagina elsteri,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Brunnivagina elsteri],🟢 Confirmed,WP_095721133.1
+Leptodesmis,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family protein [Leptodesmis],🟢 Confirmed,WP_428361353.1
+Synechococcus sp. HIMB2401,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. HIMB2401],🟢 Confirmed,WP_390128964.1
+Microseira sp. BLCC-F43,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microseira sp. BLCC-F43],🟢 Confirmed,WP_374876370.1
+Aerosakkonema,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Aerosakkonema],🟢 Confirmed,WP_374790109.1
+Acaryochloris sp. IP29b_bin.137,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Acaryochloris sp. IP29b_bin.137],🟢 Confirmed,WP_299491583.1
+Microcoleus sp. CAWBG58,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. CAWBG58],🟢 Confirmed,WP_293334556.1
+Microcoleus sp. bin38.metabat.b11b12b14.051,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. bin38.metabat.b11b12b14.051],🟢 Confirmed,WP_293132740.1
+Okeania sp. SIO3B5,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Okeania sp. SIO3B5],🟢 Confirmed,WP_293089662.1
+Nostoc sp. LPT,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. LPT],🟢 Confirmed,WP_292866035.1
+Nostoc sp. NOS(2021),alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. NOS(2021)],🟢 Confirmed,WP_292768435.1
+Nostoc sp. NMS4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. NMS4],🟢 Confirmed,WP_292745041.1
+Fischerella sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Fischerella sp.],🟢 Confirmed,WP_290882435.1
+Nostoc sp. GT001,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. GT001],🟢 Confirmed,WP_289797353.1
+Laspinema olomoucense,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Laspinema olomoucense],🟢 Confirmed,WP_261265275.1
+Nostoc sp. 'Peltigera membranacea cyanobiont' 232,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. 'Peltigera membranacea cyanobiont' 232],🟢 Confirmed,WP_094343519.1
+Nostoc sp. 'Peltigera membranacea cyanobiont' 213,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. 'Peltigera membranacea cyanobiont' 213],🟢 Confirmed,WP_094328913.1
+Tolypothrix sp. NIES-4075,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Tolypothrix sp. NIES-4075],🟢 Confirmed,WP_089128719.1
+Leptolyngbya ohadii,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya ohadii],🟢 Confirmed,WP_088891436.1
+Leptolyngbya sp. 'hensonii',alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya sp. 'hensonii'],🟢 Confirmed,WP_075598975.1
+Prochlorococcus marinus,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Prochlorococcus marinus],🟢 Confirmed,WP_075507846.1
+Moorena producens,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Moorena producens],🟢 Confirmed,WP_070394382.1
+Anabaena sp. 4-3,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Anabaena sp. 4-3],🟢 Confirmed,WP_066424870.1
+Geminocystis sp. NIES-3708,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Geminocystis sp. NIES-3708],🟢 Confirmed,WP_066343655.1
+Leptolyngbya sp. NIES-2104,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya sp. NIES-2104],🟢 Confirmed,WP_058996456.1
+Chamaesiphon sp. OTE_75_metabat_556,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chamaesiphon sp. OTE_75_metabat_556],🟢 Confirmed,WP_309731574.1
+Aphanizomenonaceae,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Aphanizomenonaceae],🟢 Confirmed,WP_187705195.1
+Synechococcus sp. Minos11,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. Minos11],🟢 Confirmed,WP_186548297.1
+Synechococcus sp. M16.1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. M16.1],🟢 Confirmed,WP_186541532.1
+Microcoleus asticus,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus asticus],🟢 Confirmed,WP_172186309.1
+Nodosilinea sp. P-1105,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nodosilinea sp. P-1105],🟢 Confirmed,WP_169617235.1
+Brasilonema,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Brasilonema],🟢 Confirmed,WP_169268111.1
+Brasilonema octagenarum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Brasilonema octagenarum],🟢 Confirmed,WP_169266252.1
+Brasilonema sp. UFV-L1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Brasilonema sp. UFV-L1],🟢 Confirmed,WP_169220883.1
+Brasilonema bromeliae,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Brasilonema bromeliae],🟢 Confirmed,WP_169154063.1
+Synechococcus sp. KORDI-100,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. KORDI-100],🟢 Confirmed,WP_051847430.1
 Chroococcus sp. FPU101,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chroococcus sp. FPU101],🟢 Confirmed,WP_206816133.1
 Synechococcus sp. CBW1107,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. CBW1107],🟢 Confirmed,WP_197161807.1
 Nostoc sp. LEGE 12447,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. LEGE 12447],🟢 Confirmed,WP_194143779.1
 Tychonema sp. LEGE 06208,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Tychonema sp. LEGE 06208],🟢 Confirmed,WP_194068207.1
 Tychonema sp. LEGE 07203,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Tychonema sp. LEGE 07203],🟢 Confirmed,WP_194064022.1
 Nodosilinea sp. LEGE 06152,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nodosilinea sp. LEGE 06152],🟢 Confirmed,WP_194053819.1
-Nostoc edaphicum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc edaphicum],🟢 Confirmed,WP_194040793.1
-Lusitaniella coriacea,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Lusitaniella coriacea],🟢 Confirmed,WP_194031341.1
 unclassified Tychonema,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [unclassified Tychonema],🟢 Confirmed,WP_194009806.1
 aff. Roholtiella sp. LEGE 12411,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [aff. Roholtiella sp. LEGE 12411],🟢 Confirmed,WP_194005622.1
-unclassified Nodularia (in: cyanobacteria),alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [unclassified Nodularia (in: cyanobacteria)],🟢 Confirmed,WP_193996975.1
 Leptolyngbya ectocarpi,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya ectocarpi],🟢 Confirmed,WP_193994893.1
-[Phormidium] sp. LEGE 05292,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [[Phormidium] sp. LEGE 05292],🟢 Confirmed,WP_193981853.1
-Nostoc sp. LEGE 12450,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. LEGE 12450],🟢 Confirmed,WP_193948096.1
 Gloeocapsopsis crepidinum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Gloeocapsopsis crepidinum],🟢 Confirmed,WP_193933647.1
-Brasilonema octagenarum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Brasilonema octagenarum],🟢 Confirmed,WP_169267268.1
-Brasilonema sp. UFV-L1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Brasilonema sp. UFV-L1],🟢 Confirmed,WP_169220341.1
 Synechococcus sp. N26,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. N26],🟢 Confirmed,WP_115131362.1
 Synechococcus sp. UW106,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. UW106],🟢 Confirmed,WP_115094773.1
 Synechococcus sp. UW140,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. UW140],🟢 Confirmed,WP_115018244.1
 Synechococcus sp. UW179A,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. UW179A],🟢 Confirmed,WP_114990842.1
 Synechococcus sp. N19,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. N19],🟢 Confirmed,WP_114988740.1
 Synechococcus sp. CB0205,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. CB0205],🟢 Confirmed,WP_050778479.1
-Microcoleus sp. T3_B1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. T3_B1],🟢 Confirmed,WP_333465843.1
 Microcoleus sp. K5-D4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. K5-D4],🟢 Confirmed,WP_333453550.1
-Microcoleus sp. herbarium5,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. herbarium5],🟢 Confirmed,WP_333452385.1
-Microcoleus sp. D2_18a_D3,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. D2_18a_D3],🟢 Confirmed,WP_333435756.1
-Microcoleus sp. F4-D5,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. F4-D5],🟢 Confirmed,WP_333421601.1
-Microcoleus sp. AT3-D2,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. AT3-D2],🟢 Confirmed,WP_333369676.1
-Microcoleus sp. herbarium14,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. herbarium14],🟢 Confirmed,WP_333363144.1
 Microcoleus sp. w1-18aA5,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. w1-18aA5],🟢 Confirmed,WP_333343860.1
 Microcoleus sp. D3_18a_C4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. D3_18a_C4],🟢 Confirmed,WP_333322246.1
-unclassified Microcoleus,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [unclassified Microcoleus],🟢 Confirmed,WP_333292647.1
-Microcoleus sp. S13_C5,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. S13_C5],🟢 Confirmed,WP_333260200.1
 Microcoleus sp. Pol12B5,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. Pol12B5],🟢 Confirmed,WP_333232259.1
 Microcoleus sp. Pol12A5,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. Pol12A5],🟢 Confirmed,WP_333220300.1
-Microcoleus sp. S36b_A4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. S36b_A4],🟢 Confirmed,WP_333210181.1
-Microcoleus sp. Pol7_A1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. Pol7_A1],🟢 Confirmed,WP_333188815.1
-Microcoleus sp. S13_B4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. S13_B4],🟢 Confirmed,WP_333174755.1
-Microcoleus sp. AT3-A2,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. AT3-A2],🟢 Confirmed,WP_333160639.1
-Microcoleus sp. Pol12B4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. Pol12B4],🟢 Confirmed,WP_333160571.1
-Microcoleus sp. Pol11C2,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. Pol11C2],🟢 Confirmed,WP_333138987.1
-Microcoleus sp. Pol11C3,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. Pol11C3],🟢 Confirmed,WP_333123480.1
 Microcoleus sp. S13C4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. S13C4],🟢 Confirmed,WP_333045987.1
-Microcoleus sp. AR_TQ3_B6,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. AR_TQ3_B6],🟢 Confirmed,WP_332957040.1
 Synechococcus sp. MU1643,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. MU1643],🟢 Confirmed,WP_226400724.1
 Aliterella atlantica,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Aliterella atlantica],🟢 Confirmed,WP_045055495.1
 Scytonema millei,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Scytonema millei],🟢 Confirmed,WP_039713448.1
 Almyronema sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Almyronema sp.],🟢 Confirmed,WP_462934784.1
 Kaarinaea lacus,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Kaarinaea lacus],🟢 Confirmed,WP_455200874.1
-Phormidium nigroviride,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Phormidium nigroviride],🟢 Confirmed,WP_449420773.1
-Myxosarcina sp. GI1(2024),alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Myxosarcina sp. GI1(2024)],🟢 Confirmed,WP_448999278.1
-Thermoleptolyngbya sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Thermoleptolyngbya sp.],🟢 Confirmed,WP_448599824.1
-Microcystis aeruginosa,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcystis aeruginosa],🟢 Confirmed,WP_272081932.1
 Oscillatoria sp. CS-180,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Oscillatoria sp. CS-180],🟢 Confirmed,WP_272061183.1
 Kamptonema animale,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Kamptonema animale],🟢 Confirmed,WP_272034960.1
 Roseofilum reptotaenium,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Roseofilum reptotaenium],🟢 Confirmed,WP_271940106.1
 Dolichospermum lemmermannii,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Dolichospermum lemmermannii],🟢 Confirmed,WP_271837082.1
 Dolichospermum circinale,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Dolichospermum circinale],🟢 Confirmed,WP_271805560.1
-Laspinema olomoucense,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Laspinema olomoucense],🟢 Confirmed,WP_261197717.1
 Nostoc sp. UHCC 0870,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. UHCC 0870],🟢 Confirmed,WP_237994276.1
 Synechococcus sp. WH 8101,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. WH 8101],🟢 Confirmed,WP_130130295.1
-Dulcicalothrix desertica,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Dulcicalothrix desertica],🟢 Confirmed,WP_127087109.1
 Synechococcus sp. MW101C3,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. MW101C3],🟢 Confirmed,WP_369802960.1
-Laspinema palackyanum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Laspinema palackyanum],🟢 Confirmed,WP_367289186.1
 Sodalinema gerasimenkoae,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Sodalinema gerasimenkoae],🟢 Confirmed,WP_343039306.1
-Leptodesmis sichuanensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptodesmis sichuanensis],🟢 Confirmed,WP_233747863.1
 Kamptonema formosum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Kamptonema formosum],🟢 Confirmed,WP_232731620.1
 Picosynechococcus sp. PCC 7117,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Picosynechococcus sp. PCC 7117],🟢 Confirmed,WP_232321487.1
 Picosynechococcus sp. PCC 73109,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Picosynechococcus sp. PCC 73109],🟢 Confirmed,WP_232308961.1
-Crocosphaera watsonii,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Crocosphaera watsonii],🟢 Confirmed,WP_231599008.1
 Amazonocrinis nigriterrae,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Amazonocrinis nigriterrae],🟢 Confirmed,WP_198128719.1
-Nostoc commune,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc commune],🟢 Confirmed,WP_196523986.1
 Nostoc sp. WHI,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. WHI],🟢 Confirmed,WP_196519052.1
 Nostoc sp. NZL,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. NZL],🟢 Confirmed,WP_196510147.1
-Chroococcidiopsis sp. [FACHB-1243],alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chroococcidiopsis sp [FACHB-1243]],🟢 Confirmed,WP_192161673.1
 Nostoc sp. FACHB-280,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. FACHB-280],🟢 Confirmed,WP_190981161.1
-Nostoc,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Nostoc],🟢 Confirmed,WP_190959685.1
 Nostoc punctiforme,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc punctiforme],🟢 Confirmed,WP_190951693.1
 Nostoc sp. FACHB-133,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. FACHB-133],🟢 Confirmed,WP_190935679.1
 Leptolyngbya sp. FACHB-261,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya sp. FACHB-261],🟢 Confirmed,WP_190805411.1
-unclassified Leptolyngbya,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [unclassified Leptolyngbya],🟢 Confirmed,WP_190775548.1
 Microcoleus sp. FACHB-68,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. FACHB-68],🟢 Confirmed,WP_190760535.1
 Tolypothrix sp. FACHB-123,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Tolypothrix sp. FACHB-123],🟢 Confirmed,WP_190752174.1
-Microcoleus vaginatus,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus vaginatus],🟢 Confirmed,WP_190743552.1
 Anabaena lutea,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Anabaena lutea],🟢 Confirmed,WP_190711210.1
-unclassified Nostoc,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [unclassified Nostoc],🟢 Confirmed,WP_190707995.1
 Nostoc sp. FACHB-110,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. FACHB-110],🟢 Confirmed,WP_190691565.1
 Nostoc sp. PA-18-2419,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. PA-18-2419],🟢 Confirmed,WP_138505189.1
 Picosynechococcus sp. PCC 11901,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Picosynechococcus sp. PCC 11901],🟢 Confirmed,WP_138072893.1
 Synechococcus sp. PCC 6312,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. PCC 6312],🟢 Confirmed,WP_041430895.1
 Cyanobium sp. NIVA-CYA 375,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Cyanobium sp. NIVA-CYA 375],🟢 Confirmed,WP_474479343.1
-Nostoc sp. DSM 114160,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. DSM 114160],🟢 Confirmed,WP_448273382.1
 unclassified Phormidesmis,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [unclassified Phormidesmis],🟢 Confirmed,WP_446858409.1
-Coleofasciculus sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Coleofasciculus sp.],🟢 Confirmed,WP_446418062.1
-Coleofasciculus chthonoplastes,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Coleofasciculus chthonoplastes],🟢 Confirmed,WP_446384694.1
 Coleofasciculus sp. D1-CHI-01,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Coleofasciculus sp. D1-CHI-01],🟢 Confirmed,WP_446373863.1
 Coleofasciculus sp. G2-EDA-02,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Coleofasciculus sp. G2-EDA-02],🟢 Confirmed,WP_446358121.1
 Coleofasciculus sp. F4-SAH-05,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Coleofasciculus sp. F4-SAH-05],🟢 Confirmed,WP_446351283.1
 Coleofasciculus sp. G1-WW12-02,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Coleofasciculus sp. G1-WW12-02],🟢 Confirmed,WP_446335867.1
-Nostoc sp. DSM 114161,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. DSM 114161],🟢 Confirmed,WP_445637582.1
 Nostoc sp. DSM 114167,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. DSM 114167],🟢 Confirmed,WP_445631375.1
-Microcoleus sp. AT8-B4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. AT8-B4],🟢 Confirmed,WP_445299789.1
 Anabaena sp. CCY 9910,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Anabaena sp. CCY 9910],🟢 Confirmed,WP_414754581.1
 Chlorogloeopsis sp. ULAP02,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chlorogloeopsis sp. ULAP02],🟢 Confirmed,WP_341996853.1
-Scytonema sp. NUACC26,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Scytonema sp. NUACC26],🟢 Confirmed,WP_407893809.1
 Planktothricoides raciborskii,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Planktothricoides raciborskii],🟢 Confirmed,WP_354635173.1
 Acaryochloris thomasi,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Acaryochloris thomasi],🟢 Confirmed,WP_110984983.1
-Chroococcidiopsis sp. CCALA 051,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chroococcidiopsis sp. CCALA 051],🟢 Confirmed,WP_106547168.1
 Chlorogloea sp. CCALA 695,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chlorogloea sp. CCALA 695],🟢 Confirmed,WP_106367378.1
 Stenomitos frigidus,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Stenomitos frigidus],🟢 Confirmed,WP_106255861.1
-Chroococcidiopsis cubana,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chroococcidiopsis cubana],🟢 Confirmed,WP_106168025.1
-Nostoc sp. 'Lobaria pulmonaria (5183) cyanobiont',alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. 'Lobaria pulmonaria (5183) cyanobiont'],🟢 Confirmed,WP_104907285.1
-Nostoc sp. 'Peltigera membranacea cyanobiont' N6,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. 'Peltigera membranacea cyanobiont' N6],🟢 Confirmed,WP_104901343.1
 Nostocales,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Nostocales],🟢 Confirmed,WP_041457959.1
 Cylindrospermum stagnale,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Cylindrospermum stagnale],🟢 Confirmed,WP_041233674.1
-unclassified Synechococcus,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [unclassified Synechococcus],🟢 Confirmed,WP_038000864.1
 unclassified Prochlorococcus,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [unclassified Prochlorococcus],🟢 Confirmed,WP_036917340.1
 Myxosarcina sp. GI1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Myxosarcina sp. GI1],🟢 Confirmed,WP_036484006.1
 Nostoc sp. C110,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. C110],🟢 Confirmed,WP_392482822.1
-Chlorogloeopsis fritschii,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chlorogloeopsis fritschii],🟢 Confirmed,WP_392435678.1
 Lyngbya sp. PCC 8106,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Lyngbya sp. PCC 8106],🟢 Confirmed,WP_232228560.1
 Gloeobacter morelensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Gloeobacter morelensis],🟢 Confirmed,WP_230842123.1
 Nostoc sp. CENA543,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. CENA543],🟢 Confirmed,WP_103136116.1
-Cylindrospermopsis raciborskii,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Cylindrospermopsis raciborskii],🟢 Confirmed,WP_102943203.1
-Fischerella thermalis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Fischerella thermalis],🟢 Confirmed,WP_102183269.1
 Dapis purpurea,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Dapis purpurea],🟢 Confirmed,WP_426549022.1
-Synechococcus sp. CCAP 1479/9,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. CCAP 1479/9],🟢 Confirmed,WP_216918617.1
 Synechococcus sp. CCY 9618,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. CCY 9618],🟢 Confirmed,WP_216900139.1
 Synechococcus sp. LTW-G,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. LTW-G],🟢 Confirmed,WP_459015522.1
 Microcoleus sp. OTE_8_concoct_300,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. OTE_8_concoct_300],🟢 Confirmed,WP_445250672.1
-Microcoleus sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp.],🟢 Confirmed,WP_445171113.1
 Symploca atlantica,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Symploca atlantica],🟢 Confirmed,WP_445102417.1
 Coleofasciculus sp. H7-2,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Coleofasciculus sp. H7-2],🟢 Confirmed,WP_378182911.1
 Almyronema,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Almyronema],🟢 Confirmed,WP_377966026.1
 Almyronema epifaneia,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Almyronema epifaneia],🟢 Confirmed,WP_377965025.1
 Mastigocoleus sp. MO_188.B34,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Mastigocoleus sp. MO_188.B34],🟢 Confirmed,WP_300632274.1
-Crocosphaera sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Crocosphaera sp.],🟢 Confirmed,WP_300509609.1
 Phormidium pseudopriestleyi,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Phormidium pseudopriestleyi],🟢 Confirmed,WP_207086105.1
 Pleurocapsa sp. CCALA 161,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Pleurocapsa sp. CCALA 161],🟢 Confirmed,WP_106237746.1
 Nostoc cycadae,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc cycadae],🟢 Confirmed,WP_103124039.1
 Fischerella muscicola,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Fischerella muscicola],🟢 Confirmed,WP_102204815.1
 Gloeocapsopsis sp. IPPAS B-1203,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Gloeocapsopsis sp. IPPAS B-1203],🟢 Confirmed,WP_099699601.1
-Nostoc linckia,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc linckia],🟢 Confirmed,WP_099073085.1
-Calothrix sp. NIES-2100,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Calothrix sp. NIES-2100],🟢 Confirmed,WP_096598876.1
-Calothrix sp. NIES-2098,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Calothrix sp. NIES-2098],🟢 Confirmed,WP_096588282.1
 Microcoleaceae,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Microcoleaceae],🟢 Confirmed,WP_094678479.1
-Nostoc sp. 'Peltigera membranacea cyanobiont' 210A,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. 'Peltigera membranacea cyanobiont' 210A],🟢 Confirmed,WP_094347891.1
-Nostoc sp. 'Peltigera membranacea cyanobiont' 232,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. 'Peltigera membranacea cyanobiont' 232],🟢 Confirmed,WP_094343123.1
-Nostoc sp. 'Peltigera membranacea cyanobiont' 213,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. 'Peltigera membranacea cyanobiont' 213],🟢 Confirmed,WP_094329582.1
-Leptolyngbya sp. NIES-2104,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya sp. NIES-2104],🟢 Confirmed,WP_058997044.1
 Leptolyngbya sp. KIOST-1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya sp. KIOST-1],🟢 Confirmed,WP_035984656.1
 Crocosphaera chwakensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Crocosphaera chwakensis],🟢 Confirmed,WP_035798806.1
 Mastigocoleus testarum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Mastigocoleus testarum],🟢 Confirmed,WP_027844386.1
@@ -1268,9 +1482,7 @@ Planktothrix rubescens,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosy
 Fischerella sp. PCC 9605,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Fischerella sp. PCC 9605],🟢 Confirmed,WP_026733252.1
 Nodosilinea sp. AN01ver1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nodosilinea sp. AN01ver1],🟢 Confirmed,WP_430714706.1
 Aetokthonos hydrillicola,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Aetokthonos hydrillicola],🟢 Confirmed,WP_208345612.1
-Thermoleptolyngbya sp. PKUAC-SCTB121,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Thermoleptolyngbya sp. PKUAC-SCTB121],🟢 Confirmed,WP_205369459.1
 Spirulina sp. CCY15215,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Spirulina sp. CCY15215],🟢 Confirmed,WP_204104266.1
-Aphanizomenonaceae,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Aphanizomenonaceae],🟢 Confirmed,WP_187705195.1
 Nostoc sphaeroides,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sphaeroides],🟢 Confirmed,WP_118167809.1
 Cylindrospermopsis sp. CR12,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Cylindrospermopsis sp. CR12],🟢 Confirmed,WP_057178215.1
 Synechococcus sp. CC9616,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. CC9616],🟢 Confirmed,WP_028953157.1
@@ -1278,40 +1490,25 @@ unclassified Synechocystis,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amyl
 Gloeobacter kilaueensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Gloeobacter kilaueensis],🟢 Confirmed,WP_023175214.1
 Lyngbya aestuarii,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Lyngbya aestuarii],🟢 Confirmed,WP_023069352.1
 Rubidibacter lacunae,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Rubidibacter lacunae],🟢 Confirmed,WP_022607004.1
-Tolypothrix sp. NIES-4075,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Tolypothrix sp. NIES-4075],🟢 Confirmed,WP_200819369.1
 Nostoc spongiaeforme,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc spongiaeforme],🟢 Confirmed,WP_190971041.1
-Nostoc flagelliforme,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc flagelliforme],🟢 Confirmed,WP_190942259.1
-Nostoc sp. FACHB-892,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. FACHB-892],🟢 Confirmed,WP_190919004.1
-Iningainema tapete,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Iningainema tapete],🟢 Confirmed,WP_190835406.1
-Coleofasciculus sp. FACHB-1120,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Coleofasciculus sp. FACHB-1120],🟢 Confirmed,WP_190822228.1
-Nostoc sp. FACHB-888,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. FACHB-888],🟢 Confirmed,WP_190731963.1
 Microcystis flos-aquae,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcystis flos-aquae],🟢 Confirmed,WP_190719768.1
 Leptolyngbya sp. FACHB-671,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya sp. FACHB-671],🟢 Confirmed,WP_190685931.1
-Microcoleus sp. FACHB-672,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. FACHB-672],🟢 Confirmed,WP_190668553.1
 Leptolyngbya,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Leptolyngbya],🟢 Confirmed,WP_190649174.1
-unclassified Calothrix,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [unclassified Calothrix],🟢 Confirmed,WP_190628201.1
 Synechococcus sp. FACHB-909,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. FACHB-909],🟢 Confirmed,WP_190612368.1
 Nostoc parmelioides,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc parmelioides],🟢 Confirmed,WP_190569054.1
 Anabaena sphaerica,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Anabaena sphaerica],🟢 Confirmed,WP_190561820.1
-Calothrix,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Calothrix],🟢 Confirmed,WP_190545812.1
 Limnospira,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Limnospira],🟢 Confirmed,WP_111892552.1
 Picosynechococcus sp. NKBG042902,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Picosynechococcus sp. NKBG042902],🟢 Confirmed,WP_030007532.1
-Leptolyngbya sp. FACHB-541,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya sp. FACHB-541],🟢 Confirmed,WP_199318876.1
 Synechococcus sp. LTW-R,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. LTW-R],🟢 Confirmed,WP_185187689.1
 Gloeocapsa sp. PCC 7428,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Gloeocapsa sp. PCC 7428],🟢 Confirmed,WP_051038419.1
 Scytonema hofmannii,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Scytonema hofmannii],🟢 Confirmed,WP_026134762.1
 Pleurocapsa sp. PCC 7319,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Pleurocapsa sp. PCC 7319],🟢 Confirmed,WP_026102763.1
-Aliinostoc sp. HNIBRCY26,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Aliinostoc sp. HNIBRCY26],🟢 Confirmed,WP_427159710.1
 Dapis brunnea,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Dapis brunnea],🟢 Confirmed,WP_426591378.1
-Dapis hubbardiae,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Dapis hubbardiae],🟢 Confirmed,WP_426563500.1
 Okeania sp. SIO1F9,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Okeania sp. SIO1F9],🟢 Confirmed,WP_353769804.1
 Synechocystis sp. LKSZ1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechocystis sp. LKSZ1],🟢 Confirmed,WP_353673894.1
 Prochlorothrix hollandica,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Prochlorothrix hollandica],🟢 Confirmed,WP_353258001.1
-Prochlorococcus marinus,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Prochlorococcus marinus],🟢 Confirmed,WP_269623166.1
-Thermocoleostomius sinensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Thermocoleostomius sinensis],🟢 Confirmed,WP_268612724.1
 Cyanobacterium sp. uoEpiScrs1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Cyanobacterium sp. uoEpiScrs1],🟢 Confirmed,WP_267383570.1
 Candidatus Synechococcus spongiarum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Candidatus Synechococcus spongiarum],🟢 Confirmed,WP_257242944.1
-Oscillatoria salina,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Oscillatoria salina],🟢 Confirmed,WP_224412601.1
 Synechococcus sp. MEDNS5,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. MEDNS5],🟢 Confirmed,WP_186583686.1
 Synechococcus sp. PROS-U-1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. PROS-U-1],🟢 Confirmed,WP_186569983.1
 Synechococcus sp. BIOS-E4-1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. BIOS-E4-1],🟢 Confirmed,WP_186539104.1
@@ -1336,16 +1533,10 @@ Anabaena,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosy
 Chroococcidiopsis,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Chroococcidiopsis],🟢 Confirmed,WP_015157227.1
 Oxynema acuminatum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Oxynema acuminatum],🟢 Confirmed,WP_015146457.1
 Pleurocapsa sp. PCC 7327,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Pleurocapsa sp. PCC 7327],🟢 Confirmed,WP_015141993.1
-Nostocaceae,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Nostocaceae],🟢 Confirmed,WP_010994346.1
-Trichothermofontia sichuanensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Trichothermofontia sichuanensis],🟢 Confirmed,WP_265900310.1
 Nostoc sp. KVJ3,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. KVJ3],🟢 Confirmed,WP_265274171.1
-Argonema galeatum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Argonema galeatum],🟢 Confirmed,WP_249106035.1
-Argonema antarcticum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Argonema antarcticum],🟢 Confirmed,WP_249067963.1
 Synechococcus sp. A10-1-5-1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. A10-1-5-1],🟢 Confirmed,WP_247911046.1
 Synechococcus sp. NB0720_010,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. NB0720_010],🟢 Confirmed,WP_247478543.1
-Leptothoe kymatousa,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptothoe kymatousa],🟢 Confirmed,WP_215618910.1
 Atlanticothrix silvestris,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Atlanticothrix silvestris],🟢 Confirmed,WP_214441783.1
-Dendronalium phyllosphericum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Dendronalium phyllosphericum],🟢 Confirmed,WP_214430705.1
 Tolypothrix sp. PCC 7910,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Tolypothrix sp. PCC 7910],🟢 Confirmed,WP_167724473.1
 Pseudanabaena sp. PCC 9330,alpha-amylase,3.2.1.1,starch,alpha-amylase [Pseudanabaena sp. PCC 9330],🟢 Confirmed,WP_473152881.1
 Pseudanabaena sp. PCC 9330,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Pseudanabaena sp. PCC 9330],🟢 Confirmed,WP_473152788.1
@@ -1369,8 +1560,6 @@ Dolichospermum sp. UHCC 0352,alpha-amylase,3.2.1.1,starch,alpha-amylase family g
 Anabaena sp. UHCC 0253,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Anabaena sp. UHCC 0253],🟢 Confirmed,WP_168535509.1
 Lyngbya confervoides,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Lyngbya confervoides],🟢 Confirmed,WP_166282317.1
 Nostoc sp. UIC 10630,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. UIC 10630],🟢 Confirmed,WP_163933632.1
-Nostoc sp. 106C,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. 106C],🟢 Confirmed,WP_086768442.1
-Nostoc sp. T09,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. T09],🟢 Confirmed,WP_086686344.1
 Planktothrix serta,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Planktothrix serta],🟢 Confirmed,WP_083621699.1
 Planktothrix paucivesiculata,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Planktothrix paucivesiculata],🟢 Confirmed,WP_083618882.1
 Crocosphaera subtropica,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Crocosphaera subtropica],🟢 Confirmed,WP_012362304.1
@@ -1383,24 +1572,15 @@ Microcoleus sp. PH2017_30_WIL_O_A,alpha-amylase,3.2.1.1,starch,alpha-amylase fam
 Okeania sp. SIO2C9,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Okeania sp. SIO2C9],🟢 Confirmed,WP_293165317.1
 Okeania sp. SIO1I7,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Okeania sp. SIO1I7],🟢 Confirmed,WP_293120335.1
 Moorena sp. SIO4G3,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Moorena sp. SIO4G3],🟢 Confirmed,WP_293113414.1
-Okeania sp. SIO3B5,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Okeania sp. SIO3B5],🟢 Confirmed,WP_293080408.1
-Okeania sp. SIO2B3,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Okeania sp. SIO2B3],🟢 Confirmed,WP_293064016.1
 Moorena sp. SIO1F2,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Moorena sp. SIO1F2],🟢 Confirmed,WP_293041927.1
 Moorena sp. SIO3I8,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Moorena sp. SIO3I8],🟢 Confirmed,WP_293021283.1
-Nostoc sp. LPT,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. LPT],🟢 Confirmed,WP_292866230.1
 Nostoc sp. NMS8,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. NMS8],🟢 Confirmed,WP_292853924.1
-Nostoc sp. NMS7,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. NMS7],🟢 Confirmed,WP_292799023.1
 Nostoc sp. NMS9,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. NMS9],🟢 Confirmed,WP_292777875.1
-Nostoc sp. NOS(2021),alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. NOS(2021)],🟢 Confirmed,WP_292772056.1
-Nostoc sp. JL31,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. JL31],🟢 Confirmed,WP_292740668.1
-Fischerella sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Fischerella sp.],🟢 Confirmed,WP_290889926.1
 unclassified Microcystis (in: cyanobacteria),alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [unclassified Microcystis (in: cyanobacteria)],🟢 Confirmed,WP_288102946.1
 Microcystis sp. LE18-22.4A,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcystis sp. LE18-22.4A],🟢 Confirmed,WP_288036350.1
 Microcystis sp. M179S2,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcystis sp. M179S2],🟢 Confirmed,WP_287739565.1
 Microcystis,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Microcystis],🟢 Confirmed,WP_287661937.1
 Synechococcus sp. RSCCF101,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. RSCCF101],🟢 Confirmed,WP_225323003.1
-Kovacikia minuta,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Kovacikia minuta],🟢 Confirmed,WP_224344536.1
-Nostoc sp. MS1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. MS1],🟢 Confirmed,WP_224091523.1
 Planktothrix tepida,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Planktothrix tepida],🟢 Confirmed,WP_222425182.1
 Phormidium tenue,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Phormidium tenue],🟢 Confirmed,WP_084173717.1
 Okeania sp. SIO2C2,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Okeania sp. SIO2C2],🟢 Confirmed,WP_287522016.1
@@ -1411,18 +1591,14 @@ Candidatus Cyanaurora vandensis,alpha-amylase,3.2.1.1,starch,alpha-amylase famil
 Synechococcus sp. CCY 0621,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. CCY 0621],🟢 Confirmed,WP_286194293.1
 Vacuolonema iberomarrocanum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Vacuolonema iberomarrocanum],🟢 Confirmed,WP_439345379.1
 Anabaena sp. WFMT,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Anabaena sp. WFMT],🟢 Confirmed,WP_438891848.1
-Chroococcidiopsis sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chroococcidiopsis sp.],🟢 Confirmed,WP_438553465.1
 Nostoc sp. CALU 1950,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. CALU 1950],🟢 Confirmed,WP_435025802.1
 Pantanalinema sp. GBBB05,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Pantanalinema sp. GBBB05],🟢 Confirmed,WP_432811808.1
-Tolypothrix sp. VBCCA 56010,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Tolypothrix sp. VBCCA 56010],🟢 Confirmed,WP_432553438.1
 Geminocystis sp. CENA526,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Geminocystis sp. CENA526],🟢 Confirmed,WP_431708021.1
-Pantanalinema rosaneae,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Pantanalinema rosaneae],🟢 Confirmed,WP_431660520.1
 Alkalinema pantanalense,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Alkalinema pantanalense],🟢 Confirmed,WP_431630588.1
 Limnospira platensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Limnospira platensis],🟢 Confirmed,WP_431620743.1
 Dapis brunnea,alpha-amylase,3.2.1.1,starch,alpha-amylase [Dapis brunnea],🟢 Confirmed,WP_426582836.1
 Dapis hubbardiae,alpha-amylase,3.2.1.1,starch,alpha-amylase [Dapis hubbardiae],🟢 Confirmed,WP_426559644.1
 Dapis purpurea,alpha-amylase,3.2.1.1,starch,alpha-amylase [Dapis purpurea],🟢 Confirmed,WP_426549017.1
-Scytonema sp. UIC 10036,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Scytonema sp. UIC 10036],🟢 Confirmed,WP_155746546.1
 [Limnothrix rosea] IAM M-220,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [[Limnothrix rosea] IAM M-220],🟢 Confirmed,WP_075891173.1
 Microcystis sp. LE19-131.1A,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcystis sp. LE19-131.1A],🟢 Confirmed,WP_288125112.1
 Microcystis sp. M169S2,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcystis sp. M169S2],🟢 Confirmed,WP_287745120.1
@@ -1431,25 +1607,18 @@ Microcystis sp. M090S1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosy
 Pseudanabaena mucicola,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Pseudanabaena mucicola],🟢 Confirmed,WP_286396327.1
 Halotia branconii,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Halotia branconii],🟢 Confirmed,WP_281482275.1
 Synechocystis salina,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechocystis salina],🟢 Confirmed,WP_338116561.1
-Leptolyngbya sp. GGD,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya sp. GGD],🟢 Confirmed,WP_268179855.1
 Synechococcus sp. CC9311,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. CC9311],🟢 Confirmed,WP_011618333.1
 Synechococcus sp. CC9902,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. CC9902],🟢 Confirmed,WP_011360978.1
 Microcystis aeruginosa,alpha-amylase,3.2.1.1,starch,Alpha-amylase [Microcystis aeruginosa],🟢 Confirmed,CAO7107595.1
 Xenococcus sp. PCC 7305,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Xenococcus sp. PCC 7305],🟢 Confirmed,WP_006509702.1
 Nostoc sp. C117,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. C117],🟢 Confirmed,WP_392531811.1
-Tychonema litorale,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Tychonema litorale],🟢 Confirmed,WP_236508238.1
 Tychonema litorale,alpha-amylase,3.2.1.1,starch,alpha-amylase [Tychonema litorale],🟢 Confirmed,WP_236505082.1
 Trichothermofontia sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Trichothermofontia sp.],🟢 Confirmed,WP_448573100.1
 Phormidesmis priestleyi,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Phormidesmis priestleyi],🟢 Confirmed,WP_448281233.1
-Nostoc sp. DSM 114159,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. DSM 114159],🟢 Confirmed,WP_448268044.1
-Coleofasciculus sp. C1-SOL-03,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Coleofasciculus sp. C1-SOL-03],🟢 Confirmed,WP_446405656.1
 Coleofasciculus sp. E1-EBD-02,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Coleofasciculus sp. E1-EBD-02],🟢 Confirmed,WP_446398923.1
 Coleofasciculus sp. B1-GNL1-01,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Coleofasciculus sp. B1-GNL1-01],🟢 Confirmed,WP_446392504.1
 Coleofasciculus sp. E2-BRE-01,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Coleofasciculus sp. E2-BRE-01],🟢 Confirmed,WP_446384102.1
-Coleofasciculus sp. G3-WIS-01,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Coleofasciculus sp. G3-WIS-01],🟢 Confirmed,WP_446368843.1
 Coleofasciculus sp. A1-SPW-01,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Coleofasciculus sp. A1-SPW-01],🟢 Confirmed,WP_446357904.1
-Leptodesmis sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptodesmis sp.],🟢 Confirmed,WP_445925805.1
-Microcoleus sp. MOSTC5,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. MOSTC5],🟢 Confirmed,WP_445301571.1
 Planktothrix rubescens CCAP 1459/22,alpha-amylase,3.2.1.1,starch,Alpha-amylase [Planktothrix rubescens CCAP 1459/22],🟢 Confirmed,CAC5341654.1
 Dolichospermum sp. UHCC 0315A,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Dolichospermum sp. UHCC 0315A],🟢 Confirmed,WP_148765249.1
 Moorena bouillonii,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Moorena bouillonii],🟢 Confirmed,WP_075902146.1
@@ -1495,7 +1664,6 @@ Nostoc sp. EfeVER01,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl h
 Nostoc sp. DedQUE07,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. DedQUE07],🟢 Confirmed,WP_322686563.1
 Nostoc sp. DedQUE05,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. DedQUE05],🟢 Confirmed,WP_322674244.1
 Nostoc sp. DedQUE09,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. DedQUE09],🟢 Confirmed,WP_322668816.1
-Dendronalium sp. ChiSLP03b,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Dendronalium sp. ChiSLP03b],🟢 Confirmed,WP_322665240.1
 Nostoc sp. CmiVER01,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. CmiVER01],🟢 Confirmed,WP_322655629.1
 Nostoc sp. ChiVER01,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. ChiVER01],🟢 Confirmed,WP_322651151.1
 Prochlorococcus sp. MIT 1341,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Prochlorococcus sp. MIT 1341],🟢 Confirmed,WP_320674782.1
@@ -1518,16 +1686,12 @@ Coccomyxa sp. KJ,alpha-amylase,3.2.1.1,starch,Probable alpha-amylase 2 [Coccomyx
 Coccomyxa sp. KJ,alpha-amylase,3.2.1.1,starch,Alpha-amylase [Coccomyxa sp. KJ],🟢 Confirmed,BHG24178.1
 Scytonema sp. NUACC21,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Scytonema sp. NUACC21],🟢 Confirmed,WP_460204268.1
 Aerosakkonema funiforme,alpha-amylase,3.2.1.1,starch,alpha-amylase [Aerosakkonema funiforme],🟢 Confirmed,WP_461310683.1
-Nostoc sp. UIC 10890,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. UIC 10890],🟢 Confirmed,WP_460333009.1
 Scytonema sp. NUACC21,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Scytonema sp. NUACC21],🟢 Confirmed,WP_460206576.1
-Floridanema aerugineum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Floridanema aerugineum],🟢 Confirmed,WP_459563833.1
-Floridanema fluviatile,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Floridanema fluviatile],🟢 Confirmed,WP_459562957.1
 Nostoc sp. FACHB-892,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Nostoc sp. FACHB-892],🟢 Confirmed,YCN09823.1
 Kaarinaea lacus,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Kaarinaea lacus],🟢 Confirmed,WP_455220406.1
 Microcoleus sp. T2B6,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. T2B6],🟢 Confirmed,WP_333412433.1
 Microcoleus sp. MON1_C1,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. MON1_C1],🟢 Confirmed,WP_333405562.1
 Microcoleus sp. N9_B4,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. N9_B4],🟢 Confirmed,WP_333370804.1
-unclassified Microcoleus,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family protein [unclassified Microcoleus],🟢 Confirmed,WP_333254379.1
 Microcoleus sp. S13_B4,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. S13_B4],🟢 Confirmed,WP_333176459.1
 Microcoleus sp. S13C4,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. S13C4],🟢 Confirmed,WP_333045607.1
 Microcoleus sp. AR_TQ3_B6,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. AR_TQ3_B6],🟢 Confirmed,WP_332959989.1
@@ -1537,6 +1701,7 @@ Cyanobacterium sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase [Cyanobacterium sp
 Vacuolonema iberomarrocanum,alpha-amylase,3.2.1.1,starch,alpha-amylase [Vacuolonema iberomarrocanum],🟢 Confirmed,WP_439342023.1
 Thermostichus sp. MS-CIW-37,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Thermostichus sp. MS-CIW-37],🟢 Confirmed,WP_457465826.1
 Phormidium nigroviride,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Phormidium nigroviride],🟢 Confirmed,WP_449419729.1
+unclassified Microcoleus,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family protein [unclassified Microcoleus],🟢 Confirmed,WP_293297536.1
 Chlorogloeopsis sp. ULAP01,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Chlorogloeopsis sp. ULAP01],🟢 Confirmed,WP_289789522.1
 Chlorogloeopsis fritschii,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Chlorogloeopsis fritschii],🟢 Confirmed,WP_276747369.1
 Microcystis aeruginosa,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcystis aeruginosa],🟢 Confirmed,WP_272082559.1
@@ -1602,49 +1767,30 @@ Nodularia sp. CChRGM 3473,alpha-amylase,3.2.1.1,starch,MAG: alpha-amylase [Nodul
 Egbenema bharatensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Egbenema bharatensis],🟢 Confirmed,WP_416676363.1
 Egbenema bharatensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Egbenema bharatensis],🟢 Confirmed,WP_416674940.1
 Egbenema bharatensis,alpha-amylase,3.2.1.1,starch,alpha-amylase [Egbenema bharatensis],🟢 Confirmed,WP_416668442.1
-unclassified Microcoleus,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase [unclassified Microcoleus],🟢 Confirmed,WP_333349952.1
-Microcoleus,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase [Microcoleus],🟢 Confirmed,WP_333217046.1
 Microcoleus vaginatus,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus vaginatus],🟢 Confirmed,WP_190737905.1
 Microcoleus sp. MOSTC5,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. MOSTC5],🟢 Confirmed,WP_445301572.1
-Microcoleus sp. Pol10D4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. Pol10D4],🟢 Confirmed,WP_333459394.1
 Microcoleus sp. K5-D4,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. K5-D4],🟢 Confirmed,WP_333451066.1
-Microcoleus sp. herbarium2,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. herbarium2],🟢 Confirmed,WP_333447001.1
-Microcoleus sp. D3_18_C4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. D3_18_C4],🟢 Confirmed,WP_333446381.1
-Microcoleus sp. herbarium2,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. herbarium2],🟢 Confirmed,WP_333440236.1
-Microcoleus sp. MON2_D5,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. MON2_D5],🟢 Confirmed,WP_333431003.1
 Microcoleus sp. MON2_D5,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. MON2_D5],🟢 Confirmed,WP_333430263.1
 Microcoleus sp. MON2_D5,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. MON2_D5],🟢 Confirmed,WP_333430176.1
 Microcoleus sp. F4-D5,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. F4-D5],🟢 Confirmed,WP_333429097.1
-Microcoleus sp. T2B6,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. T2B6],🟢 Confirmed,WP_333413207.1
 Microcoleus sp. MON1_C1,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. MON1_C1],🟢 Confirmed,WP_333407269.1
-Microcoleus sp. MON1_C1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. MON1_C1],🟢 Confirmed,WP_333405577.1
-Microcoleus sp. N9_A1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. N9_A1],🟢 Confirmed,WP_333397848.1
-Microcoleus sp. AT8-B4,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. AT8-B4],🟢 Confirmed,WP_333395535.1
-Microcoleus sp. B6-A1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. B6-A1],🟢 Confirmed,WP_333392172.1
 Microcoleus sp. Z1_A1,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. Z1_A1],🟢 Confirmed,WP_333390427.1
 Microcoleus sp. N9_B4,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. N9_B4],🟢 Confirmed,WP_333378268.1
 Microcoleus sp. Z1_B2,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. Z1_B2],🟢 Confirmed,WP_333373334.1
-Microcoleus sp. N9_B4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. N9_B4],🟢 Confirmed,WP_333371909.1
 Microcoleus sp. AT3-D2,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. AT3-D2],🟢 Confirmed,WP_333369333.1
 Microcoleus sp. AT3-D2,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. AT3-D2],🟢 Confirmed,WP_333364651.1
 Microcoleus sp. B3-A4,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. B3-A4],🟢 Confirmed,WP_333355449.1
-Microcoleus sp. B3-A4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. B3-A4],🟢 Confirmed,WP_333351295.1
 Microcoleus sp. B3-A4,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. B3-A4],🟢 Confirmed,WP_333348867.1
 Microcoleus sp. BROC3,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. BROC3],🟢 Confirmed,WP_333338705.1
-Microcoleus sp. BROC3,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. BROC3],🟢 Confirmed,WP_333333050.1
-Microcoleus sp. T3_A4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. T3_A4],🟢 Confirmed,WP_333328347.1
 Microcoleus sp. LAD1_D3,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. LAD1_D3],🟢 Confirmed,WP_333327763.1
 Microcoleus sp. LAD1_D3,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. LAD1_D3],🟢 Confirmed,WP_333326057.1
 Microcoleus sp. B4-C1,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. B4-C1],🟢 Confirmed,WP_333320838.1
 Microcoleus sp. B4-C1,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. B4-C1],🟢 Confirmed,WP_333320478.1
 Microcoleus sp. Z1_B5,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. Z1_B5],🟢 Confirmed,WP_333314046.1
-Microcoleus sp. B7-D4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. B7-D4],🟢 Confirmed,WP_333310940.1
 Microcoleus sp. B7-D4,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. B7-D4],🟢 Confirmed,WP_333310688.1
 Microcoleus sp. D2_18a_B4,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. D2_18a_B4],🟢 Confirmed,WP_333289665.1
-Microcoleus sp. D2_18a_B4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. D2_18a_B4],🟢 Confirmed,WP_333288483.1
 Microcoleus sp. D2_18a_B4,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. D2_18a_B4],🟢 Confirmed,WP_333284159.1
 Microcoleus sp. D3_18_C2,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. D3_18_C2],🟢 Confirmed,WP_333270915.1
-Microcoleus sp. BR0-C5,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. BR0-C5],🟢 Confirmed,WP_333228482.1
 Microcoleus sp. BR0-C5,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. BR0-C5],🟢 Confirmed,WP_333227644.1
 Microcoleus sp. BR0-C5,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. BR0-C5],🟢 Confirmed,WP_333224473.1
 Microcoleus sp. Pol12A5,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. Pol12A5],🟢 Confirmed,WP_333222662.1
@@ -1654,7 +1800,6 @@ Microcoleus sp. Pol12A4,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus 
 Microcoleus sp. Pol12B4,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. Pol12B4],🟢 Confirmed,WP_333167713.1
 Microcoleus sp. B9-D4,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. B9-D4],🟢 Confirmed,WP_333157027.1
 Microcoleus sp. B9-D4,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. B9-D4],🟢 Confirmed,WP_333151287.1
-Microcoleus sp. B9-D4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. B9-D4],🟢 Confirmed,WP_333151124.1
 Microcoleus sp. Pol11C2,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. Pol11C2],🟢 Confirmed,WP_333141758.1
 Microcoleus sp. Pol11C2,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. Pol11C2],🟢 Confirmed,WP_333137443.1
 Microcoleus sp. Pol11C3,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. Pol11C3],🟢 Confirmed,WP_333131732.1
@@ -1663,21 +1808,16 @@ Microcoleus sp. OTE_8_concoct_300,alpha-amylase,3.2.1.1,starch,alpha-amylase fam
 Microcoleus sp. D2_18a_D3,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. D2_18a_D3],🟢 Confirmed,WP_333438424.1
 Microcoleus sp. D2_18a_D3,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. D2_18a_D3],🟢 Confirmed,WP_333434621.1
 Microcoleus sp. POL10_C6,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. POL10_C6],🟢 Confirmed,WP_333390838.1
-Microcoleus sp. POL10_C6,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. POL10_C6],🟢 Confirmed,WP_333386423.1
 Microcoleus sp. POL10_C6,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. POL10_C6],🟢 Confirmed,WP_333385066.1
 Microcoleus sp. N3A4,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. N3A4],🟢 Confirmed,WP_333361250.1
-Microcoleus sp. N3A4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. N3A4],🟢 Confirmed,WP_333357072.1
 Microcoleus sp. D3_18a_C4,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. D3_18a_C4],🟢 Confirmed,WP_333321629.1
 Microcoleus sp. MON1_C5,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. MON1_C5],🟢 Confirmed,WP_333288622.1
-Microcoleus sp. MON1_C5,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. MON1_C5],🟢 Confirmed,WP_333285234.1
 Microcoleus sp. MON1_C5,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. MON1_C5],🟢 Confirmed,WP_333281873.1
 Microcoleus sp. S13_C5,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. S13_C5],🟢 Confirmed,WP_333261520.1
 Microcoleus sp. Pol12B5,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. Pol12B5],🟢 Confirmed,WP_333233386.1
 Microcoleus sp. Pol12B5,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. Pol12B5],🟢 Confirmed,WP_333226473.1
-Microcoleus sp. S28C3,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. S28C3],🟢 Confirmed,WP_333200787.1
 Microcoleus sp. B3-D7,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. B3-D7],🟢 Confirmed,WP_333185000.1
 Microcoleus sp. B3-D7,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. B3-D7],🟢 Confirmed,WP_333183890.1
-Microcoleus sp. B3-D7,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. B3-D7],🟢 Confirmed,WP_333183229.1
 Microcoleus sp. S13_B4,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. S13_B4],🟢 Confirmed,WP_333178235.1
 Microcoleus sp. AR_TQ3_B6,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. AR_TQ3_B6],🟢 Confirmed,WP_332958720.1
 Microcoleus sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp.],🟢 Confirmed,WP_445176641.1
@@ -1704,172 +1844,77 @@ Cylindrospermopsis raciborskii G7,alpha-amylase,3.2.1.1,starch,alpha-amylase fam
 Oscillatoriales,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Oscillatoriales],🟢 Confirmed,WP_410244874.1
 Limnospira platensis,alpha-amylase,3.2.1.1,starch,alpha-amylase [Limnospira platensis],🟢 Confirmed,WP_434222069.1
 Leptolyngbya sp. AN02str,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya sp. AN02str],🟢 Confirmed,WP_430686462.1
-Moorena producens,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Moorena producens],🟢 Confirmed,WP_424094854.1
-Leptothermofonsia sp. ETS-13,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptothermofonsia sp. ETS-13],🟢 Confirmed,WP_421655947.1
 Nostoc sp. CALU 546,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. CALU 546],🟢 Confirmed,WP_420758479.1
-Synechococcus sp. A10-1-5-9,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. A10-1-5-9],🟢 Confirmed,WP_415409051.1
 Synechococcus sp. W4D4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. W4D4],🟢 Confirmed,WP_415399913.1
-Calothrix sp. CCY 0018,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Calothrix sp. CCY 0018],🟢 Confirmed,WP_414625026.1
-Scytonema sp. PCC 10023,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Scytonema sp. PCC 10023],🟢 Confirmed,WP_414583216.1
-Anabaena sp. CCY 9402-a,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Anabaena sp. CCY 9402-a],🟢 Confirmed,WP_414578887.1
 Nostoc sp. CCY 9925,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. CCY 9925],🟢 Confirmed,WP_414572850.1
-unclassified Anabaena,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [unclassified Anabaena],🟢 Confirmed,WP_414565896.1
 Anabaena sp. CCY 0017,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Anabaena sp. CCY 0017],🟢 Confirmed,WP_414551270.1
-Nostoc sp. CCY0012,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. CCY0012],🟢 Confirmed,WP_414545606.1
-Nodularia chucula,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nodularia chucula],🟢 Confirmed,WP_414530157.1
 Synechococcus sp. H55.10,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. H55.10],🟢 Confirmed,WP_414519794.1
-Nostoc sp. PCC 9305,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. PCC 9305],🟢 Confirmed,WP_414518522.1
 Synechococcus sp. OH20,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. OH20],🟢 Confirmed,WP_414509719.1
 Synechococcus sp. W55.2,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. W55.2],🟢 Confirmed,WP_414384355.1
-Cyanobium sp. ATX-6F1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Cyanobium sp. ATX-6F1],🟢 Confirmed,WP_414026344.1
-Synechococcus sp. MIT S9507,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. MIT S9507],🟢 Confirmed,WP_413745455.1
-Synechococcus sp. MIT S9451,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. MIT S9451],🟢 Confirmed,WP_413745096.1
-Synechococcus sp. MIT S1220,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. MIT S1220],🟢 Confirmed,WP_413441735.1
 Synechococcus sp. Cu2B8-bc1011,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. Cu2B8-bc1011],🟢 Confirmed,WP_413430294.1
-Synechococcus sp. MIT S9503,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. MIT S9503],🟢 Confirmed,WP_413324016.1
-Synechococcus sp. MIT S9452,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. MIT S9452],🟢 Confirmed,WP_413296211.1
-Floridanema evergladense,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Floridanema evergladense],🟢 Confirmed,WP_413279436.1
-Floridanema flaviceps,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Floridanema flaviceps],🟢 Confirmed,WP_413268278.1
-Nostoc piscinale,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc piscinale],🟢 Confirmed,WP_413200570.1
 Anabaena azotica,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Anabaena azotica],🟢 Confirmed,WP_413173594.1
-Capilliphycus salinus,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Capilliphycus salinus],🟢 Confirmed,WP_413168155.1
-Nostoc sp. UIC 10607,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. UIC 10607],🟢 Confirmed,WP_412982811.1
-Aphanothece,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Aphanothece],🟢 Confirmed,WP_412006770.1
-Vulcanococcus limneticus,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Vulcanococcus limneticus],🟢 Confirmed,WP_411876352.1
 Nodosilinea sp. PGN35,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nodosilinea sp. PGN35],🟢 Confirmed,WP_411840803.1
-Parasynechococcus sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Parasynechococcus sp.],🟢 Confirmed,WP_407396015.1
-Synechococcus sp. HIMB2401,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. HIMB2401],🟢 Confirmed,WP_390128964.1
-Planktothrix sp. FACHB-1365,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Planktothrix sp. FACHB-1365],🟢 Confirmed,WP_375539502.1
-Microseira sp. BLCC-F43,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microseira sp. BLCC-F43],🟢 Confirmed,WP_374886025.1
 Pelatocladus sp. BLCC-F211,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Pelatocladus sp. BLCC-F211],🟢 Confirmed,WP_374874819.1
-Aerosakkonema sp. BLCC-F183,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Aerosakkonema sp. BLCC-F183],🟢 Confirmed,WP_374827315.1
-Aerosakkonema funiforme,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Aerosakkonema funiforme],🟢 Confirmed,WP_374792232.1
-Aerosakkonema,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Aerosakkonema],🟢 Confirmed,WP_374790109.1
-Chamaesiphon sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chamaesiphon sp.],🟢 Confirmed,WP_373547799.1
-Microcoleus sp. CAWBG58,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. CAWBG58],🟢 Confirmed,WP_367275481.1
 Anabaena sp. AL93,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Anabaena sp. AL93],🟢 Confirmed,WP_367142456.1
 Microcoleus sp. PH2017_05_CCC_O_A,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. PH2017_05_CCC_O_A],🟢 Confirmed,WP_366038738.1
 Microcoleus sp. PH2017_02_FOX_O_A,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. PH2017_02_FOX_O_A],🟢 Confirmed,WP_363319679.1
 Funiculus sociatus,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Funiculus sociatus],🟢 Confirmed,WP_348252788.1
 Leptolyngbya sp. GB1-A1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya sp. GB1-A1],🟢 Confirmed,WP_348247868.1
-Leptolyngbya sp. DQ-M1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya sp. DQ-M1],🟢 Confirmed,WP_348242411.1
 Trichocoleus sp. Lan,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Trichocoleus sp. Lan],🟢 Confirmed,WP_348238176.1
 Trichocoleus sp. DQ-U1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Trichocoleus sp. DQ-U1],🟢 Confirmed,WP_348233718.1
-Trichocoleus desertorum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Trichocoleus desertorum],🟢 Confirmed,WP_348229152.1
 Synechocystis sp. FACHB-383,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechocystis sp. FACHB-383],🟢 Confirmed,WP_347338274.1
-[Phormidium] sp. ETS-05,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [[Phormidium] sp. ETS-05],🟢 Confirmed,WP_346341806.1
 Sphaerothrix gracilis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Sphaerothrix gracilis],🟢 Confirmed,WP_346292429.1
 Sphaerothrix gracilis,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Sphaerothrix gracilis],🟢 Confirmed,WP_346289894.1
 Okeania hirsuta,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Okeania hirsuta],🟢 Confirmed,WP_345789231.1
-Crocosphaera sp. Alani8,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Crocosphaera sp. Alani8],🟢 Confirmed,WP_342057062.1
 Nostoc sp. UHCC 0302,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. UHCC 0302],🟢 Confirmed,WP_341532080.1
 Nostoc sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Nostoc sp.],🟢 Confirmed,WP_334870419.1
-Allocoleopsis sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Allocoleopsis sp.],🟢 Confirmed,WP_333481286.1
-Microcoleus sp. herbarium12,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. herbarium12],🟢 Confirmed,WP_333471427.1
-Microcoleus sp. herbarium8,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. herbarium8],🟢 Confirmed,WP_333420433.1
-Microcoleus sp. B4-D4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. B4-D4],🟢 Confirmed,WP_333377894.1
-Microcoleus sp. A006_D1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. A006_D1],🟢 Confirmed,WP_332997065.1
-Scytonema sp. PRP1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Scytonema sp. PRP1],🟢 Confirmed,WP_332993146.1
-Microcoleus sp. A003_D6,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. A003_D6],🟢 Confirmed,WP_332985137.1
-Pannus brasiliensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Pannus brasiliensis],🟢 Confirmed,WP_332866141.1
 Tumidithrix elongata,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Tumidithrix elongata],🟢 Confirmed,WP_330481602.1
 Phormidium sp. CCY1219,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Phormidium sp. CCY1219],🟢 Confirmed,WP_324630799.1
 Synechococcus sp. CCY9202,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. CCY9202],🟢 Confirmed,WP_323249414.1
 Nodularia spumigena,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nodularia spumigena],🟢 Confirmed,WP_323245144.1
-Roseofilum sp. SBFL,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Roseofilum sp. SBFL],🟢 Confirmed,WP_318719586.1
-Chroococcidiopsis sp. SAG 2025,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chroococcidiopsis sp. SAG 2025],🟢 Confirmed,WP_317110581.1
-Nodosilinea sp. E11,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nodosilinea sp. E11],🟢 Confirmed,WP_317038278.1
-Thermoleptolyngbya oregonensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Thermoleptolyngbya oregonensis],🟢 Confirmed,WP_316789707.1
 Leptolyngbya sp. NK1-12,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya sp. NK1-12],🟢 Confirmed,WP_316429463.1
-Leptolyngbya boryana,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya boryana],🟢 Confirmed,WP_316428822.1
-Synechococcus sp. ATX 2A4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. ATX 2A4],🟢 Confirmed,WP_315857150.1
-Fischerella sp. JS2,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Fischerella sp. JS2],🟢 Confirmed,WP_315789975.1
-Limnospira sp. PMC 289.06,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Limnospira sp. PMC 289.06],🟢 Confirmed,WP_315670102.1
 Chamaesiphon sp. OTE_20_metabat_361,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chamaesiphon sp. OTE_20_metabat_361],🟢 Confirmed,WP_309744015.1
-Chamaesiphon sp. OTE_75_metabat_556,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chamaesiphon sp. OTE_75_metabat_556],🟢 Confirmed,WP_309731574.1
 Oscillatoriales,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase [Oscillatoriales],🟢 Confirmed,WP_006616192.1
 Geminocystis sp. GBBB08,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Geminocystis sp. GBBB08],🟢 Confirmed,WP_308255796.1
-Okeania sp. KiyG1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Okeania sp. KiyG1],🟢 Confirmed,WP_307786316.1
 Synechococcus sp. YX-04-1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. YX-04-1],🟢 Confirmed,WP_303532326.1
-Acaryochloris sp. IP29b_bin.137,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Acaryochloris sp. IP29b_bin.137],🟢 Confirmed,WP_299491583.1
-Microcoleus sp. PH2017_18_LLB_O_A,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. PH2017_18_LLB_O_A],🟢 Confirmed,WP_293274559.1
 Microcoleus sp. PH2017_16_JOR_D_A,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. PH2017_16_JOR_D_A],🟢 Confirmed,WP_293224176.1
-Microcoleus sp. bin38.metabat.b11b12b14.051,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. bin38.metabat.b11b12b14.051],🟢 Confirmed,WP_293132740.1
 Moorena sp. SIOASIH,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Moorena sp. SIOASIH],🟢 Confirmed,WP_293098799.1
-Moorena sp. SIO3H5,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Moorena sp. SIO3H5],🟢 Confirmed,WP_293084950.1
 unclassified Moorena,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [unclassified Moorena],🟢 Confirmed,WP_293069193.1
-Nostoc sp. JL33,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. JL33],🟢 Confirmed,WP_292835880.1
-Nostoc sp. NMS4,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. NMS4],🟢 Confirmed,WP_292745041.1
-Nostoc sp. GT001,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. GT001],🟢 Confirmed,WP_289797353.1
 Chlorogloeopsis sp. ULAP01,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chlorogloeopsis sp. ULAP01],🟢 Confirmed,WP_289793699.1
-Microcystis sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcystis sp.],🟢 Confirmed,WP_288138091.1
 Moorena sp. SIO3A2,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Moorena sp. SIO3A2],🟢 Confirmed,WP_287265675.1
 Geitlerinema calcuttense,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Geitlerinema calcuttense],🟢 Confirmed,WP_284476256.1
-Roseofilum capinflatum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Roseofilum capinflatum],🟢 Confirmed,WP_283767428.1
-Roseofilum halophilum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Roseofilum halophilum],🟢 Confirmed,WP_283764793.1
-Roseofilum casamattae,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Roseofilum casamattae],🟢 Confirmed,WP_283757831.1
 Roseofilum acuticapitatum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Roseofilum acuticapitatum],🟢 Confirmed,WP_283754174.1
 Thermoleptolyngbya sichuanensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Thermoleptolyngbya sichuanensis],🟢 Confirmed,WP_277774560.1
-Kamptonema sp. UHCC 0994,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Kamptonema sp. UHCC 0994],🟢 Confirmed,WP_275570832.1
 Spirulina sp. CS-785/01,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Spirulina sp. CS-785/01],🟢 Confirmed,WP_272125774.1
 Spirulina,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Spirulina],🟢 Confirmed,WP_272117755.1
-Lyngbya sp. CCAP 1446/10,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Lyngbya sp. CCAP 1446/10],🟢 Confirmed,WP_265238918.1
-Zarconia navalis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Zarconia navalis],🟢 Confirmed,WP_264322171.1
 Acaryochloris marina,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Acaryochloris marina],🟢 Confirmed,WP_261891704.1
 Ancylothrix sp. D3o,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Ancylothrix sp. D3o],🟢 Confirmed,WP_261224693.1
 Laspinema sp. D2d,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Laspinema sp. D2d],🟢 Confirmed,WP_261208175.1
 Synechococcus sp. CS-1332,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. CS-1332],🟢 Confirmed,WP_259724115.1
 Synechococcus sp. CS-603,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. CS-603],🟢 Confirmed,WP_259723261.1
 Synechococcus sp. CS-1328,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. CS-1328],🟢 Confirmed,WP_259721195.1
-Nostoc sp. 'Peltigera malacea cyanobiont' DB3992,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. 'Peltigera malacea cyanobiont' DB3992],🟢 Confirmed,WP_257236713.1
-Nostoc sp. C057,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. C057],🟢 Confirmed,WP_256874675.1
-Synechococcus sp. A18-25c,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. A18-25c],🟢 Confirmed,WP_255478398.1
 Synechococcus sp. HK01-R,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. HK01-R],🟢 Confirmed,WP_255441158.1
 Synechococcus sp. PROS-9-1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. PROS-9-1],🟢 Confirmed,WP_255439862.1
-Synechococcus sp. Lug-A,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. Lug-A],🟢 Confirmed,WP_255140414.1
 Synechococcus sp. Cruz CV12-2-Slac-r,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. Cruz CV12-2-Slac-r],🟢 Confirmed,WP_255132002.1
 Synechococcus sp. L2F,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. L2F],🟢 Confirmed,WP_255099879.1
 Cyanobium sp. HWJ4-Hawea,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Cyanobium sp. HWJ4-Hawea],🟢 Confirmed,WP_255003227.1
 Cyanobium sp. N5-Cardenillas,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Cyanobium sp. N5-Cardenillas],🟢 Confirmed,WP_254991671.1
 Cyanobium sp. ATX 6A2,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Cyanobium sp. ATX 6A2],🟢 Confirmed,WP_254977250.1
-Cyanobium sp. Lug-B,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Cyanobium sp. Lug-B],🟢 Confirmed,WP_254975409.1
-Cyanobium sp. CH-040,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Cyanobium sp. CH-040],🟢 Confirmed,WP_254968910.1
-unclassified Cyanobium,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [unclassified Cyanobium],🟢 Confirmed,WP_254965575.1
 Cyanobium sp. N.Huapi 1H5,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Cyanobium sp. N.Huapi 1H5],🟢 Confirmed,WP_254949196.1
 Cyanobium sp. WAJ14-Wanaka,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Cyanobium sp. WAJ14-Wanaka],🟢 Confirmed,WP_254934706.1
-Oscillatoria sp. HE19RPO,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Oscillatoria sp. HE19RPO],🟢 Confirmed,WP_254567636.1
-Anabaena sp. UHCC 0204,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Anabaena sp. UHCC 0204],🟢 Confirmed,WP_254445272.1
 Planktothrix pseudagardhii,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Planktothrix pseudagardhii],🟢 Confirmed,WP_254175148.1
-Synechococcus sp. BDU 130192,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. BDU 130192],🟢 Confirmed,WP_254047953.1
-Limnofasciculus baicalensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Limnofasciculus baicalensis],🟢 Confirmed,WP_254014423.1
-Synechococcus sp. MU1651,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. MU1651],🟢 Confirmed,WP_250397167.1
 Synechococcus sp. MU1655,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. MU1655],🟢 Confirmed,WP_250395129.1
-Chroococcidiopsis sp. CCMEE 29,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chroococcidiopsis sp. CCMEE 29],🟢 Confirmed,WP_250126676.1
-Chroococcidiopsis sp. CCNUC1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chroococcidiopsis sp. CCNUC1],🟢 Confirmed,WP_250017504.1
 Synechococcus sp. WH 8020,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. WH 8020],🟢 Confirmed,WP_245407200.1
-Thermostichus vulcanus,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Thermostichus vulcanus],🟢 Confirmed,WP_244350057.1
-Synechococcus sp. UW179B,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. UW179B],🟢 Confirmed,WP_244279077.1
-Leptolyngbya subtilissima,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya subtilissima],🟢 Confirmed,WP_242020020.1
 Synechococcus sp. BS56D,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. BS56D],🟢 Confirmed,WP_240789313.1
 Leptolyngbya sp. CCY15150,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya sp. CCY15150],🟢 Confirmed,WP_239124718.1
-Synechococcus sp. BS55D,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. BS55D],🟢 Confirmed,WP_236629535.1
-Nostoc sp. CMAA1605,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. CMAA1605],🟢 Confirmed,WP_236144820.1
 Synechococcus sp. Nb3U1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. Nb3U1],🟢 Confirmed,WP_235278094.1
 Scytonema sp. HK-05,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Scytonema sp. HK-05],🟢 Confirmed,WP_233154208.1
 Waterburya agarophytonicola,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Waterburya agarophytonicola],🟢 Confirmed,WP_229641892.1
-Nostoc sp. XA010,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. XA010],🟢 Confirmed,WP_229557936.1
 Nostoc sp. CHAB 5836,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. CHAB 5836],🟢 Confirmed,WP_229550072.1
-Nostoc mirabile,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc mirabile],🟢 Confirmed,WP_229501370.1
-Nostoc favosum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc favosum],🟢 Confirmed,WP_229490050.1
 Nostoc sp. CHAB 5715,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. CHAB 5715],🟢 Confirmed,WP_229454016.1
-Nodosilinea sp. LEGE 07298,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nodosilinea sp. LEGE 07298],🟢 Confirmed,WP_228053006.1
-Nodosilinea sp. LEGE 07088,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nodosilinea sp. LEGE 07088],🟢 Confirmed,WP_228040855.1
 Synechococcus sp. PCC 7335,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. PCC 7335],🟢 Confirmed,WP_227500026.1
 Synechococcus sp. MU1617,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. MU1617],🟢 Confirmed,WP_226424633.1
 Synechococcus sp. MU1625,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. MU1625],🟢 Confirmed,WP_226408727.1
-Aphanothece hegewaldii,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Aphanothece hegewaldii],🟢 Confirmed,WP_219907605.1
-Chroogloeocystis siderophila,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chroogloeocystis siderophila],🟢 Confirmed,WP_218596862.1
-Anthocerotibacter panamensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Anthocerotibacter panamensis],🟢 Confirmed,WP_218079296.1
 Leptothoe spongobia,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptothoe spongobia],🟢 Confirmed,WP_215610729.1
 Leptolyngbya sp. 7M,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya sp. 7M],🟢 Confirmed,WP_211623156.1
 Hydrocoleum sp. CS-953,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Hydrocoleum sp. CS-953],🟢 Confirmed,WP_210407720.1
@@ -1880,109 +1925,69 @@ Anabaena sp. FACHB-1250,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycos
 Crinalium epipsammum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Crinalium epipsammum],🟢 Confirmed,WP_198013610.1
 Synechococcus sp. CBW1002,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. CBW1002],🟢 Confirmed,WP_197171345.1
 Synechococcus sp. CBW1108,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. CBW1108],🟢 Confirmed,WP_197150278.1
-Gloeocapsopsis dulcis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Gloeocapsopsis dulcis],🟢 Confirmed,WP_196602030.1
 Microcoleus sp. LEGE 07076,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. LEGE 07076],🟢 Confirmed,WP_193972781.1
-Desmonostoc muscorum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Desmonostoc muscorum],🟢 Confirmed,WP_193924166.1
 Vasconcelosia minhoensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Vasconcelosia minhoensis],🟢 Confirmed,WP_193911103.1
 Nostoc sp. LEGE 06077,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. LEGE 06077],🟢 Confirmed,WP_193898661.1
-Fortiea sp. LEGE XX443,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Fortiea sp. LEGE XX443],🟢 Confirmed,WP_193886323.1
 Oculatella sp. LEGE 06141,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Oculatella sp. LEGE 06141],🟢 Confirmed,WP_193878769.1
 Planktothrix mougeotii,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Planktothrix mougeotii],🟢 Confirmed,WP_193869959.1
-Cyanobium sp. LEGE 06143,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Cyanobium sp. LEGE 06143],🟢 Confirmed,WP_193813966.1
-Nostoc sp. MG11,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. MG11],🟢 Confirmed,WP_193198132.1
 Microcoleus sp. FACHB-SPT15,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. FACHB-SPT15],🟢 Confirmed,WP_192220458.1
 Aulosira sp. FACHB-615,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Aulosira sp. FACHB-615],🟢 Confirmed,WP_190872842.1
-Nostoc sp. FACHB-145,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. FACHB-145],🟢 Confirmed,WP_190756575.1
 Nodosilinea sp. FACHB-131,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nodosilinea sp. FACHB-131],🟢 Confirmed,WP_190753201.1
 Nostoc sp. FACHB-190,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. FACHB-190],🟢 Confirmed,WP_190676773.1
 Nostoc sp. FACHB-190,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Nostoc sp. FACHB-190],🟢 Confirmed,WP_190668993.1
 Oculatella sp. FACHB-28,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Oculatella sp. FACHB-28],🟢 Confirmed,WP_190643902.1
 Nostocaceae,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family protein [Nostocaceae],🟢 Confirmed,WP_190589346.1
 Alkalinema sp. FACHB-956,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Alkalinema sp. FACHB-956],🟢 Confirmed,WP_190574142.1
-Trichocoleus sp. FACHB-262,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Trichocoleus sp. FACHB-262],🟢 Confirmed,WP_190559911.1
 Trichocoleus sp. FACHB-591,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Trichocoleus sp. FACHB-591],🟢 Confirmed,WP_190553966.1
 Coleofasciculus sp. FACHB-542,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Coleofasciculus sp. FACHB-542],🟢 Confirmed,WP_190535604.1
-Oscillatoria sp. FACHB-1407,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Oscillatoria sp. FACHB-1407],🟢 Confirmed,WP_190512263.1
 Microcoleus sp. FACHB-831,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus sp. FACHB-831],🟢 Confirmed,WP_190491752.1
-Pseudanabaena sp. FACHB-2040,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Pseudanabaena sp. FACHB-2040],🟢 Confirmed,WP_190485211.1
-Oscillatoriophycideae,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Oscillatoriophycideae],🟢 Confirmed,WP_190468186.1
-Cylindrospermum sp. FACHB-282,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Cylindrospermum sp. FACHB-282],🟢 Confirmed,WP_190461213.1
-Trichocoleus,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Trichocoleus],🟢 Confirmed,WP_190441781.1
 Coleofasciculus sp. FACHB-712,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Coleofasciculus sp. FACHB-712],🟢 Confirmed,WP_190430626.1
-Anabaena subtropica,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Anabaena subtropica],🟢 Confirmed,WP_190409050.1
 Pseudanabaena sp. FACHB-1998,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Pseudanabaena sp. FACHB-1998],🟢 Confirmed,WP_190398676.1
 Dolichospermum flos-aquae,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Dolichospermum flos-aquae],🟢 Confirmed,WP_190396845.1
 Anabaena sp. FACHB-1237,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Anabaena sp. FACHB-1237],🟢 Confirmed,WP_190367420.1
 Cyanobacterium aponinum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Cyanobacterium aponinum],🟢 Confirmed,WP_190361134.1
 Pseudanabaena cinerea,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Pseudanabaena cinerea],🟢 Confirmed,WP_190353264.1
 Leptolyngbya sp. FACHB-36,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya sp. FACHB-36],🟢 Confirmed,WP_190343979.1
-Synechococcus sp. RS9907,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. RS9907],🟢 Confirmed,WP_188021372.1
 Raphidiopsis curvispora,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Raphidiopsis curvispora],🟢 Confirmed,WP_187706034.1
 Synechococcus sp. PROS-7-1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. PROS-7-1],🟢 Confirmed,WP_186595741.1
 Synechococcus sp. MVIR-18-1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. MVIR-18-1],🟢 Confirmed,WP_186589804.1
 Synechococcus sp. A15-28,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. A15-28],🟢 Confirmed,WP_186586064.1
-Synechococcus sp. Minos11,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. Minos11],🟢 Confirmed,WP_186548297.1
 Synechococcus sp. ROS8604,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. ROS8604],🟢 Confirmed,WP_186545763.1
-Synechococcus sp. M16.1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. M16.1],🟢 Confirmed,WP_186541532.1
 Synechococcus sp. A15-44,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. A15-44],🟢 Confirmed,WP_186514297.1
-Synechococcus sp. RS9902,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. RS9902],🟢 Confirmed,WP_186509444.1
-Synechococcus sp. A15-60,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. A15-60],🟢 Confirmed,WP_186500776.1
 Synechococcus sp. A15-62,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. A15-62],🟢 Confirmed,WP_186494110.1
 Synechococcus sp. BIOS-U3-1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. BIOS-U3-1],🟢 Confirmed,WP_186491089.1
-Nostoc sp. 2RC,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. 2RC],🟢 Confirmed,WP_185570185.1
 Trichormus variabilis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Trichormus variabilis],🟢 Confirmed,WP_185539424.1
 Nostoc sp. C052,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. C052],🟢 Confirmed,WP_179068674.1
 Nostoc sp. TCL26-01,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. TCL26-01],🟢 Confirmed,WP_179047997.1
 Nostoc sp. TCL240-02,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. TCL240-02],🟢 Confirmed,WP_174711338.1
 Leptolyngbya sp. O-77,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya sp. O-77],🟢 Confirmed,WP_172799745.1
-Microcoleus asticus,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Microcoleus asticus],🟢 Confirmed,WP_172190373.1
 Brasilonema sennae,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Brasilonema sennae],🟢 Confirmed,WP_171978096.1
-Nodosilinea sp. P-1105,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nodosilinea sp. P-1105],🟢 Confirmed,WP_169617235.1
 Pseudanabaena yagii,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Pseudanabaena yagii],🟢 Confirmed,WP_169365614.1
-Brasilonema,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Brasilonema],🟢 Confirmed,WP_169268111.1
-Brasilonema bromeliae,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Brasilonema bromeliae],🟢 Confirmed,WP_169154073.1
 Anabaena sp. UHCC 0187,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Anabaena sp. UHCC 0187],🟢 Confirmed,WP_168502560.1
 Myxacorys almedinensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Myxacorys almedinensis],🟢 Confirmed,WP_162423122.1
 Synechococcus sp. GFB01,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. GFB01],🟢 Confirmed,WP_152669454.1
 Prochlorococcus,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Prochlorococcus],🟢 Confirmed,WP_152557328.1
 Euhalothece natronophila,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Euhalothece natronophila],🟢 Confirmed,WP_146296124.1
 Hyella patelloides,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Hyella patelloides],🟢 Confirmed,WP_144872053.1
-Pseudanabaena sp. UWO311,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Pseudanabaena sp. UWO311],🟢 Confirmed,WP_142654595.1
-Aphanothece sacrum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Aphanothece sacrum],🟢 Confirmed,WP_124976531.1
 Okeania,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Okeania],🟢 Confirmed,WP_124154353.1
 Leptolyngbya sp. BC1307,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya sp. BC1307],🟢 Confirmed,WP_121970319.1
 Synechococcus sp. UW86,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. UW86],🟢 Confirmed,WP_115160968.1
 Synechococcus sp. GEYO,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. GEYO],🟢 Confirmed,WP_115125819.1
 Synechococcus sp. UW105,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. UW105],🟢 Confirmed,WP_115121810.1
-Synechococcus sp. N32,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. N32],🟢 Confirmed,WP_115081311.1
 Synechococcus sp. UW69,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. UW69],🟢 Confirmed,WP_115024633.1
-Synechococcus sp. N5,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. N5],🟢 Confirmed,WP_115009801.1
-Nostoc sp. ATCC 53789,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Nostoc sp. ATCC 53789],🟢 Confirmed,WP_114085997.1
-Cyanothece sp. BG0011,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Cyanothece sp. BG0011],🟢 Confirmed,WP_107668202.1
-Chroococcidiopsis sp. TS-821,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chroococcidiopsis sp. TS-821],🟢 Confirmed,WP_104545694.1
-Tolypothrix tenuis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Tolypothrix tenuis],🟢 Confirmed,WP_096582597.1
-Brunnivagina elsteri,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Brunnivagina elsteri],🟢 Confirmed,WP_095721133.1
-Synechococcus sp. BO 8801,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. BO 8801],🟢 Confirmed,WP_094584168.1
 Synechococcus sp. 1G10,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. 1G10],🟢 Confirmed,WP_094556020.1
-Pseudanabaena sp. SR411,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Pseudanabaena sp. SR411],🟢 Confirmed,WP_094536105.1
-Leptolyngbya ohadii,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya ohadii],🟢 Confirmed,WP_088892431.1
 Synechococcus sp. WH 8016,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. WH 8016],🟢 Confirmed,WP_083825903.1
 Halomicronema hongdechloris,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Halomicronema hongdechloris],🟢 Confirmed,WP_080807641.1
 Planktothrix sp. PCC 11201,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Planktothrix sp. PCC 11201],🟢 Confirmed,WP_079681369.1
-Leptolyngbya sp. 'hensonii',alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya sp. 'hensonii'],🟢 Confirmed,WP_075598975.1
 Hydrococcus rivularis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Hydrococcus rivularis],🟢 Confirmed,WP_073601115.1
 Fischerella major,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Fischerella major],🟢 Confirmed,WP_073556853.1
 Synechococcus sp. MIT S9509,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. MIT S9509],🟢 Confirmed,WP_066908843.1
-Anabaena sp. 4-3,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Anabaena sp. 4-3],🟢 Confirmed,WP_066424870.1
 Anabaena sp. CA = ATCC 33047,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Anabaena sp. CA = ATCC 33047],🟢 Confirmed,WP_066378875.1
-Geminocystis sp. NIES-3708,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Geminocystis sp. NIES-3708],🟢 Confirmed,WP_066345472.1
 Fischerella sp. NIES-3754,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Fischerella sp. NIES-3754],🟢 Confirmed,WP_062247811.1
 Pseudanabaena sp. 'Roaring Creek',alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Pseudanabaena sp. 'Roaring Creek'],🟢 Confirmed,WP_055073519.1
 Planktothricoides,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Planktothricoides],🟢 Confirmed,WP_054464857.1
-Synechococcus sp. KORDI-100,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. KORDI-100],🟢 Confirmed,WP_051847430.1
 Moorena,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family glycosyl hydrolase [Moorena],🟢 Confirmed,WP_044494659.1
 Synechococcus sp. KORDI-49,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp. KORDI-49],🟢 Confirmed,WP_043690972.1
-Leptolyngbya sp. PL-A3,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptolyngbya sp. PL-A3],🟢 Confirmed,WP_348256519.1
 Cyanobium sp. BA20m-p-22,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Cyanobium sp. BA20m-p-22],🟢 Confirmed,WP_255015253.1
 Mastigocladopsis repens,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Mastigocladopsis repens],🟢 Confirmed,WP_084786404.1
 Hassallia byssoidea,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Hassallia byssoidea],🟢 Confirmed,WP_039753392.1
@@ -2045,7 +2050,6 @@ Leptolyngbya sp. FACHB-8,alpha-amylase,3.2.1.1,starch,alpha-amylase [Leptolyngby
 Leptothoe sp. PORK10 BA2,alpha-amylase,3.2.1.1,starch,alpha-amylase [Leptothoe sp. PORK10 BA2],🟢 Confirmed,WP_323364039.1
 Leptolyngbya sp. CCNP1308,alpha-amylase,3.2.1.1,starch,alpha-amylase [Leptolyngbya sp. CCNP1308],🟢 Confirmed,WP_323351307.1
 Nodosilinea sp. E11,alpha-amylase,3.2.1.1,starch,alpha-amylase [Nodosilinea sp. E11],🟢 Confirmed,WP_317035766.1
-Leptodesmis sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Leptodesmis sp.],🟢 Confirmed,WP_428361353.1
 Aliinostoc sp. HNIBRCY26,alpha-amylase,3.2.1.1,starch,alpha-amylase [Aliinostoc sp. HNIBRCY26],🟢 Confirmed,WP_427159736.1
 Lusitaniella coriacea,alpha-amylase,3.2.1.1,starch,alpha-amylase [Lusitaniella coriacea],🟢 Confirmed,WP_426775339.1
 Aphanothece,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family protein [Aphanothece],🟢 Confirmed,WP_412007308.1
@@ -2238,12 +2242,8 @@ Nostoc cyanobionts,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase [Nos
 Microcoleaceae,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase family protein [Microcoleaceae],🟢 Confirmed,WP_194070838.1
 Microcoleaceae,alpha-amylase,3.2.1.1,starch,MULTISPECIES: alpha-amylase [Microcoleaceae],🟢 Confirmed,WP_194068260.1
 Microcoleus sp. herbarium12,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. herbarium12],🟢 Confirmed,WP_333469932.1
-Microcoleus sp. herbarium7,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. herbarium7],🟢 Confirmed,WP_333464104.1
-Microcoleus sp. herbarium8,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. herbarium8],🟢 Confirmed,WP_333421959.1
-Microcoleus sp. herbarium8,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. herbarium8],🟢 Confirmed,WP_333418719.1
 Microcoleus sp. B4-D4,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. B4-D4],🟢 Confirmed,WP_333384311.1
 Microcoleus sp. B4-D4,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Microcoleus sp. B4-D4],🟢 Confirmed,WP_333380999.1
-Microcoleus sp. herbarium14,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. herbarium14],🟢 Confirmed,WP_333352982.1
 Microcoleus sp. A006_D1,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. A006_D1],🟢 Confirmed,WP_332998258.1
 Scytonema sp. PRP1,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Scytonema sp. PRP1],🟢 Confirmed,WP_332997621.1
 Microcoleus sp. A003_D6,alpha-amylase,3.2.1.1,starch,alpha-amylase [Microcoleus sp. A003_D6],🟢 Confirmed,WP_332979777.1
@@ -2911,15 +2911,52 @@ Westiellopsis prolifica IICB1,alpha-amylase,3.2.1.1,starch,alpha-amylase [Westie
 Phormidium sp. SL48-SHIP,alpha-amylase,3.2.1.1,starch,MAG: alpha-amylase [Phormidium sp. SL48-SHIP],🟢 Confirmed,TAO06517.1
 Oscillatoriales cyanobacterium,alpha-amylase,3.2.1.1,starch,MAG: alpha-amylase [Oscillatoriales cyanobacterium],🟢 Confirmed,TAH25773.1
 Nostocales cyanobacterium,alpha-amylase,3.2.1.1,starch,MAG: alpha-amylase [Nostocales cyanobacterium],🟢 Confirmed,TAF09270.1
-Nostoc sp.,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Nostoc sp.],🟢 Confirmed,WP_461940878.1
-uncultured Nostoc sp.,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [uncultured Nostoc sp.],🟢 Confirmed,WP_298914636.1
+Nostoc sp.,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Nostoc sp.],🟢 Confirmed,WP_461926316.1
+Brasilonema sennae,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Brasilonema sennae],🟢 Confirmed,WP_370469270.1
+Leptolyngbya sp. FACHB-671,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Leptolyngbya sp. FACHB-671],🟢 Confirmed,WP_347277321.1
+Moorena sp. SIOASIH,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Moorena sp. SIOASIH],🟢 Confirmed,WP_293107027.1
+Leptolyngbya sp. FACHB-261,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Leptolyngbya sp. FACHB-261],🟢 Confirmed,WP_190805884.1
+Dulcicalothrix desertica,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Dulcicalothrix desertica],🟢 Confirmed,WP_127086836.1
+Oculatella sp. FACHB-28,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Oculatella sp. FACHB-28],🟢 Confirmed,WP_347277673.1
+Microcoleus sp. CAWBG24,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Microcoleus sp. CAWBG24],🟢 Confirmed,WP_293360597.1
+Spirulina sp. CCY15215,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Spirulina sp. CCY15215],🟢 Confirmed,WP_204103306.1
+Trichocoleus sp. FACHB-591,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Trichocoleus sp. FACHB-591],🟢 Confirmed,WP_190551388.1
+unclassified Calothrix,cellulase,3.2.1.4,cellulose,MULTISPECIES: cellulase family glycosylhydrolase [unclassified Calothrix],🟢 Confirmed,WP_373462089.1
+Oculatella sp. LEGE 06141,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Oculatella sp. LEGE 06141],🟢 Confirmed,WP_228035841.1
+Trichocoleus,cellulase,3.2.1.4,cellulose,MULTISPECIES: cellulase family glycosylhydrolase [Trichocoleus],🟢 Confirmed,WP_190431421.1
+Symploca atlantica,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Symploca atlantica],🟢 Confirmed,WP_445105806.1
+uncultured Nostoc sp.,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [uncultured Nostoc sp.],🟢 Confirmed,WP_375515890.1
+unclassified Nostoc,cellulase,3.2.1.4,cellulose,MULTISPECIES: cellulase family glycosylhydrolase [unclassified Nostoc],🟢 Confirmed,WP_273766280.1
+Chroogloeocystis siderophila,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Chroogloeocystis siderophila],🟢 Confirmed,WP_236738834.1
+unclassified Microcoleus,cellulase,3.2.1.4,cellulose,MULTISPECIES: cellulase family glycosylhydrolase [unclassified Microcoleus],🟢 Confirmed,WP_333105072.1
+Chroococcidiopsis sp. SAG 2025,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Chroococcidiopsis sp. SAG 2025],🟢 Confirmed,WP_317105829.1
+Thermoleptolyngbya oregonensis,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Thermoleptolyngbya oregonensis],🟢 Confirmed,WP_316791847.1
+Fischerella sp. JS2,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Fischerella sp. JS2],🟢 Confirmed,WP_315788234.1
+Candidatus Synechococcus calcipolaris,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Candidatus Synechococcus calcipolaris],🟢 Confirmed,WP_277865611.1
+Thermoleptolyngbya sichuanensis,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Thermoleptolyngbya sichuanensis],🟢 Confirmed,WP_277775021.1
+Neosynechococcus sphagnicola,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Neosynechococcus sphagnicola],🟢 Confirmed,WP_156120594.1
+Scytonema sp. UIC 10036,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Scytonema sp. UIC 10036],🟢 Confirmed,WP_155749072.1
+Trichocoleus desertorum,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Trichocoleus desertorum],🟢 Confirmed,WP_348227057.1
+Leptolyngbya sp. FACHB-541,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Leptolyngbya sp. FACHB-541],🟢 Confirmed,WP_347278237.1
+Calothrix sp. NIES-3974,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Calothrix sp. NIES-3974],🟢 Confirmed,WP_096621540.1
+Chroococcidiopsis sp. CCALA 051,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Chroococcidiopsis sp. CCALA 051],🟢 Confirmed,WP_106547255.1
+Stenomitos frigidus,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Stenomitos frigidus],🟢 Confirmed,WP_106259823.1
+Chroococcidiopsis sp. CCNUC1,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Chroococcidiopsis sp. CCNUC1],🟢 Confirmed,WP_106216384.1
+Chroococcidiopsis cubana,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Chroococcidiopsis cubana],🟢 Confirmed,WP_106168448.1
+Nostoc sp. 'Peltigera membranacea cyanobiont' N6,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Nostoc sp. 'Peltigera membranacea cyanobiont' N6],🟢 Confirmed,WP_104899679.1
+Chroococcidiopsis sp. TS-821,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Chroococcidiopsis sp. TS-821],🟢 Confirmed,WP_104547958.1
+Allocoleopsis sp.,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Allocoleopsis sp.],🟢 Confirmed,WP_349262960.1
+Scytonema sp. PRP1,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Scytonema sp. PRP1],🟢 Confirmed,WP_332995565.1
+Fischerella thermalis,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Fischerella thermalis],🟢 Confirmed,WP_102171086.1
+Calothrix,cellulase,3.2.1.4,cellulose,MULTISPECIES: cellulase family glycosylhydrolase [Calothrix],🟢 Confirmed,WP_390834012.1
+Nostoc sp. JL31,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Nostoc sp. JL31],🟢 Confirmed,WP_292734124.1
+Scenedesmus bijugus var. obtusiusculus,cellulase,3.2.1.4,cellulose,cellulase 1 [Scenedesmus bijugus var. obtusiusculus],🟢 Confirmed,KAN4129340.1
+Brasilonema octagenarum,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Brasilonema octagenarum],🟢 Confirmed,WP_169266042.1
 Dolichospermum flos-aquae,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Dolichospermum flos-aquae],🟢 Confirmed,WP_168694648.1
 Dolichospermum sp. UHCC 0259,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Dolichospermum sp. UHCC 0259],🟢 Confirmed,WP_168642753.1
 Microcoleus sp. T2B6,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Microcoleus sp. T2B6],🟢 Confirmed,WP_333409875.1
 Thermoleptolyngbya sp.,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Thermoleptolyngbya sp.],🟢 Confirmed,WP_448605002.1
 Acaryochloris marina,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Acaryochloris marina],🟢 Confirmed,WP_238549196.1
-Dulcicalothrix desertica,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Dulcicalothrix desertica],🟢 Confirmed,WP_127086113.1
-Fischerella thermalis,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Fischerella thermalis],🟢 Confirmed,WP_235656346.1
 Chlorogloeopsis fritschii,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Chlorogloeopsis fritschii],🟢 Confirmed,WP_235082871.1
 Microcoleus sp. FACHB-SPT15,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Microcoleus sp. FACHB-SPT15],🟢 Confirmed,WP_192218334.1
 Chroococcidiopsis sp. [FACHB-1243],cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Chroococcidiopsis sp [FACHB-1243]],🟢 Confirmed,WP_192158670.1
@@ -2936,11 +2973,8 @@ Cyanobacterium aponinum,cellulase,3.2.1.4,cellulose,cellulase family glycosylhyd
 Calothrix sp. NIES-2098,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Calothrix sp. NIES-2098],🟢 Confirmed,WP_096587092.1
 Brunnivagina elsteri,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Brunnivagina elsteri],🟢 Confirmed,WP_095719851.1
 Calothrix sp. 336/3,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Calothrix sp. 336/3],🟢 Confirmed,WP_035154188.1
-Neosynechococcus sphagnicola,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Neosynechococcus sphagnicola],🟢 Confirmed,WP_204368740.1
 Nostoc sphaeroides,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Nostoc sphaeroides],🟢 Confirmed,WP_118167450.1
 Trichocoleus sp. FACHB-262,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Trichocoleus sp. FACHB-262],🟢 Confirmed,WP_190556191.1
-Trichocoleus sp. FACHB-591,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Trichocoleus sp. FACHB-591],🟢 Confirmed,WP_190554148.1
-Calothrix,cellulase,3.2.1.4,cellulose,MULTISPECIES: cellulase family glycosylhydrolase [Calothrix],🟢 Confirmed,WP_190548510.1
 Alkalinema sp. FACHB-956,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Alkalinema sp. FACHB-956],🟢 Confirmed,WP_199306958.1
 Hassallia byssoidea,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Hassallia byssoidea],🟢 Confirmed,WP_052325902.1
 Scytonema hofmannii,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Scytonema hofmannii],🟢 Confirmed,WP_017745883.1
@@ -2954,9 +2988,7 @@ Nostocales,cellulase,3.2.1.4,cellulose,MULTISPECIES: cellulase family glycosylhy
 Brasilonema sp. UFV-L1,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Brasilonema sp. UFV-L1],🟢 Confirmed,WP_248277915.1
 Synechococcus sp. C9,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Synechococcus sp. C9],🟢 Confirmed,WP_247216520.1
 Calothrix rhizosoleniae,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Calothrix rhizosoleniae],🟢 Confirmed,WP_088241902.1
-unclassified Nostoc,cellulase,3.2.1.4,cellulose,MULTISPECIES: cellulase family glycosylhydrolase [unclassified Nostoc],🟢 Confirmed,WP_300413450.1
 Nostoc sp. 106C,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Nostoc sp. 106C],🟢 Confirmed,WP_086766446.1
-unclassified Microcoleus,cellulase,3.2.1.4,cellulose,MULTISPECIES: cellulase family glycosylhydrolase [unclassified Microcoleus],🟢 Confirmed,WP_293346538.1
 Microcoleus sp. CAWBG58,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Microcoleus sp. CAWBG58],🟢 Confirmed,WP_293336757.1
 unclassified Moorena,cellulase,3.2.1.4,cellulose,MULTISPECIES: cellulase family glycosylhydrolase [unclassified Moorena],🟢 Confirmed,WP_293070169.1
 Moorena sp. SIO1F2,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Moorena sp. SIO1F2],🟢 Confirmed,WP_293046538.1
@@ -2970,7 +3002,6 @@ Moorena bouillonii,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolas
 Anabaena sp. WFMT,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Anabaena sp. WFMT],🟢 Confirmed,WP_438893249.1
 Chroococcidiopsis sp.,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Chroococcidiopsis sp.],🟢 Confirmed,WP_438552135.1
 Alkalinema pantanalense,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Alkalinema pantanalense],🟢 Confirmed,WP_431627561.1
-Trichocoleus desertorum,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Trichocoleus desertorum],🟢 Confirmed,WP_431193345.1
 Nostoc sp. T09,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Nostoc sp. T09],🟢 Confirmed,WP_086689514.1
 Gloeomargarita sp.,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Gloeomargarita sp.],🟢 Confirmed,WP_448381409.1
 Phormidesmis sp. 146-33,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Phormidesmis sp. 146-33],🟢 Confirmed,WP_446877376.1
@@ -2982,8 +3013,6 @@ Coleofasciculus sp. D1-CHI-01,cellulase,3.2.1.4,cellulose,cellulase family glyco
 Coleofasciculus sp. A1-SPW-01,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Coleofasciculus sp. A1-SPW-01],🟢 Confirmed,WP_446351984.1
 Coleofasciculus sp. F4-SAH-05,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Coleofasciculus sp. F4-SAH-05],🟢 Confirmed,WP_446344984.1
 Coleofasciculus sp. G1-WW12-02,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Coleofasciculus sp. G1-WW12-02],🟢 Confirmed,WP_446339453.1
-Symploca atlantica,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Symploca atlantica],🟢 Confirmed,WP_445103974.1
-Chroococcidiopsis sp. TS-821,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Chroococcidiopsis sp. TS-821],🟢 Confirmed,WP_146087165.1
 Desertifilum,cellulase,3.2.1.4,cellulose,MULTISPECIES: cellulase family glycosylhydrolase [Desertifilum],🟢 Confirmed,WP_069967004.1
 Calothrix sp. UHCC 0171,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Calothrix sp. UHCC 0171],🟢 Confirmed,WP_323339298.1
 Spirulina sp. CCNP1310,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Spirulina sp. CCNP1310],🟢 Confirmed,WP_323252466.1
@@ -2996,7 +3025,6 @@ Coleofasciculus sp. B1-GNL1-01,cellulase,3.2.1.4,cellulose,cellulase family glyc
 Dolichospermum sp. UKL202,cellulase,3.2.1.4,cellulose,MAG: cellulase family glycosylhydrolase [Dolichospermum sp. UKL202],🟢 Confirmed,XWU47625.1
 Phormidium sp.,cellulase,3.2.1.4,cellulose,MAG: cellulase family glycosylhydrolase [Phormidium sp.],🟢 Confirmed,XWK88189.1
 Stanieria sp. PCC 7304,cellulase,3.2.1.4,cellulose,endoglucanase E-4 [Stanieria sp. PCC 7304],🟢 Confirmed,XVJ08488.1
-Trichocoleus,cellulase,3.2.1.4,cellulose,MULTISPECIES: cellulase family glycosylhydrolase [Trichocoleus],🟢 Confirmed,WP_190433025.1
 Nannochloropsis oceanica,cellulase,3.2.1.4,cellulose,cellulase (glycosyl hydrolase family 5) subfamily protein [Nannochloropsis oceanica],🟢 Confirmed,GAB5029536.1
 Nannochloropsis oceanica,cellulase,3.2.1.4,cellulose,cellulase 2 [Nannochloropsis oceanica],🟢 Confirmed,GAB5030396.1
 Nannochloropsis oceanica,cellulase,3.2.1.4,cellulose,cellulase 1 [Nannochloropsis oceanica],🟢 Confirmed,GAB5036660.1
@@ -3007,46 +3035,28 @@ Pycnococcus provasolii,cellulase,3.2.1.4,cellulose,cellulase [Pycnococcus provas
 Calothrix anomala,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Calothrix anomala],🟢 Confirmed,WP_190547059.1
 Brasilonema bromeliae,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Brasilonema bromeliae],🟢 Confirmed,WP_422614215.1
 Microcoleus sp. FACHB-1515,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Microcoleus sp. FACHB-1515],🟢 Confirmed,WP_199304173.1
-Stenomitos frigidus,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Stenomitos frigidus],🟢 Confirmed,WP_106259823.1
 Myxosarcina sp. GI1,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Myxosarcina sp. GI1],🟢 Confirmed,WP_052055844.1
 Mastigocladopsis repens,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Mastigocladopsis repens],🟢 Confirmed,WP_017315299.1
-Moorena sp. SIOASIH,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Moorena sp. SIOASIH],🟢 Confirmed,WP_293107027.1
-Thermoleptolyngbya sichuanensis,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Thermoleptolyngbya sichuanensis],🟢 Confirmed,WP_172357734.1
-Brasilonema octagenarum,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Brasilonema octagenarum],🟢 Confirmed,WP_169266042.1
-Scytonema sp. UIC 10036,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Scytonema sp. UIC 10036],🟢 Confirmed,WP_155749072.1
 Thermoleptolyngbya sp. M55_K2018_002,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Thermoleptolyngbya sp. M55_K2018_002],🟢 Confirmed,WP_367279265.1
-Oculatella sp. FACHB-28,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Oculatella sp. FACHB-28],🟢 Confirmed,WP_347277673.1
 Gloeocapsopsis crepidinum,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Gloeocapsopsis crepidinum],🟢 Confirmed,WP_322742549.1
-Fischerella sp. JS2,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Fischerella sp. JS2],🟢 Confirmed,WP_315788234.1
 Acaryochloris sp. CCMEE 5410,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Acaryochloris sp. CCMEE 5410],🟢 Confirmed,WP_236618860.1
-unclassified Calothrix,cellulase,3.2.1.4,cellulose,MULTISPECIES: cellulase family glycosylhydrolase [unclassified Calothrix],🟢 Confirmed,WP_190628594.1
 Scytonema sp. HK-05,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Scytonema sp. HK-05],🟢 Confirmed,WP_073627304.1
 unclassified Leptolyngbya,cellulase,3.2.1.4,cellulose,MULTISPECIES: cellulase family glycosylhydrolase [unclassified Leptolyngbya],🟢 Confirmed,WP_347279997.1
 Dolichospermum circinale,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Dolichospermum circinale],🟢 Confirmed,WP_271821622.1
 Limnofasciculus baicalensis,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Limnofasciculus baicalensis],🟢 Confirmed,WP_254009752.1
 Nostoc mirabile,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Nostoc mirabile],🟢 Confirmed,WP_229498388.1
-Oculatella sp. LEGE 06141,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Oculatella sp. LEGE 06141],🟢 Confirmed,WP_193886670.1
-Leptolyngbya sp. FACHB-261,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Leptolyngbya sp. FACHB-261],🟢 Confirmed,WP_190805884.1
 Scytonema millei,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Scytonema millei],🟢 Confirmed,WP_132867370.1
-Scytonema sp. PRP1,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Scytonema sp. PRP1],🟢 Confirmed,WP_332995565.1
-Chroococcidiopsis sp. SAG 2025,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Chroococcidiopsis sp. SAG 2025],🟢 Confirmed,WP_317106809.1
 Allocoleopsis franciscana,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Allocoleopsis franciscana],🟢 Confirmed,WP_315889687.1
-Nostoc sp. JL31,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Nostoc sp. JL31],🟢 Confirmed,WP_292734124.1
 Nostocaceae,cellulase,3.2.1.4,cellulose,MULTISPECIES: cellulase family glycosylhydrolase [Nostocaceae],🟢 Confirmed,WP_272867766.1
 Nostoc sp. XA010,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Nostoc sp. XA010],🟢 Confirmed,WP_229555448.1
-Allocoleopsis sp.,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Allocoleopsis sp.],🟢 Confirmed,WP_349262960.1
-Thermoleptolyngbya oregonensis,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Thermoleptolyngbya oregonensis],🟢 Confirmed,WP_316791847.1
-Chroococcidiopsis sp. CCNUC1,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Chroococcidiopsis sp. CCNUC1],🟢 Confirmed,WP_106216384.1
 Thermoleptolyngbya sp. C42_A2020_037,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Thermoleptolyngbya sp. C42_A2020_037],🟢 Confirmed,WP_297084115.1
 unclassified Dolichospermum,cellulase,3.2.1.4,cellulose,MULTISPECIES: cellulase family glycosylhydrolase [unclassified Dolichospermum],🟢 Confirmed,WP_148765976.1
 Calothrix sp. CCY 0018,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Calothrix sp. CCY 0018],🟢 Confirmed,WP_414619754.1
-Brasilonema sennae,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Brasilonema sennae],🟢 Confirmed,WP_370469270.1
 Chamaesiphon sp. VAR_48_metabat_135_sub,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Chamaesiphon sp. VAR_48_metabat_135_sub],🟢 Confirmed,WP_310428928.1
 Synechococcus sp. RSCCF101,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Synechococcus sp. RSCCF101],🟢 Confirmed,WP_191964817.1
 Leptolyngbya sp. FACHB-1515,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Leptolyngbya sp. FACHB-1515],🟢 Confirmed,WP_190762447.1
 Gloeocapsopsis sp. IPPAS B-1203,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Gloeocapsopsis sp. IPPAS B-1203],🟢 Confirmed,WP_289500667.1
 Iningainema tapete,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Iningainema tapete],🟢 Confirmed,WP_190826814.1
-Chroococcidiopsis cubana,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Chroococcidiopsis cubana],🟢 Confirmed,WP_106168448.1
 Phormidesmis priestleyi,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Phormidesmis priestleyi],🟢 Confirmed,WP_074382552.1
 Thermoleptolyngbya sp. PKUAC-SCTB121,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Thermoleptolyngbya sp. PKUAC-SCTB121],🟢 Confirmed,WP_205370982.1
 unclassified Coleofasciculus,cellulase,3.2.1.4,cellulose,MULTISPECIES: cellulase family glycosylhydrolase [unclassified Coleofasciculus],🟢 Confirmed,WP_193874639.1
@@ -3056,28 +3066,19 @@ Anabaena sp. FACHB-709,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydr
 Nostoc,cellulase,3.2.1.4,cellulose,MULTISPECIES: cellulase family glycosylhydrolase [Nostoc],🟢 Confirmed,WP_190957189.1
 Spirulina major,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Spirulina major],🟢 Confirmed,WP_072622612.1
 Dolichospermum lemmermannii,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Dolichospermum lemmermannii],🟢 Confirmed,WP_271835415.1
-Chroogloeocystis siderophila,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Chroogloeocystis siderophila],🟢 Confirmed,WP_236738834.1
 Cyanobacterium sp. DS4,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Cyanobacterium sp. DS4],🟢 Confirmed,WP_330202561.1
-Leptolyngbya sp. FACHB-541,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Leptolyngbya sp. FACHB-541],🟢 Confirmed,WP_347278237.1
-Leptolyngbya sp. FACHB-671,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Leptolyngbya sp. FACHB-671],🟢 Confirmed,WP_347277321.1
 Nostoc sp. UHCC 0251,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Nostoc sp. UHCC 0251],🟢 Confirmed,WP_323202168.1
-Microcoleus sp. CAWBG24,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Microcoleus sp. CAWBG24],🟢 Confirmed,WP_293360597.1
 Laspinema sp. D2d,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Laspinema sp. D2d],🟢 Confirmed,WP_261204137.1
 Myxacorys almedinensis,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Myxacorys almedinensis],🟢 Confirmed,WP_162422092.1
-Chroococcidiopsis sp. CCALA 051,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Chroococcidiopsis sp. CCALA 051],🟢 Confirmed,WP_106545960.1
 Geitlerinema calcuttense,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Geitlerinema calcuttense],🟢 Confirmed,WP_286004595.1
 Romeriopsis navalis,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Romeriopsis navalis],🟢 Confirmed,WP_264325975.1
 Acaryochloris sp. 'Moss Beach',cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Acaryochloris sp. 'Moss Beach'],🟢 Confirmed,WP_235109762.1
-Spirulina sp. CCY15215,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Spirulina sp. CCY15215],🟢 Confirmed,WP_204103306.1
-Nostoc sp. 'Peltigera membranacea cyanobiont' N6,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Nostoc sp. 'Peltigera membranacea cyanobiont' N6],🟢 Confirmed,WP_104899679.1
 Fischerella major,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Fischerella major],🟢 Confirmed,WP_073557047.1
 Fischerella,cellulase,3.2.1.4,cellulose,MULTISPECIES: cellulase family glycosylhydrolase [Fischerella],🟢 Confirmed,WP_016866549.1
 Chlorogloeopsis sp. ULAP01,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Chlorogloeopsis sp. ULAP01],🟢 Confirmed,WP_289792134.1
-Candidatus Synechococcus calcipolaris,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Candidatus Synechococcus calcipolaris],🟢 Confirmed,WP_277865611.1
 Nostoc flagelliforme,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Nostoc flagelliforme],🟢 Confirmed,WP_100899988.1
 Nostoc favosum,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Nostoc favosum],🟢 Confirmed,WP_229482933.1
 Nostoc sp. FACHB-888,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Nostoc sp. FACHB-888],🟢 Confirmed,WP_190729620.1
-Calothrix sp. NIES-3974,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Calothrix sp. NIES-3974],🟢 Confirmed,WP_096621540.1
 Fischerella sp. NIES-3754,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Fischerella sp. NIES-3754],🟢 Confirmed,WP_062246224.1
 Xenococcus sp. PCC 7305,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Xenococcus sp. PCC 7305],🟢 Confirmed,WP_006509020.1
 Rivularia sp. PCC 7116,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Rivularia sp. PCC 7116],🟢 Confirmed,WP_015116888.1

@@ -19,6 +19,9 @@ class TaxonomyService:
         self.cache_file = cache_file
         self.cache = self._load_cache()
 
+        if hasattr(AppConfig, 'NCBI_API_KEY'):
+            Entrez.api_key = AppConfig.NCBI_API_KEY
+
     def _load_cache(self) -> Dict[str, Any]:
         if os.path.exists(self.cache_file):
             try:

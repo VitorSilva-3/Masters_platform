@@ -40,7 +40,7 @@ def load_and_merge_predictions(filepath: str, main_df: pd.DataFrame, id_col: str
                 main_subset, 
                 left_on=id_col, 
                 right_on='Source ID (NCBI)', 
-                how='left'
+                how='inner'
             )
                     
         return df_pred
@@ -49,7 +49,7 @@ def load_and_merge_predictions(filepath: str, main_df: pd.DataFrame, id_col: str
         return pd.DataFrame()
 
 def render_dashboard_tab(df: pd.DataFrame, id_col: str, title: str, taxonomy_service):
-    """Renders a dashboard for a specific domain with dynamic filtering."""
+    """Renders a dashboard for a specific domain."""
 
     if df.empty:
         st.info(f"No prediction data available for {title}.")
@@ -61,29 +61,62 @@ def render_dashboard_tab(df: pd.DataFrame, id_col: str, title: str, taxonomy_ser
             species_to_group = {sp: get_group_for_species(sp, taxonomy_service) for sp in unique_species}
             df["Class"] = df["Specie"].map(species_to_group)
 
-    filtered_df = df.copy()
+
+    key_class = f"loc_class_{title}"
+    key_spec = f"loc_spec_{title}"
+    key_enz = f"loc_enz_{title}"
+    
+    filter_keys = [key_class, key_spec, key_enz]
+    
+    for k in filter_keys:
+        if k not in st.session_state:
+            st.session_state[k] = []
+
+    def clear_loc_filters():
+        for k in filter_keys:
+            st.session_state[k] = []
+
+    def get_filtered_df(exclude_col=None):
+        temp_df = df.copy()
+        if exclude_col != "Class" and st.session_state[key_class]:
+            temp_df = temp_df[temp_df["Class"].isin(st.session_state[key_class])]
+        if exclude_col != "Specie" and st.session_state[key_spec]:
+            temp_df = temp_df[temp_df["Specie"].isin(st.session_state[key_spec])]
+        if exclude_col != "Enzyme" and st.session_state[key_enz]:
+            temp_df = temp_df[temp_df["Enzyme"].isin(st.session_state[key_enz])]
+        return temp_df
+
+    def get_safe_options(col_name, state_key):
+        opts = get_filtered_df(col_name)[col_name].dropna().unique().tolist()
+        for sel in st.session_state[state_key]:
+            if sel not in opts:
+                opts.append(sel)
+        return opts
+
+    col_title, col_btn = st.columns([4, 1])
+    with col_title:
+        st.write("") 
+    with col_btn:
+        st.button("Clear filters", key=f"clear_btn_{title}", on_click=clear_loc_filters, use_container_width=True)
 
     col_f1, col_f2, col_f3 = st.columns(3)
     
     with col_f1:
-        groups = sorted([g for g in df["Class"].dropna().unique() if g != "Other / Unknown"])
-        if "Other / Unknown" in df["Class"].values:
+        opts_class = get_safe_options("Class", key_class)
+        groups = sorted([g for g in opts_class if g != "Other / Unknown"])
+        if "Other / Unknown" in opts_class:
             groups.append("Other / Unknown")
-        selected_groups = st.multiselect(f"Select class:", options=groups, key=f"loc_class_{title}")
-        if selected_groups:
-            filtered_df = filtered_df[filtered_df["Class"].isin(selected_groups)]
+        st.multiselect("Select class:", options=groups, key=key_class)
 
     with col_f2:
-        available_species = sorted(filtered_df["Specie"].dropna().unique().tolist())
-        selected_species = st.multiselect(f"Select species:", options=available_species, key=f"loc_spec_{title}")
-        if selected_species:
-            filtered_df = filtered_df[filtered_df["Specie"].isin(selected_species)]
+        opts_specie = sorted(get_safe_options("Specie", key_spec))
+        st.multiselect("Select species:", options=opts_specie, key=key_spec)
 
     with col_f3:
-        available_enzymes = sorted(filtered_df["Enzyme"].dropna().unique().tolist())
-        selected_enzymes = st.multiselect(f"Select enzyme:", options=available_enzymes, key=f"loc_enz_{title}")
-        if selected_enzymes:
-            filtered_df = filtered_df[filtered_df["Enzyme"].isin(selected_enzymes)]
+        opts_enzyme = sorted(get_safe_options("Enzyme", key_enz))
+        st.multiselect("Select enzyme:", options=opts_enzyme, key=key_enz)
+
+    filtered_df = get_filtered_df(exclude_col=None)
 
     st.divider()
 

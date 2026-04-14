@@ -11289,5 +11289,35 @@
         "status": "Found",
         "accession": "D8UXL6",
         "url": "https://www.uniprot.org/uniprotkb/D8UXL6/entry"
+    },
+    "3.2.1.1_Microcoleus drouetii_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:3.2.1.1+AND+organism_name:\"Microcoleus drouetii\""
+    },
+    "3.2.1.1_Microcoleus sp. BM001215392_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:3.2.1.1+AND+organism_name:\"Microcoleus sp. BM001215392\""
+    },
+    "3.2.1.1_Microcoleus occultus_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:3.2.1.1+AND+organism_name:\"Microcoleus occultus\""
+    },
+    "3.2.1.1_Microcoleus tentaculus_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:3.2.1.1+AND+organism_name:\"Microcoleus tentaculus\""
+    },
+    "3.2.1.1_Leptodesmis_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:3.2.1.1+AND+organism_name:\"Leptodesmis\""
+    },
+    "3.2.1.4_Scenedesmus bijugus var. obtusiusculus_link": {
+        "status": "Not Found",
+        "accession": "-",
+        "url": "https://www.uniprot.org/uniprotkb?query=ec:3.2.1.4+AND+organism_name:\"Scenedesmus bijugus var. obtusiusculus\""
     }
 }

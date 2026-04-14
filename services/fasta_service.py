@@ -5,6 +5,7 @@ import logging
 import pandas as pd
 from urllib.error import HTTPError
 from Bio import Entrez
+from config import AppConfig
 
 logger = logging.getLogger(__name__)
 
@@ -18,6 +19,8 @@ class FastaService:
         self.output_dir = output_dir
         
         Entrez.email = self.email
+        if hasattr(AppConfig, 'NCBI_API_KEY'):
+            Entrez.api_key = AppConfig.NCBI_API_KEY
         
         os.makedirs(self.output_dir, exist_ok=True)
         

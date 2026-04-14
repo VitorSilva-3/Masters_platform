@@ -93,7 +93,7 @@ predict()
         return set(glob.glob(os.path.join(self.output_dir, "results_*.csv")))
 
     def _process_latest_result(self, target_csv: str, before_files: set[str] | None = None) -> bool:
-        """Appends the newly generated predictions to the target CSV or creates it if it doesn't exist."""
+        """Adds the newly generated predictions to the target CSV or creates it if it doesn't exist."""
 
         current_files = self._get_result_files()
 
@@ -116,7 +116,7 @@ predict()
                     return False
 
                 new_df.to_csv(target_csv, mode="a", header=False, index=False)
-                logger.info(f"Appended {len(new_df)} new predictions to {os.path.basename(target_csv)}")
+                logger.info(f"Added {len(new_df)} new predictions to {os.path.basename(target_csv)}")
                 os.remove(latest_file)
             else:
                 os.rename(latest_file, target_csv)

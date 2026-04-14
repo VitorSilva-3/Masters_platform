@@ -5,7 +5,7 @@ from config import AppConfig
 
 def get_group_for_species(species: str, taxonomy_service) -> str:
     """Helper function to find which Target Taxa a species belongs to."""
-
+    
     lineage = taxonomy_service.fetch_taxonomy_lineage(species)
     if isinstance(lineage, list):
         for node in lineage:
@@ -18,9 +18,8 @@ def get_group_for_species(species: str, taxonomy_service) -> str:
 
 def render_data_view(df: pd.DataFrame, taxonomy_service):
     """
-    Renders the Data tab, displaying the main dataset with advanced filtering.
+    Renders the Data tab, displaying the main dataset.
     """
-
     st.subheader("Global dataset")
 
     if df.empty:
@@ -50,12 +49,37 @@ def render_data_view(df: pd.DataFrame, taxonomy_service):
         cols.insert(cols.index("Specie") + 1, cols.pop(cols.index("Class")))
         df = df[cols]
 
-    filtered_df = df.copy()
+
+    filter_keys = ["f_class", "f_specie", "f_enzyme", "f_sugar", "f_status"]
+    for k in filter_keys:
+        if k not in st.session_state:
+            st.session_state[k] = []
 
     def clear_data_filters():
-        for key in ["f_class", "f_specie", "f_enzyme", "f_sugar", "f_status"]:
+        for key in filter_keys:
             st.session_state[key] = []
 
+    def get_filtered_df(exclude_col=None):
+        temp_df = df.copy()
+        if exclude_col != "Class" and st.session_state["f_class"]:
+            temp_df = temp_df[temp_df["Class"].isin(st.session_state["f_class"])]
+        if exclude_col != "Specie" and st.session_state["f_specie"]:
+            temp_df = temp_df[temp_df["Specie"].isin(st.session_state["f_specie"])]
+        if exclude_col != "Enzyme" and st.session_state["f_enzyme"]:
+            temp_df = temp_df[temp_df["Enzyme"].isin(st.session_state["f_enzyme"])]
+        if exclude_col != "Target sugar" and "Target sugar" in df.columns and st.session_state["f_sugar"]:
+            temp_df = temp_df[temp_df["Target sugar"].isin(st.session_state["f_sugar"])]
+        if exclude_col != "Status" and "Status" in df.columns and st.session_state["f_status"]:
+            temp_df = temp_df[temp_df["Status"].isin(st.session_state["f_status"])]
+        return temp_df
+
+    def get_safe_options(col_name, state_key):
+        opts = get_filtered_df(col_name)[col_name].dropna().unique().tolist()
+        for sel in st.session_state[state_key]:
+            if sel not in opts:
+                opts.append(sel)
+        return opts
+    
     col_title, col_btn = st.columns([4, 1])
     with col_title:
         st.markdown("### Filters")
@@ -65,47 +89,40 @@ def render_data_view(df: pd.DataFrame, taxonomy_service):
     col1, col2, col3 = st.columns(3, gap="large")
 
     with col1:
-        groups = sorted([g for g in df["Class"].unique() if g != "Other / Unknown"])
-        if "Other / Unknown" in df["Class"].values:
+        opts_class = get_safe_options("Class", "f_class")
+        groups = sorted([g for g in opts_class if g != "Other / Unknown"])
+        if "Other / Unknown" in opts_class:
             groups.append("Other / Unknown")
-        selected_groups = st.multiselect("Select class:", options=groups, placeholder="Select...", key="f_class")
-        if selected_groups:
-            filtered_df = filtered_df[filtered_df["Class"].isin(selected_groups)]
+        st.multiselect("Select class:", options=groups, placeholder="Select...", key="f_class")
 
     with col2:
-        available_species = sorted(filtered_df["Specie"].dropna().unique().tolist())
-        selected_species = st.multiselect("Select species:", options=available_species, placeholder="Select...", key="f_specie")
-        if selected_species:
-            filtered_df = filtered_df[filtered_df["Specie"].isin(selected_species)]
+        opts_specie = sorted(get_safe_options("Specie", "f_specie"))
+        st.multiselect("Select species:", options=opts_specie, placeholder="Select...", key="f_specie")
 
     with col3:
-        available_enzymes = sorted(filtered_df["Enzyme"].dropna().unique().tolist())
-        selected_enzymes = st.multiselect("Select enzyme:", options=available_enzymes, placeholder="Select...", key="f_enzyme")
-        if selected_enzymes:
-            filtered_df = filtered_df[filtered_df["Enzyme"].isin(selected_enzymes)]
+        opts_enzyme = sorted(get_safe_options("Enzyme", "f_enzyme"))
+        st.multiselect("Select enzyme:", options=opts_enzyme, placeholder="Select...", key="f_enzyme")
 
     col4, col5 = st.columns(2, gap="large")
 
     with col4:
         if "Target sugar" in df.columns:
-            available_sugars = sorted(filtered_df["Target sugar"].dropna().unique().tolist())
-            selected_sugars = st.multiselect("Select target sugar:", options=available_sugars, placeholder="Select...", key="f_sugar")
-            if selected_sugars:
-                filtered_df = filtered_df[filtered_df["Target sugar"].isin(selected_sugars)]
+            opts_sugar = sorted(get_safe_options("Target sugar", "f_sugar"))
+            st.multiselect("Select target sugar:", options=opts_sugar, placeholder="Select...", key="f_sugar")
         else:
             st.multiselect("Select target sugar:", options=[], placeholder="N/A", disabled=True, key="f_sugar_disabled")
 
     with col5:
         if "Status" in df.columns:
-            available_status = sorted(filtered_df["Status"].dropna().unique().tolist())
-            selected_statuses = st.multiselect("Select status:", options=available_status, placeholder="Select...", key="f_status")
-            if selected_statuses:
-                filtered_df = filtered_df[filtered_df["Status"].isin(selected_statuses)]
+            opts_status = sorted(get_safe_options("Status", "f_status"))
+            st.multiselect("Select status:", options=opts_status, placeholder="Select...", key="f_status")
         else:
             st.multiselect("Select status:", options=[], placeholder="N/A", disabled=True, key="f_status_disabled")
 
+    filtered_df = get_filtered_df(exclude_col=None) 
+
     st.divider()
-    st.markdown(f"Showing {len(filtered_df)} records based on your current filters.")
+    st.markdown(f"Showing **{len(filtered_df)}** records based on your current filters.")
 
     display_df = filtered_df.copy()
     if "Source ID (NCBI)" in display_df.columns:
