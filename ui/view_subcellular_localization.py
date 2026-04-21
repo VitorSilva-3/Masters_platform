@@ -1,4 +1,3 @@
-
 import os
 import streamlit as st
 import pandas as pd
@@ -19,55 +18,87 @@ def get_group_for_species(species: str, taxonomy_service) -> str:
     return "Other / Unknown"
 
 @st.cache_data(show_spinner=False)
-def load_and_merge_predictions(filepath: str, main_df: pd.DataFrame, id_col: str) -> pd.DataFrame:
-    """Loads prediction data, cleans it, standardizes column names, and merges with the main dataframe."""
-
-    if not os.path.exists(filepath):
-        return pd.DataFrame()
+def load_and_merge_all_predictions(dataset_name: str, main_df: pd.DataFrame) -> pd.DataFrame:
+    """Loads Euk and Prok predictions, standardizes them, and merges with the main dataframe."""
     
-    try:
-        df_pred = pd.read_csv(filepath)
-        df_pred = df_pred.loc[:, ~df_pred.columns.str.contains('^Unnamed')]
+    euk_path = os.path.join("data", f"euk_{dataset_name}_predictions.csv")
+    prok_path = os.path.join("data", f"prok_{dataset_name}_predictions.csv")
+    
+    dfs = []
+    
+    if os.path.exists(euk_path):
+        df_euk = pd.read_csv(euk_path)
+        df_euk = df_euk.loc[:, ~df_euk.columns.str.contains('^Unnamed')]
+        if 'Localizations' in df_euk.columns: 
+            df_euk = df_euk.rename(columns={'Localizations': 'Localization'})
+        if 'Protein_ID' in df_euk.columns: 
+            df_euk = df_euk.rename(columns={'Protein_ID': 'Model_ID'})
+        df_euk['Domain'] = 'Eukaryotes (Microalgae)'
+        dfs.append(df_euk)
         
-        if 'Localizations' in df_pred.columns:
-            df_pred = df_pred.rename(columns={'Localizations': 'Localization'})
-            
-        if not main_df.empty and "Source ID (NCBI)" in main_df.columns:
-            main_subset = main_df[['Source ID (NCBI)', 'Specie', 'Enzyme']].dropna(subset=['Source ID (NCBI)']).drop_duplicates(subset=['Source ID (NCBI)'])
-            
-            df_pred = pd.merge(
-                df_pred, 
-                main_subset, 
-                left_on=id_col, 
-                right_on='Source ID (NCBI)', 
-                how='inner'
-            )
-                    
-        return df_pred
-    except Exception as e:
-        st.error(f"Error loading {filepath}: {e}")
-        return pd.DataFrame()
+    if os.path.exists(prok_path):
+        df_prok = pd.read_csv(prok_path)
+        df_prok = df_prok.loc[:, ~df_prok.columns.str.contains('^Unnamed')]
+        if 'Localizations' in df_prok.columns: 
+            df_prok = df_prok.rename(columns={'Localizations': 'Localization'})
+        if 'ACC' in df_prok.columns: 
+            df_prok = df_prok.rename(columns={'ACC': 'Model_ID'})
+        df_prok['Domain'] = 'Prokaryotes (Cyanobacteria)'
+        dfs.append(df_prok)
 
-def render_dashboard_tab(df: pd.DataFrame, id_col: str, title: str, taxonomy_service):
-    """Renders a dashboard for a specific domain."""
+    if not dfs:
+        return pd.DataFrame()
+        
+    all_preds = pd.concat(dfs, ignore_index=True)
+    all_preds['Model_ID'] = all_preds['Model_ID'].astype(str).str.strip()
+    
+    item_col = "Enzyme" if "Enzyme" in main_df.columns else "Transporter"
+    
+    if not main_df.empty and "Source ID (NCBI)" in main_df.columns:
+        main_subset = main_df[['Source ID (NCBI)', 'Specie', item_col]].dropna(subset=['Source ID (NCBI)']).drop_duplicates(subset=['Source ID (NCBI)'])
+        
+        merged_df = pd.merge(
+            all_preds, 
+            main_subset, 
+            left_on='Model_ID', 
+            right_on='Source ID (NCBI)', 
+            how='inner'
+        )
+        return merged_df
+        
+    return pd.DataFrame()
+
+def render_dashboard_tab(df: pd.DataFrame, item_col: str, tab_id: str, taxonomy_service):
+    """Renders a dashboard dynamically for Enzymes or Transporters."""
 
     if df.empty:
-        st.info(f"No prediction data available for {title}.")
+        st.info(f"No prediction data available.")
         return
 
-    if "Class" not in df.columns:
+    domain_choice = st.radio(
+        "Select biological domain to analyze:",
+        ["Eukaryotes (Microalgae)", "Prokaryotes (Cyanobacteria)"],
+        horizontal=True,
+        key=f"radio_domain_{tab_id}"
+    )
+
+    working_df = df[df['Domain'] == domain_choice]
+
+    if working_df.empty:
+        st.warning(f"No data found for {domain_choice} in this category.")
+        return
+
+    if "Class" not in working_df.columns:
         with st.spinner("Classifying species for filters..."):
-            unique_species = df["Specie"].dropna().unique()
+            unique_species = working_df["Specie"].dropna().unique()
             species_to_group = {sp: get_group_for_species(sp, taxonomy_service) for sp in unique_species}
-            df["Class"] = df["Specie"].map(species_to_group)
+            working_df["Class"] = working_df["Specie"].map(species_to_group)
 
-
-    key_class = f"loc_class_{title}"
-    key_spec = f"loc_spec_{title}"
-    key_enz = f"loc_enz_{title}"
+    key_class = f"loc_class_{tab_id}"
+    key_spec = f"loc_spec_{tab_id}"
+    key_item = f"loc_item_{tab_id}"
     
-    filter_keys = [key_class, key_spec, key_enz]
-    
+    filter_keys = [key_class, key_spec, key_item]
     for k in filter_keys:
         if k not in st.session_state:
             st.session_state[k] = []
@@ -77,13 +108,13 @@ def render_dashboard_tab(df: pd.DataFrame, id_col: str, title: str, taxonomy_ser
             st.session_state[k] = []
 
     def get_filtered_df(exclude_col=None):
-        temp_df = df.copy()
+        temp_df = working_df.copy()
         if exclude_col != "Class" and st.session_state[key_class]:
             temp_df = temp_df[temp_df["Class"].isin(st.session_state[key_class])]
         if exclude_col != "Specie" and st.session_state[key_spec]:
             temp_df = temp_df[temp_df["Specie"].isin(st.session_state[key_spec])]
-        if exclude_col != "Enzyme" and st.session_state[key_enz]:
-            temp_df = temp_df[temp_df["Enzyme"].isin(st.session_state[key_enz])]
+        if exclude_col != item_col and st.session_state[key_item]:
+            temp_df = temp_df[temp_df[item_col].isin(st.session_state[key_item])]
         return temp_df
 
     def get_safe_options(col_name, state_key):
@@ -97,7 +128,7 @@ def render_dashboard_tab(df: pd.DataFrame, id_col: str, title: str, taxonomy_ser
     with col_title:
         st.write("") 
     with col_btn:
-        st.button("Clear filters", key=f"clear_btn_{title}", on_click=clear_loc_filters, use_container_width=True)
+        st.button("Clear filters", key=f"clear_btn_{tab_id}", on_click=clear_loc_filters, use_container_width=True)
 
     col_f1, col_f2, col_f3 = st.columns(3)
     
@@ -113,8 +144,8 @@ def render_dashboard_tab(df: pd.DataFrame, id_col: str, title: str, taxonomy_ser
         st.multiselect("Select species:", options=opts_specie, key=key_spec)
 
     with col_f3:
-        opts_enzyme = sorted(get_safe_options("Enzyme", key_enz))
-        st.multiselect("Select enzyme:", options=opts_enzyme, key=key_enz)
+        opts_item = sorted(get_safe_options(item_col, key_item))
+        st.multiselect(f"Select {item_col.lower()}:", options=opts_item, key=key_item)
 
     filtered_df = get_filtered_df(exclude_col=None)
 
@@ -136,7 +167,6 @@ def render_dashboard_tab(df: pd.DataFrame, id_col: str, title: str, taxonomy_ser
     st.divider()
 
     st.markdown("### Localization distribution")
-    
     loc_counts = filtered_df['Localization'].value_counts().reset_index()
     loc_counts.columns = ['Subcellular localization', 'Count']
     
@@ -148,27 +178,26 @@ def render_dashboard_tab(df: pd.DataFrame, id_col: str, title: str, taxonomy_ser
         color_discrete_sequence=px.colors.qualitative.Pastel
     )
     fig.update_layout(margin=dict(t=20, b=20, l=0, r=0))
-    
     st.plotly_chart(fig, use_container_width=True)
 
     st.divider()
 
     st.markdown("### Probability scores")
-    st.markdown(f"Showing {len(filtered_df)} records based on your current filters.")
+    st.success(f"Showing {len(filtered_df)} records based on your current filters.")
     
-    base_exclude = [id_col, 'Localization', 'Signals', 'Source ID (NCBI)', 'Specie', 'Enzyme', 'Class']
+    base_exclude = ['Model_ID', 'Localization', 'Signals', 'Source ID (NCBI)', 'Specie', item_col, 'Class', 'Domain']
     
     prob_cols = []
     extra_text_cols = []
     
     for c in filtered_df.columns:
         if c not in base_exclude:
-            if pd.api.types.is_numeric_dtype(filtered_df[c]):
+            if pd.api.types.is_numeric_dtype(filtered_df[c]) and filtered_df[c].notna().any():
                 prob_cols.append(c)
-            else:
+            elif not pd.api.types.is_numeric_dtype(filtered_df[c]) and filtered_df[c].notna().any():
                 extra_text_cols.append(c)
     
-    display_cols = ['Specie', 'Enzyme', 'Localization'] + extra_text_cols + prob_cols
+    display_cols = ['Specie', item_col, 'Localization'] + extra_text_cols + prob_cols
     display_df = filtered_df[display_cols]
     
     styled_df = display_df.style.background_gradient(
@@ -180,7 +209,7 @@ def render_dashboard_tab(df: pd.DataFrame, id_col: str, title: str, taxonomy_ser
     
     col_config = {
         "Specie": st.column_config.TextColumn("Species", width="medium"),
-        "Enzyme": st.column_config.TextColumn("Enzyme", width="medium"),
+        item_col: st.column_config.TextColumn(item_col, width="medium"),
         "Localization": st.column_config.TextColumn("Final prediction", width="medium")
     }
     
@@ -194,8 +223,8 @@ def render_dashboard_tab(df: pd.DataFrame, id_col: str, title: str, taxonomy_ser
         column_config=col_config
     )
 
-def render_localization_view(df: pd.DataFrame, taxonomy_service):
-    """Main function to render the subcellular localization UI."""
+def render_localization_view(df_enzymes: pd.DataFrame, df_transporters: pd.DataFrame, taxonomy_service):
+    """Main function to render the subcellular localization UI with 2 main Tabs."""
 
     st.markdown("""
     Explore subcellular localization predictions generated by deep learning models developed by the **Technical University of Denmark (DTU)**. 
@@ -206,17 +235,14 @@ def render_localization_view(df: pd.DataFrame, taxonomy_service):
     *Credits: models and base architectures are provided by DTU Health Tech.*
     """)
 
-    euk_path = os.path.join("data", "euk_enzymes_predictions.csv")
-    prok_path = os.path.join("data", "prok_enzymes_predictions.csv")
+    with st.spinner("Loading AI predictions..."):
+        preds_enzymes = load_and_merge_all_predictions(dataset_name="enzymes", main_df=df_enzymes)
+        preds_transporters = load_and_merge_all_predictions(dataset_name="transporters", main_df=df_transporters)
 
-    with st.spinner("Loading predictions..."):
-        df_euk = load_and_merge_predictions(euk_path, df, id_col="Protein_ID")
-        df_prok = load_and_merge_predictions(prok_path, df, id_col="ACC")
+    tab_enz, tab_trans = st.tabs(["Enzymes", "Transporters"])
 
-    tab1, tab2 = st.tabs(["Eukaryotes (microalgae)", "Prokaryotes (cyanobacteria)"])
+    with tab_enz:
+        render_dashboard_tab(preds_enzymes, item_col="Enzyme", tab_id="enz", taxonomy_service=taxonomy_service)
 
-    with tab1:
-        render_dashboard_tab(df_euk, id_col="Protein_ID", title="Eukaryotes", taxonomy_service=taxonomy_service)
-
-    with tab2:
-        render_dashboard_tab(df_prok, id_col="ACC", title="Prokaryotes", taxonomy_service=taxonomy_service)
+    with tab_trans:
+        render_dashboard_tab(preds_transporters, item_col="Transporter", tab_id="tra", taxonomy_service=taxonomy_service)

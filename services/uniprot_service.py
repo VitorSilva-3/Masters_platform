@@ -13,13 +13,12 @@ class UniprotService:
     BASE_URL = "https://rest.uniprot.org/uniprotkb/search"
 
     def __init__(self, cache_file: str = "data/uniprot_cache.json"):
-        """Initialize and load local UniProt cache."""
         self.cache_file = cache_file
         self.cache = self._load_cache()
 
     def _load_cache(self) -> Dict[str, Any]:
         """Loads the JSON cache from disk."""
-        
+
         if os.path.exists(self.cache_file):
             try:
                 with open(self.cache_file, "r", encoding="utf-8") as f:
@@ -38,86 +37,65 @@ class UniprotService:
         except Exception as e:
             logger.error(f"[UniprotService] Error saving cache: {e}")
 
-    def fetch_enzyme_data(self, enzyme_name: str, ec_number: str, max_entries: int = 30) -> Dict[str, Any]:
-        """
-        Searches UniProt for general protein properties matching the EC number.
-        """
+    def fetch_protein_data(self, protein_name: str, identifier: str, id_type: str = "EC", max_entries: int = 30) -> Dict[str, Any]:
+        """Searches UniProt for general protein properties matching the EC or TC number."""
 
-        if ec_number in self.cache:
-            return self.cache[ec_number]
-
-        params = {
-            'query': f'ec:{ec_number}',
-            'format': 'json',
-            'size': max_entries,
-            'fields': 'accession,protein_name,cc_function,cc_catalytic_activity,cc_pathway,cc_cofactor,cc_subunit'
-        }
+        clean_key_name = protein_name.replace(' ', '_').replace('/', '_').replace('-', '_')
+        cache_key = f"{id_type}_{identifier}_{clean_key_name}"
         
+        if cache_key in self.cache:
+            return self.cache[cache_key]
+
+        query_name = protein_name.replace('/', ' ').replace('-', ' ')
+
+        if id_type == "EC":
+            query_str = f'ec:{identifier}'
+        elif id_type == "TC":
+            query_str = f'xref:tcdb-{identifier} AND "{query_name}"'
+        else:
+            query_str = f'{identifier} AND "{query_name}"'
+
+        def _do_request(q_str):
+            """Auxiliary function to avoid repeating the requests block."""
+
+            params = {
+                'query': q_str,
+                'format': 'json',
+                'size': max_entries,
+                'fields': 'accession,protein_name,cc_function,cc_catalytic_activity,cc_pathway,cc_cofactor,cc_subunit'
+            }
+            resp = requests.get(self.BASE_URL, params=params, timeout=10)
+            resp.raise_for_status()
+            return resp.json().get('results', [])
+
         try:
-            response = requests.get(self.BASE_URL, params=params, timeout=10)
-            response.raise_for_status()
-            data = response.json()
+            results = []
             
-            results = data.get('results', [])
+            try:
+                results = _do_request(query_str)
+            except requests.exceptions.HTTPError as req_err:
+                logger.warning(f"Specific query rejected by UniProt for '{protein_name}': {req_err}")
+
+            if not results and id_type == "TC":
+                logger.info(f"No exact match (or error) for '{protein_name}'. Falling back to general TC family {identifier} data.")
+                fallback_query = f'xref:tcdb-{identifier}'
+                results = _do_request(fallback_query)
+
             if not results:
-                self.cache[ec_number] = {}
+                self.cache[cache_key] = {}
                 self._save_cache()
                 return {}
             
-            summary = self._summarize_results(enzyme_name, ec_number, results)
-            self.cache[ec_number] = summary
+            summary = self._summarize_results(protein_name, identifier, id_type, results)
+            self.cache[cache_key] = summary
             self._save_cache()
             return summary
             
         except Exception as e:
-            logger.error(f"[UniprotService] Error fetching general data for {enzyme_name} (EC {ec_number}): {e}")
+            logger.error(f"[UniprotService] Error fetching general data for {protein_name} ({id_type} {identifier}): {e}")
             return {}
 
-    def fetch_species_link(self, ec_number: str, species_name: str) -> Dict[str, str]:
-        """
-        Searches UniProt specifically for an entry matching the EC number AND Species.
-        """
-
-        cache_key = f"{ec_number}_{species_name}_link"
-        if cache_key in self.cache:
-            return self.cache[cache_key]
-
-        params = {
-            'query': f'ec:{ec_number} AND organism_name:"{species_name}"',
-            'format': 'json',
-            'size': 1, 
-            'fields': 'accession'
-        }
-        
-        try:
-            response = requests.get(self.BASE_URL, params=params, timeout=10)
-            if response.status_code == 200:
-                results = response.json().get('results', [])
-                if results:
-                    accession = results[0].get('primaryAccession')
-                    if accession:
-                        result = {
-                            "status": "Found",
-                            "accession": accession,
-                            "url": f"https://www.uniprot.org/uniprotkb/{accession}/entry"
-                        }
-                        self.cache[cache_key] = result
-                        self._save_cache()
-                        return result
-        except Exception as e:
-            logger.error(f"[UniprotService] Error fetching link for {species_name}: {e}")
-
-        fallback_url = f"https://www.uniprot.org/uniprotkb?query=ec:{ec_number}+AND+organism_name:\"{species_name}\""
-        result = {
-            "status": "Not Found",
-            "accession": "-",
-            "url": fallback_url
-        }
-        self.cache[cache_key] = result
-        self._save_cache()
-        return result
-
-    def _summarize_results(self, name: str, ec: str, results: List[dict]) -> Dict[str, Any]:
+    def _summarize_results(self, name: str, identifier: str, id_type: str, results: List[dict]) -> Dict[str, Any]:
         """Aggregates general data."""
 
         functions = set()
@@ -149,14 +127,21 @@ class UniprotService:
         first_desc = results[0].get('proteinDescription', {}).get('recommendedName', {}).get('fullName', {}).get('value', 'Unknown')
         first_accession = results[0].get('primaryAccession')
         
-        link = f"https://www.uniprot.org/uniprotkb/{first_accession}/entry" if first_accession else f"https://www.uniprot.org/uniprotkb?query=ec:{ec}"
+        if first_accession:
+            link = f"https://www.uniprot.org/uniprotkb/{first_accession}/entry"
+        else:
+            if id_type == "EC":
+                link = f"https://www.uniprot.org/uniprotkb?query=ec:{identifier}"
+            else:
+                link = f"https://www.uniprot.org/uniprotkb?query=xref:tcdb-{identifier}"
 
         return {
-            'enzyme_name': name,
-            'ec_number': ec,
+            'protein_name': name,
+            'identifier': identifier,
+            'id_type': id_type,
             'uniprot_link': link,  
             'general_info': {
-                'protein_name': first_desc,
+                'protein_name_uniprot': first_desc,
                 'functions': list(functions)[:3], 
                 'catalytic_activities': list(set(catalytic_activities))[:3],
                 'pathways': list(pathways)[:3],

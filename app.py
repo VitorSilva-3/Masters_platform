@@ -74,19 +74,15 @@ if not st.session_state.app_loaded:
 
 else:
     st.title("Welcome to MicroValue")
-    st.markdown("#### *Biotechnological valorization of agro-industrial byproducts through microalgae*")
+    st.markdown("#### *Biotechnological valorization of agro-industrial byproducts through microalgae and cyanobacteria*")
     st.divider()
 
     st.markdown(
         """
-        <div style='font-size: 1.1em; line-height: 1.6; color: #444;'>
-        This platform integrates data on agro-industrial byproducts and the enzymes produced by various microalgae, 
-        organised by species. It identifies which byproducts can serve as substrates for each microalga, 
+        This platform integrates data on agro-industrial byproducts as well as the enzymes and transporters produced by various microalgae 
+        and cyanobacteria organised by species. It identifies which byproducts can serve as substrates for each microalga/cyanobacterium,
         indicating those with the greatest growth potential.
-        </div>
-        <br>
-        """, 
-        unsafe_allow_html=True
+        """
     )
 
     st.info("👈 **Use the left menu to navigate through the platform's specialized modules.**")
@@ -95,27 +91,26 @@ else:
 
     st.markdown("### Platform modules")
 
-    col1, col2, col3 = st.columns(3)
+    with st.container(border=True):
+        st.page_link("pages/1_Data.py", label = ":blue[**Data**]", use_container_width = True)
+        st.write("Explore the comprehensive datasets cross-referencing species, target sugars, degrading enzymes, and transport mechanisms.")
 
-    with col1:
-        with st.container(border=True):
-            st.markdown("### Data")
-            st.write("Explore the central database crossing species, target sugars, and enzymes.")
+    with st.container(border=True):
+        st.page_link("pages/2_Scientific_literature.py", label = ":blue[**Scientific literature**]", use_container_width = True)
+        st.write("Access an automated curation of PubMed publications relevant to the catalogued species and their biochemical repertoire.")
+    
+    with st.container(border=True):
+        st.page_link("pages/3_Taxonomy.py", label = ":blue[**Taxonomy**]", use_container_width = True)
+        st.write("Navigate the detailed evolutionary lineage and taxonomic classification of the catalogued microalgae and cyanobacteria.")
+    
+    with st.container(border=True):
+        st.page_link("pages/4_KEGG.py", label = ":blue[**KEGG**]", use_container_width = True)
+        st.write("Map metabolic networks and analyze the specific catalytic reactions underlying biomass degradation.")
 
-        with st.container(border=True):
-            st.markdown("### Literature")
-            st.write("Access a collection of publications related to the species catalogued in the platform.")
+    with st.container(border=True):
+        st.page_link("pages/5_UniProt.py", label = ":blue[**UniProt**]", use_container_width = True)
+        st.write("Investigate the general biochemical properties, functional annotations, and structural features of the targeted proteins.")
 
-    with col2:
-        with st.container(border=True):
-            st.markdown("### KEGG")
-            st.write("Analyze catalytic reactions and metabolic pathways from the KEGG database.")
-
-        with st.container(border=True):
-            st.markdown("### Taxonomy")
-            st.write("Compare the complete evolutionary lineage of microalgae side-by-side.")
-
-    with col3:
-        with st.container(border=True):
-            st.markdown("### UniProt")
-            st.write("Access deep biochemical properties of the enzymes from the UniProt database.")
+    with st.container(border=True):
+        st.page_link("pages/6_Subcellular_localization.py", label = ":blue[**Subcellular localization**]", use_container_width = True)
+        st.write("Examine AI-driven predictions of subcellular compartments utilizing DeepLoc 2.0 and DeepLocPro models.")

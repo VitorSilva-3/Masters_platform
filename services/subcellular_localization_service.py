@@ -12,18 +12,13 @@ logger = logging.getLogger(__name__)
 
 
 class SubcellularLocalizationService:
-    """Service responsible for running subcellular localization predictions using DeepLoc 2.0 and DeepLocPro."""
+    """
+    Service responsible for running subcellular localization predictions using DeepLoc 2.0 and DeepLocPro.
+    """
 
-    def __init__(self, data_dir="data", output_dir="data"):
+    def __init__(self, data_dir: str = "data", output_dir: str = "data"):
         self.data_dir = data_dir
         self.output_dir = output_dir
-
-        self.euk_fasta = os.path.join(self.data_dir, "euk_enzymes.fasta")
-        self.pro_fasta = os.path.join(self.data_dir, "prok_enzymes.fasta")
-
-        self.euk_csv = os.path.join(self.output_dir, "euk_enzymes_predictions.csv")
-        self.pro_csv = os.path.join(self.output_dir, "prok_enzymes_predictions.csv")
-
         os.makedirs(self.output_dir, exist_ok=True)
 
     def _run_predictor(self, import_path: str, argv: list[str]) -> None:
@@ -38,14 +33,13 @@ predict()
         subprocess.run([sys.executable, "-c", script], check=True)
 
     def _get_processed_ids(self, csv_path: str) -> set:
-        """Reads the existing predictions CSV and returns a set of already processed IDs."""
+        """Reads the existing predictions CSV and returns a set of already processed IDs to avoid redundant runs."""
 
         if not os.path.exists(csv_path):
             return set()
-
+            
         try:
             df = pd.read_csv(csv_path)
-            
             if df.empty:
                 return set()
             
@@ -127,25 +121,27 @@ predict()
             logger.error(f"Error processing results into {target_csv}: {e}")
             return False
 
-    def predict_eukaryotes(self):
-        """Runs DeepLoc 2.0 for eukaryotic sequences."""
+    def predict_eukaryotes(self, dataset_name: str):
+        """Runs DeepLoc 2.0 for eukaryotic sequences of a specific dataset."""
 
-        if not os.path.exists(self.euk_fasta) or os.path.getsize(self.euk_fasta) == 0:
-            logger.warning(f"File {self.euk_fasta} does not exist or is empty. Skipping DeepLoc 2.0.")
+        euk_fasta = os.path.join(self.data_dir, f"euk_{dataset_name}.fasta")
+        euk_csv = os.path.join(self.output_dir, f"euk_{dataset_name}_predictions.csv")
+        temp_fasta = os.path.join(self.data_dir, f"temp_euk_{dataset_name}.fasta")
+
+        if not os.path.exists(euk_fasta) or os.path.getsize(euk_fasta) == 0:
+            logger.info(f"Skipping DeepLoc 2.0 for {dataset_name}: FASTA not found or empty.")
             return
 
-        processed_ids = self._get_processed_ids(self.euk_csv)
-        temp_fasta = os.path.join(self.data_dir, "temp_euk.fasta")
-
-        new_count = self._filter_fasta(self.euk_fasta, temp_fasta, processed_ids)
+        processed_ids = self._get_processed_ids(euk_csv)
+        new_count = self._filter_fasta(euk_fasta, temp_fasta, processed_ids)
 
         if new_count == 0:
-            logger.info("All eukaryotic sequences are already predicted. Skipping DeepLoc 2.0.")
+            logger.info(f"All eukaryotic {dataset_name} sequences are already predicted. Skipping.")
             if os.path.exists(temp_fasta):
                 os.remove(temp_fasta)
             return
 
-        logger.info(f"Starting DeepLoc 2.0 predictions for {new_count} new eukaryotic sequences...")
+        logger.info(f"Starting DeepLoc 2.0 predictions for {new_count} new eukaryotic {dataset_name} sequences...")
 
         before_files = self._get_result_files()
 
@@ -155,7 +151,7 @@ predict()
                 ["-f", temp_fasta, "-o", self.output_dir, "-m", "Fast", "-d", "cpu"]
             )
 
-            ok = self._process_latest_result(self.euk_csv, before_files=before_files)
+            ok = self._process_latest_result(euk_csv, before_files=before_files)
             if ok:
                 logger.info("DeepLoc 2.0 predictions completed successfully!")
             else:
@@ -168,25 +164,27 @@ predict()
             if os.path.exists(temp_fasta):
                 os.remove(temp_fasta)
 
-    def predict_prokaryotes(self):
-        """Runs DeepLocPro for prokaryotic sequences."""
+    def predict_prokaryotes(self, dataset_name: str):
+        """Runs DeepLocPro for prokaryotic sequences of a specific dataset."""
 
-        if not os.path.exists(self.pro_fasta) or os.path.getsize(self.pro_fasta) == 0:
-            logger.warning(f"File {self.pro_fasta} does not exist or is empty. Skipping DeepLocPro.")
+        pro_fasta = os.path.join(self.data_dir, f"prok_{dataset_name}.fasta")
+        pro_csv = os.path.join(self.output_dir, f"prok_{dataset_name}_predictions.csv")
+        temp_fasta = os.path.join(self.data_dir, f"temp_prok_{dataset_name}.fasta")
+
+        if not os.path.exists(pro_fasta) or os.path.getsize(pro_fasta) == 0:
+            logger.info(f"Skipping DeepLocPro for {dataset_name}: FASTA not found or empty.")
             return
 
-        processed_ids = self._get_processed_ids(self.pro_csv)
-        temp_fasta = os.path.join(self.data_dir, "temp_prok.fasta")
-
-        new_count = self._filter_fasta(self.pro_fasta, temp_fasta, processed_ids)
+        processed_ids = self._get_processed_ids(pro_csv)
+        new_count = self._filter_fasta(pro_fasta, temp_fasta, processed_ids)
 
         if new_count == 0:
-            logger.info("All prokaryotic sequences are already predicted. Skipping DeepLocPro.")
+            logger.info(f"All prokaryotic {dataset_name} sequences are already predicted. Skipping.")
             if os.path.exists(temp_fasta):
                 os.remove(temp_fasta)
             return
 
-        logger.info(f"Starting DeepLocPro predictions for {new_count} new prokaryotic sequences...")
+        logger.info(f"Starting DeepLocPro predictions for {new_count} new prokaryotic {dataset_name} sequences...")
 
         before_files = self._get_result_files()
 
@@ -196,7 +194,7 @@ predict()
                 ["-f", temp_fasta, "-o", self.output_dir, "-d", "cpu", "-g", "any"]
             )
 
-            ok = self._process_latest_result(self.pro_csv, before_files=before_files)
+            ok = self._process_latest_result(pro_csv, before_files=before_files)
             if ok:
                 logger.info("DeepLocPro predictions completed successfully!")
             else:
@@ -209,10 +207,16 @@ predict()
             if os.path.exists(temp_fasta):
                 os.remove(temp_fasta)
 
-    def run_all(self):
-        """Orchestrates the execution of both models."""
+    def run_all(self, datasets: list = None):
+        """Orchestrates the execution of both models for all specified datasets."""
 
-        logger.info("Starting subcellular localization prediction pipeline.")
-        self.predict_eukaryotes()
-        self.predict_prokaryotes()
+        if datasets is None:
+            datasets = ["enzymes", "transporters"]
+            
+        logger.info(f"Starting subcellular localization prediction pipeline for: {', '.join(datasets)}")
+        
+        for ds in datasets:
+            self.predict_eukaryotes(ds)
+            self.predict_prokaryotes(ds)
+            
         logger.info("Subcellular localization prediction pipeline finished.")

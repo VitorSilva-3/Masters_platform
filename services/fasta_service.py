@@ -3,7 +3,6 @@ import os
 import time
 import logging
 import pandas as pd
-from urllib.error import HTTPError
 from Bio import Entrez
 from config import AppConfig
 
@@ -12,10 +11,9 @@ logger = logging.getLogger(__name__)
 class FastaService:
     """Class responsible for downloading and batching FASTA sequences from NCBI."""
 
-    def __init__(self, tax_service, email: str, data_filepath: str = "data/enzymes_data.csv", output_dir: str = "data"):
+    def __init__(self, tax_service, email: str, output_dir: str = "data"):
         self.tax_service = tax_service
         self.email = email
-        self.data_filepath = data_filepath
         self.output_dir = output_dir
         
         Entrez.email = self.email
@@ -23,14 +21,10 @@ class FastaService:
             Entrez.api_key = AppConfig.NCBI_API_KEY
         
         os.makedirs(self.output_dir, exist_ok=True)
-        
-        self.eukaryote_fasta = os.path.join(self.output_dir, "euk_enzymes.fasta")
-        self.prokaryote_fasta = os.path.join(self.output_dir, "prok_enzymes.fasta")
 
     def _split_ids_by_domain(self, df: pd.DataFrame) -> tuple:
         """Classifies species and splits NCBI IDs into eukaryotes and prokaryotes."""
 
-        logger.info("Classifying species to separate eukaryotes from prokaryotes...")
         eukaryote_ids = []
         prokaryote_ids = []
 
@@ -52,7 +46,6 @@ class FastaService:
             else:
                 eukaryote_ids.append(ncbi_id)
                 
-        logger.info(f"Classification complete: {len(eukaryote_ids)} eukaryotic enzymes, {len(prokaryote_ids)} prokaryotic enzymes.")
         return eukaryote_ids, prokaryote_ids
 
     def _get_existing_ids(self, filepath: str) -> set:
@@ -76,7 +69,6 @@ class FastaService:
             return
 
         existing_ids = self._get_existing_ids(output_file)
-        
         new_ids = list(set([ncbi_id for ncbi_id in id_list if ncbi_id not in existing_ids and ncbi_id.split('.')[0] not in existing_ids]))
 
         if not new_ids:
@@ -109,26 +101,37 @@ class FastaService:
                         break 
                     except Exception as e:  
                         if attempt < max_retries - 1:
-                            logger.warning(f"Network error on batch {batch_num} ({type(e).__name__}). Retrying in 5 seconds... (Attempt {attempt + 1}/{max_retries})")
+                            logger.warning(f"Network error on batch {batch_num}. Retrying in 5s... (Attempt {attempt + 1}/{max_retries})")
                             time.sleep(5)
                         else:
                             logger.error(f"Failed to download batch {batch_num} after {max_retries} attempts. Error: {e}")
                 
                 time.sleep(0.5)
 
-    def generate_fasta_files(self, df: pd.DataFrame) -> None:
-        """Main method to orchestrate the FASTA generation process."""
+    def generate_fasta_files(self, df: pd.DataFrame, dataset_name: str) -> None:
+        """Generates the FASTA files for a specific dataset dynamically."""
 
-        logger.info("Starting FASTA sequence generation process...")
+        logger.info(f"Starting FASTA sequence generation process for: {dataset_name.upper()}")
+        
+        eukaryote_fasta = os.path.join(self.output_dir, f"euk_{dataset_name}.fasta")
+        prokaryote_fasta = os.path.join(self.output_dir, f"prok_{dataset_name}.fasta")
         
         euk_ids, pro_ids = self._split_ids_by_domain(df)
+        logger.info(f"Classification complete: {len(euk_ids)} eukaryotic, {len(pro_ids)} prokaryotic sequences.")
         
         if euk_ids:
-            logger.info("Processing eukaryotic enzyme sequences...")
-            self._fetch_and_save_batches(euk_ids, self.eukaryote_fasta)
+            self._fetch_and_save_batches(euk_ids, eukaryote_fasta)
             
         if pro_ids:
-            logger.info("Processing prokaryotic enzyme sequences...")
-            self._fetch_and_save_batches(pro_ids, self.prokaryote_fasta)
+            self._fetch_and_save_batches(pro_ids, prokaryote_fasta)
             
-        logger.info("FASTA sequence generation successfully completed.")
+        logger.info(f"FASTA generation for {dataset_name} completed.")
+
+    def process_all_datasets(self, datasets: dict):
+        """Orchestrates the FASTA generation for multiple datasets automatically."""
+
+        for ds_name, df in datasets.items():
+            if not df.empty:
+                self.generate_fasta_files(df, dataset_name=ds_name)
+            else:
+                logger.warning(f"Dataset '{ds_name}' is empty. Skipping FASTA generation.")

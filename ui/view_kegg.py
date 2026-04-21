@@ -13,8 +13,8 @@ def render_kegg_view(df: pd.DataFrame):
     Renders the KEGG data tab with an analytical dashboard layout.
     """
 
-    st.subheader("KEGG database")
-    st.markdown("Explore fundamental biochemical properties and metabolic pathways from the KEGG database.")
+    st.subheader("KEGG Enzyme database")
+    st.markdown("Explore fundamental biochemical properties and metabolic pathways from the KEGG Enzyme database.")
     
     if df.empty:
         st.warning("No data available. Please build the main dataset first.")

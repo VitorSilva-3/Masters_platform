@@ -11,8 +11,6 @@ class PubMedService:
     """Service to search NCBI PubMed for articles."""
 
     def __init__(self, email: str, cache_file: str = "data/literature_cache.json"):
-        """Initialize with user email and load local PubMed cache."""
-
         self.email = email
         Entrez.email = self.email
         self.cache_file = cache_file
@@ -29,30 +27,33 @@ class PubMedService:
 
     def save_cache(self):
         """Saves the current cache dictionary to a JSON file."""
+
         try:
             with open(self.cache_file, "w", encoding="utf-8") as f:
                 json.dump(self.cache, f, indent=4)
         except Exception as e:
             logger.error(f"[PubMedService] Error saving cache: {e}")
 
-    def search_articles(self, organism: str, enzyme: str, ec_number: str, keywords: List[str] = None, max_results: int = 15) -> List[Dict[str, Any]]:
+    def search_articles(self, organism: str, protein_name: str, identifier: str, keywords: List[str] = None, max_results: int = 15) -> List[Dict[str, Any]]:
         """Searches PubMed for articles."""
 
-        cache_key = f"{organism}|{enzyme}|{ec_number}"
+        cache_key = f"{organism}|{protein_name}|{identifier}"
         
         if cache_key in self.cache:
             return self.cache[cache_key]
+
+        query_name = protein_name.replace('/', ' ').replace('-', ' ')
 
         if keywords:
             keywords_block = " OR ".join([f'"{kw}"[Title/Abstract]' for kw in keywords])
             query = (
                 f'("{organism}"[Organism] OR "{organism}"[Title/Abstract]) AND '
-                f'("{enzyme}"[Title/Abstract] OR "{ec_number}"[Title/Abstract] OR {keywords_block})'
+                f'("{query_name}"[Title/Abstract] OR "{identifier}"[Title/Abstract] OR {keywords_block})'
             )
         else:
             query = (
                 f'("{organism}"[Organism] OR "{organism}"[Title/Abstract]) AND '
-                f'("{enzyme}"[Title/Abstract] OR "{ec_number}"[Title/Abstract])'
+                f'("{query_name}"[Title/Abstract] OR "{identifier}"[Title/Abstract])'
             )
         
         try:
@@ -100,5 +101,5 @@ class PubMedService:
             return articles
             
         except Exception as e:
-            logger.error(f"[PubMedService] Error searching PubMed for {organism} + {enzyme}: {e}")
+            logger.error(f"[PubMedService] Error searching PubMed for {organism} + {protein_name}: {e}")
             return []

@@ -96,30 +96,32 @@ class AppConfig:
     }
 
     TRANSPORTERS: Dict[str, TransporterInfo] = {
-        # --- Transportadores de Lactose / Galactose ---
-        "lactose permease":           TransporterInfo("2.A.1.14", "lactose", "MFS"),
-        "lac y":                      TransporterInfo("2.A.1.14", "lactose", "MFS"),
-        "galactose transporter":      TransporterInfo("2.A.1.1",  "galactose", "MFS"),
-        "gal2":                       TransporterInfo("2.A.1.1",  "galactose", "MFS"),
-        
-        # --- Transportadores de Sacarose ---
-        "sucrose transporter":        TransporterInfo("2.A.1.1",  "sucrose", "MFS"),
-        "sucrose permease":           TransporterInfo("2.A.1.1",  "sucrose", "MFS"),
-        "sut1":                       TransporterInfo("2.A.1.1",  "sucrose", "MFS"),
-        
-        # --- Transportadores de Hexoses ---
-        "hexose transporter":         TransporterInfo("2.A.1.1",  "glucose/fructose", "MFS"),
-        "hxt":                        TransporterInfo("2.A.1.1",  "glucose/fructose", "MFS"),
-        "fructose transporter":       TransporterInfo("2.A.1.1",  "fructose", "MFS"),
+        # --- Família MFS ---
         "glucose transporter":        TransporterInfo("2.A.1.1",  "glucose", "MFS"),
-        
-        # --- Transportadores de Maltose ---
+        "fructose transporter":       TransporterInfo("2.A.1.1",  "fructose", "MFS"),
+        "galactose transporter":      TransporterInfo("2.A.1.1",  "galactose", "MFS"),
+        "hexose transporter":         TransporterInfo("2.A.1.1",  "glucose/fructose/galactose", "MFS"),
+        "sucrose transporter":        TransporterInfo("2.A.1.1",  "sucrose", "MFS"),
         "maltose transporter":        TransporterInfo("2.A.1.1",  "maltose", "MFS"),
-        "maltose permease":           TransporterInfo("2.A.1.1",  "maltose", "MFS"),
+        "lactose permease":           TransporterInfo("2.A.1.14", "lactose", "MFS"),
+        "lactose transporter":        TransporterInfo("2.A.1.14", "lactose", "MFS"),
         
-        # --- Sistemas ABC (Mais complexos, usam ATP) ---
-        "sugar abc transporter":      TransporterInfo("3.A.1.1",  "multiple sugars", "ABC"),
-        "multiple sugar transport":   TransporterInfo("3.A.1.1",  "multiple sugars", "ABC")
+        # --- Família SWEET ---
+        "sweet sugar transporter":    TransporterInfo("2.A.123",  "glucose/sucrose", "SWEET"),
+        "sweet transporter":          TransporterInfo("2.A.123",  "glucose/sucrose", "SWEET"),
+        
+        # --- Sistemas ABC ---
+        "maltose abc transporter":    TransporterInfo("3.A.1.1",  "maltose", "ABC"),
+        "galactose abc transporter":  TransporterInfo("3.A.1.1",  "galactose", "ABC"),
+        
+        # --- Sistemas PTS (Cianobactérias) ---
+        "pts system glucose":         TransporterInfo("4.A.1",    "glucose", "PTS"),
+        "pts system fructose":        TransporterInfo("4.A.2",    "fructose", "PTS"),
+        "pts system sucrose":         TransporterInfo("4.A.1",    "sucrose", "PTS"),
+        "pts system lactose":         TransporterInfo("4.A.3",    "lactose", "PTS"),
+
+        "sugar abc transporter":      TransporterInfo("3.A.1.1",  "broad specificity", "ABC"),
+        "sugar transporter":          TransporterInfo("2.A.1.1",  "broad specificity", "MFS")
     }
 
     FUTURE_TERMS: List[str] = [
@@ -128,21 +130,34 @@ class AppConfig:
     "potential", "like", "related"
     ]
 
-    EXCLUDED_TERMS: List[str] = [
-    "inhibitor", "regulator", "activator", "repressor", 
-    "receptor", "transcription factor", "fingers", 
-    "binding protein", "domain-containing",
-    "dna", "rna", "trna", "mrna", "ribosomal", "ribosome",
-    "recombinase", "integrase", "transposase", "nuclease",
-    "polymerase", "helicase", "chromosome", "plasmid",
-    "protein kinase", "histidine kinase", "tyrosine kinase", 
-    "serine/threonine", "signal transduction", "partial",
-    "synthase", "biosynthesis", "assembly", "pdb", "chain",
-    "fragment", "phage", "viral", "virus", "capsid",
-    "chaperone", "flagellar", "flagellum", "pilus", "porin",
-    "synthetic", "construct", "vector", "fusion", "mutant", "chimeric",
-    "operon", "promoter", "sensor", "toxin", "antitoxin", "domain",
-    "terminal", "n-terminal", "ferredoxin", "n-terminal", "c-terminal"
+    EXCLUDED_TERMS_ENZYMES: List[str] = [
+        "inhibitor", "regulator", "activator", "repressor", 
+        "receptor", "transcription factor", "fingers", 
+        "binding protein", "domain-containing",
+        "dna", "rna", "trna", "mrna", "ribosomal", "ribosome",
+        "recombinase", "integrase", "transposase", "nuclease",
+        "polymerase", "helicase", "chromosome", "plasmid",
+        "protein kinase", "histidine kinase", "tyrosine kinase", 
+        "serine/threonine", "signal transduction", "partial",
+        "assembly", "pdb", "chain", "fragment", "phage", "viral", "virus", "capsid",
+        "chaperone", "flagellar", "flagellum", "pilus", "porin",
+        "synthetic", "construct", "vector", "fusion", "mutant", "chimeric",
+        "operon", "promoter", "sensor", "toxin", "antitoxin", "domain",
+        "terminal", "n-terminal", "ferredoxin", "c-terminal"
+    ]
+
+    EXCLUDED_TERMS_TRANSPORTERS: List[str] = [
+        "inhibitor", "regulator", "activator", "repressor", 
+        "transcription factor", "fingers",
+        "dna", "rna", "trna", "mrna", "ribosomal", "ribosome",
+        "recombinase", "integrase", "transposase", "nuclease",
+        "polymerase", "helicase", "chromosome", "plasmid",
+        "protein kinase", "histidine kinase", "tyrosine kinase", 
+        "serine/threonine", "partial", "synthase", "biosynthesis",
+        "assembly", "pdb", "chain", "fragment", "phage", "viral", "virus", "capsid",
+        "chaperone", "flagellar", "flagellum", "pilus", 
+        "synthetic", "construct", "vector", "fusion", "mutant", "chimeric",
+        "operon", "promoter", "toxin", "antitoxin", "terminal", "n-terminal", "c-terminal"
     ]
 
     PUBMED_KEYWORDS: List[str] = [
