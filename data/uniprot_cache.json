@@ -233,5 +233,90 @@
     "TC_2.A.123_sweet_sugar_transporter": {},
     "TC_3.A.1.1_maltose_abc_transporter": {},
     "TC_3.A.1.1_sugar_abc_transporter": {},
-    "TC_2.A.1.1_sugar_transporter": {}
+    "TC_2.A.1.1_sugar_transporter": {},
+    "EC_2.7.1.6_galactokinase": {
+        "protein_name": "galactokinase",
+        "identifier": "2.7.1.6",
+        "id_type": "EC",
+        "uniprot_link": "https://www.uniprot.org/uniprotkb/P51570/entry",
+        "general_info": {
+            "protein_name_uniprot": "Galactokinase",
+            "functions": [
+                "Catalyzes the transfer of the gamma-phosphate of ATP to D-galactose to form alpha-D-galactose-1-phosphate (Gal-1-P). Is very specific for its substrate, since it is not able to use D-glucose, D-fructose, D-mannose, 2-deoxy-D-glucose, and D-glucosamine as substrates",
+                "Galactokinase is a key enzyme in the galactose metabolism where it catalyzes the conversion of alpha-D-galactose to galactose 1-phosphate (PubMed:12106903, PubMed:13495476, PubMed:14144). Can also induce the transcription of the yeast GAL genes in response to the organism being challenged with galactose as the sole source of carbon (PubMed:1317007, PubMed:2656659). Its striking amino acid sequence similarity to GAL3 might explain its GAL3-like induction activity (PubMed:1317007, PubMed:2656659)",
+                "Sugar-1-kinase with a very high substrate specificity for the alpha-anomeric configuration of D-galacose (D-Gal). Also efficiently converts 2-deoxy-D-Gal to 2-deoxy-D-al-1-phosphate"
+            ],
+            "catalytic_activities": [
+                "alpha-D-galactose + ATP = alpha-D-galactose 1-phosphate + ADP + H(+)"
+            ],
+            "pathways": [
+                "Carbohydrate metabolism; galactose metabolism"
+            ],
+            "cofactors": [],
+            "subunit_structure": [
+                "Homodimer",
+                "Monomer"
+            ]
+        },
+        "total_entries_analyzed": 30
+    },
+    "EC_2.7.1.2_glucokinase": {
+        "protein_name": "glucokinase",
+        "identifier": "2.7.1.2",
+        "id_type": "EC",
+        "uniprot_link": "https://www.uniprot.org/uniprotkb/P17709/entry",
+        "general_info": {
+            "protein_name_uniprot": "Glucokinase-1",
+            "functions": [
+                "Catalyzes the phosphorylation of D-glucose to D-glucose 6-phosphate using ATP as the phosphate donor. Has a broad hexose specificity, and in addition to glucose, which shows the highest catalytic efficiency, it can also phosphorylate fructose, mannose, galactose and sorbitol. Can also use CTP, GTP or UTP as phosphoryl donor",
+                "Catalyzes the phosphorylation of glucose using polyphosphate or ATP as the phosphoryl donor (PubMed:8381043, PubMed:8703950). Polyphosphate, rather than ATP, seems to be the major phosphate donor for the enzyme in M.tuberculosis (PubMed:8703950). GTP, UTP and CTP can replace ATP as phosphoryl donor (PubMed:8381043)",
+                "The enzyme has great affinity for glucose and mannose"
+            ],
+            "catalytic_activities": [
+                "a D-hexose + ATP = a D-hexose 6-phosphate + ADP + H(+)",
+                "[phosphate](n) + D-glucose = [phosphate](n-1) + D-glucose 6-phosphate + H(+)",
+                "D-glucose + ATP = D-glucose 6-phosphate + ADP + H(+)"
+            ],
+            "pathways": [
+                "Carbohydrate degradation; glycolysis; D-glyceraldehyde 3-phosphate and glycerone phosphate from D-glucose: step 1/4",
+                "Carbohydrate metabolism; hexose metabolism",
+                "Carbohydrate metabolism; mannose metabolism"
+            ],
+            "cofactors": [],
+            "subunit_structure": [
+                "Homooligomer (possibly a homotetramer). Alternatively, it may form a heterotetramer of two glucokinase subunits with two ORF2 (AC P40182) proteins",
+                "Homodimer"
+            ]
+        },
+        "total_entries_analyzed": 30
+    },
+    "EC_2.7.1.1_hexokinase": {
+        "protein_name": "hexokinase",
+        "identifier": "2.7.1.1",
+        "id_type": "EC",
+        "uniprot_link": "https://www.uniprot.org/uniprotkb/P19367/entry",
+        "general_info": {
+            "protein_name_uniprot": "Hexokinase-1",
+            "functions": [
+                "Catalyzes the phosphorylation of various hexoses, such as D-glucose, D-glucosamine, D-fructose, D-mannose and 2-deoxy-D-glucose, to hexose 6-phosphate (D-glucose 6-phosphate, D-glucosamine 6-phosphate, D-fructose 6-phosphate, D-mannose 6-phosphate and 2-deoxy-D-glucose 6-phosphate, respectively) (PubMed:1637300, PubMed:25316723, PubMed:27374331). Does not phosphorylate N-acetyl-D-glucosamine (PubMed:27374331). Mediates the initial step of glycolysis by catalyzing phosphorylation of D-glucose to D-glucose 6-phosphate (By similarity). Involved in innate immunity and inflammation by acting as a pattern recognition receptor for bacterial peptidoglycan (PubMed:27374331). When released in the cytosol, N-acetyl-D-glucosamine component of bacterial peptidoglycan inhibits the hexokinase activity of HK1 and causes its dissociation from mitochondrial outer membrane, thereby activating the NLRP3 inflammasome (PubMed:27374331)",
+                "Catalyzes the phosphorylation of various hexoses, such as D-glucose, D-glucosamine, D-fructose, D-mannose and 2-deoxy-D-glucose, to hexose 6-phosphate (D-glucose 6-phosphate, D-glucosamine 6-phosphate, D-fructose 6-phosphate, D-mannose 6-phosphate and 2-deoxy-D-glucose 6-phosphate, respectively). Does not phosphorylate N-acetyl-D-glucosamine (By similarity). Mediates the initial step of glycolysis by catalyzing phosphorylation of D-glucose to D-glucose 6-phosphate (By similarity). Involved in innate immunity and inflammation by acting as a pattern recognition receptor for bacterial peptidoglycan. When released in the cytosol, N-acetyl-D-glucosamine component of bacterial peptidoglycan inhibits the hexokinase activity of HK1 and causes its dissociation from mitochondrial outer membrane, thereby activating the NLRP3 inflammasome (PubMed:27374331)",
+                "Catalyzes the phosphorylation of hexose, such as D-glucose and D-fructose, to hexose 6-phosphate (D-glucose 6-phosphate and D-fructose 6-phosphate, respectively) (PubMed:5871820). Mediates the initial step of glycolysis by catalyzing phosphorylation of D-glucose to D-glucose 6-phosphate (PubMed:5871820)"
+            ],
+            "catalytic_activities": [
+                "a D-hexose + ATP = a D-hexose 6-phosphate + ADP + H(+)",
+                "D-fructose + ATP = D-fructose 6-phosphate + ADP + H(+)",
+                "D-glucose + ATP = D-glucose 6-phosphate + ADP + H(+)"
+            ],
+            "pathways": [
+                "Carbohydrate degradation; glycolysis; D-glyceraldehyde 3-phosphate and glycerone phosphate from D-glucose: step 1/4",
+                "Carbohydrate metabolism; hexose metabolism"
+            ],
+            "cofactors": [],
+            "subunit_structure": [
+                "Monomer (PubMed:15016359, PubMed:19362831, PubMed:23957911). Interacts with MIDN; the interaction occurs preferentially at low glucose levels and results in inhibition of hexokinase activity (PubMed:24187134). Interacts with GCKR; leading to sequestration in the nucleus (PubMed:10456334)",
+                "Interacts with RPT5B in nucleus. Interacts with RHIP1 (PubMed:26528314). Interacts with KING1 in mitochondria (PubMed:30511331). Interacts with CLF (via SANT domain) and EZA1/SWN (via SANT domain) in nucleus (PubMed:35394700)"
+            ]
+        },
+        "total_entries_analyzed": 30
+    }
 }

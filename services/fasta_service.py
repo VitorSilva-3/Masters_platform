@@ -4,22 +4,22 @@ import time
 import logging
 import pandas as pd
 from Bio import Entrez
-from config import AppConfig
+from utils import setup_ncbi_entrez, load_json_cache, save_json_cache
 
 logger = logging.getLogger(__name__)
 
 class FastaService:
-    """Class responsible for downloading and batching FASTA sequences from NCBI."""
+    """Class responsible for downloading, batching, and sanitizing FASTA sequences from NCBI."""
 
     def __init__(self, tax_service, email: str, output_dir: str = "data"):
         self.tax_service = tax_service
         self.email = email
         self.output_dir = output_dir
-        
-        Entrez.email = self.email
-        if hasattr(AppConfig, 'NCBI_API_KEY'):
-            Entrez.api_key = AppConfig.NCBI_API_KEY
-        
+
+        self.cache_file = os.path.join(self.output_dir, "fasta_cache.json")
+        self.cache = load_json_cache(self.cache_file, service_name="FastaService")
+
+        setup_ncbi_entrez(self.email)
         os.makedirs(self.output_dir, exist_ok=True)
 
     def _split_ids_by_domain(self, df: pd.DataFrame) -> tuple:
@@ -62,14 +62,20 @@ class FastaService:
         return existing_ids
 
     def _fetch_and_save_batches(self, id_list: list, output_file: str, batch_size: int = 200) -> None:
-        """Fetches sequences from NCBI in batches and saves them to a FASTA file."""
+        """Fetches sequences from NCBI in batches, saves them, and caches the requested IDs."""
 
         if not id_list:
             logger.warning(f"No IDs provided for {output_file}. Skipping download.")
             return
 
         existing_ids = self._get_existing_ids(output_file)
-        new_ids = list(set([ncbi_id for ncbi_id in id_list if ncbi_id not in existing_ids and ncbi_id.split('.')[0] not in existing_ids]))
+        
+        new_ids = []
+        for ncbi_id in set(id_list):
+            base_id = ncbi_id.split('.')[0]
+            if ncbi_id not in existing_ids and base_id not in existing_ids:
+                if ncbi_id not in self.cache:
+                    new_ids.append(ncbi_id)
 
         if not new_ids:
             logger.info(f"All sequences for '{os.path.basename(output_file)}' are already downloaded. Skipping.")
@@ -98,6 +104,11 @@ class FastaService:
                                 file.write('\n') 
                                 
                         handle.close()
+                        
+                        for req_id in batch:
+                            self.cache[req_id] = True
+                        save_json_cache(self.cache_file, self.cache, service_name="FastaService")
+                            
                         break 
                     except Exception as e:  
                         if attempt < max_retries - 1:
@@ -108,8 +119,40 @@ class FastaService:
                 
                 time.sleep(0.5)
 
+    def _remove_duplicates(self, filepath: str) -> None:
+        """Removes duplicate sequences from a FASTA file."""
+
+        if not os.path.exists(filepath):
+            return
+
+        seen_ids = set()
+        temp_filepath = f"{filepath}.tmp"
+        duplicates_removed = 0
+
+        with open(filepath, "r") as f_in, open(temp_filepath, "w") as f_out:
+            write_record = False
+            for line in f_in:
+                if line.startswith(">"):
+                    seq_id = line.split()[0][1:]
+                    
+                    if seq_id not in seen_ids:
+                        seen_ids.add(seq_id)
+                        write_record = True
+                        f_out.write(line)
+                    else:
+                        write_record = False
+                        duplicates_removed += 1
+                elif write_record:
+                    f_out.write(line)
+
+        if duplicates_removed > 0:
+            os.replace(temp_filepath, filepath)
+            logger.info(f"Sanitization: Removed {duplicates_removed} duplicate sequences from {os.path.basename(filepath)}.")
+        else:
+            os.remove(temp_filepath)
+
     def generate_fasta_files(self, df: pd.DataFrame, dataset_name: str) -> None:
-        """Generates the FASTA files for a specific dataset dynamically."""
+        """Generates and sanitizes the FASTA files."""
 
         logger.info(f"Starting FASTA sequence generation process for: {dataset_name.upper()}")
         
@@ -121,14 +164,16 @@ class FastaService:
         
         if euk_ids:
             self._fetch_and_save_batches(euk_ids, eukaryote_fasta)
+            self._remove_duplicates(eukaryote_fasta)
             
         if pro_ids:
             self._fetch_and_save_batches(pro_ids, prokaryote_fasta)
+            self._remove_duplicates(prokaryote_fasta)
             
-        logger.info(f"FASTA generation for {dataset_name} completed.")
+        logger.info(f"FASTA generation and sanitization for {dataset_name} completed.")
 
     def process_all_datasets(self, datasets: dict):
-        """Orchestrates the FASTA generation for multiple datasets automatically."""
+        """Orchestrates the FASTA generation."""
 
         for ds_name, df in datasets.items():
             if not df.empty:

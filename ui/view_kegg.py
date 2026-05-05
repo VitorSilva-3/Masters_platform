@@ -9,11 +9,8 @@ def get_kegg_info(enzyme_name: str, ec_number: str):
     return service.fetch_enzyme_details(enzyme_name, ec_number)
 
 def render_kegg_view(df: pd.DataFrame):
-    """
-    Renders the KEGG data tab with an analytical dashboard layout.
-    """
+    """Renders the KEGG data tab with an analytical dashboard layout."""
 
-    st.subheader("KEGG Enzyme database")
     st.markdown("Explore fundamental biochemical properties and metabolic pathways from the KEGG Enzyme database.")
     
     if df.empty:

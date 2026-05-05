@@ -5,7 +5,6 @@ import pandas as pd
 def render_uniprot_view(uniprot_service, df: pd.DataFrame, dataset_type: str = "enzymes"):
     """Renders the UniProt page, showing general biochemical properties."""
 
-    st.subheader("UniProt database")
     st.markdown("Explore general biochemical properties, functional annotations, and pathways catalogued in UniProt.")
 
     if df.empty:

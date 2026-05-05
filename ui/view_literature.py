@@ -1,20 +1,7 @@
 
 import streamlit as st
 import pandas as pd
-from config import AppConfig
-
-def get_group_for_species(species: str, taxonomy_service) -> str:
-    """Helper function to map species to their Taxonomic Class."""
-
-    lineage = taxonomy_service.fetch_taxonomy_lineage(species)
-    if isinstance(lineage, list):
-        for node in lineage:
-            if node.get("name") in AppConfig.TARGET_TAXA:
-                return node.get("name")
-        for node in lineage:
-            if node.get("rank") == "class":
-                return node.get("name")
-    return "Other / Unknown"
+from utils import get_group_for_species, add_taxonomic_class_column
 
 def render_literature_tab(df: pd.DataFrame, item_col: str, id_col: str, tab_id: str, pubmed_service, taxonomy_service):
     """Renders the literature search for a specific domain (Enzymes or Transporters)."""
@@ -23,11 +10,7 @@ def render_literature_tab(df: pd.DataFrame, item_col: str, id_col: str, tab_id: 
         st.info("No data available.")
         return
 
-    if "Class" not in df.columns:
-        with st.spinner("Classifying species for literature..."):
-            unique_species = df["Specie"].dropna().unique()
-            species_to_group = {sp: get_group_for_species(sp, taxonomy_service) for sp in unique_species}
-            df["Class"] = df["Specie"].map(species_to_group)
+    df = add_taxonomic_class_column(df, taxonomy_service, loading_text="Classifying species for literature...")
 
     key_class = f"lit_class_{tab_id}"
     key_spec = f"lit_spec_{tab_id}"
@@ -57,7 +40,7 @@ def render_literature_tab(df: pd.DataFrame, item_col: str, id_col: str, tab_id: 
 
     col_title, col_btn = st.columns([4, 1])
     with col_title:
-        st.markdown("### Search filters")
+        st.markdown("### Filters")
     with col_btn:
         st.button("Clear filters", key=f"btn_clear_{tab_id}", use_container_width=True, on_click=clear_lit_filters)
 

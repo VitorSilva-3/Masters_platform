@@ -24,6 +24,8 @@ class DataManager:
         self.data_type = data_type 
 
     def load_data(self) -> pd.DataFrame:
+        """Loads existing dataset from disk if available, otherwise returns an empty DataFrame."""
+
         if os.path.exists(self.file_path):
             try:
                 df = pd.read_csv(self.file_path)
@@ -33,6 +35,8 @@ class DataManager:
         return pd.DataFrame()
 
     def _fetch_batch_with_retry(self, batch_ids: list, max_retries: int = 3) -> list:
+        """Fetches a batch of records from NCBI with retry logic for handling network issues."""
+
         for attempt in range(max_retries):
             try:
                 handle = Entrez.efetch(db="protein", id=batch_ids, rettype="gb", retmode="text")
@@ -48,6 +52,8 @@ class DataManager:
         return []
 
     def _parse_and_validate_record(self, record, item_name, info, target_taxa_lower) -> dict:
+        """Parses a GenBank record, checks for exclusion criteria, validates taxonomy, and extracts relevant metadata."""
+
         desc = record.description.lower()
         
         excluded_list = AppConfig.EXCLUDED_TERMS_ENZYMES if self.data_type == "enzyme" else AppConfig.EXCLUDED_TERMS_TRANSPORTERS
@@ -72,6 +78,21 @@ class DataManager:
         else:
             status = "🟢 Confirmed"
 
+        metadata_parts = []
+
+        for feature in record.features:
+            if feature.type == "source":
+                for key, values in feature.qualifiers.items():
+                    val_str = ", ".join(values)
+                    
+                    formatted_key = key.replace('_', ' ').capitalize()
+                    
+                    metadata_parts.append(f"{formatted_key}: {val_str}")
+                
+                break 
+        
+        origin_info = " | ".join(metadata_parts) if metadata_parts else "Unspecified"
+
         if self.data_type == "enzyme":
             return {
                 "Specie": organism_clean,
@@ -80,7 +101,8 @@ class DataManager:
                 "Target sugar": info.target_sugar,
                 "Description": record.description,
                 "Status": status,
-                "Source ID (NCBI)": record.id 
+                "Source ID (NCBI)": record.id,
+                "Origin": origin_info  
             }
         elif self.data_type == "transporter":
             return {
@@ -91,10 +113,13 @@ class DataManager:
                 "Target sugar": info.target_sugar,
                 "Description": record.description,
                 "Status": status,
-                "Source ID (NCBI)": record.id 
+                "Source ID (NCBI)": record.id,
+                "Origin": origin_info  
             }
 
     def _save_checkpoint(self, new_records: list):
+        """Saves new records to disk, ensuring no duplicates based on 'Source ID (NCBI)'."""
+
         if not new_records:
             return
 
@@ -113,6 +138,8 @@ class DataManager:
         logger.debug(f"Checkpoint saved: {len(final_df)} total records now in disk.")
 
     def build_dataset_offline(self):
+        """Main method to build the dataset by querying NCBI, validating records, and saving results with checkpointing."""
+
         logger.info(f"Starting {self.data_type.upper()} dataset build. Target Taxa: {len(AppConfig.TARGET_TAXA)} groups.")
         
         Entrez.email = AppConfig.EMAIL

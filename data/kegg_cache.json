@@ -7,7 +7,7 @@
         "pathways": [
             {
                 "code": "ec00052",
-                "description": "Galactose metabolism"   
+                "description": "Galactose metabolism"
             }
         ]
     },
@@ -80,6 +80,42 @@
             {
                 "code": "ec00500",
                 "description": "Starch and sucrose metabolism"
+            }
+        ]
+    },
+    "2.7.1.6": {
+        "ec_number": "2.7.1.6",
+        "name": "galactokinase",
+        "definition": null,
+        "reaction": "ATP + alpha-D-galactose = ADP + alpha-D-galactose 1-phosphate [RN:R01092]",
+        "pathways": [
+            {
+                "code": "ec00052",
+                "description": "Galactose metabolism"
+            }
+        ]
+    },
+    "2.7.1.2": {
+        "ec_number": "2.7.1.2",
+        "name": "glucokinase",
+        "definition": null,
+        "reaction": "ATP + D-glucose = ADP + D-glucose 6-phosphate [RN:R00299]",
+        "pathways": [
+            {
+                "code": "ec00010",
+                "description": "Glycolysis / Gluconeogenesis"
+            }
+        ]
+    },
+    "2.7.1.1": {
+        "ec_number": "2.7.1.1",
+        "name": "hexokinase",
+        "definition": null,
+        "reaction": "ATP + D-hexose = ADP + D-hexose 6-phosphate [RN:R02848]",
+        "pathways": [
+            {
+                "code": "ec00010",
+                "description": "Glycolysis / Gluconeogenesis"
             }
         ]
     }

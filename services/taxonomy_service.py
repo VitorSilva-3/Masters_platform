@@ -1,10 +1,9 @@
 
-import json
-import os
 import logging
 from Bio import Entrez
-from typing import Dict, Any, List, Union
-from config import AppConfig  
+from typing import Dict, List, Union
+from config import AppConfig
+from utils import load_json_cache, save_json_cache, setup_ncbi_entrez
 
 logger = logging.getLogger(__name__)
 
@@ -15,33 +14,12 @@ class TaxonomyService:
         """Initialize with user email and load local taxonomy cache."""
 
         self.email = email
-        Entrez.email = self.email
+        setup_ncbi_entrez(self.email)
         self.cache_file = cache_file
-        self.cache = self._load_cache()
-
-        if hasattr(AppConfig, 'NCBI_API_KEY'):
-            Entrez.api_key = AppConfig.NCBI_API_KEY
-
-    def _load_cache(self) -> Dict[str, Any]:
-        if os.path.exists(self.cache_file):
-            try:
-                with open(self.cache_file, "r", encoding="utf-8") as f:
-                    return json.load(f)
-            except Exception as e:
-                logger.error(f"[TaxonomyService] Error loading cache: {e}")
-        return {}
-
-    def _save_cache(self):
-        try:
-            with open(self.cache_file, "w", encoding="utf-8") as f:
-                json.dump(self.cache, f, indent=4)
-        except Exception as e:
-            logger.error(f"[TaxonomyService] Error saving cache: {e}")
+        self.cache = load_json_cache(self.cache_file, service_name = "TaxonomyService")
 
     def fetch_taxonomy_lineage(self, organism_name: str) -> Union[List[Dict[str, str]], str]:
-        """
-        Fetches the full taxonomy lineage for a specific organism.
-        """
+        """Fetches the full taxonomy lineage for a specific organism."""
         
         if organism_name in self.cache:
             return self.cache[organism_name]
@@ -93,10 +71,14 @@ class TaxonomyService:
                     result = "No details found."
 
             self.cache[organism_name] = result
-            self._save_cache()
+            save_json_cache(self.cache_file, self.cache, service_name = "TaxonomyService")
             
             return result
             
         except Exception as e:
             logger.error(f"[TaxonomyService] Error fetching taxonomy for {organism_name}: {e}")
             return f"Error fetching taxonomy: {str(e)}"
+        
+    def save_cache(self):
+        """Saves the cache to disk."""
+        save_json_cache(self.cache_file, self.cache, service_name = "TaxonomyService")

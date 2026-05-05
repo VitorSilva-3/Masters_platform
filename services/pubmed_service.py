@@ -1,9 +1,8 @@
 
-import json
-import os
 import logging
 from Bio import Entrez, Medline
 from typing import List, Dict, Any
+from utils import load_json_cache, save_json_cache, setup_ncbi_entrez
 
 logger = logging.getLogger(__name__)
 
@@ -12,27 +11,9 @@ class PubMedService:
 
     def __init__(self, email: str, cache_file: str = "data/literature_cache.json"):
         self.email = email
-        Entrez.email = self.email
+        setup_ncbi_entrez(self.email)
         self.cache_file = cache_file
-        self.cache = self._load_cache()
-
-    def _load_cache(self) -> Dict[str, Any]:
-        if os.path.exists(self.cache_file):
-            try:
-                with open(self.cache_file, "r", encoding="utf-8") as f:
-                    return json.load(f)
-            except Exception as e:
-                logger.error(f"[PubMedService] Error loading cache: {e}")
-        return {}
-
-    def save_cache(self):
-        """Saves the current cache dictionary to a JSON file."""
-
-        try:
-            with open(self.cache_file, "w", encoding="utf-8") as f:
-                json.dump(self.cache, f, indent=4)
-        except Exception as e:
-            logger.error(f"[PubMedService] Error saving cache: {e}")
+        self.cache = load_json_cache(self.cache_file, service_name = "PubMedService")
 
     def search_articles(self, organism: str, protein_name: str, identifier: str, keywords: List[str] = None, max_results: int = 15) -> List[Dict[str, Any]]:
         """Searches PubMed for articles."""
@@ -64,7 +45,7 @@ class PubMedService:
             pmids = record.get("IdList", [])
             if not pmids:
                 self.cache[cache_key] = []
-                self.save_cache()
+                save_json_cache(self.cache_file, self.cache, service_name = "PubMedService")
                 return [] 
 
             handle = Entrez.efetch(db="pubmed", id=pmids, rettype="medline", retmode="text")
@@ -96,10 +77,14 @@ class PubMedService:
             handle.close()
             
             self.cache[cache_key] = articles
-            self.save_cache()
+            save_json_cache(self.cache_file, self.cache, service_name = "PubMedService")
             
             return articles
             
         except Exception as e:
             logger.error(f"[PubMedService] Error searching PubMed for {organism} + {protein_name}: {e}")
             return []
+        
+    def save_cache(self):
+        """Saves the cache to disk."""
+        save_json_cache(self.cache_file, self.cache, service_name = "PubMedService")

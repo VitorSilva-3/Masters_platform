@@ -1,36 +1,18 @@
 
 import streamlit as st
 import pandas as pd
-from config import AppConfig
-
-def get_group_for_species(species: str, taxonomy_service) -> str:
-    """Helper function to map species to their Taxonomic Class."""
-
-    lineage = taxonomy_service.fetch_taxonomy_lineage(species)
-    if isinstance(lineage, list):
-        for node in lineage:
-            if node.get("name") in AppConfig.TARGET_TAXA:
-                return node.get("name")
-        for node in lineage:
-            if node.get("rank") == "class":
-                return node.get("name")
-    return "Other / Unknown"
+from utils import get_group_for_species, add_taxonomic_class_column
 
 def render_taxonomy_view(taxonomy_service, df: pd.DataFrame):
     """Renders the Taxonomy tab, allowing side-by-side comparison of species lineages."""
 
-    st.subheader("Species taxonomy")
     st.markdown("Explore and compare the evolutionary lineage of the species catalogued in the platform.")
 
     if df.empty:
         st.warning("No data available to display taxonomy.")
         return
 
-    if "Class" not in df.columns:
-        with st.spinner("Classifying species for taxonomy..."):
-            unique_species = df["Specie"].dropna().unique()
-            species_to_group = {sp: get_group_for_species(sp, taxonomy_service) for sp in unique_species}
-            df["Class"] = df["Specie"].map(species_to_group)
+    df = add_taxonomic_class_column(df, taxonomy_service, loading_text="Classifying species for taxonomy...")
 
     filtered_df = df.copy()
 
@@ -40,7 +22,7 @@ def render_taxonomy_view(taxonomy_service, df: pd.DataFrame):
 
     col_title, col_btn = st.columns([4, 1])
     with col_title:
-        st.markdown("### Search filters")
+        st.markdown("### Filters")
     with col_btn:
         st.button("Clear filters", use_container_width=True, on_click=clear_tax_filters)
 

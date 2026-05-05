@@ -1,9 +1,8 @@
 
 import requests
-import json
-import os
 import logging
 from typing import Dict, Any, List
+from utils import load_json_cache, save_json_cache
 
 logger = logging.getLogger(__name__)
 
@@ -14,28 +13,7 @@ class UniprotService:
 
     def __init__(self, cache_file: str = "data/uniprot_cache.json"):
         self.cache_file = cache_file
-        self.cache = self._load_cache()
-
-    def _load_cache(self) -> Dict[str, Any]:
-        """Loads the JSON cache from disk."""
-
-        if os.path.exists(self.cache_file):
-            try:
-                with open(self.cache_file, "r", encoding="utf-8") as f:
-                    return json.load(f)
-            except Exception as e:
-                logger.error(f"[UniprotService] Error loading cache: {e}")
-        return {}
-
-    def _save_cache(self):
-        """Saves the current cache dictionary to disk."""
-
-        try:
-            os.makedirs(os.path.dirname(self.cache_file), exist_ok=True)
-            with open(self.cache_file, "w", encoding="utf-8") as f:
-                json.dump(self.cache, f, indent=4)
-        except Exception as e:
-            logger.error(f"[UniprotService] Error saving cache: {e}")
+        self.cache = load_json_cache(self.cache_file, service_name = "UniprotService")
 
     def fetch_protein_data(self, protein_name: str, identifier: str, id_type: str = "EC", max_entries: int = 30) -> Dict[str, Any]:
         """Searches UniProt for general protein properties matching the EC or TC number."""
@@ -83,12 +61,12 @@ class UniprotService:
 
             if not results:
                 self.cache[cache_key] = {}
-                self._save_cache()
+                save_json_cache(self.cache_file, self.cache, service_name = "UniprotService")
                 return {}
             
             summary = self._summarize_results(protein_name, identifier, id_type, results)
             self.cache[cache_key] = summary
-            self._save_cache()
+            save_json_cache(self.cache_file, self.cache, service_name = "UniprotService")
             return summary
             
         except Exception as e:
@@ -150,3 +128,7 @@ class UniprotService:
             },
             'total_entries_analyzed': len(results)
         }
+    
+    def save_cache(self):        
+        """Saves the cache to disk."""
+        save_json_cache(self.cache_file, self.cache, service_name = "UniprotService")

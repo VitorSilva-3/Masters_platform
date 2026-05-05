@@ -2,20 +2,7 @@ import os
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-from config import AppConfig
-
-def get_group_for_species(species: str, taxonomy_service) -> str:
-    """Helper function to map species to their taxonomic class."""
-
-    lineage = taxonomy_service.fetch_taxonomy_lineage(species)
-    if isinstance(lineage, list):
-        for node in lineage:
-            if node.get("name") in AppConfig.TARGET_TAXA:
-                return node.get("name")
-        for node in lineage:
-            if node.get("rank") == "class":
-                return node.get("name")
-    return "Other / Unknown"
+from utils import get_group_for_species, add_taxonomic_class_column
 
 @st.cache_data(show_spinner=False)
 def load_and_merge_all_predictions(dataset_name: str, main_df: pd.DataFrame) -> pd.DataFrame:
@@ -88,11 +75,7 @@ def render_dashboard_tab(df: pd.DataFrame, item_col: str, tab_id: str, taxonomy_
         st.warning(f"No data found for {domain_choice} in this category.")
         return
 
-    if "Class" not in working_df.columns:
-        with st.spinner("Classifying species for filters..."):
-            unique_species = working_df["Specie"].dropna().unique()
-            species_to_group = {sp: get_group_for_species(sp, taxonomy_service) for sp in unique_species}
-            working_df["Class"] = working_df["Specie"].map(species_to_group)
+    df = add_taxonomic_class_column(working_df, taxonomy_service, loading_text="Classifying species for subcellular localization...")
 
     key_class = f"loc_class_{tab_id}"
     key_spec = f"loc_spec_{tab_id}"

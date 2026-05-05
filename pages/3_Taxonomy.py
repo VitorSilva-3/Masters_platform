@@ -1,30 +1,29 @@
 
 import streamlit as st
-from PIL import Image
+import pandas as pd
 from config import AppConfig
-from services.data_manager import DataManager
 from services.taxonomy_service import TaxonomyService
 from ui.view_taxonomy import render_taxonomy_view
+from utils import configure_page, load_core_datasets
 
-try:
-    icon_image = Image.open("images/logo.jpg")
-    st.set_page_config(page_title="Taxonomy - MicroValue", page_icon=icon_image, layout="wide")
-except FileNotFoundError:
-    st.set_page_config(page_title="Taxonomy - MicroValue", layout="wide")
+configure_page("Taxonomy")
 
 @st.cache_resource
-def get_services():
-    return DataManager(), TaxonomyService(email=AppConfig.EMAIL)
+def get_taxonomy_service():
+    return TaxonomyService(email=AppConfig.EMAIL)
 
-@st.cache_data
-def get_main_dataframe():
-    return get_services()[0].load_data()
+taxonomy_service = get_taxonomy_service()
+df_enzymes, df_transporters = load_core_datasets()
 
-data_manager, taxonomy_service = get_services()
-df = get_main_dataframe()
+dfs_to_concat = [df for df in [df_enzymes, df_transporters] if not df.empty]
+if dfs_to_concat:
+    df_combined = pd.concat(dfs_to_concat, ignore_index=True).drop_duplicates(subset=["Specie"])
+else:
+    df_combined = pd.DataFrame()
 
 st.title("Taxonomy")
-if df.empty:
-    st.error("Data file not found or empty!")
+
+if df_combined.empty:
+    st.error("Data files not found or empty!")
 else:
-    render_taxonomy_view(taxonomy_service, df)
+    render_taxonomy_view(taxonomy_service, df_combined)

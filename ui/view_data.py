@@ -2,20 +2,7 @@
 import os
 import streamlit as st
 import pandas as pd
-from config import AppConfig
-
-def get_group_for_species(species: str, taxonomy_service) -> str:
-    """Helper function to find which target taxa a species belongs to."""
-    
-    lineage = taxonomy_service.fetch_taxonomy_lineage(species)
-    if isinstance(lineage, list):
-        for node in lineage:
-            if node.get("name") in AppConfig.TARGET_TAXA:
-                return node.get("name")
-        for node in lineage:
-            if node.get("rank") == "class":
-                return node.get("name")
-    return "Other / Unknown"
+from utils import get_group_for_species, add_taxonomic_class_column
 
 @st.cache_data(show_spinner=False)
 def load_all_localizations() -> pd.DataFrame:
@@ -64,11 +51,7 @@ def _render_domain_view(df: pd.DataFrame, item_col: str, prefix: str, taxonomy_s
     col_m4.metric("Total records", len(df))
     st.divider()
 
-    if "Class" not in df.columns:
-        with st.spinner("Classifying species..."):
-            unique_species = df["Specie"].dropna().unique()
-            species_to_group = {sp: get_group_for_species(sp, taxonomy_service) for sp in unique_species}
-            df["Class"] = df["Specie"].map(species_to_group)
+    df = add_taxonomic_class_column(df, taxonomy_service)
 
     cols = df.columns.tolist()
     if "Class" in cols:
@@ -166,8 +149,6 @@ def _render_domain_view(df: pd.DataFrame, item_col: str, prefix: str, taxonomy_s
     display_df = filtered_df.copy()
     if "Source ID (NCBI)" in display_df.columns:
         display_df["NCBI_URL"] = "https://www.ncbi.nlm.nih.gov/protein/" + display_df["Source ID (NCBI)"].astype(str)
-
-    st.markdown("<br>", unsafe_allow_html=True)
     
     col_config = {
         "Specie": st.column_config.TextColumn("Species", width="medium"),
@@ -178,15 +159,19 @@ def _render_domain_view(df: pd.DataFrame, item_col: str, prefix: str, taxonomy_s
         "NCBI_URL": st.column_config.LinkColumn(
             "Source ID (NCBI)", 
             display_text=r"https://www\.ncbi\.nlm\.nih\.gov/protein/(.*)" 
-        )
+        ),
+        "Origin": st.column_config.TextColumn("Origin details", width="large"),
     }
 
     final_cols = ["Class", "Specie", item_col]
     if "Description" in display_df.columns: final_cols.append("Description")
     if "Target sugar" in display_df.columns: final_cols.append("Target sugar")
+    if "Origin" in display_df.columns: final_cols.append("Origin")
     if "Localization" in display_df.columns: final_cols.append("Localization")
-    if "NCBI_URL" in display_df.columns: final_cols.append("NCBI_URL")
     if "Status" in display_df.columns: final_cols.append("Status")
+    if "NCBI_URL" in display_df.columns: final_cols.append("NCBI_URL")
+
+    st.caption("**Tip:** Double-click any cell to expand it.")
 
     st.dataframe(
         display_df[final_cols],
@@ -261,32 +246,34 @@ def render_data_view(df_enzymes: pd.DataFrame, df_transporters: pd.DataFrame, ta
                     st.warning(f"No species found with a complete metabolic pathway to degrade and import **{selected_sugar}**.")
                 else:                    
                     loc_col_enz = "Localization" if "Localization" in enz_match.columns else "Pending"
-                    enz_clean = enz_match[enz_match["Specie"].isin(ideal_species)][
-                        ["Specie", "Enzyme", "Source ID (NCBI)", loc_col_enz]
-                    ].rename(columns={
+                    enz_cols = ["Specie", "Enzyme", "Source ID (NCBI)", loc_col_enz]
+                    if "Origin" in enz_match.columns: enz_cols.append("Origin")
+                    
+                    enz_clean = enz_match[enz_match["Specie"].isin(ideal_species)][enz_cols].rename(columns={
                         "Source ID (NCBI)": "Enzyme ID",
-                        loc_col_enz: "Enzyme Localization"
+                        loc_col_enz: "Enzyme Localization",
+                        "Origin": "Enzyme Origin"
                     })
 
                     loc_col_tra = "Localization" if "Localization" in tra_match.columns else "Pending"
-                    tra_clean = tra_match[tra_match["Specie"].isin(ideal_species)][
-                        ["Specie", "Transporter", "Target sugar", "Source ID (NCBI)", loc_col_tra]
-                    ].rename(columns={
+                    tra_cols = ["Specie", "Transporter", "Target sugar", "Source ID (NCBI)", loc_col_tra]
+                    if "Origin" in tra_match.columns: tra_cols.append("Origin")
+                    
+                    tra_clean = tra_match[tra_match["Specie"].isin(ideal_species)][tra_cols].rename(columns={
                         "Source ID (NCBI)": "Transporter ID",
-                        loc_col_tra: "Transporter Localization"
+                        loc_col_tra: "Transporter Localization",
+                        "Origin": "Transporter Origin"
                     })
 
                     cross_df = pd.merge(enz_clean, tra_clean, on="Specie", how="inner")
 
-                    with st.spinner("Classifying results for filters..."):
-                        species_to_group = {sp: get_group_for_species(sp, taxonomy_service) for sp in ideal_species}
-                        cross_df.insert(1, "Class", cross_df["Specie"].map(species_to_group))
+                    cross_df = add_taxonomic_class_column(cross_df, taxonomy_service, loading_text="Classifying species for cross-analysis...")
 
                     st.divider()
                     
                     st.info("Note: for polisaccharides, look mostly for enzymes with predicted localization in **[Extracellular]** or **[Cell wall]**.")
 
-                    st.markdown("#### Filter results")
+                    st.markdown("### Filters")
                     
                     if "cross_f_class" not in st.session_state: st.session_state["cross_f_class"] = []
                     if "cross_f_specie" not in st.session_state: st.session_state["cross_f_specie"] = []
@@ -337,19 +324,24 @@ def render_data_view(df_enzymes: pd.DataFrame, df_transporters: pd.DataFrame, ta
 
                     filtered_cross_df = get_cross_filtered_df(exclude_col=None)
 
-                    st.markdown("<br>", unsafe_allow_html=True)
+                    st.divider()
                     st.success(f"Showing **{len(filtered_cross_df)}** potential enzyme-transporter pairings based on your filters.")
 
                     display_cross_df = filtered_cross_df.copy()
                     display_cross_df["Enzyme_URL"] = "https://www.ncbi.nlm.nih.gov/protein/" + display_cross_df["Enzyme ID"].astype(str)
                     display_cross_df["Transporter_URL"] = "https://www.ncbi.nlm.nih.gov/protein/" + display_cross_df["Transporter ID"].astype(str)
 
+                    final_cross_cols = ["Class", "Specie", "Enzyme", "Enzyme Localization", "Enzyme_URL"]
+                    if "Enzyme Origin" in display_cross_df.columns:
+                        final_cross_cols.append("Enzyme Origin")
+                        
+                    final_cross_cols.extend(["Transporter", "Target sugar", "Transporter Localization", "Transporter_URL"])
+                    if "Transporter Origin" in display_cross_df.columns:
+                        final_cross_cols.append("Transporter Origin")
+
+                    st.caption("**Tip:** Double-click any cell to expand it.")
                     st.dataframe(
-                        display_cross_df[[
-                            "Class", "Specie", 
-                            "Enzyme", "Enzyme Localization", "Enzyme_URL",
-                            "Transporter", "Target sugar", "Transporter Localization", "Transporter_URL"
-                        ]],
+                        display_cross_df[final_cross_cols],
                         use_container_width=True,
                         hide_index=True,
                         column_config={
@@ -362,6 +354,7 @@ def render_data_view(df_enzymes: pd.DataFrame, df_transporters: pd.DataFrame, ta
                                 display_text=r"https://www\.ncbi\.nlm\.nih\.gov/protein/(.*)",
                                 width="small"
                             ),
+                            "Enzyme Origin": st.column_config.TextColumn("Enzyme origin details", width="large"),
                             "Transporter": st.column_config.TextColumn("Transporter", width="medium"),
                             "Target sugar": st.column_config.TextColumn("Transported sugar", width="small"),
                             "Transporter Localization": st.column_config.TextColumn("Transporter localization", width="small"),
@@ -370,5 +363,6 @@ def render_data_view(df_enzymes: pd.DataFrame, df_transporters: pd.DataFrame, ta
                                 display_text=r"https://www\.ncbi\.nlm\.nih\.gov/protein/(.*)",
                                 width="small"
                             ),
+                            "Transporter Origin": st.column_config.TextColumn("Transporter origin details", width="large"),
                         }
                     )

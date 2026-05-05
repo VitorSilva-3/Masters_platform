@@ -103,7 +103,8 @@ class CacheBuilder:
                 self.tax_service.fetch_taxonomy_lineage(org)
                 added += 1
                 time.sleep(self.ncbi_delay)
-                
+
+        self.tax_service.save_cache()        
         logger.info(f"Taxonomy cache update completed. {added} new organisms added.")
 
     def update_kegg(self, datasets: dict) -> None:
@@ -122,7 +123,8 @@ class CacheBuilder:
                     logger.info(f"Fetching KEGG data for EC: {ec}")
                     self.kegg_service.fetch_enzyme_details(row['Enzyme'], ec)
                     added += 1
-                    
+
+        self.kegg_service.save_cache()        
         logger.info(f"KEGG cache update completed. {added} new entries added.")
 
     def update_uniprot(self, datasets: dict) -> None: 
@@ -152,7 +154,8 @@ class CacheBuilder:
                     self.uniprot_service.fetch_protein_data(name, identifier, id_type=id_type)
                     added_general += 1
                     time.sleep(self.uniprot_delay) 
-                
+        
+        self.uniprot_service.save_cache()
         logger.info(f"UniProt cache update completed. {added_general} general profiles added.")
 
     def update_literature(self, datasets: dict) -> None:

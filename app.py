@@ -1,26 +1,13 @@
 
 import streamlit as st
 import time
-import json
-from PIL import Image
 from streamlit_lottie import st_lottie
+from utils import load_lottiefile, configure_page
 
-def load_lottiefile(filepath: str):
-    try:
-        with open(filepath, "r", encoding="utf-8") as f:
-            return json.load(f)
-    except Exception:
-        return None
+configure_page("Home")
 
 LOTTIE_DNA = "images/DNA strand.json" 
 LOTTIE_FACTORY = "images/Factory pollution city air and water.json"
-
-try:
-    icon_image = Image.open("images/logo.jpg")
-    st.set_page_config(page_title="MicroValue - Home", page_icon=icon_image, layout="wide")
-except FileNotFoundError:
-    st.set_page_config(page_title="MicroValue - Home", layout="wide")
-
 
 if 'app_loaded' not in st.session_state:
     st.session_state.app_loaded = False

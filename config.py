@@ -88,8 +88,11 @@ class AppConfig:
         "beta-fructofuranosidase":    EnzymeInfo("3.2.1.26", "sucrose"),
         "invertase":                  EnzymeInfo("3.2.1.26", "sucrose"),
         "sucrase":                    EnzymeInfo("3.2.1.26", "sucrose"),
-        "fructokinase":               EnzymeInfo("2.7.1.4",  "fructose"),
         "maltase":                    EnzymeInfo("3.2.1.20", "maltose"),
+        "fructokinase":               EnzymeInfo("2.7.1.4",  "fructose"),
+        "galactokinase":              EnzymeInfo("2.7.1.6",  "galactose"),
+        "glucokinase":                EnzymeInfo("2.7.1.2",  "glucose"),
+        "hexokinase":                EnzymeInfo("2.7.1.1",  "glucose"),
         "beta-amylase":               EnzymeInfo("3.2.1.2",  "starch"),
         "alpha-amylase":              EnzymeInfo("3.2.1.1",  "starch"),
         "cellulase":                  EnzymeInfo("3.2.1.4",  "cellulose")

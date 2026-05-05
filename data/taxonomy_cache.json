@@ -67306,5 +67306,5444 @@
             "rank": "no rank",
             "name": "unclassified Leptolyngbya"
         }
+    ],
+    "Picocystis salinarum": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Eukaryota"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Viridiplantae"
+        },
+        {
+            "rank": "phylum",
+            "name": "Chlorophyta"
+        },
+        {
+            "rank": "class",
+            "name": "Picocystophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Picocystales"
+        },
+        {
+            "rank": "family",
+            "name": "Picocystaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Picocystis"
+        }
+    ],
+    "Kovacikia sp. CALU 1929": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Leptolyngbyales"
+        },
+        {
+            "rank": "family",
+            "name": "Leptolyngbyaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Kovacikia"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Kovacikia"
+        }
+    ],
+    "Synechococcales cyanobacterium MV0715": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Synechococcales"
+        }
+    ],
+    "Paraciimarium castrense": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Prochlorococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Paraciimarium"
+        }
+    ],
+    "Marcopretia estuarina": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Prochlorococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Marcopretia"
+        }
+    ],
+    "Cryptocyanus atlanticus": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Prochlorococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Cryptocyanus"
+        }
+    ],
+    "Nostoc sp. LEGE 12454": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Nostocaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Nostoc"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Nostoc"
+        }
+    ],
+    "Nodularia sp. LEGE 04288": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Nodulariaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Nodularia"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Nodularia (in: cyanobacteria)"
+        }
+    ],
+    "Sphaerospermopsis aphanizomenoides": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Aphanizomenonaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Sphaerospermopsis"
+        }
+    ],
+    "Trichocoleus sp. FACHB-69": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Leptolyngbyales"
+        },
+        {
+            "rank": "family",
+            "name": "Trichocoleusaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Trichocoleus"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Trichocoleus"
+        }
+    ],
+    "Richelia sinica": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Nostocaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Richelia"
+        }
+    ],
+    "Trichormus sp. NMC-1": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Nostocaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Trichormus"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Trichormus"
+        }
+    ],
+    "Gloeomargarita lithophora Alchichica-D10": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Gloeomargaritales"
+        },
+        {
+            "rank": "family",
+            "name": "Gloeomargaritaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Gloeomargarita"
+        },
+        {
+            "rank": "species",
+            "name": "Gloeomargarita lithophora"
+        }
+    ],
+    "Cylindrospermum stagnale PCC 7417": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Nostocaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Cylindrospermum"
+        },
+        {
+            "rank": "species",
+            "name": "Cylindrospermum stagnale"
+        }
+    ],
+    "Oxynema acuminatum PCC 6304": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Oscillatoriales"
+        },
+        {
+            "rank": "family",
+            "name": "Oscillatoriaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Oxynema"
+        },
+        {
+            "rank": "species",
+            "name": "Oxynema acuminatum"
+        }
+    ],
+    "Microcystis aeruginosa C-1004": "Taxonomy ID not found.",
+    "Okeania sp. SIO2F4": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Oscillatoriales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcoleaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Okeania"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Okeania"
+        }
+    ],
+    "Okeania sp.": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Oscillatoriales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcoleaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Okeania"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Okeania"
+        }
+    ],
+    "Okeania sp. SIO3I5": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Oscillatoriales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcoleaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Okeania"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Okeania"
+        }
+    ],
+    "Anabaena sp. TISTR 8404": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Nostocaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Anabaena"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Anabaena"
+        }
+    ],
+    "Leptolyngbya sp. CALU 1928": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Leptolyngbyales"
+        },
+        {
+            "rank": "family",
+            "name": "Leptolyngbyaceae"
+        },
+        {
+            "rank": "no rank",
+            "name": "Leptolyngbya group"
+        },
+        {
+            "rank": "genus",
+            "name": "Leptolyngbya"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Leptolyngbya"
+        }
+    ],
+    "Synechococcales cyanobacterium MV1218C": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Synechococcales"
+        }
+    ],
+    "Synechococcales cyanobacterium MVD013D": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Synechococcales"
+        }
+    ],
+    "Synechococcales cyanobacterium MV1320": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Synechococcales"
+        }
+    ],
+    "Synechococcales cyanobacterium MV1715": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Synechococcales"
+        }
+    ],
+    "Synechococcales cyanobacterium MV0605": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Synechococcales"
+        }
+    ],
+    "Calyptranema fuscum": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Oculatellales"
+        },
+        {
+            "rank": "family",
+            "name": "Oculatellaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Calyptranema"
+        }
+    ],
+    "Pseudanabaenococcus habilitatus": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Pseudanabaenales"
+        },
+        {
+            "rank": "family",
+            "name": "Pseudanabaenaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Pseudanabaenococcus"
+        }
+    ],
+    "Synechocystis sp. PCC 6803 substr. Kazusa": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Merismopediaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Synechocystis"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Synechocystis"
+        },
+        {
+            "rank": "species",
+            "name": "Synechocystis sp. PCC 6803"
+        }
+    ],
+    "Oxynema mangrovii": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Oscillatoriales"
+        },
+        {
+            "rank": "family",
+            "name": "Oscillatoriaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Oxynema"
+        }
+    ],
+    "Thermostichus sp. MS-CIW-22": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Thermostichales"
+        },
+        {
+            "rank": "family",
+            "name": "Thermostichaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Thermostichus"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Thermostichus"
+        }
+    ],
+    "Thermostichus sp. MS-CIW-36": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Thermostichales"
+        },
+        {
+            "rank": "family",
+            "name": "Thermostichaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Thermostichus"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Thermostichus"
+        }
+    ],
+    "Thermostichus sp. OS-CIW-30": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Thermostichales"
+        },
+        {
+            "rank": "family",
+            "name": "Thermostichaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Thermostichus"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Thermostichus"
+        }
+    ],
+    "unclassified Thermostichus": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Thermostichales"
+        },
+        {
+            "rank": "family",
+            "name": "Thermostichaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Thermostichus"
+        }
+    ],
+    "Parathermosynechococcus lividus": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Acaryochloridales"
+        },
+        {
+            "rank": "family",
+            "name": "Thermosynechococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Parathermosynechococcus"
+        }
+    ],
+    "Vulcanococcus sp. Clear-D1": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Synechococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Vulcanococcus"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Vulcanococcus"
+        }
+    ],
+    "Cyanobium sp. T1G-Tous": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Prochlorococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Cyanobium"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Cyanobium"
+        }
+    ],
+    "Cyanobium sp. L1E-Cus": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Prochlorococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Cyanobium"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Cyanobium"
+        }
+    ],
+    "Cyanobium sp. WKJ7-Wakatipu": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Prochlorococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Cyanobium"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Cyanobium"
+        }
+    ],
+    "Cyanobium sp. BA5m-21": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Prochlorococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Cyanobium"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Cyanobium"
+        }
+    ],
+    "Cyanobium sp. A1C-AMD": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Prochlorococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Cyanobium"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Cyanobium"
+        }
+    ],
+    "Cyanobium sp. BA20m-14": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Prochlorococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Cyanobium"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Cyanobium"
+        }
+    ],
+    "Prochlorococcus sp.": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Prochlorococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Prochlorococcus"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Prochlorococcus"
+        }
+    ],
+    "Microcystis protocystis": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Chroococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcystaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Microcystis"
+        }
+    ],
+    "Microcystis ichthyoblabe": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Chroococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcystaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Microcystis"
+        }
+    ],
+    "Synechococcus elongatus M14.2": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Synechococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Synechococcus"
+        },
+        {
+            "rank": "species",
+            "name": "Synechococcus elongatus"
+        }
+    ],
+    "Baaleninema sp.": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Oscillatoriales"
+        },
+        {
+            "rank": "family",
+            "name": "Oscillatoriaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Baaleninema"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Baaleninema"
+        }
+    ],
+    "Mastigocladus laminosus SAG 4.84": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Hapalosiphonaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Mastigocladus"
+        },
+        {
+            "rank": "species",
+            "name": "Mastigocladus laminosus"
+        }
+    ],
+    "Synechococcales cyanobacterium": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Synechococcales"
+        }
+    ],
+    "Moorena sp. SIO4E2": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Coleofasciculales"
+        },
+        {
+            "rank": "family",
+            "name": "Coleofasciculaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Moorena"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Moorena"
+        }
+    ],
+    "Synechococcus sp. R6-6": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Synechococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Synechococcus"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Synechococcus"
+        }
+    ],
+    "Synechococcus sp. R5-12": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Synechococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Synechococcus"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Synechococcus"
+        }
+    ],
+    "Synechococcus sp. F70.1": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Synechococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Synechococcus"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Synechococcus"
+        }
+    ],
+    "Synechococcus sp. R70.1": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Synechococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Synechococcus"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Synechococcus"
+        }
+    ],
+    "Synechococcus sp. W60.1": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Synechococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Synechococcus"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Synechococcus"
+        }
+    ],
+    "Synechococcus sp. O70.1": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Synechococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Synechococcus"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Synechococcus"
+        }
+    ],
+    "Synechococcus sp. W65.1": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Synechococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Synechococcus"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Synechococcus"
+        }
+    ],
+    "Synechococcus sp. R65.1": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Synechococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Synechococcus"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Synechococcus"
+        }
+    ],
+    "Synechococcus sp. O70.2": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Synechococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Synechococcus"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Synechococcus"
+        }
+    ],
+    "Synechococcus sp. H55.11": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Synechococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Synechococcus"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Synechococcus"
+        }
+    ],
+    "Synechococcus sp. R6-10": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Synechococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Synechococcus"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Synechococcus"
+        }
+    ],
+    "Arthrospira sp. PCC 8006": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Oscillatoriales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcoleaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Arthrospira"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Arthrospira"
+        }
+    ],
+    "Prochlorococcus sp. ALOHA_ZT_50": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Prochlorococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Prochlorococcus"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Prochlorococcus"
+        }
+    ],
+    "Microcystis sp. BLCC-F210": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Chroococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcystaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Microcystis"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Microcystis (in: cyanobacteria)"
+        }
+    ],
+    "Thermosynechococcus sichuanensis": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Acaryochloridales"
+        },
+        {
+            "rank": "family",
+            "name": "Thermosynechococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Thermosynechococcus"
+        }
+    ],
+    "unclassified Trichocoleus": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Leptolyngbyales"
+        },
+        {
+            "rank": "family",
+            "name": "Trichocoleusaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Trichocoleus"
+        }
+    ],
+    "Trichormus azollae": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Nostocaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Trichormus"
+        }
+    ],
+    "Anabaena sp. UHCC 0451": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Nostocaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Anabaena"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Anabaena"
+        }
+    ],
+    "Microcystis aeruginosa LE3": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Chroococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcystaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Microcystis"
+        },
+        {
+            "rank": "species",
+            "name": "Microcystis aeruginosa"
+        }
+    ],
+    "Microcystis wesenbergii": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Chroococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcystaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Microcystis"
+        }
+    ],
+    "Chamaesiphon sp. OTE_8_metabat_110": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Gomontiellales"
+        },
+        {
+            "rank": "family",
+            "name": "Chamaesiphonaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Chamaesiphon"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Chamaesiphon"
+        }
+    ],
+    "Microcystis aeruginosa PCC 7806": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Chroococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcystaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Microcystis"
+        },
+        {
+            "rank": "species",
+            "name": "Microcystis aeruginosa"
+        }
+    ],
+    "unclassified Thermosynechococcus": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Acaryochloridales"
+        },
+        {
+            "rank": "family",
+            "name": "Thermosynechococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Thermosynechococcus"
+        }
+    ],
+    "Thermosynechococcus sp. Uc": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Acaryochloridales"
+        },
+        {
+            "rank": "family",
+            "name": "Thermosynechococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Thermosynechococcus"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Thermosynechococcus"
+        }
+    ],
+    "uncultured Thermosynechococcus sp.": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Acaryochloridales"
+        },
+        {
+            "rank": "family",
+            "name": "Thermosynechococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Thermosynechococcus"
+        },
+        {
+            "rank": "no rank",
+            "name": "environmental samples"
+        }
+    ],
+    "Vulcanococcus sp. DEBay_Sum29NL08_54": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Synechococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Vulcanococcus"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Vulcanococcus"
+        }
+    ],
+    "Nostoc sp. JL34": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Nostocaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Nostoc"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Nostoc"
+        }
+    ],
+    "uncultured Synechococcus sp.": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Synechococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Synechococcus"
+        },
+        {
+            "rank": "no rank",
+            "name": "environmental samples"
+        }
+    ],
+    "Microcystis sp. M53602_WE12": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Chroococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcystaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Microcystis"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Microcystis (in: cyanobacteria)"
+        }
+    ],
+    "Microcystis sp. M061S2": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Chroococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcystaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Microcystis"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Microcystis (in: cyanobacteria)"
+        }
+    ],
+    "Moorena sp. SIO3B2": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Coleofasciculales"
+        },
+        {
+            "rank": "family",
+            "name": "Coleofasciculaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Moorena"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Moorena"
+        }
+    ],
+    "Moorena sp. SIO1G6": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Coleofasciculales"
+        },
+        {
+            "rank": "family",
+            "name": "Coleofasciculaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Moorena"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Moorena"
+        }
+    ],
+    "Anabaenopsis tanganyikae": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Nodulariaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Anabaenopsis"
+        }
+    ],
+    "Anabaenopsis sp. FSS-46": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Nodulariaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Anabaenopsis"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Anabaenopsis"
+        }
+    ],
+    "Aphanizomenon sp. CS-733/32": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Aphanizomenonaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Aphanizomenon"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Aphanizomenon"
+        }
+    ],
+    "Anabaena sp. CS-542/02": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Nostocaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Anabaena"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Anabaena"
+        }
+    ],
+    "Dolichospermum heterosporum": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Aphanizomenonaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Dolichospermum"
+        }
+    ],
+    "Cyanobium sp. ATX 6F1": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Prochlorococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Cyanobium"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Cyanobium"
+        }
+    ],
+    "Cyanobium sp. Alchichica 3B3-8F6": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Prochlorococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Cyanobium"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Cyanobium"
+        }
+    ],
+    "Cyanobium sp. Aljojuca 7D2": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Prochlorococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Cyanobium"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Cyanobium"
+        }
+    ],
+    "Cyanobium sp. ATX 6E8": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Prochlorococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Cyanobium"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Cyanobium"
+        }
+    ],
+    "Cyanobium sp. Morenito 9A2": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Prochlorococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Cyanobium"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Cyanobium"
+        }
+    ],
+    "Acaryochloris": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Acaryochloridales"
+        },
+        {
+            "rank": "family",
+            "name": "Acaryochloridaceae"
+        }
+    ],
+    "Microcystis aeruginosa FACHB-905 = DIANCHI905": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Chroococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcystaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Microcystis"
+        },
+        {
+            "rank": "species",
+            "name": "Microcystis aeruginosa"
+        }
+    ],
+    "Oxynema aestuarii": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Oscillatoriales"
+        },
+        {
+            "rank": "family",
+            "name": "Oscillatoriaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Oxynema"
+        }
+    ],
+    "Sphaerospermopsis torques-reginae": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Aphanizomenonaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Sphaerospermopsis"
+        }
+    ],
+    "Sphaerospermopsis sp. LEGE 08334": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Aphanizomenonaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Sphaerospermopsis"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Sphaerospermopsis"
+        }
+    ],
+    "Microcystis sp. LEGE 08355": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Chroococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcystaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Microcystis"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Microcystis (in: cyanobacteria)"
+        }
+    ],
+    "Cuspidothrix issatschenkoi": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Aphanizomenonaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Cuspidothrix"
+        }
+    ],
+    "Dolichospermum sp. LEGE 00240": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Aphanizomenonaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Dolichospermum"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Dolichospermum"
+        }
+    ],
+    "Aphanizomenon": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Aphanizomenonaceae"
+        }
+    ],
+    "Sphaerospermopsis": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Aphanizomenonaceae"
+        }
+    ],
+    "Dolichospermum sp. FACHB-1091": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Aphanizomenonaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Dolichospermum"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Dolichospermum"
+        }
+    ],
+    "Sphaerospermopsis sp. LEGE 00249": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Aphanizomenonaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Sphaerospermopsis"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Sphaerospermopsis"
+        }
+    ],
+    "Geitlerinema sp. P-1104": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Geitlerinematales"
+        },
+        {
+            "rank": "family",
+            "name": "Geitlerinemataceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Geitlerinema"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Geitlerinema"
+        }
+    ],
+    "Thermosynechococcus vestitus": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Acaryochloridales"
+        },
+        {
+            "rank": "family",
+            "name": "Thermosynechococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Thermosynechococcus"
+        }
+    ],
+    "Gloeomargarita lithophora": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Gloeomargaritales"
+        },
+        {
+            "rank": "family",
+            "name": "Gloeomargaritaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Gloeomargarita"
+        }
+    ],
+    "Geitlerinema sp. PCC 9228": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Geitlerinematales"
+        },
+        {
+            "rank": "family",
+            "name": "Geitlerinemataceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Geitlerinema"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Geitlerinema"
+        }
+    ],
+    "Microcystis panniformis Mp_MB_F_20080800_S26D": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Chroococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcystaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Microcystis"
+        },
+        {
+            "rank": "species",
+            "name": "Microcystis panniformis"
+        }
+    ],
+    "Microcystis aeruginosa Ma_QC_C_20070823_S13": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Chroococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcystaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Microcystis"
+        },
+        {
+            "rank": "species",
+            "name": "Microcystis aeruginosa"
+        }
+    ],
+    "Microcystis aeruginosa Ma_QC_C_20070823_S13D": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Chroococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcystaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Microcystis"
+        },
+        {
+            "rank": "species",
+            "name": "Microcystis aeruginosa"
+        }
+    ],
+    "Microcystis flos-aquae Ma_QC_C_20070823_S18": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Chroococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcystaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Microcystis"
+        },
+        {
+            "rank": "species",
+            "name": "Microcystis flos-aquae"
+        }
+    ],
+    "Dolichospermum compactum": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Aphanizomenonaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Dolichospermum"
+        }
+    ],
+    "Sphaerospermopsis kisseleviana": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Aphanizomenonaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Sphaerospermopsis"
+        }
+    ],
+    "Cylindrospermopsis": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Aphanizomenonaceae"
+        }
+    ],
+    "Aphanocapsa feldmannii 288cV": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Chroococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcystaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Aphanocapsa"
+        },
+        {
+            "rank": "species",
+            "name": "Aphanocapsa feldmannii"
+        }
+    ],
+    "Synechococcus sp. MED-G134": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Synechococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Synechococcus"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Synechococcus"
+        }
+    ],
+    "Prochlorococcus sp. MED-G72": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Prochlorococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Prochlorococcus"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Prochlorococcus"
+        }
+    ],
+    "Synechococcus sp. Baikal-G1": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Synechococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Synechococcus"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Synechococcus"
+        }
+    ],
+    "uncultured Prochlorococcus marinus clone HF10-11A3": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Prochlorococcaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Prochlorococcus"
+        },
+        {
+            "rank": "species",
+            "name": "Prochlorococcus marinus"
+        },
+        {
+            "rank": "no rank",
+            "name": "environmental samples"
+        }
+    ],
+    "Candidatus Atelocyanobacterium thalassa isolate SIO64986": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Chroococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Aphanothecaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Candidatus Atelocyanobacterium"
+        },
+        {
+            "rank": "species",
+            "name": "Candidatus Atelocyanobacterium thalassae"
+        }
+    ],
+    "Rippkaea orientalis PCC 8801": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Chroococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Aphanothecaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Rippkaea"
+        },
+        {
+            "rank": "species",
+            "name": "Rippkaea orientalis"
+        }
+    ],
+    "Candidatus Atelocyanobacterium thalassa isolate ALOHA": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Chroococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Aphanothecaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Candidatus Atelocyanobacterium"
+        },
+        {
+            "rank": "species",
+            "name": "Candidatus Atelocyanobacterium thalassae"
+        }
+    ],
+    "Microcystis aeruginosa PCC 9701": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Chroococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcystaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Microcystis"
+        },
+        {
+            "rank": "species",
+            "name": "Microcystis aeruginosa"
+        }
+    ],
+    "Microcystis aeruginosa PCC 9808": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Chroococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcystaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Microcystis"
+        },
+        {
+            "rank": "species",
+            "name": "Microcystis aeruginosa"
+        }
+    ],
+    "Microcystis aeruginosa PCC 9807": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Chroococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcystaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Microcystis"
+        },
+        {
+            "rank": "species",
+            "name": "Microcystis aeruginosa"
+        }
+    ],
+    "Microcystis aeruginosa PCC 9806": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Chroococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcystaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Microcystis"
+        },
+        {
+            "rank": "species",
+            "name": "Microcystis aeruginosa"
+        }
+    ],
+    "Microcystis aeruginosa PCC 7941": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Chroococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcystaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Microcystis"
+        },
+        {
+            "rank": "species",
+            "name": "Microcystis aeruginosa"
+        }
+    ],
+    "Microcystis aeruginosa PCC 9443": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Chroococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcystaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Microcystis"
+        },
+        {
+            "rank": "species",
+            "name": "Microcystis aeruginosa"
+        }
+    ],
+    "Microcystis aeruginosa PCC 9432": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Chroococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcystaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Microcystis"
+        },
+        {
+            "rank": "species",
+            "name": "Microcystis aeruginosa"
+        }
+    ],
+    "Volvox carteri f. nagariensis": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Eukaryota"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Viridiplantae"
+        },
+        {
+            "rank": "phylum",
+            "name": "Chlorophyta"
+        },
+        {
+            "rank": "clade",
+            "name": "core chlorophytes"
+        },
+        {
+            "rank": "class",
+            "name": "Chlorophyceae"
+        },
+        {
+            "rank": "clade",
+            "name": "CS clade"
+        },
+        {
+            "rank": "order",
+            "name": "Chlamydomonadales"
+        },
+        {
+            "rank": "family",
+            "name": "Volvocaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Volvox"
+        },
+        {
+            "rank": "species",
+            "name": "Volvox carteri"
+        }
+    ],
+    "Prochlorococcaceae": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Synechococcales"
+        }
     ]
 }

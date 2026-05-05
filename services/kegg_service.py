@@ -1,9 +1,8 @@
 
-import json
-import os
 import logging
 from Bio.KEGG import REST
 from typing import Dict, Any
+from utils import load_json_cache, save_json_cache
 
 logger = logging.getLogger(__name__)
 
@@ -12,27 +11,7 @@ class KeggService:
 
     def __init__(self, cache_file: str = "data/kegg_cache.json"):
         self.cache_file = cache_file
-        self.cache = self._load_cache()
-
-    def _load_cache(self) -> Dict[str, Any]:
-        """Loads the cache from a JSON file if it exists, otherwise returns an empty dictionary."""
-
-        if os.path.exists(self.cache_file):
-            try:
-                with open(self.cache_file, "r", encoding="utf-8") as f:
-                    return json.load(f)
-            except Exception as e:
-                logger.error(f"[KeggService] Error loading cache: {e}") 
-        return {}
-
-    def _save_cache(self):
-        """Saves the current cache dictionary to a JSON file."""
-
-        try:
-            with open(self.cache_file, "w", encoding="utf-8") as f:
-                json.dump(self.cache, f, indent=4)
-        except Exception as e:
-            logger.error(f"[KeggService] Error saving cache: {e}") 
+        self.cache = load_json_cache(self.cache_file, service_name = "KeggService")
 
     def fetch_enzyme_details(self, enzyme_name: str, ec_number: str) -> Dict[str, Any]:
         """Fetches detailed information from KEGG for a specific enzyme."""
@@ -47,7 +26,7 @@ class KeggService:
             
             if info and info.get('name'): 
                 self.cache[ec_number] = info
-                self._save_cache()
+                save_json_cache(self.cache_file, self.cache, service_name = "KeggService")
                 
             return info
             
@@ -81,3 +60,7 @@ class KeggService:
                     info['pathways'].append({'code': code, 'description': desc})
 
         return info
+    
+    def save_cache(self):
+        """Saves the cache to disk."""
+        save_json_cache(self.cache_file, self.cache, service_name = "KeggService")
