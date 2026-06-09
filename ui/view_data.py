@@ -2,7 +2,9 @@
 import os
 import streamlit as st
 import pandas as pd
-from utils import get_group_for_species, add_taxonomic_class_column
+import urllib.parse
+import re
+from utils import add_taxonomic_class_column
 
 @st.cache_data(show_spinner=False)
 def load_all_localizations() -> pd.DataFrame:
@@ -199,7 +201,7 @@ def render_data_view(df_enzymes: pd.DataFrame, df_transporters: pd.DataFrame, ta
                 df_transporters = pd.merge(df_transporters, df_locs, left_on="Source ID (NCBI)", right_on="Model_ID", how="left")
                 df_transporters["Localization"] = df_transporters["Localization"].fillna("Pending")
 
-    tab_enz, tab_trans, tab_cross = st.tabs(["Enzymes", "Transporters", "Cross-analysis"])
+    tab_enz, tab_trans, tab_cross, tab_cultures = st.tabs(["Enzymes", "Transporters", "Cross-analysis", "Culture collections"])
     
     with tab_enz:
         _render_domain_view(df=df_enzymes, item_col="Enzyme", prefix="enz", taxonomy_service=taxonomy_service)
@@ -366,3 +368,91 @@ def render_data_view(df_enzymes: pd.DataFrame, df_transporters: pd.DataFrame, ta
                             "Transporter Origin": st.column_config.TextColumn("Transporter origin details", width="large"),
                         }
                     )
+
+    with tab_cultures:
+            st.markdown("### Strain availability")
+            st.markdown("Search for your species of interest in the Global Catalogue of Microorganisms (GCM).")
+            
+            all_species_df = pd.concat([df_enzymes[["Specie"]], df_transporters[["Specie"]]]).drop_duplicates(subset=["Specie"])
+            all_species_df = add_taxonomic_class_column(all_species_df, taxonomy_service)
+            
+            def add_gcm_link(df):
+                
+                def clean_for_search(name):
+                    clean_name = re.sub(r"[\[\]\(\)\']", "", str(name))
+                    
+                    parts = clean_name.split()
+                    
+                    if len(parts) >= 2:
+                        clean_name = f"{parts[0]} {parts[1]}"
+                    elif len(parts) == 1:
+                        clean_name = parts[0]
+                        
+                    return clean_name
+
+                search_queries = df["Specie"].apply(clean_for_search)
+                
+                sp_query = search_queries.apply(lambda x: urllib.parse.quote(str(x)))
+                
+                df["GCM search"] = "https://gcm.wdcm.org/search?search=" + sp_query + "&list=strain"
+                
+                return df
+
+            if "cult_class" not in st.session_state: st.session_state["cult_class"] = []
+            if "cult_spec" not in st.session_state: st.session_state["cult_spec"] = []
+
+            def get_cult_filtered_df(exclude_col=None):
+
+                temp_df = all_species_df.copy()
+
+                if exclude_col != "Class" and st.session_state["cult_class"]:
+                    temp_df = temp_df[temp_df["Class"].isin(st.session_state["cult_class"])]
+
+                if exclude_col != "Specie" and st.session_state["cult_spec"]:
+                    temp_df = temp_df[temp_df["Specie"].isin(st.session_state["cult_spec"])]
+
+                return temp_df
+
+            def get_cult_safe_options(col_name, state_key):
+
+                opts = get_cult_filtered_df(exclude_col=col_name)[col_name].dropna().unique().tolist()
+                
+                for sel in st.session_state[state_key]:
+                    if sel not in opts:
+                        opts.append(sel)
+
+                return sorted(opts)
+
+            col_c1, col_c2 = st.columns(2)
+            with col_c1:
+                f_class = st.multiselect(
+                    "Select class:", 
+                    options=get_cult_safe_options("Class", "cult_class"), 
+                    key="cult_class"
+                )
+
+            with col_c2:
+                f_specie = st.multiselect(
+                    "Select species:", 
+                    options=get_cult_safe_options("Specie", "cult_spec"), 
+                    key="cult_spec"
+                )
+
+            filtered = get_cult_filtered_df(exclude_col=None)
+            
+            st.success(f"Showing **{len(filtered)}** records based on your current filters.")
+            
+            filtered = add_gcm_link(filtered)
+            cols = ["Class", "Specie", "GCM search"]
+            link_cfg = st.column_config.LinkColumn("Availability", display_text="Search GCM")
+            
+            st.dataframe(
+                filtered[cols], 
+                use_container_width=True, 
+                hide_index=True,
+                column_config={
+                    "Class": st.column_config.TextColumn("Taxonomic class", width="medium"),
+                    "Specie": st.column_config.TextColumn("Species", width="medium"),
+                    "GCM search": link_cfg
+                }
+            )

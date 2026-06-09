@@ -9945,3 +9945,74 @@ Crocosphaera watsonii WH 0003,cellulase,3.2.1.4,cellulose,putative cellulase [Cr
 Crocosphaera watsonii WH 0003,cellulase,3.2.1.4,cellulose,Cellulase M related protein [Crocosphaera watsonii WH 0003],🟡 Probable/Hypothetical,EHJ11172.1,Organism: Crocosphaera watsonii WH 0003 | Strain: WH 0003 | Db xref: taxon:423471
 Lingulaulax polyedra,cellulase,3.2.1.4,cellulose,cellulase [Lingulaulax polyedra],🟢 Confirmed,ADG63074.1,Organism: Lingulaulax polyedra | Db xref: taxon:160621
 Pyrocystis lunula,cellulase,3.2.1.4,cellulose,cellulase [Pyrocystis lunula],🟢 Confirmed,ADG63073.1,Organism: Pyrocystis lunula | Db xref: taxon:2972
+Aliterella sp. E5.1,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Aliterella sp. E5.1],🟢 Confirmed,WP_486890047.1,Organism: Aliterella sp. E5.1 | Db xref: taxon:3351547
+Aliterella sp. E5.1,beta-galactosidase,3.2.1.23,lactose,beta-galactosidase [Aliterella sp. E5.1],🟢 Confirmed,WP_486889794.1,Organism: Aliterella sp. E5.1 | Db xref: taxon:3351547
+Thainema salinarum,maltase,3.2.1.20,maltose,alpha-glucosidase [Thainema salinarum],🟢 Confirmed,WP_488206704.1,Organism: Thainema salinarum | Db xref: taxon:2908845
+Thainema salinarum,maltase,3.2.1.20,maltose,alpha-glucosidase [Thainema salinarum],🟢 Confirmed,WP_488206205.1,Organism: Thainema salinarum | Db xref: taxon:2908845
+Johannesbaptistia floridana,maltase,3.2.1.20,maltose,alpha-glucosidase [Johannesbaptistia floridana],🟢 Confirmed,WP_486734947.1,Organism: Johannesbaptistia floridana | Db xref: taxon:2774051
+Anabaena sp. EIM26,galactokinase,2.7.1.6,galactose,galactokinase [Anabaena sp. EIM26],🟢 Confirmed,WP_487065965.1,Organism: Anabaena sp. EIM26 | Db xref: taxon:3696541
+Aliterella sp. E5.1,galactokinase,2.7.1.6,galactose,galactokinase [Aliterella sp. E5.1],🟢 Confirmed,WP_486887848.1,Organism: Aliterella sp. E5.1 | Db xref: taxon:3351547
+Tychonema sp. LEGE 07196,galactokinase,2.7.1.6,galactose,galactokinase [Tychonema sp. LEGE 07196],🟢 Confirmed,WP_194011369.1,Organism: Tychonema sp. LEGE 07196 | Db xref: taxon:1828665
+Cylindrospermopsis raciborskii,glucokinase,2.7.1.2,glucose,glucokinase [Cylindrospermopsis raciborskii],🟢 Confirmed,WP_488492336.1,Organism: Cylindrospermopsis raciborskii | Db xref: taxon:77022
+Cylindrospermopsis raciborskii,glucokinase,2.7.1.2,glucose,glucokinase [Cylindrospermopsis raciborskii],🟢 Confirmed,WP_488473087.1,Organism: Cylindrospermopsis raciborskii | Db xref: taxon:77022
+Thainema salinarum,glucokinase,2.7.1.2,glucose,glucokinase [Thainema salinarum],🟢 Confirmed,WP_488207994.1,Organism: Thainema salinarum | Db xref: taxon:2908845
+Thermoleptolyngbya sichuanensis,glucokinase,2.7.1.2,glucose,glucokinase [Thermoleptolyngbya sichuanensis],🟢 Confirmed,WP_488151246.1,Organism: Thermoleptolyngbya sichuanensis | Db xref: taxon:2885951
+Johannesbaptistia floridana,glucokinase,2.7.1.2,glucose,glucokinase [Johannesbaptistia floridana],🟢 Confirmed,WP_486737921.1,Organism: Johannesbaptistia floridana | Db xref: taxon:2774051
+Anabaena sp. EIM26,glucokinase,2.7.1.2,glucose,glucokinase [Anabaena sp. EIM26],🟢 Confirmed,WP_487062336.1,Organism: Anabaena sp. EIM26 | Db xref: taxon:3696541
+Aliterella sp. E5.1,glucokinase,2.7.1.2,glucose,glucokinase [Aliterella sp. E5.1],🟢 Confirmed,WP_486890128.1,Organism: Aliterella sp. E5.1 | Db xref: taxon:3351547
+Aliterella sp. E5.1,glucokinase,2.7.1.2,glucose,glucokinase [Aliterella sp. E5.1],🟢 Confirmed,WP_486888835.1,Organism: Aliterella sp. E5.1 | Db xref: taxon:3351547
+Johannesbaptistia floridana,glucokinase,2.7.1.2,glucose,glucokinase [Johannesbaptistia floridana],🟢 Confirmed,WP_486737150.1,Organism: Johannesbaptistia floridana | Db xref: taxon:2774051
+Tychonema sp. LEGE 07196,glucokinase,2.7.1.2,glucose,glucokinase [Tychonema sp. LEGE 07196],🟢 Confirmed,WP_194012954.1,Organism: Tychonema sp. LEGE 07196 | Db xref: taxon:1828665
+Okeania sp. BLCC-M348,glucokinase,2.7.1.2,glucose,glucokinase [Okeania sp. BLCC-M348],🟢 Confirmed,WP_485973993.1,Organism: Okeania sp. BLCC-M348 | Db xref: taxon:3470679
+Planktothrix sp. PLAVEN19ND,glucokinase,2.7.1.2,glucose,glucokinase [Planktothrix sp. PLAVEN19ND],🟢 Confirmed,WP_484693621.1,Organism: Planktothrix sp. PLAVEN19ND | Db xref: taxon:3705779
+Synechococcus sp.,glucokinase,2.7.1.2,glucose,glucokinase [Synechococcus sp.],🟢 Confirmed,WP_484595241.1,Organism: Synechococcus sp. | Db xref: taxon:1131
+Synechococcus sp.,glucokinase,2.7.1.2,glucose,glucokinase [Synechococcus sp.],🟢 Confirmed,WP_484594012.1,Organism: Synechococcus sp. | Db xref: taxon:1131
+Synechococcus sp.,glucokinase,2.7.1.2,glucose,glucokinase [Synechococcus sp.],🟢 Confirmed,WP_484400262.1,Organism: Synechococcus sp. | Db xref: taxon:1131
+Tychonema sp. LEGE 06208,glucokinase,2.7.1.2,glucose,glucokinase [Tychonema sp. LEGE 06208],🟢 Confirmed,WP_194067740.1,Organism: Tychonema sp. LEGE 06208 | Db xref: taxon:1828663
+Thainema salinarum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Thainema salinarum],🟢 Confirmed,WP_488208573.1,Organism: Thainema salinarum | Db xref: taxon:2908845
+Thainema salinarum,alpha-amylase,3.2.1.1,starch,alpha-amylase [Thainema salinarum],🟢 Confirmed,WP_488207986.1,Organism: Thainema salinarum | Db xref: taxon:2908845
+Thainema salinarum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Thainema salinarum],🟢 Confirmed,WP_488206769.1,Organism: Thainema salinarum | Db xref: taxon:2908845
+Thainema salinarum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Thainema salinarum],🟢 Confirmed,WP_488205846.1,Organism: Thainema salinarum | Db xref: taxon:2908845
+Thainema salinarum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Thainema salinarum],🟢 Confirmed,WP_488204426.1,Organism: Thainema salinarum | Db xref: taxon:2908845
+Thainema salinarum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Thainema salinarum],🟢 Confirmed,WP_488203484.1,Organism: Thainema salinarum | Db xref: taxon:2908845
+Thainema salinarum,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Thainema salinarum],🟢 Confirmed,WP_488203354.1,Organism: Thainema salinarum | Db xref: taxon:2908845
+Thainema salinarum,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Thainema salinarum],🟢 Confirmed,WP_488203120.1,Organism: Thainema salinarum | Db xref: taxon:2908845
+Thermoleptolyngbya sichuanensis,alpha-amylase,3.2.1.1,starch,alpha-amylase [Thermoleptolyngbya sichuanensis],🟢 Confirmed,WP_488153307.1,Organism: Thermoleptolyngbya sichuanensis | Db xref: taxon:2885951
+Thermoleptolyngbya sichuanensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Thermoleptolyngbya sichuanensis],🟢 Confirmed,WP_488151474.1,Organism: Thermoleptolyngbya sichuanensis | Db xref: taxon:2885951
+Thermoleptolyngbya sichuanensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Thermoleptolyngbya sichuanensis],🟢 Confirmed,WP_488151473.1,Organism: Thermoleptolyngbya sichuanensis | Db xref: taxon:2885951
+Thermoleptolyngbya sichuanensis,alpha-amylase,3.2.1.1,starch,alpha-amylase [Thermoleptolyngbya sichuanensis],🟢 Confirmed,WP_488149967.1,Organism: Thermoleptolyngbya sichuanensis | Db xref: taxon:2885951
+Okeania sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Okeania sp.],🟢 Confirmed,WP_488042396.1,Organism: Okeania sp. | Db xref: taxon:3100323
+Okeania sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Okeania sp.],🟢 Confirmed,WP_488041276.1,Organism: Okeania sp. | Db xref: taxon:3100323
+Okeania sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase [Okeania sp.],🟢 Confirmed,WP_488037829.1,Organism: Okeania sp. | Db xref: taxon:3100323
+Moorena sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Moorena sp.],🟢 Confirmed,WP_488010850.1,Organism: Moorena sp. | Db xref: taxon:3100447
+Johannesbaptistia floridana,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Johannesbaptistia floridana],🟢 Confirmed,WP_486737755.1,Organism: Johannesbaptistia floridana | Db xref: taxon:2774051
+Johannesbaptistia floridana,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Johannesbaptistia floridana],🟢 Confirmed,WP_486737504.1,Organism: Johannesbaptistia floridana | Db xref: taxon:2774051
+Johannesbaptistia floridana,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Johannesbaptistia floridana],🟢 Confirmed,WP_486736831.1,Organism: Johannesbaptistia floridana | Db xref: taxon:2774051
+Johannesbaptistia floridana,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Johannesbaptistia floridana],🟢 Confirmed,WP_486736830.1,Organism: Johannesbaptistia floridana | Db xref: taxon:2774051
+Anabaena sp. EIM26,alpha-amylase,3.2.1.1,starch,alpha-amylase [Anabaena sp. EIM26],🟢 Confirmed,WP_487061337.1,Organism: Anabaena sp. EIM26 | Db xref: taxon:3696541
+Anabaena sp. EIM26,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Anabaena sp. EIM26],🟢 Confirmed,WP_487061148.1,Organism: Anabaena sp. EIM26 | Db xref: taxon:3696541
+Aliterella sp. E5.1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Aliterella sp. E5.1],🟢 Confirmed,WP_486887433.1,Organism: Aliterella sp. E5.1 | Db xref: taxon:3351547
+Aliterella sp. E5.1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Aliterella sp. E5.1],🟢 Confirmed,WP_486887134.1,Organism: Aliterella sp. E5.1 | Db xref: taxon:3351547
+Aliterella sp. E5.1,alpha-amylase,3.2.1.1,starch,alpha-amylase [Aliterella sp. E5.1],🟢 Confirmed,WP_486886015.1,Organism: Aliterella sp. E5.1 | Db xref: taxon:3351547
+Zarconia sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase [Zarconia sp.],🟢 Confirmed,WP_486810643.1,Organism: Zarconia sp. | Db xref: taxon:3101284
+Johannesbaptistia floridana,alpha-amylase,3.2.1.1,starch,alpha-amylase [Johannesbaptistia floridana],🟢 Confirmed,WP_486737716.1,Organism: Johannesbaptistia floridana | Db xref: taxon:2774051
+Planktothrix sp. PLAVEN19ND,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Planktothrix sp. PLAVEN19ND],🟢 Confirmed,WP_484691268.1,Organism: Planktothrix sp. PLAVEN19ND | Db xref: taxon:3705779
+Tychonema sp. LEGE 07196,alpha-amylase,3.2.1.1,starch,alpha-amylase [Tychonema sp. LEGE 07196],🟢 Confirmed,WP_194012246.1,Organism: Tychonema sp. LEGE 07196 | Db xref: taxon:1828665
+Tychonema sp. LEGE 07196,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Tychonema sp. LEGE 07196],🟢 Confirmed,WP_194012128.1,Organism: Tychonema sp. LEGE 07196 | Db xref: taxon:1828665
+Tychonema sp. LEGE 07196,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Tychonema sp. LEGE 07196],🟢 Confirmed,WP_194010790.1,Organism: Tychonema sp. LEGE 07196 | Db xref: taxon:1828665
+Tychonema sp. LEGE 07196,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Tychonema sp. LEGE 07196],🟢 Confirmed,WP_194009806.1,Organism: Tychonema sp. LEGE 07196 | Db xref: taxon:1828665
+Planktothrix sp. PLAVEN19ND,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Planktothrix sp. PLAVEN19ND],🟢 Confirmed,WP_484692140.1,Organism: Planktothrix sp. PLAVEN19ND | Db xref: taxon:3705779
+Okeania sp. BLCC-M348,alpha-amylase,3.2.1.1,starch,alpha-amylase [Okeania sp. BLCC-M348],🟢 Confirmed,WP_485974145.1,Organism: Okeania sp. BLCC-M348 | Db xref: taxon:3470679
+Okeania sp. BLCC-M348,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Okeania sp. BLCC-M348],🟢 Confirmed,WP_485972761.1,Organism: Okeania sp. BLCC-M348 | Db xref: taxon:3470679
+Okeania sp. BLCC-M348,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Okeania sp. BLCC-M348],🟢 Confirmed,WP_485971578.1,Organism: Okeania sp. BLCC-M348 | Db xref: taxon:3470679
+Okeania sp. BLCC-M348,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Okeania sp. BLCC-M348],🟢 Confirmed,WP_485971306.1,Organism: Okeania sp. BLCC-M348 | Db xref: taxon:3470679
+Okeania sp. BLCC-M348,alpha-amylase,3.2.1.1,starch,alpha-amylase [Okeania sp. BLCC-M348],🟢 Confirmed,WP_485965598.1,Organism: Okeania sp. BLCC-M348 | Db xref: taxon:3470679
+Tychonema sp. LEGE 06208,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Tychonema sp. LEGE 06208],🟢 Confirmed,WP_194068207.1,Organism: Tychonema sp. LEGE 06208 | Db xref: taxon:1828663
+Gloeobacter kilaueensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Gloeobacter kilaueensis],🟢 Confirmed,WP_023175741.1,Organism: Gloeobacter kilaueensis | Db xref: taxon:1416614
+Prochlorothrix hollandica,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Prochlorothrix hollandica],🟢 Confirmed,WP_017714598.1,Organism: Prochlorothrix hollandica | Db xref: taxon:1223
+Synechococcus sp. PCC 7336,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Synechococcus sp. PCC 7336],🟢 Confirmed,WP_017328234.1,Organism: Synechococcus sp. PCC 7336 | Db xref: taxon:195250
+Nostoc punctiforme,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Nostoc punctiforme],🟢 Confirmed,WP_012412615.1,Organism: Nostoc punctiforme | Db xref: taxon:272131
+Gloeobacter violaceus,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Gloeobacter violaceus],🟢 Confirmed,WP_011142795.1,Organism: Gloeobacter violaceus | Db xref: taxon:33072
+Thermoleptolyngbya sichuanensis,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Thermoleptolyngbya sichuanensis],🟢 Confirmed,WP_488151392.1,Organism: Thermoleptolyngbya sichuanensis | Db xref: taxon:2885951
+Moorena sp.,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Moorena sp.],🟢 Confirmed,WP_488006613.1,Organism: Moorena sp. | Db xref: taxon:3100447
+Zarconia sp.,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Zarconia sp.],🟢 Confirmed,WP_486809314.1,Organism: Zarconia sp. | Db xref: taxon:3101284

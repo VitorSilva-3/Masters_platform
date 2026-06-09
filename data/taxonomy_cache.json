@@ -72745,5 +72745,354 @@
             "rank": "order",
             "name": "Synechococcales"
         }
+    ],
+    "Tychonema sp. LEGE 07196": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Oscillatoriales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcoleaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Tychonema"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Tychonema"
+        }
+    ],
+    "Aliterella sp. E5.1": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Chroococcidiopsidales"
+        },
+        {
+            "rank": "family",
+            "name": "Aliterellaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Aliterella"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Aliterella"
+        }
+    ],
+    "Okeania sp. BLCC-M348": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Oscillatoriales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcoleaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Okeania"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Okeania"
+        }
+    ],
+    "Thainema salinarum": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Leptolyngbyales"
+        },
+        {
+            "rank": "family",
+            "name": "Leptolyngbyaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Thainema"
+        }
+    ],
+    "Zarconia sp.": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Oscillatoriales"
+        },
+        {
+            "rank": "no rank",
+            "name": "Oscillatoriales incertae sedis"
+        },
+        {
+            "rank": "genus",
+            "name": "Zarconia"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Zarconia"
+        }
+    ],
+    "Anabaena sp. EIM26": "Taxonomy ID not found.",
+    "Planktothrix sp. PLAVEN19ND": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Oscillatoriales"
+        },
+        {
+            "rank": "family",
+            "name": "Microcoleaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Planktothrix"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Planktothrix"
+        }
+    ],
+    "Moorena sp.": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Coleofasciculales"
+        },
+        {
+            "rank": "family",
+            "name": "Coleofasciculaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Moorena"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Moorena"
+        }
+    ],
+    "Johannesbaptistia floridana": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Chroococcales"
+        },
+        {
+            "rank": "family",
+            "name": "Cyanothrichaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Johannesbaptistia"
+        }
     ]
 }
