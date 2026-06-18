@@ -73094,5 +73094,85 @@
             "rank": "genus",
             "name": "Johannesbaptistia"
         }
+    ],
+    "Roseofilum sp. KMC-1": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Desertifilales"
+        },
+        {
+            "rank": "family",
+            "name": "Desertifilaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Roseofilum"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Roseofilum"
+        }
+    ],
+    "Aliinostoc maniaoense": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Nostocales"
+        },
+        {
+            "rank": "family",
+            "name": "Nodulariaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Aliinostoc"
+        }
     ]
 }
