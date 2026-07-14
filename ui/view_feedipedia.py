@@ -20,7 +20,6 @@ def render_feedipedia_view():
     records_map = [
         {
             "main_category": item["Main_Category"],
-            "sub_category": item["Sub_Category"],
             "residue_name": item["Residue_Name"],
             "index": idx
         }
@@ -29,7 +28,7 @@ def render_feedipedia_view():
     df_structure = pd.DataFrame(records_map)
 
     st.markdown("### Filters")
-    col1, col2, col3 = st.columns(3)
+    col1, col2= st.columns(2)
     
     with col1:
         main_categories = sorted(df_structure["main_category"].unique())
@@ -37,17 +36,12 @@ def render_feedipedia_view():
         df_filtered_main = df_structure[df_structure["main_category"] == selected_main]
 
     with col2:
-        sub_categories = sorted(df_filtered_main["sub_category"].unique())
-        selected_sub = st.selectbox("Select sub-category", sub_categories)
-        df_filtered_sub = df_filtered_main[df_filtered_main["sub_category"] == selected_sub]
-
-    with col3:
-        residue_names = sorted(df_filtered_sub["residue_name"].unique())
+        residue_names = sorted(df_filtered_main["residue_name"].unique())
         selected_residue = st.selectbox("Select agro-industrial waste", residue_names)
 
     st.divider()
 
-    target_match = df_filtered_sub[df_filtered_sub["residue_name"] == selected_residue]
+    target_match = df_filtered_main[df_filtered_main["residue_name"] == selected_residue]
     
     if target_match.empty:
         st.warning("No data found matching the selected criteria.")
