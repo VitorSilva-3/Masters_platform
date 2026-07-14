@@ -12,9 +12,7 @@ logger = logging.getLogger(__name__)
 
 
 class SubcellularLocalizationService:
-    """
-    Service responsible for running subcellular localization predictions using DeepLoc 2.0 and DeepLocPro.
-    """
+    """Service responsible for running subcellular localization predictions using DeepLoc 2.0 and DeepLocPro."""
 
     def __init__(self, data_dir: str = "data", output_dir: str = "data"):
         self.data_dir = data_dir

@@ -5,7 +5,7 @@ import pandas as pd
 def render_uniprot_view(uniprot_service, df: pd.DataFrame, dataset_type: str = "enzymes"):
     """Renders the UniProt page, showing general biochemical properties."""
 
-    st.markdown("Explore general biochemical properties, functional annotations, and pathways catalogued in UniProt.")
+    st.markdown("Explore general biochemical properties, functional annotations, and pathways catalogued in **UniProt**.")
 
     if df.empty:
         st.warning("No data available.")
@@ -22,12 +22,12 @@ def render_uniprot_view(uniprot_service, df: pd.DataFrame, dataset_type: str = "
         for _, row in unique_items.iterrows()
     }
 
-    label_noun = "an enzyme" if dataset_type == "enzymes" else "a transporter"
+    label_noun = "enzyme" if dataset_type == "enzymes" else "transporter"
     selected_label = st.selectbox(
-        f"Select {label_noun} to analyze:",
+        f"Select {label_noun}:",
         options=list(protein_dict.keys()),
         index=None,
-        placeholder=f"Choose {label_noun}..."
+        placeholder="Enzyme..." if dataset_type == "enzymes" else "Transporter..."
     )
 
     if selected_label:

@@ -113,35 +113,35 @@ def _render_domain_view(df: pd.DataFrame, item_col: str, prefix: str, taxonomy_s
         groups = sorted([g for g in opts_class if g != "Other / Unknown"])
         if "Other / Unknown" in opts_class:
             groups.append("Other / Unknown")
-        st.multiselect("Select class:", options=groups, placeholder="Select...", key=k_class)
+        st.multiselect("Select taxonomic class:", options=groups, placeholder="Class...", key=k_class)
 
     with col2:
         opts_specie = sorted(get_safe_options("Specie", k_specie))
-        st.multiselect("Select species:", options=opts_specie, placeholder="Select...", key=k_specie)
+        st.multiselect("Select species:", options=opts_specie, placeholder="Species...", key=k_specie)
 
     with col3:
         opts_item = sorted(get_safe_options(item_col, k_item))
-        st.multiselect(f"Select {item_col.lower()}:", options=opts_item, placeholder="Select...", key=k_item)
+        st.multiselect(f"Select {item_col.lower()}:", options=opts_item, placeholder="Enzyme...", key=k_item)
 
     col4, col5, col6 = st.columns(3, gap="large")
 
     with col4:
         if "Target sugar" in df.columns:
             opts_sugar = sorted(get_safe_options("Target sugar", k_sugar))
-            st.multiselect("Select target sugar:", options=opts_sugar, placeholder="Select...", key=k_sugar)
+            st.multiselect("Select target sugar:", options=opts_sugar, placeholder="Target sugar...", key=k_sugar)
         else:
             st.multiselect("Select target sugar:", options=[], placeholder="N/A", disabled=True, key=f"{prefix}_sugar_disabled")
 
     with col5:
         if "Status" in df.columns:
             opts_status = sorted(get_safe_options("Status", k_status))
-            st.multiselect("Select status:", options=opts_status, placeholder="Select...", key=k_status)
+            st.multiselect("Select status:", options=opts_status, placeholder="Status...", key=k_status)
         else:
             st.multiselect("Select status:", options=[], placeholder="N/A", disabled=True, key=f"{prefix}_status_disabled")
 
     with col6:
         opts_loc = sorted(get_safe_options("Localization", k_loc))
-        st.multiselect("Select subcellular localization:", options=opts_loc, placeholder="Select...", key=k_loc)
+        st.multiselect("Select subcellular localization:", options=opts_loc, placeholder="Subcellular localization...", key=k_loc)
 
     filtered_df = get_filtered_df(exclude_col=None) 
 

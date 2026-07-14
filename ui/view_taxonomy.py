@@ -36,7 +36,7 @@ def render_taxonomy_view(taxonomy_service, df: pd.DataFrame):
         selected_groups = st.multiselect(
             "Select taxonomic class:", 
             options=groups, 
-            placeholder="Select one or more classes...", 
+            placeholder="Class...", 
             key="tax_f_class"
         )
         if selected_groups:
@@ -47,7 +47,7 @@ def render_taxonomy_view(taxonomy_service, df: pd.DataFrame):
         selected_species_list = st.multiselect(
             "Select species:", 
             options=available_species,
-            placeholder="Select one or more species...", 
+            placeholder="Species...", 
             key="tax_f_specie"
         )
 

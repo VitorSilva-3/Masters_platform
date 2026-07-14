@@ -20,7 +20,7 @@ def load_and_merge_all_predictions(dataset_name: str, main_df: pd.DataFrame) -> 
             df_euk = df_euk.rename(columns={'Localizations': 'Localization'})
         if 'Protein_ID' in df_euk.columns: 
             df_euk = df_euk.rename(columns={'Protein_ID': 'Model_ID'})
-        df_euk['Domain'] = 'Eukaryotes (Microalgae)'
+        df_euk['Domain'] = 'Microalgae'
         dfs.append(df_euk)
         
     if os.path.exists(prok_path):
@@ -30,7 +30,7 @@ def load_and_merge_all_predictions(dataset_name: str, main_df: pd.DataFrame) -> 
             df_prok = df_prok.rename(columns={'Localizations': 'Localization'})
         if 'ACC' in df_prok.columns: 
             df_prok = df_prok.rename(columns={'ACC': 'Model_ID'})
-        df_prok['Domain'] = 'Prokaryotes (Cyanobacteria)'
+        df_prok['Domain'] = 'Cyanobacteria'
         dfs.append(df_prok)
 
     if not dfs:
@@ -63,8 +63,8 @@ def render_dashboard_tab(df: pd.DataFrame, item_col: str, tab_id: str, taxonomy_
         return
 
     domain_choice = st.radio(
-        "Select biological domain to analyze:",
-        ["Eukaryotes (Microalgae)", "Prokaryotes (Cyanobacteria)"],
+        "Select biological domain:",
+        ["Microalgae", "Cyanobacteria"],
         horizontal=True,
         key=f"radio_domain_{tab_id}"
     )
@@ -120,15 +120,15 @@ def render_dashboard_tab(df: pd.DataFrame, item_col: str, tab_id: str, taxonomy_
         groups = sorted([g for g in opts_class if g != "Other / Unknown"])
         if "Other / Unknown" in opts_class:
             groups.append("Other / Unknown")
-        st.multiselect("Select class:", options=groups, key=key_class)
+        st.multiselect("Select taxonomic class:", placeholder = "Class...", options=groups, key=key_class)
 
     with col_f2:
         opts_specie = sorted(get_safe_options("Specie", key_spec))
-        st.multiselect("Select species:", options=opts_specie, key=key_spec)
+        st.multiselect("Select species:", placeholder = "Species...", options=opts_specie, key=key_spec)
 
     with col_f3:
         opts_item = sorted(get_safe_options(item_col, key_item))
-        st.multiselect(f"Select {item_col.lower()}:", options=opts_item, key=key_item)
+        st.multiselect(f"Select {item_col.lower()}:", placeholder = "Enzyme...", options=opts_item, key=key_item)
 
     filtered_df = get_filtered_df(exclude_col=None)
 

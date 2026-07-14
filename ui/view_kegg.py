@@ -11,7 +11,7 @@ def get_kegg_info(enzyme_name: str, ec_number: str):
 def render_kegg_view(df: pd.DataFrame):
     """Renders the KEGG data tab with an analytical dashboard layout."""
 
-    st.markdown("Explore fundamental biochemical properties and metabolic pathways from the KEGG Enzyme database.")
+    st.markdown("Explore fundamental biochemical properties and metabolic pathways from the **KEGG Enzyme** database.")
     
     if df.empty:
         st.warning("No data available. Please build the main dataset first.")
@@ -21,10 +21,10 @@ def render_kegg_view(df: pd.DataFrame):
     options = {f"{row['Enzyme']} (EC {row['EC number']})": row for _, row in unique_enzymes.iterrows()}
     
     selected_option = st.selectbox(
-        "Select an enzyme to analyze:", 
+        "Select enzyme:", 
         options=list(options.keys()),
         index=None,
-        placeholder="Search for an enzyme...",
+        placeholder="Enzyme...",
         key="kegg_enzyme_selector"
     )
     

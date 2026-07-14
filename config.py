@@ -178,6 +178,115 @@ class AppConfig:
         "pomace", "peel*", "sugar beet pulp", "molasses"
     ]
 
+    FEEDIPEDIA_RESIDUES: Dict[str, Dict[str, Dict[str, int]]] = {
+
+        "Cereal grains and by-products": {
+
+            "Barley distillers grains (ethanol)": 19499,
+            "Brewers grains, dehydrated": 11893,
+            "Maize bran": 12280,
+            "Hominy feed": 12290,
+            "Maize cobs": 12875, 
+            "Maize stover, dry": 12874,
+            "Corn thin stillage": 12852,
+            "Corn gluten feed": 12287,
+            "Barley rootlets, dehydrated": 11829,
+            "Oat hulls": 12387,
+            "Oat mill feed": 15136,
+            "Rice bran, defatted, fibre > 20%": 11641, 
+            "Rice hulls": 11643,
+            "Wheat middlings": 12756 
+        },
+
+        "Legume seeds and by-products": {
+
+            "Carob pod meal, without seeds": 11933,
+            "Carob germ, dehydrated": 11932,
+            "Chickpea bran (chuni)": 11971,
+            "Chickpea pod husks": 17367,
+            "Chickpea straw": 11976,
+            "Common bean straw": 12006,
+            "Faba bean aerial part, straw": 19703,
+            "Guar meal crop residues": 11703,
+            "Guar meal": 11697,
+            "Guar meal, high protein": 11698,
+            "Guar meal, raw": 11700,
+            "Guar meal forage, dry": 11702,
+            "Lentil screenings": 12249,
+            "Lentil bran": 12246,
+            "Lentil pod husks": 12247,
+            "Lentil straw": 12250,
+            "Lupin seed hulls": 24366,
+            "Peanut hulls": 12155,
+            "Peanut skins": 12166,
+            "Peanut crop residues, dry": 12167
+        },
+
+        "Oil plants and by-products": {
+
+            "Almond hulls": 11756,
+            "Almond shells": 26577,
+            "Cocoa hulls": 11692,
+            "Cocoa pod husks": 15454,
+            "Cotton straw": 12019,
+            "Cottonseed hulls": 12020,
+            "Oil palm fronds, dried": 15389,
+            "Olive oil cake, exhausted, with stones": 12887,
+            "Olive oil cake, exhausted, without stones": 12888,
+            "Olive oil vegetation water": 12889,
+            "Palm oil mill effluent, decanted": 15497,
+            "Palm press fibre, low oil": 15394,
+            "Rapeseed hulls": 12501,
+            "Soybean hulls": 12623,
+            "Soybean straw": 19916,
+            "Sunflower stover (stalks and heads)": 12662,
+            "Sunflower hulls": 12661,
+            "Sunflower screenings": 15601
+        },
+
+        "Fruits and by-products": {
+
+            "Apple pomace, dehydrated": 22380,
+            "Citrus molasses": 11986,
+            "Citrus pulp, dried": 11987,
+            "Coffee husks": 11612,
+            "Coffee pulp, dehydrated": 11613,
+            "Instant coffee byproduct": 11615,
+            "Grape pomace, dehydrated": 12133,
+            "Guava waste, dried": 20399,
+            "Mango juice extraction by-product, dried": 14827,
+            "Papaya pomace, dried": 11554,
+            "Pineapple canning byproduct, dehydrated": 12453,
+            "Pumpkin hulls": 12481,
+            "Tomato pomace, dehydrated": 12705,
+            "Watermelon hulls": 12743
+        },
+
+        "Roots, tubers and by-products": {
+
+            "Beet pulp, dehydrated": 11838,
+            "Beet molasses": 12340,
+            "Cassava pomace, dehydrated": 11945,
+            "Cassava peels, dry": 12805,
+            "Potato pulp, dehydrated": 26045,
+            "Steamed potato peels (liquid potato feed)": 26046
+        },
+
+        "Sugar processing by-products": {
+
+            "Sugarcane molasses": 12341,
+            "Sugarcane bagasse, dehydrated": 11673,
+            "Sugarcane bagasse pith": 11677,
+            "Sugarcane filter-press mud": 12653
+        },
+
+        "Dairy by-products": {
+
+            "Whey, sweet, dehydrated, skimmed": 12893,
+            "Whey, acid, dehydrated, skimmed": 12894
+        }
+    }
+
     @staticmethod
     def get_enzyme_names() -> List[str]:
         return list(AppConfig.ENZYMES.keys())

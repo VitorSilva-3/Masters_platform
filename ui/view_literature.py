@@ -55,7 +55,7 @@ def render_literature_tab(df: pd.DataFrame, item_col: str, id_col: str, tab_id: 
         st.multiselect(
             "Select taxonomic class:", 
             options=groups,
-            placeholder="Select one or more classes...", 
+            placeholder="Class...", 
             key=key_class
         )
 
@@ -64,7 +64,7 @@ def render_literature_tab(df: pd.DataFrame, item_col: str, id_col: str, tab_id: 
         st.multiselect(
             "Select species:", 
             options=opts_specie,  
-            placeholder="Select one or more species...", 
+            placeholder="Species...", 
             key=key_spec
         )
 
@@ -125,7 +125,7 @@ def render_literature_tab(df: pd.DataFrame, item_col: str, id_col: str, tab_id: 
 def render_literature_view(pubmed_service, df_enzymes: pd.DataFrame, df_transporters: pd.DataFrame, taxonomy_service):
     """Renders the literature view."""
 
-    st.markdown("Explore scientific literature from PubMed.")
+    st.markdown("Explore scientific literature from **PubMed**.")
 
     df_e = df_enzymes.copy()
     if not df_e.empty:
