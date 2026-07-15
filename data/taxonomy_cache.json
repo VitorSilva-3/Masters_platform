@@ -73174,5 +73174,135 @@
             "rank": "genus",
             "name": "Aliinostoc"
         }
+    ],
+    "Arthrospira sp. PCC 9901": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "subclass",
+            "name": "Oscillatoriophycideae"
+        },
+        {
+            "rank": "order",
+            "name": "Oscillatoriales"
+        },
+        {
+            "rank": "family",
+            "name": "Sirenicapillariaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Limnospira"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Limnospira"
+        }
+    ],
+    "Limnothrix sp. HT2024": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Pseudanabaenales"
+        },
+        {
+            "rank": "family",
+            "name": "Pseudanabaenaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Limnothrix"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Limnothrix"
+        }
+    ],
+    "Waterburya sp.": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Bacteria"
+        },
+        {
+            "rank": "kingdom",
+            "name": "Bacillati"
+        },
+        {
+            "rank": "clade",
+            "name": "Cyanobacteriota/Melainabacteria group"
+        },
+        {
+            "rank": "phylum",
+            "name": "Cyanobacteriota"
+        },
+        {
+            "rank": "class",
+            "name": "Cyanophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Pleurocapsales"
+        },
+        {
+            "rank": "family",
+            "name": "Pleurocapsaceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Waterburya"
+        },
+        {
+            "rank": "no rank",
+            "name": "unclassified Waterburya"
+        }
     ]
 }

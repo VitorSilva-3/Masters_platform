@@ -10030,3 +10030,40 @@ Roseofilum sp. KMC-1,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl 
 Prochlorothrix hollandica,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Prochlorothrix hollandica],🟢 Confirmed,WP_148288299.1,Organism: Prochlorothrix hollandica | Db xref: taxon:1223
 Aliinostoc maniaoense,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Aliinostoc maniaoense],🟢 Confirmed,WP_490270240.1,Organism: Aliinostoc maniaoense | Db xref: taxon:3416947
 Aliinostoc maniaoense,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Aliinostoc maniaoense],🟢 Confirmed,YFD43574.1,"Organism: Aliinostoc maniaoense | Strain: TIOX60 | Isolation source: Marine, benthic habitat within tropical coral reef ecosystems. | Type material: reference strain of Aliinostoc maniaoense | Db xref: taxon:3416947 | Geo loc name: China: Coral reef area in Maniao Bay, Hainan | Collection date: 2019-12"
+Crocosphaera sp.,maltase,3.2.1.20,maltose,alpha-glucosidase [Crocosphaera sp.],🟢 Confirmed,WP_491248167.1,Organism: Crocosphaera sp. | Db xref: taxon:2729996
+Crocosphaera sp.,maltase,3.2.1.20,maltose,alpha-glucosidase [Crocosphaera sp.],🟢 Confirmed,WP_491217566.1,Organism: Crocosphaera sp. | Db xref: taxon:2729996
+Limnothrix sp. HT2024,glucokinase,2.7.1.2,glucose,glucokinase [Limnothrix sp. HT2024],🟢 Confirmed,WP_494387386.1,Organism: Limnothrix sp. HT2024 | Db xref: taxon:3706735
+Arthrospira sp. PCC 9901,glucokinase,2.7.1.2,glucose,glucokinase [Arthrospira sp. PCC 9901],🟢 Confirmed,WP_493750995.1,Organism: Arthrospira sp. PCC 9901 | Db xref: taxon:478446
+Arthrospira sp. PCC 9901,glucokinase,2.7.1.2,glucose,glucokinase [Arthrospira sp. PCC 9901],🟢 Confirmed,YFR06083.1,"Organism: Arthrospira sp. PCC 9901 | Strain: PCC 9901 | Isolation source: water | Db xref: taxon:478446 | Geo loc name: China: Inner Mongolia, Lake Chagannao'er | Lat lon: 39.11 N 108.59 E | Collection date: 1999"
+Ostreococcus tauri,glucokinase,2.7.1.2,glucose,Glucokinase [Ostreococcus tauri],🟢 Confirmed,CAR5166260.1,Organism: Ostreococcus tauri | Strain: RCC4221 | Db xref: taxon:70448 | Chromosome: 2
+Waterburya sp.,glucokinase,2.7.1.2,glucose,glucokinase [Waterburya sp.],🟢 Confirmed,WP_491782403.1,Organism: Waterburya sp. | Db xref: taxon:3069706
+Crocosphaera sp.,glucokinase,2.7.1.2,glucose,glucokinase [Crocosphaera sp.],🟢 Confirmed,WP_491249006.1,Organism: Crocosphaera sp. | Db xref: taxon:2729996
+Crocosphaera sp.,glucokinase,2.7.1.2,glucose,glucokinase [Crocosphaera sp.],🟢 Confirmed,WP_491233119.1,Organism: Crocosphaera sp. | Db xref: taxon:2729996
+Crocosphaera sp.,glucokinase,2.7.1.2,glucose,glucokinase [Crocosphaera sp.],🟢 Confirmed,WP_491232371.1,Organism: Crocosphaera sp. | Db xref: taxon:2729996
+Crocosphaera sp.,glucokinase,2.7.1.2,glucose,glucokinase [Crocosphaera sp.],🟢 Confirmed,WP_491231760.1,Organism: Crocosphaera sp. | Db xref: taxon:2729996
+Crocosphaera sp.,glucokinase,2.7.1.2,glucose,glucokinase [Crocosphaera sp.],🟢 Confirmed,WP_491231759.1,Organism: Crocosphaera sp. | Db xref: taxon:2729996
+Crocosphaera sp.,glucokinase,2.7.1.2,glucose,glucokinase [Crocosphaera sp.],🟢 Confirmed,WP_491215692.1,Organism: Crocosphaera sp. | Db xref: taxon:2729996
+Crocosphaera sp.,glucokinase,2.7.1.2,glucose,glucokinase [Crocosphaera sp.],🟢 Confirmed,WP_491207154.1,Organism: Crocosphaera sp. | Db xref: taxon:2729996
+Synechococcus sp.,glucokinase,2.7.1.2,glucose,glucokinase [Synechococcus sp.],🟢 Confirmed,WP_491011276.1,Organism: Synechococcus sp. | Db xref: taxon:1131
+Limnothrix sp. HT2024,alpha-amylase,3.2.1.1,starch,alpha-amylase [Limnothrix sp. HT2024],🟢 Confirmed,WP_494389556.1,Organism: Limnothrix sp. HT2024 | Db xref: taxon:3706735
+Limnothrix sp. HT2024,alpha-amylase,3.2.1.1,starch,alpha-amylase [Limnothrix sp. HT2024],🟢 Confirmed,WP_494389082.1,Organism: Limnothrix sp. HT2024 | Db xref: taxon:3706735
+Arthrospira sp. PCC 9901,alpha-amylase,3.2.1.1,starch,alpha-amylase [Arthrospira sp. PCC 9901],🟢 Confirmed,WP_493751521.1,Organism: Arthrospira sp. PCC 9901 | Db xref: taxon:478446
+Arthrospira sp. PCC 9901,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Arthrospira sp. PCC 9901],🟢 Confirmed,WP_493750309.1,Organism: Arthrospira sp. PCC 9901 | Db xref: taxon:478446
+Arthrospira sp. PCC 9901,alpha-amylase,3.2.1.1,starch,alpha-amylase [Arthrospira sp. PCC 9901],🟢 Confirmed,YFR06859.1,"Organism: Arthrospira sp. PCC 9901 | Strain: PCC 9901 | Isolation source: water | Db xref: taxon:478446 | Geo loc name: China: Inner Mongolia, Lake Chagannao'er | Lat lon: 39.11 N 108.59 E | Collection date: 1999"
+Arthrospira sp. PCC 9901,alpha-amylase,3.2.1.1,starch,alpha-amylase [Arthrospira sp. PCC 9901],🟢 Confirmed,YFR05976.1,"Organism: Arthrospira sp. PCC 9901 | Strain: PCC 9901 | Isolation source: water | Db xref: taxon:478446 | Geo loc name: China: Inner Mongolia, Lake Chagannao'er | Lat lon: 39.11 N 108.59 E | Collection date: 1999"
+Arthrospira sp. PCC 9901,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Arthrospira sp. PCC 9901],🟢 Confirmed,YFR05051.1,"Organism: Arthrospira sp. PCC 9901 | Strain: PCC 9901 | Isolation source: water | Db xref: taxon:478446 | Geo loc name: China: Inner Mongolia, Lake Chagannao'er | Lat lon: 39.11 N 108.59 E | Collection date: 1999"
+Prochlorothrix hollandica,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Prochlorothrix hollandica],🟢 Confirmed,WP_488560193.1,Organism: Prochlorothrix hollandica | Db xref: taxon:1223
+Waterburya sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Waterburya sp.],🟢 Confirmed,WP_491784142.1,Organism: Waterburya sp. | Db xref: taxon:3069706
+Waterburya sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Waterburya sp.],🟢 Confirmed,WP_491784115.1,Organism: Waterburya sp. | Db xref: taxon:3069706
+Waterburya sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Waterburya sp.],🟢 Confirmed,WP_491783499.1,Organism: Waterburya sp. | Db xref: taxon:3069706
+Waterburya sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Waterburya sp.],🟢 Confirmed,WP_491782607.1,Organism: Waterburya sp. | Db xref: taxon:3069706
+Crocosphaera sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Crocosphaera sp.],🟢 Confirmed,WP_491249217.1,Organism: Crocosphaera sp. | Db xref: taxon:2729996
+Crocosphaera sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase [Crocosphaera sp.],🟢 Confirmed,WP_491248976.1,Organism: Crocosphaera sp. | Db xref: taxon:2729996
+Crocosphaera sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Crocosphaera sp.],🟢 Confirmed,WP_491232990.1,Organism: Crocosphaera sp. | Db xref: taxon:2729996
+Crocosphaera sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Crocosphaera sp.],🟢 Confirmed,WP_491231486.1,Organism: Crocosphaera sp. | Db xref: taxon:2729996
+Crocosphaera sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Crocosphaera sp.],🟢 Confirmed,WP_491217530.1,Organism: Crocosphaera sp. | Db xref: taxon:2729996
+Crocosphaera sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Crocosphaera sp.],🟢 Confirmed,WP_491214763.1,Organism: Crocosphaera sp. | Db xref: taxon:2729996
+Crocosphaera sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Crocosphaera sp.],🟢 Confirmed,WP_491209138.1,Organism: Crocosphaera sp. | Db xref: taxon:2729996
+Crocosphaera sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Crocosphaera sp.],🟢 Confirmed,WP_491207151.1,Organism: Crocosphaera sp. | Db xref: taxon:2729996
+Crocosphaera sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Crocosphaera sp.],🟢 Confirmed,WP_491206207.1,Organism: Crocosphaera sp. | Db xref: taxon:2729996
+Crocosphaera sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Crocosphaera sp.],🟢 Confirmed,WP_491204915.1,Organism: Crocosphaera sp. | Db xref: taxon:2729996
