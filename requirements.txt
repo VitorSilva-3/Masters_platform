@@ -17,3 +17,6 @@ matplotlib
 
 # API & Network
 requests
+
+# AI & LLM
+google-genai
