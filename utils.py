@@ -1,3 +1,5 @@
+
+import streamlit as st
 import os
 import logging
 import json
@@ -6,7 +8,6 @@ import streamlit as st
 from typing import Dict, Any
 from PIL import Image
 from config import AppConfig
-from services.data_manager import DataManager
 from Bio import Entrez
 
 logger = logging.getLogger(__name__)
@@ -66,6 +67,8 @@ def configure_page(page_name: str):
 def load_core_datasets():
     """Loads and caches the main enzyme and transporter datasets globally."""
 
+    from services.data_manager import DataManager
+
     manager_enzymes = DataManager(file_path="data/enzymes_data.csv", data_type="enzyme")
     df_enzymes = manager_enzymes.load_data()
     
@@ -95,10 +98,19 @@ def save_json_cache(cache_file: str, data: Dict[str, Any], service_name: str = "
     except Exception as e:
         logger.error(f"[{service_name}] Error saving cache: {e}")
 
-def setup_ncbi_entrez(email: str):
-    """Configures NCBI Entrez globally with email and optional API Key."""
-
-    Entrez.email = email
+def setup_ncbi_entrez():
+    """Configures NCBI Entrez globally with email and optional API Key from secrets."""
     
-    if hasattr(AppConfig, 'NCBI_API_KEY') and AppConfig.NCBI_API_KEY:
-        Entrez.api_key = AppConfig.NCBI_API_KEY
+    try:
+        Entrez.email = st.secrets["NCBI_EMAIL"]
+    except KeyError:
+        logger.error(" NCBI_EMAIL not found in Streamlit secrets. Please set it to a valid email address.")
+        return False
+
+    if "NCBI_API_KEY" in st.secrets:
+        Entrez.api_key = st.secrets["NCBI_API_KEY"]
+        logger.info(" NCBI API Key found. Using it for faster requests.")
+    else:
+        logger.warning("NCBI API Key not found. The extraction will be slower.")
+        
+    return True 

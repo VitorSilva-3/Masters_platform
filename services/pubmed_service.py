@@ -9,9 +9,8 @@ logger = logging.getLogger(__name__)
 class PubMedService:
     """Service to search NCBI PubMed for articles."""
 
-    def __init__(self, email: str, cache_file: str = "data/literature_cache.json"):
-        self.email = email
-        setup_ncbi_entrez(self.email)
+    def __init__(self, cache_file: str = "data/literature_cache.json"):
+        setup_ncbi_entrez()
         self.cache_file = cache_file
         self.cache = load_json_cache(self.cache_file, service_name = "PubMedService")
 

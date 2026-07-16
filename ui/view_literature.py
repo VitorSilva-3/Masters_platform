@@ -1,7 +1,7 @@
 
 import streamlit as st
 import pandas as pd
-from utils import get_group_for_species, add_taxonomic_class_column
+from utils import add_taxonomic_class_column
 
 def render_literature_tab(df: pd.DataFrame, item_col: str, id_col: str, tab_id: str, pubmed_service, taxonomy_service):
     """Renders the literature search for a specific domain (Enzymes or Transporters)."""

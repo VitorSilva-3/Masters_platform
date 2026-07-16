@@ -6,6 +6,7 @@ import logging
 import http.client
 from Bio import Entrez, SeqIO
 from config import AppConfig
+from utils import setup_ncbi_entrez
 
 logging.basicConfig(
     level=logging.INFO,
@@ -142,9 +143,8 @@ class DataManager:
 
         logger.info(f"Starting {self.data_type.upper()} dataset build. Target Taxa: {len(AppConfig.TARGET_TAXA)} groups.")
         
-        Entrez.email = AppConfig.EMAIL
-        if hasattr(AppConfig, 'NCBI_API_KEY'):
-            Entrez.api_key = AppConfig.NCBI_API_KEY
+        if not setup_ncbi_entrez():
+            return
 
         existing_df = self.load_data()
         existing_ids = set()

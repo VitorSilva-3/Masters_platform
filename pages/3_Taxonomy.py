@@ -10,7 +10,7 @@ configure_page("Taxonomy")
 
 @st.cache_resource
 def get_taxonomy_service():
-    return TaxonomyService(email=AppConfig.EMAIL)
+    return TaxonomyService()
 
 taxonomy_service = get_taxonomy_service()
 df_enzymes, df_transporters = load_core_datasets()

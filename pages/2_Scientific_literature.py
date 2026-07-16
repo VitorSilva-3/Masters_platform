@@ -12,8 +12,8 @@ configure_page("Scientific literature (PubMed)")
 def get_services():
     """Initialize and cache both the TaxonomyService and PubMedService instances."""
 
-    tax_service = TaxonomyService(email=AppConfig.EMAIL)
-    pub_service = PubMedService(email=AppConfig.EMAIL)
+    tax_service = TaxonomyService()
+    pub_service = PubMedService()
     return tax_service, pub_service
 
 taxonomy_service, pubmed_service = get_services()

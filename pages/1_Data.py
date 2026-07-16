@@ -11,7 +11,7 @@ configure_page("Data")
 def get_taxonomy_service():
     """Initializes and caches the TaxonomyService instance."""
 
-    return TaxonomyService(email=AppConfig.EMAIL)
+    return TaxonomyService()
 
 taxonomy_service = get_taxonomy_service()
 df_enzymes, df_transporters = load_core_datasets()

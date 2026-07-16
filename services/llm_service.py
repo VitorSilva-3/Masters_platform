@@ -1,81 +1,128 @@
 
 import os
-import json
+import pandas as pd
+import streamlit as st
 from google import genai
 from google.genai import types
 
 class LLMService:
     def __init__(self, api_key: str):
-        """
-        Initializes the LLM Service with the Gemini API key and loads the local database context.
-        """
         self.client = genai.Client(api_key=api_key)
-        self.data_context = self._load_feedipedia_context()
+        
+        # 1. Carrega os CSVs pequenos como texto estático
+        self.static_csv_context = self._load_csv_previews()
+        
+        # 2. Gere o Upload do ficheiro pesado (Feedipedia) para a Google
+        self.uploaded_feedipedia = self._get_or_upload_file()
 
-    def _load_feedipedia_context(self) -> str:
+    def _get_or_upload_file(self):
         """
-        Reads the local JSON file and compresses it into a string to be injected into the LLM prompt.
+        Verifica se o ficheiro Feedipedia já está na nuvem da Google.
+        Se não estiver, faz o upload automaticamente.
         """
         current_dir = os.path.dirname(os.path.abspath(__file__))
         project_root = os.path.dirname(current_dir)
-        data_path = os.path.join(project_root, "data", "feedipedia_raw_data.json")
-        
-        if os.path.exists(data_path):
-            try:
-                with open(data_path, 'r', encoding='utf-8') as f:
-                    data = json.load(f)
-                    return json.dumps(data, ensure_ascii=False)
-            except Exception as e:
-                print(f"[-] Error loading Feedipedia context: {e}")
-                
-        return "No local database context available."
+        file_path = os.path.join(project_root, "data", "feedipedia_raw_data.json")
+        display_name = "feedipedia_master_data"
 
-    def get_chat_response(self, user_prompt: str, chat_history: list) -> str:
-        """
-        Sends the user's prompt, the conversation history, and the system instructions to the Gemini model.
-        """
-        # 1. Prepare the Hybrid System Instruction (Platform Guide + Database Expert) in English
+        # Tenta encontrar o ficheiro já carregado para não duplicar uploads
+        try:
+            for f in self.client.files.list():
+                if f.display_name == display_name:
+                    return f
+        except Exception as e:
+            print(f"[-] Error checking existing files: {e}")
+
+        # Se não encontrou, faz o upload
+        if os.path.exists(file_path):
+            try:
+                print("Uploading Feedipedia to Gemini API...")
+                uploaded_file = self.client.files.upload(
+                    file=file_path,
+                    config={'display_name': display_name}
+                )
+                return uploaded_file
+            except Exception as e:
+                print(f"[-] Error uploading file: {e}")
+                return None
+        return None
+
+    def _load_csv_previews(self) -> str:
+        """Loads previews of the main CSV files."""
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        project_root = os.path.dirname(current_dir)
+        data_path = os.path.join(project_root, "data")
+        
+        context_parts = []
+        for filename in ["enzymes_data.csv", "transporters_data.csv"]:
+            file_path = os.path.join(data_path, filename)
+            if os.path.exists(file_path):
+                try:
+                    df = pd.read_csv(file_path)
+                    csv_str = df.head(20).to_csv(index=False)
+                    context_parts.append(f"--- FILE: {filename} (Preview) ---\n{csv_str}\n... [TRUNCATED]\n")
+                except Exception:
+                    pass
+        return "\n".join(context_parts)
+
+    def get_chat_response_stream(self, user_prompt: str, chat_history: list):
+        """Sends the prompt to Gemini and YIELDS the response in chunks for real-time streaming."""
+        
         system_instruction = (
-            "You are the core intelligent assistant of an advanced bioinformatics and machine learning platform "
+            "You are the core intelligent assistant of platform "
             "dedicated to agro-industrial waste valorization.\n"
             "Your main mission is:\n"
-            "1. Help users navigate the platform and understand its purpose (predicting and optimizing the use of "
-            "residues using artificial intelligence).\n"
-            "2. Explain scientific concepts related to biotechnology, bioinformatics, microalgae metabolism, "
-            "and predictive models in a clear and accessible way.\n"
+            "1. Help users navigate the platform and understand its purpose.\n"
+            "2. Explain scientific concepts related to biotechnology.\n"
             "3. Act as an expert in agro-industrial residues.\n\n"
-            "In addition to your general scientific knowledge, you have direct access to the platform's internal database "
-            "(extracted from Feedipedia). When the user asks about exact values, metrics, or chemical composition "
-            "(e.g., dry matter, crude protein, lactose, lignin) of specific residues, you MUST consult "
-            "the provided data below and base your answer on those exact numbers.\n"
+            "You have direct access to the Feedipedia JSON file attached to this prompt. "
+            "Always consult it carefully to extract exact nutritional data when requested.\n"
             "Always reply in English.\n\n"
-            f"--- PLATFORM INTERNAL DATABASE (FEEDIPEDIA) ---\n{self.data_context}\n---------------------------------------"
+            f"--- PLATFORM CSV PREVIEWS ---\n{self.static_csv_context}\n"
+            f"---------------------------------------"
         )
 
-        # 2. Format the Streamlit chat history into the Gemini API format
         formatted_contents = []
+        
+        # 1. Reconstrói o histórico do chat
         for msg in chat_history:
             role = "user" if msg["role"] == "user" else "model"
             formatted_contents.append(
                 types.Content(role=role, parts=[types.Part.from_text(text=msg["content"])])
             )
         
-        # 3. Add the current user prompt to the very end of the contents list
+        # 2. Constrói o novo prompt do utilizador
+        current_parts = []
+        
+        # Anexa o ficheiro diretamente ao prompt atual do utilizador (se o upload funcionou)
+        # Anexa o ficheiro usando a referência URI correta da nuvem da Google
+        if self.uploaded_feedipedia:
+            file_part = types.Part.from_uri(
+                file_uri=self.uploaded_feedipedia.uri,
+                mime_type=self.uploaded_feedipedia.mime_type
+            )
+            current_parts.append(file_part)
+            
+        current_parts.append(types.Part.from_text(text=user_prompt))
+        
         formatted_contents.append(
-            types.Content(role="user", parts=[types.Part.from_text(text=user_prompt)])
+            types.Content(role="user", parts=current_parts)
         )
 
-        # 4. Make the API Call
         try:
-            response = self.client.models.generate_content(
-                model='gemini-1.5-flash',
+            # Usa o modelo mais leve e rápido (fallback para 1.5-flash)
+            model_name = st.secrets.get("GEMINI_MODEL", "gemini-1.5-flash")
+            
+            response_stream = self.client.models.generate_content_stream(
+                model=model_name,
                 contents=formatted_contents,
                 config=types.GenerateContentConfig(
                     system_instruction=system_instruction,
-                    temperature=0.3, # Slightly higher for fluid scientific explanations
+                    temperature=0.3,
                 )
             )
-            return response.text
-            
+            for chunk in response_stream:
+                yield chunk.text
+                
         except Exception as e:
-            return f"Sorry, an error occurred while connecting to the AI server: {str(e)}"
+            yield f"Sorry, an error occurred while connecting to the AI server: {str(e)}"

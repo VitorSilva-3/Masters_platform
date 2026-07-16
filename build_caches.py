@@ -34,10 +34,10 @@ class CacheBuilder:
         try:
             self.kegg_service = KeggService()
             self.uniprot_service = UniprotService() 
-            self.tax_service = TaxonomyService(email=self.email)
-            self.pubmed_service = PubMedService(email=self.email)
+            self.tax_service = TaxonomyService()
+            self.pubmed_service = PubMedService()
             #self.s2_service = SemanticScholarService(email=self.email) 
-            self.fasta_service = FastaService(tax_service=self.tax_service, email=self.email)
+            self.fasta_service = FastaService(tax_service=self.tax_service)
             self.subcellular_localization_service = SubcellularLocalizationService()
             
             logger.info("All services initialized successfully.")

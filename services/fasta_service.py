@@ -11,15 +11,14 @@ logger = logging.getLogger(__name__)
 class FastaService:
     """Class responsible for downloading, batching, and sanitizing FASTA sequences from NCBI."""
 
-    def __init__(self, tax_service, email: str, output_dir: str = "data"):
+    def __init__(self, tax_service, output_dir: str = "data"):
         self.tax_service = tax_service
-        self.email = email
         self.output_dir = output_dir
 
         self.cache_file = os.path.join(self.output_dir, "fasta_cache.json")
         self.cache = load_json_cache(self.cache_file, service_name="FastaService")
 
-        setup_ncbi_entrez(self.email)
+        setup_ncbi_entrez()
         os.makedirs(self.output_dir, exist_ok=True)
 
     def _split_ids_by_domain(self, df: pd.DataFrame) -> tuple:

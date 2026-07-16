@@ -10,11 +10,10 @@ logger = logging.getLogger(__name__)
 class TaxonomyService:
     """Service to fetch organism lineage from NCBI Taxonomy"""
 
-    def __init__(self, email: str, cache_file: str = "data/taxonomy_cache.json"):
+    def __init__(self, cache_file: str = "data/taxonomy_cache.json"):
         """Initialize with user email and load local taxonomy cache."""
 
-        self.email = email
-        setup_ncbi_entrez(self.email)
+        setup_ncbi_entrez()
         self.cache_file = cache_file
         self.cache = load_json_cache(self.cache_file, service_name = "TaxonomyService")
 

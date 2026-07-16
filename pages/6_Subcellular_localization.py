@@ -11,7 +11,7 @@ configure_page("Subcellular localization")
 def get_taxonomy_service():
     """Initialize and cache the TaxonomyService instance."""
 
-    return TaxonomyService(email=AppConfig.EMAIL)
+    return TaxonomyService()
 
 taxonomy_service = get_taxonomy_service()
 df_enzymes, df_transporters = load_core_datasets()
