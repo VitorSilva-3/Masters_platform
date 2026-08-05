@@ -1,6 +1,7 @@
 
 # Core Framework
-streamlit>=1.40.0
+streamlit
+starlette
 
 # Data Handling & Bioinformatics
 pandas

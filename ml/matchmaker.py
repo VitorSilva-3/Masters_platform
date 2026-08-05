@@ -93,10 +93,14 @@ class BiotransformationMatchmaker:
             
             current_pathway_enzymes = []
             for required_ec in enzymes_required:
+                required_ec_clean = str(required_ec).lower().strip()
                 enzyme_matched = False
+                
                 for enz in strain_enz_list:
-                    if str(required_ec).lower().strip() in enz["ec"]:
-                        if str(required_ec).startswith("3.") and rules.get("requires_extracellular", False):
+                    organism_ecs = [e.strip() for e in enz["ec"].replace(';', ',').split(',')]
+                    
+                    if required_ec_clean in organism_ecs:
+                        if required_ec_clean.startswith("3.") and rules.get("requires_extracellular", False):
                             if "extracellular" in enz["loc"] or "secreted" in enz["loc"]:
                                 enzyme_matched = True
                                 current_pathway_enzymes.append(f"{enz['name']} (Ext)")
@@ -105,6 +109,7 @@ class BiotransformationMatchmaker:
                             enzyme_matched = True
                             current_pathway_enzymes.append(enz['name'])
                             break
+                
                 if enzyme_matched:
                     enzymes_found += 1
             
