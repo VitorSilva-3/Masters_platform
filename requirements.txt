@@ -16,6 +16,9 @@ streamlit-lottie
 Pillow
 matplotlib
 
+# Database
+pymongo
+
 # API & Network
 requests
 

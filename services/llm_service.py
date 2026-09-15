@@ -7,6 +7,8 @@ from google.genai import types
 
 class LLMService:
     def __init__(self, api_key: str):
+        """Initializes the LLMService with the provided API key."""
+
         self.client = genai.Client(api_key=api_key)
         
         # 1. Carrega os CSVs pequenos como texto estático
@@ -16,10 +18,8 @@ class LLMService:
         self.uploaded_feedipedia = self._get_or_upload_file()
 
     def _get_or_upload_file(self):
-        """
-        Verifica se o ficheiro Feedipedia já está na nuvem da Google.
-        Se não estiver, faz o upload automaticamente.
-        """
+        """Checks if the Feedipedia file is already uploaded to the Gemini API. If not, uploads it and returns the uploaded file object."""
+
         current_dir = os.path.dirname(os.path.abspath(__file__))
         project_root = os.path.dirname(current_dir)
         file_path = os.path.join(project_root, "data", "feedipedia_raw_data.json")
@@ -49,6 +49,7 @@ class LLMService:
 
     def _load_csv_previews(self) -> str:
         """Loads previews of the main CSV files."""
+
         current_dir = os.path.dirname(os.path.abspath(__file__))
         project_root = os.path.dirname(current_dir)
         data_path = os.path.join(project_root, "data")
@@ -66,7 +67,7 @@ class LLMService:
         return "\n".join(context_parts)
 
     def get_chat_response_stream(self, user_prompt: str, chat_history: list):
-        """Sends the prompt to Gemini and YIELDS the response in chunks for real-time streaming."""
+        """Sends the prompt to Gemini and yields the response in chunks for real-time streaming."""
         
         system_instruction = (
             "You are the core intelligent assistant of platform "

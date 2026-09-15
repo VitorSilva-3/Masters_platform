@@ -92,7 +92,7 @@ else:
     
     with st.container(border=True):
         st.page_link("pages/4_KEGG.py", label = ":blue[**KEGG**]", use_container_width = True)
-        st.write("Map metabolic networks and analyze the specific catalytic reactions underlying biomass degradation.")
+        st.write("Map metabolic networks and analyze the specific catalytic reactions.")
 
     with st.container(border=True):
         st.page_link("pages/5_UniProt.py", label = ":blue[**UniProt**]", use_container_width = True)
@@ -101,3 +101,15 @@ else:
     with st.container(border=True):
         st.page_link("pages/6_Subcellular_localization.py", label = ":blue[**Subcellular localization**]", use_container_width = True)
         st.write("Examine AI-driven predictions of subcellular compartments utilizing DeepLoc 2.0 and DeepLocPro models.")
+
+    with st.container(border = True):
+        st.page_link("pages/7_Agro-industrial_waste_composition.py", label = ":blue[**Agro-industrial waste composition**]", use_container_width = True)
+        st.write("Analyze the compositional data of agro-industrial byproducts according to the Feedipedia database.")
+
+    with st.container(border = True):
+        st.page_link("pages/8_Matchmaker.py", label = ":blue[**Matchmaker**]", use_container_width = True)
+        st.write("Identify the most suitable microalgae and cyanobacteria to be used for the valorization of some agro-industrial byproducts and sugars.")
+
+    with st.container(border = True):
+        st.page_link("pages/9_Chatbot.py", label = ":blue[**Chatbot**]", use_container_width = True)
+        st.write("Interact with an AI-powered chatbot to ask questions and get insights about the platform's data and features.")
