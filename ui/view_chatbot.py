@@ -104,4 +104,7 @@ def render_chat_view():
                 
         st.session_state.messages.append({"role": "user", "content": prompt})
         st.session_state.messages.append({"role": "assistant", "content": full_response})
+        
         mongo_service.save_chat(active_user, st.session_state.current_chat_id, st.session_state.messages)
+        
+        st.rerun()
