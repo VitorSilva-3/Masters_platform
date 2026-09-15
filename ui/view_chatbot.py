@@ -52,15 +52,14 @@ def render_chat_view():
         if st.button("New chat", use_container_width=True):
             st.session_state.current_chat_id = str(uuid.uuid4())[:8]
             st.session_state.messages = [{"role": "assistant", "content": f"Hello, {active_user}! How can I help you today?"}]
-            mongo_service.save_chat(active_user, st.session_state.current_chat_id, st.session_state.messages)
+            # A linha de save_chat foi removida daqui! 
+            # Só guardamos quando o utilizador escrever algo na caixa de texto.
             st.rerun()
 
         # Dropdown: Carregar chat anterior (com títulos legíveis)
         if user_chats_data:
-            # Criamos um dicionário para mapear os títulos bonitos de volta para os IDs
             chat_options = {"Current session": "Current session"}
             for chat in user_chats_data:
-                # O formato final será: "O que é microalgae... (7841ac32)"
                 label = f"{chat['title']} ({chat['id']})"
                 chat_options[label] = chat['id']
                 
@@ -68,7 +67,6 @@ def render_chat_view():
             selected_chat_id = chat_options[selected_label]
             
             if selected_chat_id != "Current session":
-                # Colocamos os botões de Carregar e Eliminar lado a lado
                 col1, col2 = st.columns(2)
                 with col1:
                     if st.button("Load", use_container_width=True):
@@ -79,11 +77,11 @@ def render_chat_view():
                     if st.button("Delete", type="primary", use_container_width=True):
                         mongo_service.delete_chat(active_user, selected_chat_id)
                         
-                        # Se eliminarmos o chat que temos aberto, o ecrã reinicia para um Novo Chat
+                        # Se eliminarmos o chat aberto, o ecrã reinicia para um Novo Chat vazio na memória (não na DB)
                         if st.session_state.current_chat_id == selected_chat_id:
                             st.session_state.current_chat_id = str(uuid.uuid4())[:8]
                             st.session_state.messages = [{"role": "assistant", "content": f"Hello, {active_user}! How can I help you today?"}]
-                            mongo_service.save_chat(active_user, st.session_state.current_chat_id, st.session_state.messages)
+                            # A linha de save_chat também foi removida daqui!
                             
                         st.rerun()
 
