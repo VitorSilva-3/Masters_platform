@@ -44,29 +44,48 @@ def render_chat_view():
             st.rerun()
 
         st.divider()
-        st.header("Management of chats")
+        st.header("Chat history")
         
-        user_chats = mongo_service.get_user_chats(active_user)
+        user_chats_data = mongo_service.get_user_chats(active_user)
         
+        # Botão: Novo Chat
         if st.button("New chat", use_container_width=True):
             st.session_state.current_chat_id = str(uuid.uuid4())[:8]
             st.session_state.messages = [{"role": "assistant", "content": f"Hello, {active_user}! How can I help you today?"}]
             mongo_service.save_chat(active_user, st.session_state.current_chat_id, st.session_state.messages)
             st.rerun()
 
-        if user_chats:
-            selected_chat = st.selectbox("Load previous chat:", ["Current Session"] + user_chats)
-            if selected_chat != "Current Session":
-                if st.button("Load selected", use_container_width=True):
-                    st.session_state.current_chat_id = selected_chat
-                    st.session_state.messages = mongo_service.load_chat(active_user, selected_chat)
-                    st.rerun()
-
-        st.divider()
-        if st.button("Clear current chat", type="primary", use_container_width=True):
-            st.session_state.messages = [{"role": "assistant", "content": f"Hello, {active_user}! How can I help you today?"}]
-            mongo_service.save_chat(active_user, st.session_state.current_chat_id, st.session_state.messages)
-            st.rerun()
+        # Dropdown: Carregar chat anterior (com títulos legíveis)
+        if user_chats_data:
+            # Criamos um dicionário para mapear os títulos bonitos de volta para os IDs
+            chat_options = {"Current session": "Current session"}
+            for chat in user_chats_data:
+                # O formato final será: "O que é microalgae... (7841ac32)"
+                label = f"{chat['title']} ({chat['id']})"
+                chat_options[label] = chat['id']
+                
+            selected_label = st.selectbox("Chat history:", list(chat_options.keys()))
+            selected_chat_id = chat_options[selected_label]
+            
+            if selected_chat_id != "Current session":
+                # Colocamos os botões de Carregar e Eliminar lado a lado
+                col1, col2 = st.columns(2)
+                with col1:
+                    if st.button("Load", use_container_width=True):
+                        st.session_state.current_chat_id = selected_chat_id
+                        st.session_state.messages = mongo_service.load_chat(active_user, selected_chat_id)
+                        st.rerun()
+                with col2:
+                    if st.button("Delete", type="primary", use_container_width=True):
+                        mongo_service.delete_chat(active_user, selected_chat_id)
+                        
+                        # Se eliminarmos o chat que temos aberto, o ecrã reinicia para um Novo Chat
+                        if st.session_state.current_chat_id == selected_chat_id:
+                            st.session_state.current_chat_id = str(uuid.uuid4())[:8]
+                            st.session_state.messages = [{"role": "assistant", "content": f"Hello, {active_user}! How can I help you today?"}]
+                            mongo_service.save_chat(active_user, st.session_state.current_chat_id, st.session_state.messages)
+                            
+                        st.rerun()
 
     # --- ÁREA PRINCIPAL DO CHAT ---
     for message in st.session_state.messages:

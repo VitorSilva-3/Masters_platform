@@ -33,7 +33,29 @@ class MongoService:
         return []
 
     def get_user_chats(self, user: str) -> list:
-        """Returns all chat IDs for a specific user."""
+        """Returns a list of chat IDs and their corresponding titles for a specific user."""
+
+        chats = self.collection.find({"user": user}, {"chat_id": 1, "messages": 1, "_id": 0})
+        chat_list = []
         
-        chats = self.collection.find({"user": user}, {"chat_id": 1, "_id": 0})
-        return [chat["chat_id"] for chat in chats]
+        for chat in chats:
+            chat_id = chat.get("chat_id")
+            messages = chat.get("messages", [])
+            
+            # Procurar a primeira mensagem do utilizador para usar como título
+            title = f"Chat {chat_id}" # Título de segurança
+            for msg in messages:
+                if msg["role"] == "user":
+                    content = msg["content"]
+                    # Trunca o texto aos primeiros 35 caracteres e adiciona "..."
+                    title = content[:35] + "..." if len(content) > 35 else content
+                    break
+            
+            chat_list.append({"id": chat_id, "title": title})
+            
+        return chat_list[::-1]
+
+    def delete_chat(self, user: str, chat_id: str):
+        """Deletes a specific chat from the database"""
+
+        self.collection.delete_one({"chat_id": chat_id, "user": user})
