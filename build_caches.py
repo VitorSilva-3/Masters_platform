@@ -8,7 +8,6 @@ import os
 from config import AppConfig
 from services.taxonomy_service import TaxonomyService
 from services.pubmed_service import PubMedService
-#from services.semantic_scholar_service import SemanticScholarService
 from services.kegg_service import KeggService
 from services.uniprot_service import UniprotService
 from services.fasta_service import FastaService
@@ -25,8 +24,7 @@ logger = logging.getLogger(__name__)
 class CacheBuilder:
     """Class responsible for building and updating all local JSON caches for all datasets."""
 
-    def __init__(self, email: str):
-        self.email = email
+    def __init__(self):
         self.ncbi_delay = 0.35  
         self.uniprot_delay = 0.50 
         self.s2_delay = 3.0 
@@ -36,7 +34,6 @@ class CacheBuilder:
             self.uniprot_service = UniprotService() 
             self.tax_service = TaxonomyService()
             self.pubmed_service = PubMedService()
-            #self.s2_service = SemanticScholarService(email=self.email) 
             self.fasta_service = FastaService(tax_service=self.tax_service)
             self.subcellular_localization_service = SubcellularLocalizationService()
             
@@ -128,32 +125,27 @@ class CacheBuilder:
         logger.info(f"KEGG cache update completed. {added} new entries added.")
 
     def update_uniprot(self, datasets: dict) -> None: 
-        """Updates the UniProt cache for all datasets dynamically."""
+        """Updates the UniProt cache for enzymes."""
         
         logger.info("Initiating UniProt cache update...")
         added_general = 0
         
-        for ds_name, df in datasets.items():
-            if df.empty: continue
-            
-            item_col = "Enzyme" if ds_name == "enzymes" else "Transporter"
-            id_col = "EC number" if ds_name == "enzymes" else "TC number"
-            id_type = "EC" if ds_name == "enzymes" else "TC"
-            
-            unique_items = df[[item_col, id_col]].dropna().drop_duplicates()
-            
+        if "enzymes" in datasets and not datasets["enzymes"].empty:
+            df = datasets["enzymes"]
+            unique_items = df[['Enzyme', 'EC number']].dropna().drop_duplicates()
+
             for _, row in unique_items.iterrows():
-                identifier = row[id_col]
-                name = row[item_col]
-                
+                identifier = row['EC number']
+                name = row['Enzyme']
+
                 clean_name = name.replace(' ', '_').replace('/', '_').replace('-', '_')
-                cache_key = f"{id_type}_{identifier}_{clean_name}"
-                
+                cache_key = f"EC_{identifier}_{clean_name}"
+
                 if cache_key not in self.uniprot_service.cache:
-                    logger.info(f"Fetching UniProt general data for {id_type}: {identifier}")
-                    self.uniprot_service.fetch_protein_data(name, identifier, id_type=id_type)
+                    logger.info(f"Fetching UniProt general data for EC: {identifier}")
+                    self.uniprot_service.fetch_protein_data(name, identifier)
                     added_general += 1
-                    time.sleep(self.uniprot_delay) 
+                    time.sleep(self.uniprot_delay)
         
         self.uniprot_service.save_cache()
         logger.info(f"UniProt cache update completed. {added_general} general profiles added.")
@@ -188,10 +180,6 @@ class CacheBuilder:
                         keywords=AppConfig.PUBMED_KEYWORDS
                     )
                     
-                    #s2_arts = []
-                    #combined_arts = pubmed_arts + s2_arts
-                    #unique_arts = self._deduplicate_articles(combined_arts)
-                    
                     self.pubmed_service.cache[cache_key] = pubmed_arts
                     self.pubmed_service.save_cache()
                     
@@ -222,7 +210,5 @@ class CacheBuilder:
 
 
 if __name__ == "__main__":
-    USER_EMAIL = AppConfig.EMAIL
-    
-    builder = CacheBuilder(email=USER_EMAIL)
+    builder = CacheBuilder()
     builder.run_all()

@@ -223,17 +223,6 @@
         },
         "total_entries_analyzed": 30
     },
-    "TC_2.A.1.1_glucose_transporter": {},
-    "TC_2.A.1.1_fructose_transporter": {},
-    "TC_2.A.1.1_galactose_transporter": {},
-    "TC_2.A.1.1_hexose_transporter": {},
-    "TC_2.A.1.1_sucrose_transporter": {},
-    "TC_2.A.1.1_maltose_transporter": {},
-    "TC_2.A.1.14_lactose_transporter": {},
-    "TC_2.A.123_sweet_sugar_transporter": {},
-    "TC_3.A.1.1_maltose_abc_transporter": {},
-    "TC_3.A.1.1_sugar_abc_transporter": {},
-    "TC_2.A.1.1_sugar_transporter": {},
     "EC_2.7.1.6_galactokinase": {
         "protein_name": "galactokinase",
         "identifier": "2.7.1.6",
@@ -315,6 +304,35 @@
             "subunit_structure": [
                 "Monomer (PubMed:15016359, PubMed:19362831, PubMed:23957911). Interacts with MIDN; the interaction occurs preferentially at low glucose levels and results in inhibition of hexokinase activity (PubMed:24187134). Interacts with GCKR; leading to sequestration in the nucleus (PubMed:10456334)",
                 "Interacts with RPT5B in nucleus. Interacts with RHIP1 (PubMed:26528314). Interacts with KING1 in mitochondria (PubMed:30511331). Interacts with CLF (via SANT domain) and EZA1/SWN (via SANT domain) in nucleus (PubMed:35394700)"
+            ]
+        },
+        "total_entries_analyzed": 30
+    },
+    "EC_3.2.1.21_beta_glucosidase": {
+        "protein_name": "beta-glucosidase",
+        "identifier": "3.2.1.21",
+        "id_type": "EC",
+        "uniprot_link": "https://www.uniprot.org/uniprotkb/Q9H227/entry",
+        "general_info": {
+            "protein_name_uniprot": "Cytosolic beta-glucosidase",
+            "functions": [
+                "Bifunctional beta-D-glucosidase/beta-D-fucosidase. Activity towards pNP-beta-D-fucoside is about 80-85% of the activity towards pNP-beta-D-glucoside. Also has slight activity (less than 10%) towards pNP-beta-D-galactoside, and very low activity (less than 1%) towards pNP-beta-D-xyloside. Hydrolyzes laminaribiose, sophorose, cellobiose and gentobiose. Not active against maltose, pNP-alpha-D-glucoside or pNP-beta-L-fucoside",
+                "Hydrolyzes p-nitrophenyl beta-D-glucoside, p-nitrophenyl beta-D-mannoside, p-nitrophenyl beta-D-galactoside, p-nitrophenyl beta-D-xyloside, p-nitrophenyl beta-D-fucoside, p-nitrophenyl beta-L-arabinoside, oligosaccharides, pyridoxine beta-D-glucoside and the cyanogenic glucosides amygdalin, prunasin and dhurrin. Possesses pyridoxine transglucosylation activity",
+                "Hydrolyzes glycosides and monolignol glucosides (PubMed:25219312). Can hydrolyze para-nitrophenyl beta-D-glucopyranoside (pNPGlc) in vitro (PubMed:23811195, PubMed:25219312). Hydrolyzes para-nitrophenyl beta-D-fucopyranoside, para-nitrophenyl beta-D-galactopyranoside and para-nitrophenyl beta-D-xylopyranoside in vitro (PubMed:25219312). Hydrolyzes the monolignol glucosides coniferin and syringin with high catalytic efficiencies (PubMed:25219312)"
+            ],
+            "catalytic_activities": [
+                "a beta-D-galactosyl-(1<->1')-N-acylsphing-4-enine + H2O = D-galactose + an N-acylsphing-4-enine",
+                "Hydrolysis of terminal non-reducing beta-D-fucose residues in beta-D-fucosides.",
+                "DIBOA beta-D-glucoside + H2O = DIBOA + D-glucose"
+            ],
+            "pathways": [
+                "Glycan metabolism; beta-D-glucan degradation",
+                "Glycan metabolism; cellulose degradation"
+            ],
+            "cofactors": [],
+            "subunit_structure": [
+                "Component of the PYK10 complex, at least composed of PYK10/BGLU23, BGLU21, BGLU22, JAL22, JAL23, PBP1/JAL30, PBP2/JAL31, JAL32, JAL33, JAL34, JAL35, GLL22 and GLL23",
+                "May interact with NEU2"
             ]
         },
         "total_entries_analyzed": 30

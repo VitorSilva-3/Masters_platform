@@ -26,7 +26,7 @@ class AppConfig:
     """Central configuration for the application."""
         
     TARGET_TAXA: List[str] = [
-        # --- Green Microalgae ---
+        # green microalgae
         "Chloropicophyceae",
         "Mamiellophyceae",
         "Nephroselmidophyceae",
@@ -38,65 +38,71 @@ class AppConfig:
         "Pedinophyceae",       
         "Trebouxiophyceae", 
 
-        # --- Red Microalgae ---
+        # red microalgae
         "Rhodellophyceae",       
         "Stylonematophyceae",    
     
-        # --- Yellow-green Microalgae ---
+        # yellow-green microalgae
         "Xanthophyceae",
 
-        # --- Golden Microalgae ---
+        # golden-brown microalgae
         "Chrysophyceae",
 
-        # --- Diatoms ---
+        # diatoms
         "Bacillariophyceae",
         "Coscinodiscophyceae",
         "Fragilariophyceae",
         "Mediophyceae",     
 
-        # --- Haptophytes ---
+        # haptophytes
         "Prymnesiophyceae",
         "Pavlovophyceae",
         "Rappephyceae",
 
-        # --- Dinoflagellates ---
+        # dinoflagellates
         "Dinophyceae",
 
-        # --- Ochrophytes ---
+        # ochrophytes
         "Eustigmatophyceae",
         "Dictyochophyceae",
         "Raphidophyceae",
         
-        # --- Flagellates ---
+        # flagellates
         "Euglenida",
         "Cryptophyceae",
         
-        # --- Ancestral & Specialized Lineages ---
+        # ancestral 
         "Glaucocystophyceae",
         "Chlorarachniophyceae",
                 
-        # --- Cyanobacteria ---
+        # cyanobacteria
         "Cyanophyceae"          
     ]
 
     ENZYMES: Dict[str, EnzymeInfo] = {
+        # monosaccharides
+        "glucokinase":                EnzymeInfo("2.7.1.2",  "glucose"),
+        "hexokinase":                EnzymeInfo("2.7.1.1",  "glucose"),
+        "fructokinase":               EnzymeInfo("2.7.1.4",  "fructose"),
+        "galactokinase":              EnzymeInfo("2.7.1.6",  "galactose"),
+
+        # disaccharides
         "beta-galactosidase":         EnzymeInfo("3.2.1.23", "lactose"),
         "lactase":                    EnzymeInfo("3.2.1.23", "lactose"),
         "beta-fructofuranosidase":    EnzymeInfo("3.2.1.26", "sucrose"),
         "invertase":                  EnzymeInfo("3.2.1.26", "sucrose"),
         "sucrase":                    EnzymeInfo("3.2.1.26", "sucrose"),
         "maltase":                    EnzymeInfo("3.2.1.20", "maltose"),
-        "fructokinase":               EnzymeInfo("2.7.1.4",  "fructose"),
-        "galactokinase":              EnzymeInfo("2.7.1.6",  "galactose"),
-        "glucokinase":                EnzymeInfo("2.7.1.2",  "glucose"),
-        "hexokinase":                EnzymeInfo("2.7.1.1",  "glucose"),
+        "beta-glucosidase":           EnzymeInfo("3.2.1.21", "cellobiose"),
+
+        # polysaccharides
         "beta-amylase":               EnzymeInfo("3.2.1.2",  "starch"),
         "alpha-amylase":              EnzymeInfo("3.2.1.1",  "starch"),
         "cellulase":                  EnzymeInfo("3.2.1.4",  "cellulose")
     }
 
     TRANSPORTERS: Dict[str, TransporterInfo] = {
-        # --- Família MFS ---
+        # major facilitator superfamily (MFS)
         "glucose transporter":        TransporterInfo("2.A.1.1",  "glucose", "MFS"),
         "fructose transporter":       TransporterInfo("2.A.1.1",  "fructose", "MFS"),
         "galactose transporter":      TransporterInfo("2.A.1.1",  "galactose", "MFS"),
@@ -105,21 +111,23 @@ class AppConfig:
         "maltose transporter":        TransporterInfo("2.A.1.1",  "maltose", "MFS"),
         "lactose permease":           TransporterInfo("2.A.1.14", "lactose", "MFS"),
         "lactose transporter":        TransporterInfo("2.A.1.14", "lactose", "MFS"),
+        "cellobiose transporter":     TransporterInfo("2.A.1.1",  "cellobiose", "MFS"),
         
-        # --- Família SWEET ---
+        # sweet transporters (SWEET)
         "sweet sugar transporter":    TransporterInfo("2.A.123",  "glucose/sucrose", "SWEET"),
         "sweet transporter":          TransporterInfo("2.A.123",  "glucose/sucrose", "SWEET"),
         
-        # --- Sistemas ABC ---
+        # ATP-binding cassette (ABC) transporters
         "maltose abc transporter":    TransporterInfo("3.A.1.1",  "maltose", "ABC"),
         "galactose abc transporter":  TransporterInfo("3.A.1.1",  "galactose", "ABC"),
         
-        # --- Sistemas PTS (Cianobactérias) ---
+        # phosphotransferase system (PTS)
         "pts system glucose":         TransporterInfo("4.A.1",    "glucose", "PTS"),
         "pts system fructose":        TransporterInfo("4.A.2",    "fructose", "PTS"),
         "pts system sucrose":         TransporterInfo("4.A.1",    "sucrose", "PTS"),
         "pts system lactose":         TransporterInfo("4.A.3",    "lactose", "PTS"),
 
+        # broad specificity transporters
         "sugar abc transporter":      TransporterInfo("3.A.1.1",  "broad specificity", "ABC"),
         "sugar transporter":          TransporterInfo("2.A.1.1",  "broad specificity", "MFS")
     }
@@ -161,17 +169,17 @@ class AppConfig:
     ]
 
     PUBMED_KEYWORDS: List[str] = [
-        # Concepts
+        # concepts
         "circular economy", "biorefinery", "valorization", "valorisation", "upcycling", "bioeconomy",
-        # General waste
+        # general waste
         "byproduct*", "by-product*", "waste*", "agro-industrial", "agroindustrial", "effluent*", "food waste",
-        # Dairy
+        # dairy
         "dairy", "whey", "cheese whey", "milk permeate",
-        # Brewing and wine
+        # brewing and wine
         "brewing", "brewery", "spent grain", "BSG", "vinasse", "grape pomace",
-        # Cereals
+        # cereals
         "cereal*", "bran", "straw", "stover", "husks", "hulls", "lignocellulosic",
-        # Fruits and veggies
+        # fruits and veggies
         "pomace", "peel*", "sugar beet pulp", "molasses"
     ]
 

@@ -7,7 +7,7 @@ from utils import load_json_cache, save_json_cache
 logger = logging.getLogger(__name__)
 
 class UniprotService:
-    """Service to interact with the UniProtKB Database via API with local caching."""
+    """Service to interact with the UniProtKB Database via API with local caching for enzymes."""
 
     BASE_URL = "https://rest.uniprot.org/uniprotkb/search"
 
@@ -15,23 +15,16 @@ class UniprotService:
         self.cache_file = cache_file
         self.cache = load_json_cache(self.cache_file, service_name = "UniprotService")
 
-    def fetch_protein_data(self, protein_name: str, identifier: str, id_type: str = "EC", max_entries: int = 30) -> Dict[str, Any]:
-        """Searches UniProt for general protein properties matching the EC or TC number."""
+    def fetch_protein_data(self, protein_name: str, identifier: str, max_entries: int = 30) -> Dict[str, Any]:
+        """Searches UniProt for general protein properties matching the EC number."""
 
         clean_key_name = protein_name.replace(' ', '_').replace('/', '_').replace('-', '_')
-        cache_key = f"{id_type}_{identifier}_{clean_key_name}"
+        cache_key = f"EC_{identifier}_{clean_key_name}"
         
         if cache_key in self.cache:
             return self.cache[cache_key]
 
-        query_name = protein_name.replace('/', ' ').replace('-', ' ')
-
-        if id_type == "EC":
-            query_str = f'ec:{identifier}'
-        elif id_type == "TC":
-            query_str = f'xref:tcdb-{identifier} AND "{query_name}"'
-        else:
-            query_str = f'{identifier} AND "{query_name}"'
+        query_str = f'ec:{identifier}'
 
         def _do_request(q_str):
             """Auxiliary function to avoid repeating the requests block."""
@@ -54,26 +47,21 @@ class UniprotService:
             except requests.exceptions.HTTPError as req_err:
                 logger.warning(f"Specific query rejected by UniProt for '{protein_name}': {req_err}")
 
-            if not results and id_type == "TC":
-                logger.info(f"No exact match (or error) for '{protein_name}'. Falling back to general TC family {identifier} data.")
-                fallback_query = f'xref:tcdb-{identifier}'
-                results = _do_request(fallback_query)
-
             if not results:
                 self.cache[cache_key] = {}
                 save_json_cache(self.cache_file, self.cache, service_name = "UniprotService")
                 return {}
             
-            summary = self._summarize_results(protein_name, identifier, id_type, results)
+            summary = self._summarize_results(protein_name, identifier, results)
             self.cache[cache_key] = summary
             save_json_cache(self.cache_file, self.cache, service_name = "UniprotService")
             return summary
             
         except Exception as e:
-            logger.error(f"[UniprotService] Error fetching general data for {protein_name} ({id_type} {identifier}): {e}")
+            logger.error(f"[UniprotService] Error fetching general data for {protein_name} (EC {identifier}): {e}")
             return {}
 
-    def _summarize_results(self, name: str, identifier: str, id_type: str, results: List[dict]) -> Dict[str, Any]:
+    def _summarize_results(self, name: str, identifier: str, results: List[dict]) -> Dict[str, Any]:
         """Aggregates general data."""
 
         functions = set()
@@ -108,15 +96,12 @@ class UniprotService:
         if first_accession:
             link = f"https://www.uniprot.org/uniprotkb/{first_accession}/entry"
         else:
-            if id_type == "EC":
-                link = f"https://www.uniprot.org/uniprotkb?query=ec:{identifier}"
-            else:
-                link = f"https://www.uniprot.org/uniprotkb?query=xref:tcdb-{identifier}"
+            link = f"https://www.uniprot.org/uniprotkb?query=ec:{identifier}"
 
         return {
             'protein_name': name,
             'identifier': identifier,
-            'id_type': id_type,
+            'id_type': "EC",
             'uniprot_link': link,  
             'general_info': {
                 'protein_name_uniprot': first_desc,

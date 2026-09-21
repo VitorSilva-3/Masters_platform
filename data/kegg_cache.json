@@ -118,5 +118,17 @@
                 "description": "Glycolysis / Gluconeogenesis"
             }
         ]
+    },
+    "3.2.1.21": {
+        "ec_number": "3.2.1.21",
+        "name": "beta-glucosidase",
+        "definition": null,
+        "reaction": "Hydrolysis of terminal, non-reducing beta-D-glucosyl residues with release of beta-D-glucose",
+        "pathways": [
+            {
+                "code": "ec00460",
+                "description": "Cyanoamino acid metabolism"
+            }
+        ]
     }
 }

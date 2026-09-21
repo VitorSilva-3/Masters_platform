@@ -34,8 +34,8 @@ METABOLIC_PATHWAYS = {
     },
     "Cellulose_Pathway": {
         "feedipedia_triggers": ["Crude fibre", "NDF", "ADF", "Neutral detergent fibre", "Acid detergent fibre"],
-        "enzymes": ["3.2.1.4", "2.7.1.1", "2.7.1.2"], # cellulase, hexokinase, glucokinase
-        "transporters": ["glucose", "glucose/fructose/galactose", "glucose/sucrose", "broad specificity"],
+        "enzymes": ["3.2.1.4", "3.2.1.21", "2.7.1.1", "2.7.1.2"], # cellulase, beta-glucosidase, hexokinase, glucokinase
+        "transporters": ["glucose", "cellobiose", "glucose/fructose/galactose", "glucose/sucrose", "broad specificity"],
         "requires_extracellular": True
     },
     "Fructose_Pathway": {
@@ -77,22 +77,22 @@ PURE_SUGARS_PATHWAYS = {
     },
     "lactose": {
         "enzymes": ["3.2.1.23", "2.7.1.6", "2.7.1.1", "2.7.1.2"], # lactase, beta-galactosidase, galactokinase, hexokinase, glucokinase
-        "transporters": ["lactose", "broad specificity"],
+        "transporters": ["lactose", "glucose", "galactose", "glucose/sucrose", "glucose/fructose/galactose", "broad specificity"],
         "requires_extracellular": False
     },
     "maltose": {
         "enzymes": ["3.2.1.20", "2.7.1.1", "2.7.1.2"], # maltase, hexokinase, glucokinase
-        "transporters": ["maltose", "broad specificity"],
+        "transporters": ["maltose", "glucose", "glucose/sucrose", "glucose/fructose/galactose", "broad specificity"],
         "requires_extracellular": False
     },
     "starch": {
         "enzymes": ["3.2.1.1", "3.2.1.2", "3.2.1.20", "2.7.1.1", "2.7.1.2"], # alpha-amylase, beta-amylase, maltase, hexokinase, glucokinase
-        "transporters": ["maltose", "glucose", "broad specificity"],
+        "transporters": ["maltose", "glucose", "glucose/sucrose", "glucose/fructose/galactose", "broad specificity"],
         "requires_extracellular": True
     },
     "cellulose": {
-        "enzymes": ["3.2.1.4", "2.7.1.1", "2.7.1.2"], # cellulase, hexokinase, glucokinase
-        "transporters": ["glucose", "broad specificity"],
+        "enzymes": ["3.2.1.4", "3.2.1.21", "2.7.1.1", "2.7.1.2"], # cellulase, beta-glucosidase, hexokinase, glucokinase
+        "transporters": ["glucose", "cellobiose", "glucose/sucrose", "glucose/fructose/galactose", "broad specificity"],
         "requires_extracellular": True
     }
 }

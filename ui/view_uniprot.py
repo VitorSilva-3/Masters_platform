@@ -2,8 +2,8 @@
 import streamlit as st
 import pandas as pd
 
-def render_uniprot_view(uniprot_service, df: pd.DataFrame, dataset_type: str = "enzymes"):
-    """Renders the UniProt page, showing general biochemical properties."""
+def render_uniprot_view(uniprot_service, df: pd.DataFrame):
+    """Renders the UniProt page, showing general biochemical properties for enzymes."""
 
     st.markdown("Explore general biochemical properties, functional annotations, and pathways catalogued in **UniProt**.")
 
@@ -11,9 +11,9 @@ def render_uniprot_view(uniprot_service, df: pd.DataFrame, dataset_type: str = "
         st.warning("No data available.")
         return
 
-    item_col = "Enzyme" if dataset_type == "enzymes" else "Transporter"
-    id_col = "EC number" if dataset_type == "enzymes" else "TC number"
-    id_type = "EC" if dataset_type == "enzymes" else "TC"
+    item_col = "Enzyme"
+    id_col = "EC number"
+    id_type = "EC"
 
     unique_items = df[[item_col, id_col]].dropna().drop_duplicates().sort_values(by=item_col)
     
@@ -22,12 +22,11 @@ def render_uniprot_view(uniprot_service, df: pd.DataFrame, dataset_type: str = "
         for _, row in unique_items.iterrows()
     }
 
-    label_noun = "enzyme" if dataset_type == "enzymes" else "transporter"
     selected_label = st.selectbox(
-        f"Select {label_noun}:",
+        "Select enzyme:",
         options=list(protein_dict.keys()),
         index=None,
-        placeholder="Enzyme..." if dataset_type == "enzymes" else "Transporter..."
+        placeholder="Enzyme..."
     )
 
     if selected_label:
@@ -35,7 +34,7 @@ def render_uniprot_view(uniprot_service, df: pd.DataFrame, dataset_type: str = "
         protein_name, identifier = protein_dict[selected_label]
         
         with st.spinner("Consulting UniProt general database..."):
-            data = uniprot_service.fetch_protein_data(protein_name, identifier, id_type=id_type)
+            data = uniprot_service.fetch_protein_data(protein_name, identifier)
         
         if not data or 'general_info' not in data:
             st.info(f"No detailed information found in UniProt for {protein_name} ({id_type} {identifier}).")
