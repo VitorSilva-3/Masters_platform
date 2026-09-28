@@ -128,7 +128,7 @@ def render_dashboard_tab(df: pd.DataFrame, item_col: str, tab_id: str, taxonomy_
 
     with col_f3:
         opts_item = sorted(get_safe_options(item_col, key_item))
-        st.multiselect(f"Select {item_col.lower()}:", placeholder = "Enzyme...", options=opts_item, key=key_item)
+        st.multiselect(f"Select {item_col.lower()}:", placeholder = "...", options=opts_item, key=key_item)
 
     filtered_df = get_filtered_df(exclude_col=None)
 

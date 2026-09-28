@@ -121,7 +121,7 @@ def _render_domain_view(df: pd.DataFrame, item_col: str, prefix: str, taxonomy_s
 
     with col3:
         opts_item = sorted(get_safe_options(item_col, k_item))
-        st.multiselect(f"Select {item_col.lower()}:", options=opts_item, placeholder="Enzyme...", key=k_item)
+        st.multiselect(f"Select {item_col.lower()}:", options=opts_item, placeholder="...", key=k_item)
 
     col4, col5, col6 = st.columns(3, gap="large")
 
