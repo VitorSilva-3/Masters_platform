@@ -24,17 +24,18 @@ class PubMedService:
 
         query_name = protein_name.replace('/', ' ').replace('-', ' ')
 
+        is_ec_number = any(char.isdigit() for char in identifier)
+        
+        if is_ec_number:
+            protein_block = f'("{query_name}"[Title/Abstract] OR "{identifier}"[Title/Abstract])'
+        else:
+            protein_block = f'("{query_name}"[Title/Abstract])'
+
         if keywords:
             keywords_block = " OR ".join([f'"{kw}"[Title/Abstract]' for kw in keywords])
-            query = (
-                f'("{organism}"[Organism] OR "{organism}"[Title/Abstract]) AND '
-                f'("{query_name}"[Title/Abstract] OR "{identifier}"[Title/Abstract] OR {keywords_block})'
-            )
+            query = f'("{organism}"[Organism] OR "{organism}"[Title/Abstract]) AND {protein_block} AND ({keywords_block})'
         else:
-            query = (
-                f'("{organism}"[Organism] OR "{organism}"[Title/Abstract]) AND '
-                f'("{query_name}"[Title/Abstract] OR "{identifier}"[Title/Abstract])'
-            )
+            query = f'("{organism}"[Organism] OR "{organism}"[Title/Abstract]) AND {protein_block}'
         
         try:
             handle = Entrez.esearch(db="pubmed", term=query, retmax=max_results, sort="relevance")
@@ -44,7 +45,7 @@ class PubMedService:
             pmids = record.get("IdList", [])
             if not pmids:
                 self.cache[cache_key] = []
-                save_json_cache(self.cache_file, self.cache, service_name = "PubMedService")
+                self.save_cache() 
                 return [] 
 
             handle = Entrez.efetch(db="pubmed", id=pmids, rettype="medline", retmode="text")
@@ -76,7 +77,7 @@ class PubMedService:
             handle.close()
             
             self.cache[cache_key] = articles
-            save_json_cache(self.cache_file, self.cache, service_name = "PubMedService")
+            self.save_cache() 
             
             return articles
             

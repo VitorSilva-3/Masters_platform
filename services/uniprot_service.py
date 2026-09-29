@@ -15,20 +15,21 @@ class UniprotService:
         self.cache_file = cache_file
         self.cache = load_json_cache(self.cache_file, service_name = "UniprotService")
 
-    def fetch_protein_data(self, protein_name: str, identifier: str, max_entries: int = 30) -> Dict[str, Any]:
-        """Searches UniProt for general protein properties matching the EC number."""
+    def fetch_protein_data(self, protein_name: str, identifier: str, id_type: str = "EC", max_entries: int = 30) -> Dict[str, Any]:
+        """Searches UniProt for general protein properties matching the EC number or Protein Name."""
 
         clean_key_name = protein_name.replace(' ', '_').replace('/', '_').replace('-', '_')
-        cache_key = f"EC_{identifier}_{clean_key_name}"
+        cache_key = f"{id_type}_{identifier}_{clean_key_name}"
         
         if cache_key in self.cache:
             return self.cache[cache_key]
 
-        query_str = f'ec:{identifier}'
+        if id_type == "EC":
+            query_str = f'ec:{identifier}'
+        else:
+            query_str = f'(protein_name:"{protein_name}")'
 
         def _do_request(q_str):
-            """Auxiliary function to avoid repeating the requests block."""
-
             params = {
                 'query': q_str,
                 'format': 'json',
@@ -52,16 +53,16 @@ class UniprotService:
                 save_json_cache(self.cache_file, self.cache, service_name = "UniprotService")
                 return {}
             
-            summary = self._summarize_results(protein_name, identifier, results)
+            summary = self._summarize_results(protein_name, identifier, id_type, results)
             self.cache[cache_key] = summary
             save_json_cache(self.cache_file, self.cache, service_name = "UniprotService")
             return summary
             
         except Exception as e:
-            logger.error(f"[UniprotService] Error fetching general data for {protein_name} (EC {identifier}): {e}")
+            logger.error(f"[UniprotService] Error fetching general data for {protein_name} ({id_type} {identifier}): {e}")
             return {}
 
-    def _summarize_results(self, name: str, identifier: str, results: List[dict]) -> Dict[str, Any]:
+    def _summarize_results(self, name: str, identifier: str, id_type: str, results: List[dict]) -> Dict[str, Any]:
         """Aggregates general data."""
 
         functions = set()
@@ -96,12 +97,15 @@ class UniprotService:
         if first_accession:
             link = f"https://www.uniprot.org/uniprotkb/{first_accession}/entry"
         else:
-            link = f"https://www.uniprot.org/uniprotkb?query=ec:{identifier}"
+            if id_type == "EC":
+                link = f"https://www.uniprot.org/uniprotkb?query=ec:{identifier}"
+            else:
+                link = f"https://www.uniprot.org/uniprotkb?query=(protein_name:\"{name}\")"
 
         return {
             'protein_name': name,
             'identifier': identifier,
-            'id_type': "EC",
+            'id_type': id_type,
             'uniprot_link': link,  
             'general_info': {
                 'protein_name_uniprot': first_desc,

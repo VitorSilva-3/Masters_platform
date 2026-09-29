@@ -101,36 +101,15 @@ class AppConfig:
         "cellulase":                  EnzymeInfo("3.2.1.4",  "cellulose")
     }
 
-    TRANSPORTERS: Dict[str, TransporterInfo] = {
-        # major facilitator superfamily (MFS)
-        "glucose transporter":        TransporterInfo("2.A.1.1",  "glucose", "MFS"),
-        "fructose transporter":       TransporterInfo("2.A.1.1",  "fructose", "MFS"),
-        "galactose transporter":      TransporterInfo("2.A.1.1",  "galactose", "MFS"),
-        "hexose transporter":         TransporterInfo("2.A.1.1",  "glucose/fructose/galactose", "MFS"),
-        "sucrose transporter":        TransporterInfo("2.A.1.1",  "sucrose", "MFS"),
-        "maltose transporter":        TransporterInfo("2.A.1.1",  "maltose", "MFS"),
-        "lactose permease":           TransporterInfo("2.A.1.14", "lactose", "MFS"),
-        "lactose transporter":        TransporterInfo("2.A.1.14", "lactose", "MFS"),
-        "cellobiose transporter":     TransporterInfo("2.A.1.1",  "cellobiose", "MFS"),
-        
-        # sweet transporters (SWEET)
-        "sweet sugar transporter":    TransporterInfo("2.A.123",  "glucose/sucrose", "SWEET"),
-        "sweet transporter":          TransporterInfo("2.A.123",  "glucose/sucrose", "SWEET"),
-        
-        # ATP-binding cassette (ABC) transporters
-        "maltose abc transporter":    TransporterInfo("3.A.1.1",  "maltose", "ABC"),
-        "galactose abc transporter":  TransporterInfo("3.A.1.1",  "galactose", "ABC"),
-        
-        # phosphotransferase system (PTS)
-        "pts system glucose":         TransporterInfo("4.A.1",    "glucose", "PTS"),
-        "pts system fructose":        TransporterInfo("4.A.2",    "fructose", "PTS"),
-        "pts system sucrose":         TransporterInfo("4.A.1",    "sucrose", "PTS"),
-        "pts system lactose":         TransporterInfo("4.A.3",    "lactose", "PTS"),
+    TARGET_SUGARS: List[str] = [
+        "glucose", "fructose", "galactose", 
+        "lactose", "sucrose", "maltose", "cellobiose" 
+    ]
 
-        # broad specificity transporters
-        "sugar abc transporter":      TransporterInfo("3.A.1.1",  "broad specificity", "ABC"),
-        "sugar transporter":          TransporterInfo("2.A.1.1",  "broad specificity", "MFS")
-    }
+    TRANSPORT_TERMS: List[str] = [
+        "transporter", "permease", "porter", "carrier", 
+        "symporter", "antiporter", "uniporter", "pts", "abc"
+    ]
 
     FUTURE_TERMS: List[str] = [
     "hypothetical", "similar", "putative", 

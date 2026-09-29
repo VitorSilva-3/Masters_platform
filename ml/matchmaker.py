@@ -6,7 +6,7 @@ from ml.metabolic_rules import METABOLIC_PATHWAYS, PURE_SUGARS_PATHWAYS
 class BiotransformationMatchmaker:
     """
     A class to recommend microalgae and cyanobacteria strains based on the metabolic potential
-    to biotransform specific agro-industrial residues or pure sugars.
+    to biotransform specific agro-industrial byproducts or pure sugars.
     """
 
     def __init__(self, df_feedipedia: pd.DataFrame, df_strains_enzymes: pd.DataFrame, df_strains_transporters: pd.DataFrame):
@@ -16,8 +16,8 @@ class BiotransformationMatchmaker:
         self.pathways = METABOLIC_PATHWAYS
         self.pure_sugars_pathways = PURE_SUGARS_PATHWAYS
         
-        self.enz_strain_col = self._find_column(self.df_enzymes, ['strain', 'organism', 'name'])
-        self.trans_strain_col = self._find_column(self.df_transporters, ['strain', 'organism', 'name'])
+        self.enz_strain_col = self._find_column(self.df_enzymes, ['specie', 'strain', 'organism', 'name'])
+        self.trans_strain_col = self._find_column(self.df_transporters, ['specie', 'strain', 'organism', 'name'])
 
     def _find_column(self, df: pd.DataFrame, possible_names: list) -> str:
         if df.empty: return None

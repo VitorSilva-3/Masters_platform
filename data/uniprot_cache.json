@@ -336,5 +336,239 @@
             ]
         },
         "total_entries_analyzed": 30
+    },
+    "Sugar_glucose_glucose_transporter": {
+        "protein_name": "glucose transporter",
+        "identifier": "glucose",
+        "id_type": "Sugar",
+        "uniprot_link": "https://www.uniprot.org/uniprotkb/Q9NY64/entry",
+        "general_info": {
+            "protein_name_uniprot": "Solute carrier family 2, facilitated glucose transporter member 8",
+            "functions": [
+                "Insulin-regulated facilitative glucose transporter",
+                "Facilitative glucose transporter that plays a role in glucose metabolism and regulation of longevity. May also play a role in lipid metabolism. Glucose transport activity of isoform a is competitively inhibited by mannose, galactose and fructose, suggesting ability to transport also other hexose sugars",
+                "Insulin-regulated facilitative hexose transporter that mediates the transport of glucose and fructose (By similarity). Facilitates hepatic influx of dietary trehalose, which in turn inhibits glucose and fructose influx triggering a starvation signal and hepatic autophagy through activation of AMPK and ULK1 (PubMed:27922102). Also able to mediate the transport of dehydroascorbate"
+            ],
+            "catalytic_activities": [
+                "L-dehydroascorbate(out) = L-dehydroascorbate(in)",
+                "D-galactose(in) = D-galactose(out)",
+                "D-glucose(out) = D-glucose(in)"
+            ],
+            "pathways": [
+                "Carbohydrate degradation"
+            ],
+            "cofactors": [],
+            "subunit_structure": [
+                "Interacts with AP2B1",
+                "Interacts with NDUFA9 (By similarity). Binds to DAXX (PubMed:11842083). Interacts via its N-terminus with SRFBP1 (PubMed:16647043). Interacts with TRARG1; the interaction is required for proper SLC2A4 recycling after insulin stimulation (By similarity)"
+            ]
+        },
+        "total_entries_analyzed": 30
+    },
+    "Sugar_glucose_glucose_pts": {
+        "protein_name": "glucose pts",
+        "identifier": "glucose",
+        "id_type": "Sugar",
+        "uniprot_link": "https://www.uniprot.org/uniprotkb/A0A7U5HLM8/entry",
+        "general_info": {
+            "protein_name_uniprot": "Unknown",
+            "functions": [],
+            "catalytic_activities": [],
+            "pathways": [],
+            "cofactors": [],
+            "subunit_structure": []
+        },
+        "total_entries_analyzed": 30
+    },
+    "Sugar_fructose_fructose_transporter": {
+        "protein_name": "fructose transporter",
+        "identifier": "fructose",
+        "id_type": "Sugar",
+        "uniprot_link": "https://www.uniprot.org/uniprotkb/P22732/entry",
+        "general_info": {
+            "protein_name_uniprot": "Solute carrier family 2, facilitated glucose transporter member 5",
+            "functions": [
+                "Functions as a fructose transporter that has only low activity with other monosaccharides (PubMed:12031501, PubMed:19091748). Can mediate the uptake of deoxyglucose, but with low efficiency (By similarity). Essential for fructose uptake in the small intestine (PubMed:19091748, PubMed:26071406). Plays a role in the regulation of salt uptake and blood pressure in response to dietary fructose (PubMed:19091748). Required for the development of high blood pressure in response to high dietary fructose intake (PubMed:19091748)",
+                "Functions as a fructose transporter that has only low activity with other monosaccharides (PubMed:7980458). Can mediate the uptake of deoxyglucose, but with low efficiency (By similarity). Essential for fructose uptake in the small intestine. Plays a role in the regulation of salt uptake and blood pressure in response to dietary fructose. Required for the development of high blood pressure in response to high dietary fructose intake (By similarity)",
+                "Functions as a fructose transporter that has only low activity with other monosaccharides (PubMed:26416735, PubMed:8333543, PubMed:9820812). Can mediate the uptake of deoxyglucose, but with low efficiency (PubMed:8333543). Essential for fructose uptake in the small intestine (By similarity). Plays a role in the regulation of salt uptake and blood pressure in response to dietary fructose (By similarity). Required for the development of high blood pressure in response to high dietary fructose intake (By similarity)"
+            ],
+            "catalytic_activities": [
+                "L-dehydroascorbate(out) = L-dehydroascorbate(in)",
+                "D-galactose(in) = D-galactose(out)",
+                "D-glucose(out) = D-glucose(in)"
+            ],
+            "pathways": [],
+            "cofactors": [],
+            "subunit_structure": []
+        },
+        "total_entries_analyzed": 30
+    },
+    "Sugar_galactose_galactose_transporter": {
+        "protein_name": "galactose transporter",
+        "identifier": "galactose",
+        "id_type": "Sugar",
+        "uniprot_link": "https://www.uniprot.org/uniprotkb/Q9VMU8/entry",
+        "general_info": {
+            "protein_name_uniprot": "UDP-galactose transporter senju",
+            "functions": [
+                "Nucleotide-sugar transporter that transports UDP-rhamnose or UDP-galactose and UMP in a strict counter-exchange mode",
+                "Transports uridine diphosphate galactose (UDP-galactose) from the cytosol into the Golgi apparatus, functioning as an antiporter that exchanges UDP-galactose for UMP (PubMed:12682060, PubMed:9010752). It is also able to exchange UDP-galactose for AMP and CMP, and to transport UDP-N-acetylgalactosamine (UDP-GalNAc) and other nucleotide sugars (PubMed:11784306, PubMed:12682060). As a provider of UDP-galactose to galactosyltransferases present in the Golgi apparatus, it is necessary for globotriaosylceramide/globoside (Gb3Cer) synthesis from lactosylceramide (PubMed:30817854)",
+                "Essential for the transport of UDP-galactose into the lumen of Golgi apparatus"
+            ],
+            "catalytic_activities": [
+                "UMP(out) + UDP-N-acetyl-alpha-D-glucosamine(in) = UMP(in) + UDP-N-acetyl-alpha-D-glucosamine(out)",
+                "UDP-N-acetyl-alpha-D-glucosamine(out) + UDP-alpha-D-galactose(in) = UDP-N-acetyl-alpha-D-glucosamine(in) + UDP-alpha-D-galactose(out)",
+                "UDP-N-acetyl-alpha-D-galactosamine(out) + UDP-alpha-D-galactose(in) = UDP-N-acetyl-alpha-D-galactosamine(in) + UDP-alpha-D-galactose(out)"
+            ],
+            "pathways": [],
+            "cofactors": [],
+            "subunit_structure": [
+                "Interacts with SLC35A3; the interaction is reduced in the presence of SLC35A4 (By similarity). Found in a complex with SLC35A3 and SLC35A4 (By similarity)",
+                "Interacts with SLC35A3; the interaction is reduced in the presence of SLC35A4 (PubMed:23089177, PubMed:28167211). Found in a complex with SLC35A3 and SLC35A4 (PubMed:28167211)"
+            ]
+        },
+        "total_entries_analyzed": 30
+    },
+    "Sugar_lactose_lactose_transporter": {
+        "protein_name": "lactose transporter",
+        "identifier": "lactose",
+        "id_type": "Sugar",
+        "uniprot_link": "https://www.uniprot.org/uniprotkb/Q7WTB2/entry",
+        "general_info": {
+            "protein_name_uniprot": "Lactose permease",
+            "functions": [
+                "Responsible for transport of beta-galactosides into the cell, with the concomitant uptake of protons (symport system), and also for transport of homologous and heterologous exchange of beta-galactosides"
+            ],
+            "catalytic_activities": [],
+            "pathways": [],
+            "cofactors": [],
+            "subunit_structure": []
+        },
+        "total_entries_analyzed": 30
+    },
+    "Sugar_lactose_lactose_permease": {
+        "protein_name": "lactose permease",
+        "identifier": "lactose",
+        "id_type": "Sugar",
+        "uniprot_link": "https://www.uniprot.org/uniprotkb/P02920/entry",
+        "general_info": {
+            "protein_name_uniprot": "Lactose permease",
+            "functions": [
+                "Responsible for transport of beta-galactosides into the cell, with the concomitant uptake of protons (symport system), and also for transport of homologous and heterologous exchange of beta-galactosides",
+                "The phosphoenolpyruvate-dependent sugar phosphotransferase system (sugar PTS), a major carbohydrate active transport system, catalyzes the phosphorylation of incoming sugar substrates concomitantly with their translocation across the cell membrane. The enzyme II LacEF PTS system is involved in lactose transport",
+                "LAC12 mediates the transport of lactose and it would appear that the permease works in part by a proton symport mechanism"
+            ],
+            "catalytic_activities": [
+                "melibiose(in) + H(+)(in) = melibiose(out) + H(+)(out)",
+                "lactose(out) + N(pros)-phospho-L-histidyl-[protein] = lactose 6-phosphate(in) + L-histidyl-[protein]",
+                "myo-inositol(out) + H(+)(out) = myo-inositol(in) + H(+)(in)"
+            ],
+            "pathways": [],
+            "cofactors": [],
+            "subunit_structure": [
+                "Monomer"
+            ]
+        },
+        "total_entries_analyzed": 30
+    },
+    "Sugar_sucrose_sucrose_transporter": {
+        "protein_name": "sucrose transporter",
+        "identifier": "sucrose",
+        "id_type": "Sugar",
+        "uniprot_link": "https://www.uniprot.org/uniprotkb/Q10R54/entry",
+        "general_info": {
+            "protein_name_uniprot": "Sucrose transport protein SUT1",
+            "functions": [
+                "Responsible for the transport of sucrose into the cell, with the concomitant uptake of protons (symport system). Can also transport other glucosides such as maltose, arbutin (hydroquinone-beta-D-glucoside), salicin (2-(hydroxymethyl)phenyl-beta-D-glucoside), alpha-phenylglucoside, beta-phenylglucoside, alpha-paranitrophenylglucoside, beta-paranitrophenylglucoside, and paranitrophenyl-beta-thioglucoside. May also transport biotin. Required for apoplastic phloem sucrose loading in source tissues (e.g. leaves) in order to transport it to sink tissues (e.g. roots, flowers)",
+                "Responsible for the transport of sucrose into the cell, with the concomitant uptake of protons (symport system) (PubMed:10948254). Can also transport maltose at a lesser rate. May also transport biotin (PubMed:10948254)",
+                "Responsible for the transport of sucrose into the cell, with the concomitant uptake of protons (symport system). Can also transport maltose at a lesser rate. May also transport biotin. Probably involved in carpel maturation that leads to pod shatter and seed dispersal"
+            ],
+            "catalytic_activities": [
+                "sucrose(out) + H(+)(out) = sucrose(in) + H(+)(in)"
+            ],
+            "pathways": [
+                "Glycan biosynthesis; sucrose metabolism"
+            ],
+            "cofactors": [],
+            "subunit_structure": [
+                "Homodimer. Interacts with SUC2 and SUC3",
+                "Homodimer. Interacts with SUC2 and SUC4"
+            ]
+        },
+        "total_entries_analyzed": 30
+    },
+    "Sugar_sucrose_sucrose_permease": {
+        "protein_name": "sucrose permease",
+        "identifier": "sucrose",
+        "id_type": "Sugar",
+        "uniprot_link": "https://www.uniprot.org/uniprotkb/Q39232/entry",
+        "general_info": {
+            "protein_name_uniprot": "Sucrose transport protein SUC1",
+            "functions": [
+                "Responsible in a heterologous system for the transport of sucrose into the cell, with the concomitant uptake of protons (symport system). Can also transport biotin, and probably maltose at a lesser rate. In planta, the role of SUC5 for the transport of sucrose seems to be negligible. Plays a role in the nutrition of the filial tissues during early seed development and is probably involved in the import of biotin into the endosperm and the embryo epidermis",
+                "Responsible for the transport of sucrose into the cell, with the concomitant uptake of protons (symport system). May also transport other glucosides. May be required for apoplastic phloem sucrose loading in source tissues (e.g. leaves) in order to transport it to sink tissues (e.g. roots, flowers) (By similarity)",
+                "The phosphoenolpyruvate-dependent sugar phosphotransferase system (sugar PTS), a major carbohydrate active transport system, catalyzes the phosphorylation of incoming sugar substrates concomitantly with their translocation across the cell membrane (PubMed:3122206). This system is involved in sucrose transport (PubMed:3122206)"
+            ],
+            "catalytic_activities": [
+                "sucrose(out) + H(+)(out) = sucrose(in) + H(+)(in)",
+                "N(pros)-phospho-L-histidyl-[protein](out) + sucrose = sucrose 6(G)-phosphate(in) + L-histidyl-[protein]"
+            ],
+            "pathways": [
+                "Glycan biosynthesis; sucrose metabolism"
+            ],
+            "cofactors": [],
+            "subunit_structure": [
+                "Homodimer. Interacts with SUC2 and SUC3",
+                "Homodimer. Interacts with SUC2 and SUC4"
+            ]
+        },
+        "total_entries_analyzed": 30
+    },
+    "Sugar_sucrose_sucrose_symporter": {
+        "protein_name": "sucrose symporter",
+        "identifier": "sucrose",
+        "id_type": "Sugar",
+        "uniprot_link": "https://www.uniprot.org/uniprotkb/A0A087B3B4/entry",
+        "general_info": {
+            "protein_name_uniprot": "Unknown",
+            "functions": [],
+            "catalytic_activities": [],
+            "pathways": [],
+            "cofactors": [],
+            "subunit_structure": []
+        },
+        "total_entries_analyzed": 13
+    },
+    "Sugar_maltose_maltose_transporter": {
+        "protein_name": "maltose transporter",
+        "identifier": "maltose",
+        "id_type": "Sugar",
+        "uniprot_link": "https://www.uniprot.org/uniprotkb/B8LJC8/entry",
+        "general_info": {
+            "protein_name_uniprot": "Unknown",
+            "functions": [],
+            "catalytic_activities": [
+                "myo-inositol(out) + H(+)(out) = myo-inositol(in) + H(+)(in)"
+            ],
+            "pathways": [],
+            "cofactors": [],
+            "subunit_structure": []
+        },
+        "total_entries_analyzed": 30
+    },
+    "Sugar_cellobiose_cellobiose_transporter": {
+        "protein_name": "cellobiose transporter",
+        "identifier": "cellobiose",
+        "id_type": "Sugar",
+        "uniprot_link": "https://www.uniprot.org/uniprotkb/A0A0X4EFB7/entry",
+        "general_info": {
+            "protein_name_uniprot": "Unknown",
+            "functions": [],
+            "catalytic_activities": [],
+            "pathways": [],
+            "cofactors": [],
+            "subunit_structure": []
+        },
+        "total_entries_analyzed": 30
     }
 }

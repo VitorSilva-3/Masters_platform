@@ -2,11 +2,12 @@
 import streamlit as st
 import pandas as pd
 import json
+import urllib.parse
+import re
 from ml.matchmaker import BiotransformationMatchmaker
 
 @st.cache_resource
 def load_ai_engine():
-    # 1. Safe JSON loading
     with open("data/feedipedia_raw_data.json", "r", encoding="utf-8") as f:
         raw_json = json.load(f)
         
@@ -16,7 +17,6 @@ def load_ai_engine():
                 raw_json = val
                 break
                 
-    # 2. Flattening the hierarchical JSON structure
     flattened_data = []
     for residue in raw_json:
         nome_residuo = residue.get("Residue_Name", "Unknown")
@@ -87,7 +87,7 @@ def load_ai_engine():
     return BiotransformationMatchmaker(df_feedipedia, df_all_enzymes, df_all_transporters)
 
 
-def render_ml_page():
+def render_matchmaker_page():
     st.title("Matchmaker")
     st.markdown("""
     This page utilizes a knowledge-based recommendation system to cross-reference the 
@@ -103,7 +103,7 @@ def render_ml_page():
         return
 
     # Helper function to format and display the results cleanly
-    def format_results(df):
+    def format_results(df, key_suffix):
         if "Affinity score percent" in df.columns:
             df["Metabolic affinity index"] = df["Affinity score percent"] / 10.0
             
@@ -115,9 +115,38 @@ def render_ml_page():
             
         df["Match level"] = df["Metabolic affinity index"].apply(categorize_match)
         
-        # Filter and order the columns for display, including the new ones
-        df_display = df[["Strain", "Match level", "Metabolic affinity index", "Mapped enzymes", "Mapped transporters"]]
+        # Add a column for GCM search links
+        def clean_for_search(name):
+            clean_name = re.sub(r"[\[\]\(\)\']", "", str(name))
+            parts = clean_name.split()
+            if len(parts) >= 2:
+                clean_name = f"{parts[0]} {parts[1]}"
+            elif len(parts) == 1:
+                clean_name = parts[0]
+            return clean_name
+
+        search_queries = df["Strain"].apply(clean_for_search)
+        sp_query = search_queries.apply(lambda x: urllib.parse.quote(str(x)))
+        df["GCM search"] = "https://gcm.wdcm.org/search?search=" + sp_query + "&list=strain"
         
+        df_display = df[["Strain", "Match level", "Metabolic affinity index", "Mapped enzymes", "Mapped transporters", "GCM search"]]
+        
+        available_levels = df_display["Match level"].unique().tolist()
+        
+        available_levels.sort(reverse=True) 
+
+        selected_levels = st.multiselect(
+            "Filter results by Match level:",
+            options=available_levels,
+            default=available_levels, 
+            key=f"filter_match_{key_suffix}"
+        )
+
+        if selected_levels:
+            df_display = df_display[df_display["Match level"].isin(selected_levels)]
+        else:
+            df_display = df_display.iloc[0:0]
+
         st.dataframe(
             df_display,
             column_config={
@@ -129,7 +158,12 @@ def render_ml_page():
                     format="%.2f"
                 ),
                 "Mapped enzymes": st.column_config.TextColumn("Enzymes found", width="medium"),
-                "Mapped transporters": st.column_config.TextColumn("Transporters found", width="medium")
+                "Mapped transporters": st.column_config.TextColumn("Transporters found", width="medium"),
+                "GCM search": st.column_config.LinkColumn(
+                    "Availability", 
+                    display_text="Search GCM",
+                    width="small"
+                )
             },
             use_container_width=True,
             hide_index=True
@@ -148,15 +182,18 @@ def render_ml_page():
 
         if st.button("Run recommendation for byproduct", type="primary"):
             with st.spinner("Calculating targeted pathway affinities..."):
-                results_df = ai_engine.recommend_strains(selected_residue)
+                st.session_state["results_waste"] = ai_engine.recommend_strains(selected_residue)
+                st.session_state["last_residue"] = selected_residue
                 
+        if "results_waste" in st.session_state and st.session_state.get("last_residue") == selected_residue:
+            results_df = st.session_state["results_waste"]
+            
             if results_df.empty:
                 st.warning(f"No mapped strains found for **{selected_residue}**.")
-                
                 st.dataframe(ai_engine.df_feedipedia.loc[selected_residue].replace(0.0, pd.NA).dropna())
             else:
                 st.success(f"Analysis complete for **{selected_residue}**!")
-                format_results(results_df)
+                format_results(results_df, "waste")
 
     with tab_sugar:
         st.subheader("1. Sugar selection")
@@ -169,10 +206,14 @@ def render_ml_page():
 
         if st.button("Run recommendation for sugar", type="primary"):
             with st.spinner("Calculating targeted pathway affinities..."):
-                results_sugar_df = ai_engine.recommend_strains_for_pure_sugar(selected_sugar.lower())
+                st.session_state["results_sugar"] = ai_engine.recommend_strains_for_pure_sugar(selected_sugar.lower())
+                st.session_state["last_sugar"] = selected_sugar
                 
+        if "results_sugar" in st.session_state and st.session_state.get("last_sugar") == selected_sugar:
+            results_sugar_df = st.session_state["results_sugar"]
+            
             if results_sugar_df.empty:
                 st.warning(f"No mapped strains found for {selected_sugar}.")
             else:
                 st.success(f"Analysis complete for {selected_sugar}!")
-                format_results(results_sugar_df)
+                format_results(results_sugar_df, "sugar")

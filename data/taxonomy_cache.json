@@ -75215,5 +75215,39 @@
             "name": "unclassified Pelatocladus"
         }
     ],
-    "Goleter sp.": "Taxonomy ID not found."
+    "Goleter sp.": "Taxonomy ID not found.",
+    "Braarudosphaera bigelowii": [
+        {
+            "rank": "cellular root",
+            "name": "cellular organisms"
+        },
+        {
+            "rank": "domain",
+            "name": "Eukaryota"
+        },
+        {
+            "rank": "clade",
+            "name": "Haptista"
+        },
+        {
+            "rank": "phylum",
+            "name": "Haptophyta"
+        },
+        {
+            "rank": "clade",
+            "name": "Prymnesiophyceae"
+        },
+        {
+            "rank": "order",
+            "name": "Zygodiscales"
+        },
+        {
+            "rank": "family",
+            "name": "Braarudosphaeraceae"
+        },
+        {
+            "rank": "genus",
+            "name": "Braarudosphaera"
+        }
+    ]
 }

@@ -26,7 +26,6 @@ class DataManager:
 
     def load_data(self) -> pd.DataFrame:
         """Loads existing dataset from disk if available, otherwise returns an empty DataFrame."""
-
         if os.path.exists(self.file_path):
             try:
                 df = pd.read_csv(self.file_path)
@@ -37,7 +36,6 @@ class DataManager:
 
     def _fetch_batch_with_retry(self, batch_ids: list, max_retries: int = 3) -> list:
         """Fetches a batch of records from NCBI with retry logic for handling network issues."""
-
         for attempt in range(max_retries):
             try:
                 handle = Entrez.efetch(db="protein", id=batch_ids, rettype="gb", retmode="text")
@@ -54,7 +52,6 @@ class DataManager:
 
     def _parse_and_validate_record(self, record, item_name, info, target_taxa_lower) -> dict:
         """Parses a GenBank record, checks for exclusion criteria, validates taxonomy, and extracts relevant metadata."""
-
         desc = record.description.lower()
         
         excluded_list = AppConfig.EXCLUDED_TERMS_ENZYMES if self.data_type == "enzyme" else AppConfig.EXCLUDED_TERMS_TRANSPORTERS
@@ -80,16 +77,12 @@ class DataManager:
             status = "🟢 Confirmed"
 
         metadata_parts = []
-
         for feature in record.features:
             if feature.type == "source":
                 for key, values in feature.qualifiers.items():
                     val_str = ", ".join(values)
-                    
                     formatted_key = key.replace('_', ' ').capitalize()
-                    
                     metadata_parts.append(f"{formatted_key}: {val_str}")
-                
                 break 
         
         origin_info = " | ".join(metadata_parts) if metadata_parts else "Unspecified"
@@ -109,9 +102,7 @@ class DataManager:
             return {
                 "Specie": organism_clean,
                 "Transporter": item_name,
-                "TC number": info.tc_number,
-                "Family": info.family,
-                "Target sugar": info.target_sugar,
+                "Target sugar": info, 
                 "Description": record.description,
                 "Status": status,
                 "Source ID (NCBI)": record.id,
@@ -120,7 +111,6 @@ class DataManager:
 
     def _save_checkpoint(self, new_records: list):
         """Saves new records to disk, ensuring no duplicates based on 'Source ID (NCBI)'."""
-
         if not new_records:
             return
 
@@ -138,9 +128,46 @@ class DataManager:
         final_df.to_csv(self.file_path, index=False)
         logger.debug(f"Checkpoint saved: {len(final_df)} total records now in disk.")
 
+    def _execute_search_and_fetch(self, item_name, info, query, existing_ids, target_taxa_lower):
+        """Helper method that runs the esearch and efetch process for a given query."""
+        try:
+            handle = Entrez.esearch(db="protein", term=query, retmax=5000)
+            search_results = Entrez.read(handle)
+            handle.close()
+            
+            all_ids = search_results.get("IdList", [])
+            ids_to_fetch = [ncbi_id for ncbi_id in all_ids if ncbi_id not in existing_ids]
+            
+            if not ids_to_fetch:
+                logger.info(f"No new records for {item_name}.")
+                return
+
+            logger.info(f"Found {len(all_ids)} total. Fetching {len(ids_to_fetch)} new records...")
+
+            batch_size = 100
+            for i in range(0, len(ids_to_fetch), batch_size):
+                batch_ids = ids_to_fetch[i:i+batch_size]
+                records = self._fetch_batch_with_retry(batch_ids)
+                
+                batch_valid_records = []
+                for record in records:
+                    data = self._parse_and_validate_record(record, item_name, info, target_taxa_lower)
+                    if data:
+                        batch_valid_records.append(data)
+                
+                if batch_valid_records:
+                    self._save_checkpoint(batch_valid_records)
+                    for r in batch_valid_records:
+                        existing_ids.add(str(r["Source ID (NCBI)"]))
+                
+                time.sleep(0.5 if Entrez.api_key else 1.0) 
+
+        except Exception as e:
+            logger.error(f"Critical error during {item_name} processing: {e}")
+
+
     def build_dataset_offline(self):
         """Main method to build the dataset by querying NCBI, validating records, and saving results with checkpointing."""
-
         logger.info(f"Starting {self.data_type.upper()} dataset build. Target Taxa: {len(AppConfig.TARGET_TAXA)} groups.")
         
         if not setup_ncbi_entrez():
@@ -155,51 +182,22 @@ class DataManager:
         taxa_query = " OR ".join([f'"{t}"[Organism]' for t in AppConfig.TARGET_TAXA])
         target_taxa_lower = [t.lower() for t in AppConfig.TARGET_TAXA]
         
-        target_dict = AppConfig.ENZYMES if self.data_type == "enzyme" else AppConfig.TRANSPORTERS
-        
-        for item_name, info in target_dict.items():
-            
-            if self.data_type == "enzyme":
+        if self.data_type == "enzyme":
+            for item_name, info in AppConfig.ENZYMES.items():
                 logger.info(f"Processing: {item_name} (EC: {info.ec_number})")
                 query = f'("{item_name}"[Protein Name] OR "{item_name}"[Title] OR "{info.ec_number}"[EC/RN Number]) AND ({taxa_query})'
-            else:
-                logger.info(f"Processing: {item_name} (TC: {info.tc_number})")
-                query = f'("{item_name}"[Protein Name] OR "{item_name}"[Title] OR "{info.tc_number}"[All Fields]) AND ({taxa_query})'
-            
-            try:
-                handle = Entrez.esearch(db="protein", term=query, retmax=5000)
-                search_results = Entrez.read(handle)
-                handle.close()
-                
-                all_ids = search_results.get("IdList", [])
-                ids_to_fetch = [ncbi_id for ncbi_id in all_ids if ncbi_id not in existing_ids]
-                
-                if not ids_to_fetch:
-                    logger.info(f"No new records for {item_name}.")
-                    continue
+                self._execute_search_and_fetch(item_name, info, query, existing_ids, target_taxa_lower)
 
-                logger.info(f"Found {len(all_ids)} total. Fetching {len(ids_to_fetch)} new records...")
-
-                batch_size = 100
-                for i in range(0, len(ids_to_fetch), batch_size):
-                    batch_ids = ids_to_fetch[i:i+batch_size]
-                    records = self._fetch_batch_with_retry(batch_ids)
+        elif self.data_type == "transporter":
+            for sugar in AppConfig.TARGET_SUGARS:
+                for term in AppConfig.TRANSPORT_TERMS:
+                    item_name = f"{sugar} {term}"
+                    info = sugar 
+                    logger.info(f"Processing: {item_name}")
                     
-                    batch_valid_records = []
-                    for record in records:
-                        data = self._parse_and_validate_record(record, item_name, info, target_taxa_lower)
-                        if data:
-                            batch_valid_records.append(data)
+                    query = f'(({sugar}[Protein Name] OR {sugar}[Title]) AND ({term}[Protein Name] OR {term}[Title])) AND ({taxa_query})'
                     
-                    if batch_valid_records:
-                        self._save_checkpoint(batch_valid_records)
-                        for r in batch_valid_records:
-                            existing_ids.add(str(r["Source ID (NCBI)"]))
-                    
-                    time.sleep(0.5 if Entrez.api_key else 1.0) 
-
-            except Exception as e:
-                logger.error(f"Critical error during {item_name} processing: {e}")
+                    self._execute_search_and_fetch(item_name, info, query, existing_ids, target_taxa_lower)
 
         logger.info(f"Build process finished. Final dataset saved at {self.file_path} with {len(existing_ids)} unique records.")
 

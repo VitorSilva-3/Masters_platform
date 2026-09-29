@@ -11690,3 +11690,27 @@ Stenomitos rutilans,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrola
 Mojavia sp.,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Mojavia sp.],🟢 Confirmed,WP_495880964.1,Organism: Mojavia sp. | Db xref: taxon:3100451
 Myxacorys chilensis,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Myxacorys chilensis],🟢 Confirmed,WP_495872968.1,Organism: Myxacorys chilensis | Db xref: taxon:2594884
 Brasilonema angustatum,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Brasilonema angustatum],🟢 Confirmed,WP_495836128.1,Organism: Brasilonema angustatum | Db xref: taxon:1249745
+Gloeomargarita sp.,glucokinase,2.7.1.2,glucose,glucokinase [Gloeomargarita sp.],🟢 Confirmed,WP_510089174.1,Organism: Gloeomargarita sp. | Db xref: taxon:3100528
+Thermosynechococcus sp.,glucokinase,2.7.1.2,glucose,glucokinase [Thermosynechococcus sp.],🟢 Confirmed,WP_510087528.1,Organism: Thermosynechococcus sp. | Db xref: taxon:2814275
+Synechococcus sp. CS-1330,beta-glucosidase,3.2.1.21,cellobiose,beta-glucosidase family protein [Synechococcus sp. CS-1330],🟢 Confirmed,WP_499658894.1,Organism: Synechococcus sp. CS-1330 | Db xref: taxon:2847974
+Thermocoleostomius sinensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Thermocoleostomius sinensis],🟢 Confirmed,WP_506411736.1,Organism: Thermocoleostomius sinensis | Db xref: taxon:3065396
+Trichothermofontia sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Trichothermofontia sp.],🟢 Confirmed,WP_506383119.1,Organism: Trichothermofontia sp. | Db xref: taxon:3101342
+Leptodesmis sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Leptodesmis sp.],🟢 Confirmed,WP_506297588.1,Organism: Leptodesmis sp. | Db xref: taxon:3100501
+Chlorogloeopsis sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Chlorogloeopsis sp.],🟢 Confirmed,WP_506285145.1,Organism: Chlorogloeopsis sp. | Db xref: taxon:28069
+Thermoleptolyngbya sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Thermoleptolyngbya sp.],🟢 Confirmed,WP_506076446.1,Organism: Thermoleptolyngbya sp. | Db xref: taxon:3100228
+Thermoleptolyngbya sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase [Thermoleptolyngbya sp.],🟢 Confirmed,WP_505184659.1,Organism: Thermoleptolyngbya sp. | Db xref: taxon:3100228
+Leptodesmis sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family protein [Leptodesmis sp.],🟢 Confirmed,WP_504853772.1,Organism: Leptodesmis sp. | Db xref: taxon:3100501
+Fischerella thermalis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Fischerella thermalis],🟢 Confirmed,WP_510080132.1,Organism: Fischerella thermalis | Db xref: taxon:372787
+Fischerella thermalis,alpha-amylase,3.2.1.1,starch,alpha-amylase [Fischerella thermalis],🟢 Confirmed,WP_510079698.1,Organism: Fischerella thermalis | Db xref: taxon:372787
+Sodalinema gerasimenkoae,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Sodalinema gerasimenkoae],🟢 Confirmed,WP_508483623.1,Organism: Sodalinema gerasimenkoae | Db xref: taxon:2862348
+Sodalinema gerasimenkoae,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Sodalinema gerasimenkoae],🟢 Confirmed,WP_508483120.1,Organism: Sodalinema gerasimenkoae | Db xref: taxon:2862348
+Sodalinema gerasimenkoae,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Sodalinema gerasimenkoae],🟢 Confirmed,WP_508481891.1,Organism: Sodalinema gerasimenkoae | Db xref: taxon:2862348
+Synechococcus sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Synechococcus sp.],🟢 Confirmed,WP_508475421.1,Organism: Synechococcus sp. | Db xref: taxon:1131
+Thermoleptolyngbya sichuanensis,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Thermoleptolyngbya sichuanensis],🟢 Confirmed,WP_506416453.1,Organism: Thermoleptolyngbya sichuanensis | Db xref: taxon:2885951
+Thermocoleostomius sp.,alpha-amylase,3.2.1.1,starch,alpha-amylase family glycosyl hydrolase [Thermocoleostomius sp.],🟢 Confirmed,WP_506084207.1,Organism: Thermocoleostomius sp. | Db xref: taxon:3100574
+Tildeniella sp. 4.3,alpha-amylase,3.2.1.1,starch,alpha-amylase [Tildeniella sp. 4.3],🟢 Confirmed,WP_503252641.1,Organism: Tildeniella sp. 4.3 | Db xref: taxon:3451559
+Leptothoe sp. ISB3NOV94-8A,alpha-amylase,3.2.1.1,starch,alpha-amylase [Leptothoe sp. ISB3NOV94-8A],🟢 Confirmed,WP_499867625.1,Organism: Leptothoe sp. ISB3NOV94-8A | Db xref: taxon:3102775
+Gloeomargarita sp.,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Gloeomargarita sp.],🟢 Confirmed,WP_510089934.1,Organism: Gloeomargarita sp. | Db xref: taxon:3100528
+Thermoleptolyngbya sichuanensis,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Thermoleptolyngbya sichuanensis],🟢 Confirmed,WP_506415761.1,Organism: Thermoleptolyngbya sichuanensis | Db xref: taxon:2885951
+Chlorogloeopsis sp.,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Chlorogloeopsis sp.],🟢 Confirmed,WP_506283620.1,Organism: Chlorogloeopsis sp. | Db xref: taxon:28069
+Thermoleptolyngbya sp.,cellulase,3.2.1.4,cellulose,cellulase family glycosylhydrolase [Thermoleptolyngbya sp.],🟢 Confirmed,WP_506075347.1,Organism: Thermoleptolyngbya sp. | Db xref: taxon:3100228

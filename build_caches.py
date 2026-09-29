@@ -27,7 +27,7 @@ class CacheBuilder:
     def __init__(self):
         self.ncbi_delay = 0.35  
         self.uniprot_delay = 0.50 
-        self.s2_delay = 3.0 
+        self.pubmed_delay = 3.0 
         
         try:
             self.kegg_service = KeggService()
@@ -62,26 +62,6 @@ class CacheBuilder:
                 datasets[name] = pd.DataFrame()
                 
         return datasets
-
-    @staticmethod
-    def _deduplicate_articles(articles: list) -> list:
-        seen_dois = set()
-        seen_titles = set()
-        unique_articles = []
-
-        for art in articles:
-            doi = art.get('doi')
-            if doi:
-                if doi in seen_dois: continue
-                seen_dois.add(doi)
-            
-            title = art.get('title', '').strip().lower()
-            if title in seen_titles: continue
-            seen_titles.add(title)
-            
-            unique_articles.append(art)
-            
-        return unique_articles
 
     def update_taxonomy(self, datasets: dict) -> None:
         """Updates the Taxonomy cache for all species across all datasets."""
@@ -125,25 +105,30 @@ class CacheBuilder:
         logger.info(f"KEGG cache update completed. {added} new entries added.")
 
     def update_uniprot(self, datasets: dict) -> None: 
-        """Updates the UniProt cache for enzymes."""
+        """Updates the UniProt cache for enzymes and transporters."""
         
         logger.info("Initiating UniProt cache update...")
         added_general = 0
         
-        if "enzymes" in datasets and not datasets["enzymes"].empty:
-            df = datasets["enzymes"]
-            unique_items = df[['Enzyme', 'EC number']].dropna().drop_duplicates()
+        for ds_name, df in datasets.items():
+            if df.empty: continue
+
+            item_col = 'Enzyme' if ds_name == "enzymes" else 'Transporter'
+            id_col = 'EC number' if ds_name == "enzymes" else 'Target sugar'
+            id_type = "EC" if ds_name == "enzymes" else "Sugar"
+
+            unique_items = df[[item_col, id_col]].dropna().drop_duplicates()
 
             for _, row in unique_items.iterrows():
-                identifier = row['EC number']
-                name = row['Enzyme']
+                identifier = row[id_col]
+                name = row[item_col]
 
                 clean_name = name.replace(' ', '_').replace('/', '_').replace('-', '_')
-                cache_key = f"EC_{identifier}_{clean_name}"
+                cache_key = f"{id_type}_{identifier}_{clean_name}"
 
                 if cache_key not in self.uniprot_service.cache:
-                    logger.info(f"Fetching UniProt general data for EC: {identifier}")
-                    self.uniprot_service.fetch_protein_data(name, identifier)
+                    logger.info(f"Fetching UniProt general data for: {name} ({id_type}: {identifier})")
+                    self.uniprot_service.fetch_protein_data(name, identifier, id_type=id_type)
                     added_general += 1
                     time.sleep(self.uniprot_delay)
         
@@ -160,7 +145,7 @@ class CacheBuilder:
             if df.empty: continue
             
             item_col = "Enzyme" if ds_name == "enzymes" else "Transporter"
-            id_col = "EC number" if ds_name == "enzymes" else "TC number"
+            id_col = "EC number" if ds_name == "enzymes" else "Target sugar"
             
             unique_combinations = df[['Specie', item_col, id_col]].dropna().drop_duplicates()
             
@@ -184,7 +169,7 @@ class CacheBuilder:
                     self.pubmed_service.save_cache()
                     
                     added += 1
-                    time.sleep(self.s2_delay)
+                    time.sleep(self.pubmed_delay)
                 
         logger.info(f"Literature cache update completed. {added} new searches added.")
 
