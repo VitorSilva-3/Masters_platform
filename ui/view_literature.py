@@ -1,6 +1,7 @@
 
 import streamlit as st
 import pandas as pd
+from config import AppConfig
 from utils import add_taxonomic_class_column
 
 def render_literature_tab(df: pd.DataFrame, item_col: str, id_col: str, tab_id: str, pubmed_service, taxonomy_service):
@@ -85,7 +86,14 @@ def render_literature_tab(df: pd.DataFrame, item_col: str, id_col: str, tab_id: 
 
             with st.spinner(f"Fetching literature for {current_species}..."):
                 for p_name, p_id in items_to_search:
-                    arts = pubmed_service.search_articles(current_species, p_name, p_id)
+                    
+                    arts = pubmed_service.search_articles(
+                        current_species, 
+                        p_name, 
+                        p_id, 
+                        keywords=AppConfig.PUBMED_KEYWORDS
+                    )
+                    
                     for art in arts:
                         pmid = art.get('pmid')
                         if not pmid or pmid not in seen_pmids:
@@ -136,7 +144,7 @@ def render_literature_view(pubmed_service, df_enzymes: pd.DataFrame, df_transpor
     df_t = df_transporters.copy()
     if not df_t.empty:
         df_t['Protein_Name'] = df_t['Transporter']
-        df_t['Protein_ID'] = df_t['TC number']
+        df_t['Protein_ID'] = df_t['Target sugar']
         df_t['Type'] = 'Transporter'
 
     dfs_to_concat = [df for df in [df_e, df_t] if not df.empty]

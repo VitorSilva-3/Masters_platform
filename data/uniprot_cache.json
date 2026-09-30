@@ -570,5 +570,30 @@
             "subunit_structure": []
         },
         "total_entries_analyzed": 30
+    },
+    "NAME_lactose_lactose_permease": {
+        "protein_name": "lactose permease",
+        "identifier": "lactose",
+        "id_type": "NAME",
+        "uniprot_link": "https://www.uniprot.org/uniprotkb/P02920/entry",
+        "general_info": {
+            "protein_name_uniprot": "Lactose permease",
+            "functions": [
+                "LAC12 mediates the transport of lactose and it would appear that the permease works in part by a proton symport mechanism",
+                "The phosphoenolpyruvate-dependent sugar phosphotransferase system (sugar PTS), a major carbohydrate active transport system, catalyzes the phosphorylation of incoming sugar substrates concomitantly with their translocation across the cell membrane. The enzyme II LacEF PTS system is involved in lactose transport, but can also use galactose, isopropyl beta-thio-galactopyranoside and thiomethyl beta-D-galactopyranoside (TMG) as substrates",
+                "Responsible for transport of beta-galactosides into the cell, with the concomitant import of a proton (symport system)"
+            ],
+            "catalytic_activities": [
+                "melibiose(in) + H(+)(in) = melibiose(out) + H(+)(out)",
+                "myo-inositol(out) + H(+)(out) = myo-inositol(in) + H(+)(in)",
+                "lactose(in) + H(+)(in) = lactose(out) + H(+)(out)"
+            ],
+            "pathways": [],
+            "cofactors": [],
+            "subunit_structure": [
+                "Monomer"
+            ]
+        },
+        "total_entries_analyzed": 30
     }
 }

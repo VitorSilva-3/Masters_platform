@@ -29,7 +29,12 @@ class PubMedService:
         if is_ec_number:
             protein_block = f'("{query_name}"[Title/Abstract] OR "{identifier}"[Title/Abstract])'
         else:
-            protein_block = f'("{query_name}"[Title/Abstract])'
+            words = query_name.split()
+            if len(words) > 1:
+                joined_words = " AND ".join([f'"{w}"[Title/Abstract]' for w in words])
+                protein_block = f"({joined_words})"
+            else:
+                protein_block = f'("{query_name}"[Title/Abstract])'
 
         if keywords:
             keywords_block = " OR ".join([f'"{kw}"[Title/Abstract]' for kw in keywords])

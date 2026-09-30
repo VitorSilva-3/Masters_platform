@@ -153,20 +153,18 @@ class CacheBuilder:
                 org = row['Specie']
                 protein_name = row[item_col]
                 identifier = row[id_col]
+                
                 cache_key = f"{org}|{protein_name}|{identifier}"
                 
                 if cache_key not in self.pubmed_service.cache:
                     logger.info(f"Searching Literature for: {org} + {protein_name}")
                     
-                    pubmed_arts = self.pubmed_service.search_articles(
+                    self.pubmed_service.search_articles(
                         organism=org, 
                         protein_name=protein_name, 
                         identifier=identifier, 
                         keywords=AppConfig.PUBMED_KEYWORDS
                     )
-                    
-                    self.pubmed_service.cache[cache_key] = pubmed_arts
-                    self.pubmed_service.save_cache()
                     
                     added += 1
                     time.sleep(self.pubmed_delay)
