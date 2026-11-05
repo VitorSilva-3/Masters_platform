@@ -84,7 +84,7 @@ elif st.session_state["authentication_status"]:
         
         if current_role == "admin":
             st.divider()
-            st.markdown("### Admin panel")
+            st.markdown("Admin panel")
             with st.expander("Manage users"):
                 users_list = mongo.get_users_list()
                 if len(users_list) == 1:
@@ -92,16 +92,20 @@ elif st.session_state["authentication_status"]:
                 else:
                     for u in users_list:
                         if u['email'] != current_email: 
-                            col1, col2 = st.columns([3, 1])
+                            col1, col2 = st.columns([3, 2]) 
                             
                             col1.markdown(f"**{u['name']}**")
                             
                             if u.get('role') == 'admin':
                                 col2.caption("Admin")
                             else:
-                                if col2.button("Delete", type="primary", key=f"del_{u['email']}", help="Delete profile and chats"):
-                                    mongo.delete_user(u['email'])
-                                    st.rerun()
+                                with col2.popover("Delete"):
+                                    st.markdown(f"Are you sure you want to delete **{u['name']}**?")
+                                    st.caption("This action will also delete all their chat history. It cannot be undone.")
+                                    
+                                    if st.button("Yes, delete", type="primary", key=f"confirm_del_{u['email']}", use_container_width=True):
+                                        mongo.delete_user(u['email'])
+                                        st.rerun()
 
     LOTTIE_DNA = "images/DNA strand.json" 
     LOTTIE_FACTORY = "images/Factory pollution city air and water.json"
