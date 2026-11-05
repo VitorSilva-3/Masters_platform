@@ -24,3 +24,7 @@ requests
 
 # AI & LLM
 google-genai
+
+# Authentication & Security
+streamlit-authenticator
+bcrypt

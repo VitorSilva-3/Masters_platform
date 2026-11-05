@@ -12,10 +12,8 @@ class LLMService:
 
         self.client = genai.Client(api_key=api_key)
         
-        # 1. Carrega os CSVs pequenos como texto estático
         self.static_csv_context = self._load_csv_previews()
         
-        # 2. Gere o Upload do ficheiro pesado (Feedipedia) para a Google
         self.uploaded_feedipedia = self._get_or_upload_file()
 
     def _get_or_upload_file(self):
@@ -27,14 +25,12 @@ class LLMService:
         display_name = "feedipedia_master_data"
 
         try:
-            # Verifica se o ficheiro já existe nos servidores da Google
             for f in self.client.files.list():
                 if f.display_name == display_name:
                     return f
         except Exception as e:
             print(f"[-] Error checking existing files: {e}")
 
-        # Se não encontrou, faz o upload
         if os.path.exists(file_path):
             try:
                 print("Uploading Feedipedia to Gemini API...")
@@ -88,13 +84,10 @@ class LLMService:
         formatted_contents = []
         is_first_message = True
         
-        # 1. Reconstrói o histórico do chat
         for msg in chat_history:
             role = "user" if msg["role"] == "user" else "model"
             parts = [types.Part.from_text(text=msg["content"])]
             
-            # OTIMIZAÇÃO: Anexar o ficheiro apenas à PRIMEIRA mensagem do utilizador
-            # Isto poupa milhares de tokens e torna o modelo muito mais rápido.
             if is_first_message and role == "user" and self.uploaded_feedipedia:
                 parts.insert(0, types.Part.from_uri(
                     file_uri=self.uploaded_feedipedia.uri,
@@ -104,10 +97,8 @@ class LLMService:
                 
             formatted_contents.append(types.Content(role=role, parts=parts))
         
-        # 2. Prepara a nova mensagem (o prompt atual)
         current_parts = []
         
-        # Se o histórico estava vazio, esta é a primeira mensagem, logo anexamos o ficheiro aqui
         if is_first_message and self.uploaded_feedipedia:
             current_parts.append(types.Part.from_uri(
                 file_uri=self.uploaded_feedipedia.uri,
@@ -117,7 +108,6 @@ class LLMService:
         current_parts.append(types.Part.from_text(text=user_prompt))
         formatted_contents.append(types.Content(role="user", parts=current_parts))
 
-        # 3. Comunicação com a API (com Retry Logic)
         model_name = st.secrets.get("GEMINI_MODEL", "gemini-1.5-flash")
         max_tentativas = 3
         
@@ -132,20 +122,17 @@ class LLMService:
                     )
                 )
                 
-                # Sucesso! Envia os pedaços de texto para o ecrã
                 for chunk in response_stream:
                     yield chunk.text
-                return  # Sai da função em caso de sucesso
+                return 
                 
             except Exception as e:
                 erro_str = str(e)
-                # Deteta se o erro é de sobrecarga/limite (503 ou 429)
                 if ("503" in erro_str or "429" in erro_str or "UNAVAILABLE" in erro_str.upper()):
                     if tentativa < max_tentativas - 1:
-                        tempo_espera = 2 ** tentativa  # Espera 1s na primeira falha, 2s na segunda
+                        tempo_espera = 2 ** tentativa  
                         time.sleep(tempo_espera)
-                        continue  # Tenta novamente
+                        continue  
                 
-                # Se for outro tipo de erro ou esgotar as tentativas, mostra mensagem limpa
                 yield f"\n\n Could not connect to the AI server. Reason: {erro_str}"
                 return
