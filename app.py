@@ -47,18 +47,23 @@ if not st.session_state.get("authentication_status"):
 
             if submit_register:
                 if new_name and new_email and new_password:
-                    salt = bcrypt.gensalt()
-                    hashed_password = bcrypt.hashpw(new_password.encode('utf-8'), salt).decode('utf-8')
+                    existing_emails = [u['email'] for u in mongo.get_users_list()]
                     
-                    try:
-                        mongo.add_user(
-                            email=new_email,
-                            name=new_name,
-                            hashed_password=hashed_password
-                        )
-                        st.success("Profile registered successfully! You can now log in via the Login tab.")
-                    except Exception as e:
-                        st.error(f"An error occurred: {e}")
+                    if new_email in existing_emails:
+                        st.error("This email is already registered in the platform!")
+                    else:
+                        salt = bcrypt.gensalt()
+                        hashed_password = bcrypt.hashpw(new_password.encode('utf-8'), salt).decode('utf-8')
+                        
+                        try:
+                            mongo.add_user(
+                                email=new_email,
+                                name=new_name,
+                                hashed_password=hashed_password
+                            )
+                            st.success("Profile registered successfully! You can now log in via the Login tab.")
+                        except Exception as e:
+                            st.error(f"An error occurred: {e}")
                 else:
                     st.warning("Please fill in all fields to register.")
 
